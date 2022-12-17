@@ -2,9 +2,9 @@
 
 The site you're seeing now can be transformed into an IDE if you connect it with an API that you can run locally.
 
-## Set up instructions
+# Set up instructions
 
-### 1) Prerequisites
+## 1) Prerequisites
 
 You need **Chrome** for this tool, please install chrome [here](https://www.google.com/chrome)
 
@@ -16,7 +16,7 @@ You need **`git`** too! Installation instructions [here](https://git-scm.com/dow
 
 Other recommended devtools can be found [here](https://codefromanywhere.com/docs/course/getting-started/installation-instructions) (optional)
 
-### 2) Clone and open it in your code editor
+## 2) Clone and open it in your code editor
 
 Open a terminal, and clone the repo. You can use [VSCode](https://code.visualstudio.com/)), or simply your terminal if you don't want to change anything.
 
@@ -24,13 +24,13 @@ Open a terminal, and clone the repo. You can use [VSCode](https://code.visualstu
 git clone https://github.com/CodeFromAnywhere/gptide
 ```
 
-### 3) Install
+## 3) Install
 
 ```
 yarn
 ```
 
-### 4) Run
+## 4) Run
 
 In the repo folder, run:
 
@@ -38,7 +38,7 @@ In the repo folder, run:
 yarn dev
 ```
 
-This runs the serve on `localhost:42000`. If you now go back to the site, you should be able to see your own file-system! If you don't, make sure you click "API" and ensure `http://localhost:42000` is filled in there. I've only tested on chrome, not sure if other browsers allow this http connection (you might get CORS error).
+This runs the server on `localhost:42000`. If you now go back to the site, you should be able to see your own file-system! If you don't, make sure you click "API" and ensure `http://localhost:42000` is filled in there. I've only tested on chrome, not sure if other browsers allow this http connection (you might get CORS error).
 
 Alternatively, you can also run the app in `[path-to-repo]/apps/generative-web` using `yarn dev` there. It's the same thing, just locally. You can also build it using `yarn build` and then run the prod version with `yarn start`.
 
@@ -46,19 +46,15 @@ The files are located in `/path/to/your/repo/docs` and you can put anything you 
 
 You can now create your own prompts or try executing some of the pre-existing ones.
 
-[VID coming SOON]
+https://www.youtube.com/watch?v=qIXb2N7iYb8
 
 _❗️ If you have any issues with the setup, please reach out, I'm trying to make this tool as accessible as possible, and didn't test thoroughly yet on all different environments❗️_
 
-## Prompting
+# Prompting
 
-As you can see here, you can do prompts on a file or on a selection within a file.
+You can create a new prompt with "Free-form prompt" or you can just use a pre-created prompt from the menu. You can base prompts on your selection, as well as the context of the file. Your choice!
 
-![](./prompts.png)
-
-You can create a new prompt with "Free-form prompt" or you can just use a precreated prompt from the menu.
-
-## Building your own products on top?
+# Building your own products on top?
 
 Because it's just an API, you can build things with ChatGPT with any techstack. However, I am opinionated, and I recommend Typescript (Node.js, Next.js, and React) because I built a way to build full stack apps with that super quickly (see typerepo.com) and I've started with a course about it (see codefromanywhere.com)
 
