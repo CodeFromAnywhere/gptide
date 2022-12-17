@@ -1,0 +1,33 @@
+{
+  "createdAt": 1671112888869,
+  "updatedAt": 1671112888869,
+  "deletedAt": 0,
+  "createdFirstAt": 1671112888869,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "getRealSrc",
+  "slug": "get-real-src",
+  "operationRelativeTypescriptFilePath": "src/util/getRealSrc.ts",
+  "type": {
+    "rawType": "(src: string | undefined, config: import(\"/Users/king/King/operations/tools/user-interfaces/gui/smart/markdown/src/types\").MarkdownParseRenderConfig) => string | undefined",
+    "typeDefinition": {
+      "type": "object",
+      "properties": {},
+      "optional": false
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false,
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    }
+  },
+  "value": "(\n  src: string | undefined,\n  config: MarkdownParseRenderConfig\n) => {\n  // src from static folder of next.js\n  const relativeUrlStrategy =\n    config.isDev || !config.isStatic ? \"api\" : \"static\";\n\n  if (!src) return undefined;\n\n  if (\n    isPathRelative(src) &&\n    config.projectRelativeBaseFolderPath &&\n    config.projectRelativeMarkdownFilePath\n  ) {\n    return getUrlFromRelativeUrl(\n      src,\n      relativeUrlStrategy,\n      config.projectRelativeBaseFolderPath,\n      config.projectRelativeMarkdownFilePath\n    );\n  }\n\n  return src;\n}",
+  "description": "Based on markdown info, gest the real source for an asset",
+  "id": "ljsbbxfmhwafaonedyezjqsy"
+}

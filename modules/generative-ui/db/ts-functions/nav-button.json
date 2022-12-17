@@ -1,0 +1,40 @@
+{
+  "createdAt": 1671194263936,
+  "updatedAt": 1671194263936,
+  "deletedAt": 0,
+  "createdFirstAt": 1671194263936,
+  "isApiExposed": true,
+  "isExported": true,
+  "groupAuthorization": {},
+  "operationRelativeTypescriptFilePath": "src/components/NavButton.tsx",
+  "commentsInside": [],
+  "rawText": " (props: {\n  onClick?: () => void;\n  href?: string;\n  isActive?: boolean;\n  title: string;\n  id?: string;\n  openContextMenuProps?: object;\n}) => {\n  const { href, title, onClick, isActive, openContextMenuProps, id } = props;\n\n  const className = ` ${\n    isActive ? \"dark:bg-blue-800\" : \"dark:bg-gray-700\"\n  } dark:hover:bg-gray-600 ${\n    isActive ? \"bg-blue-300\" : \"bg-gray-100\"\n  } light:hover:bg-gray-200 rounded-md border border-black p-2 m-1 cursor-pointer lg:mx-2`;\n  if (onClick) {\n    return (\n      <P\n        id={id}\n        onClick={onClick}\n        className={className}\n        {...openContextMenuProps}\n      >\n        {title}\n      </P>\n    );\n  }\n\n  return (\n    <ALink id={id} href={href} className={className}>\n      <div id={id} {...openContextMenuProps}>\n        {title}\n      </div>\n    </ALink>\n  );\n}",
+  "name": "NavButton",
+  "slug": "nav-button",
+  "parameters": [],
+  "description": "",
+  "returnType": {
+    "rawType": "JSX.Element",
+    "typeDefinition": {
+      "optional": false,
+      "$ref": "#/definitions/JSX.Element"
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "maxIndentationDepth": 4,
+  "size": {
+    "characters": 824,
+    "lines": 36,
+    "bytes": 824,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 23,
+    "linesPerFile": 36,
+    "numberOfFiles": 1
+  },
+  "id": "tuwygjgqugfvhfzglmuoesbn"
+}

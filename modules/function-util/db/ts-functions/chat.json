@@ -1,0 +1,39 @@
+{
+  "createdAt": 1668448615788,
+  "updatedAt": 1668448615788,
+  "deletedAt": 0,
+  "createdFirstAt": 1668448615788,
+  "publicAuthorization": [
+    "read",
+    "search"
+  ],
+  "isApiExposed": false,
+  "isExported": false,
+  "operationRelativeTypescriptFilePath": "src/converse-extra.test.ts",
+  "commentsInside": [],
+  "rawText": " () => {\n  // 1- listen\n  // 2- respond\n  chat();\n}",
+  "name": "chat",
+  "slug": "chat",
+  "parameters": [],
+  "description": "",
+  "returnType": {
+    "rawType": "void",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "maxIndentationDepth": 1,
+  "size": {
+    "characters": 51,
+    "lines": 5,
+    "bytes": 51,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 10,
+    "linesPerFile": 5,
+    "numberOfFiles": 1
+  },
+  "id": "wofagristrkwqeebmbycksur"
+}

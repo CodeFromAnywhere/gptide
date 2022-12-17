@@ -1,0 +1,24 @@
+{
+  "createdAt": 1670216174049,
+  "updatedAt": 1670216174049,
+  "deletedAt": 0,
+  "createdFirstAt": 1670216174049,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "projectRelativeGeneratedOperationsFolder",
+  "slug": "project-relative-generated-operations-folder",
+  "operationRelativeTypescriptFilePath": "src/filename-conventions.ts",
+  "type": {
+    "rawType": "String",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "\"operations/tools/generated\"",
+  "description": "",
+  "id": "douscnmvqvajrsncodordacf"
+}

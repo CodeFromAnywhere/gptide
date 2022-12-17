@@ -1,0 +1,133 @@
+{
+  "createdAt": 1668328744771,
+  "updatedAt": 1668328744771,
+  "deletedAt": 0,
+  "createdFirstAt": 1668328744771,
+  "id": "xkhhpdbucaopovxzzfodmtvo",
+  "dependencies": {
+    "asset-functions-node": "0.0.1",
+    "asset-type": "0.0.1",
+    "code-types": "0.0.1",
+    "database": "0.0.1",
+    "explore-project": "0.0.1",
+    "fs-util": "1.0.5",
+    "get-path": "0.0.1",
+    "js-util": "0.0.1",
+    "recursive-util": "0.0.1",
+    "webpage-types": "0.0.1",
+    "markdown-types": "0.0.1",
+    "matter-types": "0.0.1",
+    "read-markdown-file": "0.0.1",
+    "markdown-parse-js": "0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.1",
+    "typescript": "^4.7.4"
+  },
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "test": "node ./build/cli.js",
+    "up": "npm version patch -f",
+    "pub": "yarn up && npm publish"
+  },
+  "source": "src/index.ts",
+  "version": "0.0.1",
+  "name": "writer-functions",
+  "language": "english",
+  "slug": "writer-functions",
+  "operation": {
+    "indirectDependencies": [],
+    "buildResultIndexed": {
+      "buildSucceeded": true,
+      "dependenciesBuildsFailed": false,
+      "indexErrors": [],
+      "indexImportExportError": "",
+      "indexInteracesErrors": [
+        "No schema/definitions found for /Users/king/King/operations/tools/purpose/writer/writer-functions/src/getFrontmatterSchema.ts. Error: TypeError: Cannot read properties of undefined (reading 'filter')"
+      ],
+      "lintProblems": []
+    },
+    "classificationIndexed": "node-cjs",
+    "coreDependenciesIndexed": [],
+    "folderNameIndexed": "writer-functions",
+    "hasGeneratedDependenciesIndexed": false,
+    "lastPullTimeAtIndexed": 0,
+    "lastRebuildAt": 1671101704917,
+    "operationDependenciesIndexed": [
+      "fs",
+      "path",
+      "getProjectRoot",
+      "fs",
+      "path",
+      "getProjectRoot",
+      "fs",
+      "path",
+      "getProjectRoot",
+      "DbModels",
+      "db",
+      "SimplifiedSchema",
+      "getProjectRelativePaths",
+      "WriterWebPage",
+      "getMenuPagesObject",
+      "fs",
+      "path",
+      "getProjectRoot",
+      "fs",
+      "path",
+      "getProjectRoot",
+      "fs",
+      "path",
+      "getProjectRoot",
+      "BackendAsset",
+      "processAsset",
+      "notEmpty",
+      "fs",
+      "path",
+      "getProjectRoot",
+      "fs",
+      "path",
+      "getProjectRoot",
+      "fs",
+      "path",
+      "getProjectRoot",
+      "fs",
+      "path",
+      "getProjectRoot",
+      "MarkdownParse",
+      "Frontmatter",
+      "readMarkdownFile",
+      "markdownParseToMarkdownString"
+    ],
+    "packageDependenciesIndexed": [],
+    "relativeOperationLocationPathIndexed": "operations/tools/purpose/writer",
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 14,
+        "lines": 444,
+        "characters": 12274,
+        "bytes": 12274
+      },
+      "dataSize": {
+        "numberOfFiles": 2,
+        "lines": 164,
+        "characters": 4865,
+        "bytes": 4865
+      },
+      "textSize": {
+        "numberOfFiles": 1,
+        "lines": 203,
+        "characters": 4257,
+        "bytes": 4257
+      },
+      "size": {
+        "bytes": 21396,
+        "characters": 21396,
+        "lines": 811,
+        "numberOfFiles": 17
+      }
+    },
+    "hasGeneratedImportsIndexed": false
+  }
+}

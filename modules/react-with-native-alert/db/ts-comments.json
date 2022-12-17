@@ -1,0 +1,18 @@
+[
+  {
+    "createdAt": 1670218986738,
+    "updatedAt": 1670218986738,
+    "deletedAt": 0,
+    "createdFirstAt": 1670218986738,
+    "name": "Comment",
+    "slug": "comment",
+    "operationRelativeTypescriptFilePath": "src/types.tsx",
+    "comment": "Replaces `AlertStatic[\"alert\"]`",
+    "rawStatement": "export type AlertFn = (\n  title: string,\n  message?: string | JSX.Element,\n  buttons?: AlertButton[],\n  options?: AlertOptions\n) => void;",
+    "parameters": {},
+    "types": [],
+    "firstLine": 11,
+    "lastLine": 13,
+    "id": "bvjjjdycjcoywxrzdmofpgvb"
+  }
+]

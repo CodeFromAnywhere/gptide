@@ -1,0 +1,40 @@
+{
+  "createdAt": 1671193667252,
+  "updatedAt": 1671193667252,
+  "deletedAt": 0,
+  "createdFirstAt": 1671193667252,
+  "isApiExposed": false,
+  "name": "MyApp",
+  "slug": "my-app",
+  "isExported": true,
+  "operationRelativeTypescriptFilePath": "src/pages/_app.tsx",
+  "groupAuthorization": {},
+  "commentsInside": [],
+  "description": "",
+  "parameters": [],
+  "returnType": {
+    "rawType": "JSX.Element",
+    "typeDefinition": {
+      "optional": false,
+      "$ref": "#/definitions/JSX.Element"
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "size": {
+    "characters": 1066,
+    "lines": 33,
+    "bytes": 1066,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 32,
+    "linesPerFile": 33,
+    "numberOfFiles": 1
+  },
+  "rawText": "\n\n// Only holds serverRuntimeConfig and publicRuntimeConfig\n\nfunction MyApp({ Component, pageProps }: AppProps) {\n  const title = process.env.NEXT_PUBLIC_TITLE;\n  const description =\n    \"Learn mode about the impact of ChatGPT and other LLM's! GPT Ideas presents a database of prompts for you to learn from and start building!\";\n  return (\n    <QueryClientProvider client={queryClient}>\n      <Head>\n        <title>{title}</title>\n\n        <link\n          rel=\"stylesheet\"\n          href=\"https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/default.min.css\"\n        />\n        <meta property=\"og:description\" content={description} />\n        <meta property=\"og:image\" content=\"head-explosion.png\" />\n\n        <meta name=\"description\" content={description} />\n      </Head>\n      <ToastContainer />\n      <AlertProvider>\n        <ModalProvider>\n          <StoreProvider>\n            <MyLayout pageProps={pageProps} nextPage={Component} />\n          </StoreProvider>\n        </ModalProvider>\n      </AlertProvider>\n    </QueryClientProvider>\n  );\n}",
+  "maxIndentationDepth": 6,
+  "id": "jqldstasobvpnoiqyjghvrgg"
+}

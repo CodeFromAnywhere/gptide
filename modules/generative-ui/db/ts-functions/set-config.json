@@ -1,0 +1,57 @@
+{
+  "createdAt": 1671209127811,
+  "updatedAt": 1671209127811,
+  "deletedAt": 0,
+  "createdFirstAt": 1671209127811,
+  "isApiExposed": true,
+  "isExported": true,
+  "groupAuthorization": {},
+  "operationRelativeTypescriptFilePath": "src/components/setConfig.ts",
+  "commentsInside": [],
+  "rawText": " (apiUrl: string, disableAdmin: boolean) => {\n  setItem(\"api.customUrl\", apiUrl === \"\" ? null : apiUrl);\n  setItem(\"generativeWeb.config\", { disableAdmin });\n}",
+  "name": "setConfig",
+  "slug": "set-config",
+  "parameters": [
+    {
+      "name": "apiUrl",
+      "schema": {
+        "type": "string"
+      },
+      "simplifiedSchema": {
+        "type": "string"
+      },
+      "required": true
+    },
+    {
+      "name": "disableAdmin",
+      "schema": {
+        "type": "boolean"
+      },
+      "simplifiedSchema": {
+        "type": "boolean"
+      },
+      "required": true
+    }
+  ],
+  "description": "",
+  "returnType": {
+    "rawType": "void",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "maxIndentationDepth": 1,
+  "size": {
+    "characters": 159,
+    "lines": 4,
+    "bytes": 159,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 40,
+    "linesPerFile": 4,
+    "numberOfFiles": 1
+  },
+  "id": "vmdfibiczfbxgndwyispsayk"
+}

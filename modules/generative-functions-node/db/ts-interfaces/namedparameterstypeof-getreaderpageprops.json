@@ -1,0 +1,58 @@
+{
+  "createdAt": 1671230415109,
+  "updatedAt": 1671230415109,
+  "deletedAt": 0,
+  "createdFirstAt": 1671230415109,
+  "id": "namedparameterstypeof-getreaderpageprops",
+  "name": "NamedParameters<typeof getReaderPageProps>",
+  "slug": "namedparameterstypeof-getreaderpageprops",
+  "operationRelativeTypescriptFilePath": "src/getReaderPageProps.ts",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "properties": {
+        "projectRelativeFilePath": {
+          "type": "string"
+        },
+        "basePath": {
+          "type": "string",
+          "description": "Good to know in case the path requested can't be found (will show basePath root dir)"
+        }
+      },
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [
+        {
+          "name": "projectRelativeFilePath",
+          "required": false,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "basePath",
+          "required": false,
+          "schema": {
+            "fullComment": "Good to know in case the path requested can't be found (will show basePath root dir)",
+            "type": "string"
+          }
+        }
+      ],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof getReaderPageProps>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

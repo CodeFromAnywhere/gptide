@@ -1,0 +1,33 @@
+{
+  "createdAt": 1670528040004,
+  "updatedAt": 1670528040004,
+  "deletedAt": 0,
+  "createdFirstAt": 1670528040004,
+  "id": "namedparameterstypeof-generateid",
+  "name": "NamedParameters<typeof generateId>",
+  "slug": "namedparameterstypeof-generateid",
+  "operationRelativeTypescriptFilePath": "src/id.ts",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof generateId>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

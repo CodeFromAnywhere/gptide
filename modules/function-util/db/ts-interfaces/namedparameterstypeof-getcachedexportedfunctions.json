@@ -1,0 +1,33 @@
+{
+  "createdAt": 1668448620594,
+  "updatedAt": 1668448620594,
+  "deletedAt": 0,
+  "createdFirstAt": 1668448620594,
+  "id": "namedparameterstypeof-getcachedexportedfunctions",
+  "name": "NamedParameters<typeof getCachedExportedFunctions>",
+  "slug": "namedparameterstypeof-getcachedexportedfunctions",
+  "operationRelativeTypescriptFilePath": "src/getCachedExportedFunctions.ts",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof getCachedExportedFunctions>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

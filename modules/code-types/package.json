@@ -1,0 +1,120 @@
+{
+  "createdAt": 1668328728450,
+  "updatedAt": 1668328728450,
+  "deletedAt": 0,
+  "createdFirstAt": 1668328728450,
+  "id": "OPfmHygUKpSTTntc",
+  "author": "",
+  "dependencies": {
+    "pluralize": "0.0.1",
+    "convert-case": "0.0.1",
+    "model-types": "0.0.1",
+    "matter-types": "0.0.1",
+    "fs-util": "1.0.5",
+    "json-schema": "*",
+    "ts-json-schema-generator": "*",
+    "auth-types": "0.0.1",
+    "asset-type": "0.0.1",
+    "measure-performance": "0.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  },
+  "main": "build/index.js",
+  "scripts": {
+    "test": "node build/index.js",
+    "dev": "tsc -w",
+    "build": "tsc",
+    "up": "npm version patch -f",
+    "pub": "npm run up && npm publish"
+  },
+  "source": "src/index.ts",
+  "version": "0.0.1",
+  "name": "code-types",
+  "language": "english",
+  "slug": "code-types",
+  "operation": {
+    "buildResultIndexed": {
+      "buildSucceeded": true,
+      "dependenciesBuildsFailed": false,
+      "indexErrors": [],
+      "indexImportExportError": "",
+      "indexInteracesErrors": [],
+      "lintProblems": []
+    },
+    "classificationIndexed": "cjs",
+    "coreDependenciesIndexed": [],
+    "folderNameIndexed": "code-types",
+    "hasGeneratedDependenciesIndexed": false,
+    "lastPullTimeAtIndexed": 0,
+    "lastRebuildAt": 1670064118199,
+    "operationDependenciesIndexed": [
+      "DefaultModelType",
+      "SlugModelType",
+      "Price",
+      "AugmentedAnyModelType",
+      "pluralize",
+      "kebabCase",
+      "DefaultModelType",
+      "Id",
+      "Markdown",
+      "PerformanceItem",
+      "Id",
+      "Markdown",
+      "SlugModelType",
+      "Markdown",
+      "TsIndexModelType",
+      "Frontmatter",
+      "AnyModelType",
+      "Creation",
+      "TsIndexModelType",
+      "Markdown",
+      "Price",
+      "TsIndexModelType",
+      "TsIndexModelType",
+      "Markdown",
+      "TsIndexModelType",
+      "Creation",
+      "TsIndexModelType",
+      "kebabCase",
+      "DefaultModelType",
+      "TsIndexModelType",
+      "DefaultModelType",
+      "DefaultModelType"
+    ],
+    "packageDependenciesIndexed": [
+      "Schema",
+      "JSONSchema7Type",
+      "Schema",
+      "Schema"
+    ],
+    "relativeOperationLocationPathIndexed": "operations/tools/types",
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 26,
+        "lines": 1781,
+        "characters": 49812,
+        "bytes": 49812
+      },
+      "dataSize": {
+        "numberOfFiles": 2,
+        "lines": 147,
+        "characters": 3379,
+        "bytes": 3379
+      },
+      "textSize": {
+        "numberOfFiles": 3,
+        "lines": 1647,
+        "characters": 43365,
+        "bytes": 43365
+      },
+      "size": {
+        "bytes": 96556,
+        "characters": 96556,
+        "lines": 3575,
+        "numberOfFiles": 31
+      }
+    },
+    "hasGeneratedImportsIndexed": false
+  }
+}

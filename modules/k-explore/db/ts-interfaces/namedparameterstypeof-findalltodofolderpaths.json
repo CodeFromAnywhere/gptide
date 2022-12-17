@@ -1,0 +1,59 @@
+{
+  "createdAt": 1670216122668,
+  "updatedAt": 1670216122668,
+  "deletedAt": 0,
+  "createdFirstAt": 1670216122668,
+  "id": "namedparameterstypeof-findalltodofolderpaths",
+  "name": "NamedParameters<typeof findAllTodoFolderPaths>",
+  "slug": "namedparameterstypeof-findalltodofolderpaths",
+  "operationRelativeTypescriptFilePath": "src/find-folders.ts",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "properties": {
+        "basePath": {
+          "type": "string"
+        },
+        "ignoreOperations": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "basePath"
+      ],
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [
+        {
+          "name": "basePath",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "ignoreOperations",
+          "required": false,
+          "schema": {
+            "type": "boolean"
+          }
+        }
+      ],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof findAllTodoFolderPaths>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1671194205817,
+  "updatedAt": 1671194205817,
+  "deletedAt": 0,
+  "createdFirstAt": 1671194205817,
+  "name": "gptide",
+  "slug": "gptide",
+  "description": "GPT IDE",
+  "isGitRepoPublic": true,
+  "emoji": "🗣",
+  "primaryColor": "#3679c5",
+  "gitRepoUrl": "https://github.com/CodeFromAnywhere/gptide",
+  "language": "en",
+  "deploymentHostname": "gptideas.com/gpt-ide",
+  "id": "kfsjlkjdkljfslkjsfo",
+  "operationName": null,
+  "projectRelativePath": "/db/bundle-configs/gptide.json",
+  "categoryStackCalculated": []
+}

@@ -1,0 +1,76 @@
+{
+  "createdAt": 1671116618134,
+  "updatedAt": 1671116618134,
+  "deletedAt": 0,
+  "createdFirstAt": 1671116618134,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "getPublicPerson",
+  "slug": "get-public-person",
+  "operationRelativeTypescriptFilePath": "src/getPublicPerson.ts",
+  "type": {
+    "rawType": "import(\"/Users/king/King/operations/tools/user-interfaces/api/function-server-types/build/ApiFunction\").ApiFunction",
+    "typeDefinition": {
+      "type": "object",
+      "properties": {
+        "isPublic": {
+          "type": "boolean"
+        },
+        "allowedRoles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "allOf": [
+              {
+                "transform": [
+                  "trim"
+                ]
+              },
+              {
+                "minLength": 1
+              }
+            ]
+          }
+        }
+      },
+      "optional": false
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false,
+    "simplifiedSchema": {
+      "properties": [
+        {
+          "name": "isPublic",
+          "required": false,
+          "schema": {
+            "type": "boolean"
+          }
+        },
+        {
+          "name": "allowedRoles",
+          "required": false,
+          "schema": {
+            "items": [
+              {
+                "schema": {
+                  "type": "string"
+                },
+                "name": null
+              }
+            ],
+            "type": "array"
+          }
+        }
+      ],
+      "type": "object"
+    }
+  },
+  "value": "async (id?: string) => {\n  return (await getPublicPersons()).find((x) => x.id === id);\n}",
+  "description": "",
+  "id": "ngxxxxwpmxcnarbicpmovdkg"
+}

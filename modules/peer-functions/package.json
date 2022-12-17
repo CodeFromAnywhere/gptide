@@ -1,0 +1,132 @@
+{
+  "createdAt": 1668328718128,
+  "updatedAt": 1668328718128,
+  "deletedAt": 0,
+  "createdFirstAt": 1668328718128,
+  "id": "STZJGyqPOGISGkCo",
+  "dependencies": {
+    "api": "0.0.1",
+    "database": "0.0.1",
+    "port-conventions": "0.0.1",
+    "js-util": "0.0.1",
+    "fs-util": "1.0.5",
+    "get-path": "0.0.1",
+    "nested-menu": "0.0.1",
+    "k-explore": "0.0.2",
+    "one-by-one": "0.0.1",
+    "model-types": "0.0.1",
+    "peer-types": "0.0.1",
+    "api-types": "0.0.1",
+    "recursive-util": "0.0.1",
+    "recursive-types": "0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.1",
+    "typescript": "^4.7.4"
+  },
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "test": "node ./build/cli.js",
+    "up": "npm version patch -f",
+    "pub": "yarn up && npm publish"
+  },
+  "source": "src/index.ts",
+  "version": "0.0.1",
+  "name": "peer-functions",
+  "language": "english",
+  "slug": "peer-functions",
+  "operation": {
+    "buildResultIndexed": {
+      "buildSucceeded": true,
+      "indexImportExportError": "",
+      "indexInteracesErrors": "[\"No schema/definitions found for /Users/king/King/operations/tools/p2p/peer-functions/src/updatePeer.ts. Error: Error: Argument of type '\\\"Peer\\\"' is not assignable to parameter of type 'keyof DbModels'.\\n\\nProperty 'slug' does not exist on type 'Device | Group | SlugModelType | PageVisit | PeerMessage | Person | Persona | PersonInformation | ... 92 more ... | ValueChainPhase'.\\n  Property 'slug' does not exist on type 'Device'.\"]",
+      "lintProblems": []
+    },
+    "classificationIndexed": "node-cjs",
+    "coreDependenciesIndexed": [],
+    "folderNameIndexed": "peer-functions",
+    "hasGeneratedDependenciesIndexed": false,
+    "lastPullTimeAtIndexed": 0,
+    "lastRebuildAt": 1671012614796,
+    "operationDependenciesIndexed": [
+      "apiWithConfig",
+      "db",
+      "Creation",
+      "Device",
+      "ports",
+      "db",
+      "Device",
+      "apiWithConfig",
+      "db",
+      "Device",
+      "ports",
+      "db",
+      "AppOperation",
+      "db",
+      "destructureOptionalObject",
+      "Device",
+      "Person",
+      "path",
+      "getProjectRoot",
+      "queryPathsArrayToNestedPathObject",
+      "explore",
+      "makeRelative",
+      "NestedPathObject",
+      "db",
+      "db",
+      "Person",
+      "db",
+      "path",
+      "getProjectRoot",
+      "apiWithConfig",
+      "ports",
+      "RealApiReturnType",
+      "NestedPathObject",
+      "db",
+      "db",
+      "apiWithConfig",
+      "PeerMessage",
+      "notEmpty",
+      "ports",
+      "oneByOne",
+      "apiWithConfig",
+      "db",
+      "ports",
+      "db",
+      "Device",
+      "db",
+      "omitUndefinedValues"
+    ],
+    "packageDependenciesIndexed": [],
+    "relativeOperationLocationPathIndexed": "operations/tools/purpose/p2p",
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 22,
+        "lines": 569,
+        "characters": 14954,
+        "bytes": 14954
+      },
+      "dataSize": {
+        "numberOfFiles": 2,
+        "lines": 170,
+        "characters": 5157,
+        "bytes": 5157
+      },
+      "textSize": {
+        "numberOfFiles": 1,
+        "lines": 347,
+        "characters": 5972,
+        "bytes": 5972
+      },
+      "size": {
+        "bytes": 26083,
+        "characters": 26083,
+        "lines": 1086,
+        "numberOfFiles": 25
+      }
+    },
+    "hasGeneratedImportsIndexed": false
+  }
+}

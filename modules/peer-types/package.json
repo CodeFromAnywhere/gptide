@@ -1,0 +1,117 @@
+{
+  "createdAt": 1668328718447,
+  "updatedAt": 1668328718447,
+  "deletedAt": 0,
+  "createdFirstAt": 1668328718447,
+  "id": "hvMDXibXiSQYwWSD",
+  "dependencies": {
+    "model-types": "0.0.1",
+    "auth-types": "0.0.1",
+    "code-types": "0.0.1",
+    "geo-types": "0.0.1",
+    "asset-type": "0.0.1",
+    "social-media-types": "0.0.1",
+    "ua-parser-js": "*",
+    "server": "*"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "test": "node ./build/cli.js",
+    "up": "npm version patch -f",
+    "pub": "yarn up && npm publish"
+  },
+  "source": "src/index.ts",
+  "version": "0.0.1",
+  "name": "peer-types",
+  "language": "english",
+  "slug": "peer-types",
+  "operation": {
+    "buildResultIndexed": {
+      "buildSucceeded": true,
+      "dependenciesBuildsFailed": false,
+      "indexErrors": [],
+      "indexImportExportError": "",
+      "indexInteracesErrors": [],
+      "lintProblems": []
+    },
+    "classificationIndexed": "cjs",
+    "coreDependenciesIndexed": [],
+    "folderNameIndexed": "peer-types",
+    "hasGeneratedDependenciesIndexed": false,
+    "lastPullTimeAtIndexed": 0,
+    "lastRebuildAt": 1671116178356,
+    "operationDependenciesIndexed": [
+      "DefaultModelType",
+      "Id",
+      "SlugModelType",
+      "Authorization",
+      "AuthorizationModel",
+      "Position",
+      "DefaultModelType",
+      "Authorization",
+      "Credit",
+      "DefaultModelType",
+      "Id",
+      "Price",
+      "Slug",
+      "BackendAsset",
+      "BackendAsset",
+      "Location",
+      "Id",
+      "Language",
+      "Slug",
+      "SlugModelType",
+      "Interest",
+      "MediaCredential",
+      "KeyValueMarkdownModelType",
+      "Slug",
+      "DefaultModelType",
+      "Id",
+      "KeyValueMarkdownModelType",
+      "Slug",
+      "DefaultModelType",
+      "Id",
+      "Slug",
+      "DefaultModelType",
+      "Slug",
+      "Slug",
+      "SlugModelType",
+      "DefaultModelType",
+      "Slug"
+    ],
+    "packageDependenciesIndexed": [],
+    "relativeOperationLocationPathIndexed": "operations/tools/purpose/p2p",
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 17,
+        "lines": 847,
+        "characters": 24479,
+        "bytes": 24479
+      },
+      "dataSize": {
+        "numberOfFiles": 2,
+        "lines": 155,
+        "characters": 4455,
+        "bytes": 4455
+      },
+      "textSize": {
+        "numberOfFiles": 1,
+        "lines": 734,
+        "characters": 16186,
+        "bytes": 16186
+      },
+      "size": {
+        "bytes": 45120,
+        "characters": 45120,
+        "lines": 1736,
+        "numberOfFiles": 20
+      }
+    },
+    "hasGeneratedImportsIndexed": false
+  }
+}

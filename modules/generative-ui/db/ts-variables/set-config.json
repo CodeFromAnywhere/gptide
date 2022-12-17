@@ -1,0 +1,33 @@
+{
+  "createdAt": 1671209127991,
+  "updatedAt": 1671209127991,
+  "deletedAt": 0,
+  "createdFirstAt": 1671209127991,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "setConfig",
+  "slug": "set-config",
+  "operationRelativeTypescriptFilePath": "src/components/setConfig.ts",
+  "type": {
+    "rawType": "(apiUrl: string, disableAdmin: boolean) => void",
+    "typeDefinition": {
+      "type": "object",
+      "properties": {},
+      "optional": false
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false,
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    }
+  },
+  "value": "(apiUrl: string, disableAdmin: boolean) => {\n  setItem(\"api.customUrl\", apiUrl === \"\" ? null : apiUrl);\n  setItem(\"generativeWeb.config\", { disableAdmin });\n}",
+  "description": "",
+  "id": "cnbcdntlhayioledayqhfqqm"
+}

@@ -1,0 +1,120 @@
+{
+  "createdAt": 1668603506322,
+  "updatedAt": 1668603506322,
+  "deletedAt": 0,
+  "createdFirstAt": 1668603506322,
+  "version": "0.0.0",
+  "main": "build/index.js",
+  "source": "src/index.ts",
+  "scripts": {
+    "dev": "npx tsc-watch --onSuccess 'yarn css'",
+    "css": "tailwindcss -o css.css",
+    "build": "tsc"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "sensible": {
+    "hasGeneratedDependencies": false
+  },
+  "dependencies": {
+    "react-with-native": "1.4.9",
+    "menu": "0.0.0",
+    "next-a-link": "0.0.1",
+    "bundle-types": "0.0.1",
+    "authentication": "0.0.1",
+    "react-with-native-router": "1.0.14",
+    "augmented-word-types": "0.0.1",
+    "api": "0.0.1",
+    "clickable-icon": "0.0.1",
+    "nested-menu": "0.0.1",
+    "react-with-native-store": "2.0.40",
+    "share": "1.0.0",
+    "react": "*"
+  },
+  "name": "layout",
+  "operation": {
+    "indirectDependencies": [
+      "function-functions-node"
+    ],
+    "hasGeneratedDependenciesIndexed": false,
+    "buildResultIndexed": {
+      "buildSucceeded": true,
+      "indexImportExportError": "",
+      "lintProblems": [],
+      "indexInteracesErrors": [
+        "No schema/definitions found for /Users/king/King/operations/tools/user-interfaces/gui/wise/layout/src/AuthenticationLayout.tsx. Error: Error: Unknown node \"new (props: P) => Component<P, any>\" of kind \"ConstructorType\""
+      ]
+    },
+    "lastRebuildAt": 1671116931440,
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 5,
+        "lines": 287,
+        "characters": 7830,
+        "bytes": 7830
+      },
+      "dataSize": {
+        "numberOfFiles": 2,
+        "lines": 157,
+        "characters": 4701,
+        "bytes": 4701
+      },
+      "textSize": {
+        "numberOfFiles": 2,
+        "lines": 107,
+        "characters": 2423,
+        "bytes": 2423
+      },
+      "size": {
+        "bytes": 14954,
+        "characters": 14954,
+        "lines": 551,
+        "numberOfFiles": 9
+      }
+    },
+    "folderNameIndexed": "layout",
+    "relativeOperationLocationPathIndexed": "operations/tools/user-interfaces/gui/wise",
+    "classificationIndexed": "ui-cjs",
+    "coreDependenciesIndexed": [
+      "useEffect",
+      "useState",
+      "useEffect",
+      "useState"
+    ],
+    "operationDependenciesIndexed": [
+      "LoginForm",
+      "LoginWrapper",
+      "SignupForm",
+      "UpdateMeForm",
+      "PublicProfile",
+      "AuthenticationMethodsCrud",
+      "queries",
+      "MenuProps",
+      "Div",
+      "useRouter",
+      "MeAuthenticationInfo",
+      "PublicBundleConfig",
+      "ClickableIcon",
+      "ALink",
+      "Div",
+      "P",
+      "Share",
+      "API_NO_RESPONSE_TIME_KEY",
+      "getItem",
+      "Menu",
+      "MenuProps",
+      "Div",
+      "API_NO_RESPONSE_TIME_KEY",
+      "ALink",
+      "Div",
+      "getItem",
+      "nestedMenuStoreInitialValues",
+      "createStore"
+    ],
+    "packageDependenciesIndexed": []
+  },
+  "slug": "layout",
+  "id": "wawdrsmykhqbtpmblsexbxiq"
+}

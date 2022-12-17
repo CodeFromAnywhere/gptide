@@ -1,0 +1,133 @@
+{
+  "createdAt": 1671114944936,
+  "updatedAt": 1671114944936,
+  "deletedAt": 0,
+  "createdFirstAt": 1671114944936,
+  "version": "0.0.1",
+  "main": "build/index.js",
+  "source": "src/index.ts",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.0.1",
+    "typescript": "^4.7.4"
+  },
+  "name": "generative-functions-node",
+  "operation": {
+    "hasGeneratedDependenciesIndexed": false,
+    "buildResultIndexed": {
+      "indexInteracesErrors": [
+        "No schema/definitions found for /Users/king/King/operations/tools/ai/generative-functions-node/src/readerPageGetStatic.ts. Error: TypeError: Invalid value used as weak map key"
+      ],
+      "buildSucceeded": true,
+      "indexImportExportError": "",
+      "lintProblems": []
+    },
+    "lastRebuildAt": 1671208476835,
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 5,
+        "lines": 900,
+        "characters": 30718,
+        "bytes": 30718
+      },
+      "dataSize": {
+        "numberOfFiles": 2,
+        "lines": 172,
+        "characters": 5086,
+        "bytes": 5086
+      },
+      "textSize": {
+        "numberOfFiles": 2,
+        "lines": 288,
+        "characters": 10018,
+        "bytes": 10018
+      },
+      "size": {
+        "bytes": 45822,
+        "characters": 45822,
+        "lines": 1360,
+        "numberOfFiles": 9
+      }
+    },
+    "folderNameIndexed": "generative-functions-node",
+    "relativeOperationLocationPathIndexed": "operations/tools/ai",
+    "classificationIndexed": "node-cjs",
+    "coreDependenciesIndexed": [],
+    "operationDependenciesIndexed": [
+      "ContextualPromptResult",
+      "ContextualPromptsObject",
+      "db",
+      "getFileTypeFromPath",
+      "createMappedObject",
+      "destructureOptionalObject",
+      "getSubsetFromObject",
+      "notEmpty",
+      "getAugmentedWordObject",
+      "WordMatrix",
+      "db",
+      "fs",
+      "path",
+      "readJsonFile",
+      "getProjectRoot",
+      "destructureOptionalObject",
+      "omitUndefinedValues",
+      "ContextualPromptResult",
+      "db",
+      "FileType",
+      "fs",
+      "path",
+      "omitUndefinedValues",
+      "getProjectRoot",
+      "tryParseJson",
+      "ContextualPrompt",
+      "ContextualPromptsObject",
+      "FolderContent",
+      "ReaderProps",
+      "canSee",
+      "fs",
+      "path",
+      "getExtension",
+      "getProjectRoot",
+      "makeRelative",
+      "notEmpty",
+      "omitUndefinedValues",
+      "Frontmatter",
+      "readMarkdownFile",
+      "ReaderProps",
+      "path",
+      "explore",
+      "getProjectRoot",
+      "makeRelative",
+      "makeArray",
+      "omitUndefinedValues"
+    ],
+    "packageDependenciesIndexed": [
+      "GetStaticPaths",
+      "GetStaticProps"
+    ]
+  },
+  "dependencies": {
+    "ai-types": "0.0.1",
+    "database": "0.0.1",
+    "filename-conventions": "0.0.1",
+    "js-util": "0.0.1",
+    "augmented-word-node": "0.0.1",
+    "language-types": "0.0.1",
+    "fs-util": "1.0.5",
+    "read-json-file": "0.0.1",
+    "get-path": "0.0.1",
+    "try-parse-json": "0.0.1",
+    "fs-util-js": "0.0.1",
+    "matter-types": "0.0.1",
+    "next-types": "0.0.1",
+    "read-markdown-file": "0.0.1",
+    "k-explore": "0.0.2",
+    "next": "*"
+  },
+  "slug": "generative-functions-node",
+  "id": "eatosihbotjdxslswtdiybvq"
+}

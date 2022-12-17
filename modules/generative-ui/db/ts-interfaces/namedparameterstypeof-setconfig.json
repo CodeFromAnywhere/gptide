@@ -1,0 +1,60 @@
+{
+  "createdAt": 1671209126051,
+  "updatedAt": 1671209126051,
+  "deletedAt": 0,
+  "createdFirstAt": 1671209126051,
+  "id": "namedparameterstypeof-setconfig",
+  "name": "NamedParameters<typeof setConfig>",
+  "slug": "namedparameterstypeof-setconfig",
+  "operationRelativeTypescriptFilePath": "src/components/setConfig.ts",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "properties": {
+        "apiUrl": {
+          "type": "string"
+        },
+        "disableAdmin": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "apiUrl",
+        "disableAdmin"
+      ],
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [
+        {
+          "name": "apiUrl",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "disableAdmin",
+          "required": true,
+          "schema": {
+            "type": "boolean"
+          }
+        }
+      ],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof setConfig>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

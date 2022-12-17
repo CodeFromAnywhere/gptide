@@ -1,0 +1,68 @@
+{
+  "createdAt": 1668545166365,
+  "updatedAt": 1668545166365,
+  "deletedAt": 0,
+  "createdFirstAt": 1668545166365,
+  "version": "0.0.1",
+  "main": "build/index.js",
+  "source": "src/index.ts",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.0.1",
+    "typescript": "^4.7.4"
+  },
+  "name": "encrypt-password",
+  "operation": {
+    "hasGeneratedDependenciesIndexed": false,
+    "buildResultIndexed": {
+      "buildSucceeded": true,
+      "indexImportExportError": "",
+      "lintProblems": []
+    },
+    "lastRebuildAt": 1670528231059,
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 2,
+        "lines": 21,
+        "characters": 498,
+        "bytes": 498
+      },
+      "dataSize": {
+        "numberOfFiles": 2,
+        "lines": 106,
+        "characters": 3321,
+        "bytes": 3321
+      },
+      "textSize": {
+        "numberOfFiles": 2,
+        "lines": 50,
+        "characters": 931,
+        "bytes": 931
+      },
+      "size": {
+        "bytes": 4750,
+        "characters": 4750,
+        "lines": 177,
+        "numberOfFiles": 6
+      }
+    },
+    "folderNameIndexed": "encrypt-password",
+    "relativeOperationLocationPathIndexed": "operations/tools/user-interfaces/api",
+    "classificationIndexed": "node-cjs",
+    "coreDependenciesIndexed": [],
+    "operationDependenciesIndexed": [],
+    "packageDependenciesIndexed": [
+      "compareSync",
+      "hashSync"
+    ]
+  },
+  "dependencies": {
+    "bcrypt": "*"
+  },
+  "slug": "encrypt-password",
+  "id": "abmvwsdhfxtqpkialrsakdut"
+}

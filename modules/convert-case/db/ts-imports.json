@@ -1,0 +1,19 @@
+[
+  {
+    "createdAt": 1668336336899,
+    "updatedAt": 1668336336899,
+    "deletedAt": 0,
+    "createdFirstAt": 1668336336899,
+    "name": "makeTest",
+    "slug": "make-test",
+    "type": "value",
+    "module": "make-test",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/general.ts",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "nbynfijwpwsceaymamrfavpy"
+  }
+]

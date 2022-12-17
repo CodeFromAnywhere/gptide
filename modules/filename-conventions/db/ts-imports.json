@@ -1,0 +1,51 @@
+[
+  {
+    "createdAt": 1670216161233,
+    "updatedAt": 1670216161233,
+    "deletedAt": 0,
+    "createdFirstAt": 1670216161233,
+    "name": "hasSubExtension",
+    "slug": "has-sub-extension",
+    "module": "./hasSubExtension",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/filename-conventions.ts",
+    "classification": "internal",
+    "isAbsolute": false,
+    "isModuleFromMonorepo": false,
+    "id": "rnyaclznrhtaqpynipuryteh"
+  },
+  {
+    "createdAt": 1670216161233,
+    "updatedAt": 1670216161233,
+    "deletedAt": 0,
+    "createdFirstAt": 1670216161233,
+    "name": "FileType",
+    "slug": "file-type",
+    "module": "./extensions",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/getFileTypeFromPath.ts",
+    "classification": "internal",
+    "isAbsolute": false,
+    "isModuleFromMonorepo": false,
+    "id": "orqymrfvpyvmizrjheioilnl"
+  },
+  {
+    "createdAt": 1670216161233,
+    "updatedAt": 1670216161233,
+    "deletedAt": 0,
+    "createdFirstAt": 1670216161233,
+    "name": "makeArray",
+    "slug": "make-array",
+    "type": "value",
+    "module": "js-util",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/hasSubExtension.ts",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "obzxrvzdwwpmfsfvnboxluez"
+  }
+]

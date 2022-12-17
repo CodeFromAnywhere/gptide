@@ -1,0 +1,16 @@
+{
+  "createdAt": 1670245379607,
+  "updatedAt": 1670245379607,
+  "deletedAt": 0,
+  "createdFirstAt": 1670245379607,
+  "name": "keywords",
+  "language": "english",
+  "promptContent": "What are the most important keywords for this text that would be very useful to be indexed by search engines?\n\n```\n%context\n```\n",
+  "usesContext": true,
+  "contextType": [
+    "text"
+  ],
+  "isFavorite": true,
+  "slug": "keywords",
+  "id": "qcxtsysplxnxeevsgdyjxycu"
+}

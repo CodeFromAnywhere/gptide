@@ -1,0 +1,33 @@
+{
+  "createdAt": 1671116913531,
+  "updatedAt": 1671116913531,
+  "deletedAt": 0,
+  "createdFirstAt": 1671116913531,
+  "id": "namedparameterstypeof-pingapi",
+  "name": "NamedParameters<typeof PingApi>",
+  "slug": "namedparameterstypeof-pingapi",
+  "operationRelativeTypescriptFilePath": "src/PingApi.tsx",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof PingApi>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

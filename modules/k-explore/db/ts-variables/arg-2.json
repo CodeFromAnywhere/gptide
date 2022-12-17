@@ -1,0 +1,24 @@
+{
+  "createdAt": 1670216113290,
+  "updatedAt": 1670216113290,
+  "deletedAt": 0,
+  "createdFirstAt": 1670216113290,
+  "classification": "const",
+  "comments": [],
+  "isExported": false,
+  "name": "arg2",
+  "slug": "arg-2",
+  "operationRelativeTypescriptFilePath": "src/cli.ts",
+  "type": {
+    "rawType": "any",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "getArgument(2)",
+  "description": "",
+  "id": "oofnefjipkttldelgrcdcguk"
+}

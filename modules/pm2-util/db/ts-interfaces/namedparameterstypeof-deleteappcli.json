@@ -1,0 +1,33 @@
+{
+  "createdAt": 1669883383184,
+  "updatedAt": 1669883383184,
+  "deletedAt": 0,
+  "createdFirstAt": 1669883383184,
+  "id": "namedparameterstypeof-deleteappcli",
+  "name": "NamedParameters<typeof deleteAppCli>",
+  "slug": "namedparameterstypeof-deleteappcli",
+  "operationRelativeTypescriptFilePath": "src/cli/deleteApp.cli.ts",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof deleteAppCli>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

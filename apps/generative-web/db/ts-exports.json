@@ -1,0 +1,110 @@
+[
+  {
+    "createdAt": 1671193656903,
+    "updatedAt": 1671193656903,
+    "deletedAt": 0,
+    "createdFirstAt": 1671193656903,
+    "name": "TextWriter",
+    "slug": "text-writer",
+    "operationRelativeTypescriptFilePath": "src/index.ts",
+    "comments": [],
+    "type": "value",
+    "id": "uxoqboaevainoifmylzdacll"
+  },
+  {
+    "createdAt": 1671193656904,
+    "updatedAt": 1671193656904,
+    "deletedAt": 0,
+    "createdFirstAt": 1671193656904,
+    "name": "getStaticProps",
+    "slug": "get-static-props",
+    "operationRelativeTypescriptFilePath": "src/index.ts",
+    "comments": [],
+    "type": "value",
+    "id": "gptwlsxrpfggfjnpxbekxgsc"
+  },
+  {
+    "createdAt": 1671193656904,
+    "updatedAt": 1671193656904,
+    "deletedAt": 0,
+    "createdFirstAt": 1671193656904,
+    "name": "default",
+    "slug": "default",
+    "operationRelativeTypescriptFilePath": "src/pages/_app.tsx",
+    "comments": [],
+    "type": "value",
+    "id": "pjbvpnjdyjhouzuizokbxrgf"
+  },
+  {
+    "createdAt": 1671193656904,
+    "updatedAt": 1671193656904,
+    "deletedAt": 0,
+    "createdFirstAt": 1671193656904,
+    "name": "TextWriter",
+    "slug": "text-writer",
+    "operationRelativeTypescriptFilePath": "src/pages/index.tsx",
+    "comments": [],
+    "type": "value",
+    "id": "lhqxtdrrauevsgfyqbgpuozc"
+  },
+  {
+    "createdAt": 1671193656904,
+    "updatedAt": 1671193656904,
+    "deletedAt": 0,
+    "createdFirstAt": 1671193656904,
+    "name": "default",
+    "slug": "default",
+    "operationRelativeTypescriptFilePath": "src/pages/index.tsx",
+    "comments": [],
+    "type": "value",
+    "id": "bpgjirjlrmynarzoqplswlbo"
+  },
+  {
+    "createdAt": 1671193656904,
+    "updatedAt": 1671193656904,
+    "deletedAt": 0,
+    "createdFirstAt": 1671193656904,
+    "name": "getStaticProps",
+    "slug": "get-static-props",
+    "operationRelativeTypescriptFilePath": "src/pages/index.tsx",
+    "comments": [],
+    "type": "value",
+    "id": "efsthhiqyoomngmclmlzmmrc"
+  },
+  {
+    "createdAt": 1671193656904,
+    "updatedAt": 1671193656904,
+    "deletedAt": 0,
+    "createdFirstAt": 1671193656904,
+    "name": "default",
+    "slug": "default",
+    "operationRelativeTypescriptFilePath": "src/pages/offers.tsx",
+    "comments": [],
+    "type": "value",
+    "id": "mepwmtnfkxfkqsskkrysugxd"
+  },
+  {
+    "createdAt": 1671193656905,
+    "updatedAt": 1671193656905,
+    "deletedAt": 0,
+    "createdFirstAt": 1671193656905,
+    "name": "default",
+    "slug": "default",
+    "operationRelativeTypescriptFilePath": "src/pages/settings.tsx",
+    "comments": [],
+    "type": "value",
+    "id": "fqyzzekanaxxpudwfjeguatu"
+  },
+  {
+    "createdAt": 1671193656905,
+    "updatedAt": 1671193656905,
+    "deletedAt": 0,
+    "createdFirstAt": 1671193656905,
+    "name": "default",
+    "slug": "default",
+    "operationRelativeTypescriptFilePath": "src/pages/signup.tsx",
+    "comments": [],
+    "type": "value",
+    "id": "pfupikxqpgznztyksnznvstk"
+  }
+]

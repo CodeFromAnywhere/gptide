@@ -1,0 +1,24 @@
+{
+  "createdAt": 1671193673179,
+  "updatedAt": 1671193673179,
+  "deletedAt": 0,
+  "createdFirstAt": 1671193673179,
+  "classification": "const",
+  "comments": [],
+  "isExported": false,
+  "name": "content",
+  "slug": "content",
+  "operationRelativeTypescriptFilePath": "src/pages/offers.tsx",
+  "type": {
+    "rawType": "String",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "`\n\n# Offers\n\nGreat that you're interested in GPT Ideas! Please register for one of these packages in the form below.\n\n## Free membership\n\n- Get my basic prompts dataset for download, by email\n- Daily or weekly knowledge-bomb in your inbox\n\n[Sign up for free](/signup?tier=free)\n\n## \n\n## 🏛 Indie membership \n\n- Community access\n- GPT IDE access\n- Coming soon: access to my premium prompts dataset and premium material\n\nPrice: $1000/year (or connect for collaborating as beta user)\n\n[Sign up for indie membership](/signup?tier=indie) (you're not charged yet)\n\n## 🚀 Startup membership\n\n- 1:1 Consulting\n- Relevant source codes to kickstart your startup\n- Private resources for prompt engineering secrets\n\nPrice: Get in touch\n\n[Apply for startup membership](/signup?tier=startup)\n\n## \n\n## 🤑 Sponsoring, backing and investing..\n\n- Get in contact with GPT-related startups in any sector, and see what they're building\n- Invest in a hackathon for a specific category/usecase\n\nPrice: choose your amount, get in touch\n\n[Sign up as sponsor](/signup?tier=sponsor)\n\n## ❓ Questions? Feedback?\n\nPlease [email me](mailto:wijnand@karsens.com) and let's get in touch!\n\n\n\n`",
+  "description": "- Add tweet button on every page\n- Ensure there's a good unfurling and page titles (SEO)\n- Add a call to action saying something like \"do you want my prompts? Click here\" leading to `db.tsx\"",
+  "id": "uxgawjltbnmqaanqvzxanxhv"
+}

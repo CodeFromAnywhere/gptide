@@ -1,0 +1,134 @@
+{
+  "createdAt": 1670487580297,
+  "updatedAt": 1670487580297,
+  "deletedAt": 0,
+  "createdFirstAt": 1670487580297,
+  "scripts": {
+    "dev": "next dev -p 42043",
+    "start": "next start -p 42043",
+    "stop": "pm2 stop app_generative-web",
+    "fillPublic": "node fillPublic.js",
+    "build": "yarn fillPublic && next build",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@badrap/bar-of-progress": "^0.2.1",
+    "@headlessui/react": "^1.6.2",
+    "@zeit/next-workers": "^1.0.0",
+    "fs-util": "1.0.5",
+    "next": "12.3.1",
+    "next-pwa": "^5.6.0",
+    "next-transpile-modules": "^9.0.0",
+    "react": "17.0.2",
+    "react-datepicker": "^4.8.0",
+    "react-datetime": "^3.1.1",
+    "react-dom": "17.0.2",
+    "react-markdown": "^8.0.3",
+    "react-query": "^3.39.0",
+    "react-twitter-embed": "^4.0.4",
+    "generative-ui": "1.0.0",
+    "react-with-native-alert": "1.0.33",
+    "react-with-native-modal": "1.0.60",
+    "react-with-native-notification": "1.0.42",
+    "react-with-native": "1.4.9",
+    "timeline": "1.0.0",
+    "markdown": "1.0.0",
+    "function-form": "0.0.1",
+    "fancy-loader": "0.0.1",
+    "cool-toast": "0.0.0",
+    "js-util": "0.0.1",
+    "next-a-link": "0.0.1",
+    "react-with-native-router": "1.0.14"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.3.0",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
+  },
+  "private": true,
+  "version": "0.0.1",
+  "operation": {
+    "port": 42043,
+    "markdown": "# 🪄 generative-web",
+    "indirectDependencies": [],
+    "buildResultIndexed": {
+      "indexInteracesErrors": [
+        "No schema/definitions found for /Users/king/King/operations/tools/ai/generative-web/src/pages/signup.tsx. Error: Error: Unknown node \" () => {\n  const router = useRouter();\n\n  const info = `Please join [our Discord](https://discord.gg/gehCtKJk) and introduce yourself there to sign up and join the community. I won't charge you anything since we're still beta-testing, and I can give you FREE ACCESS to the Prompting IDE!`;\n\n  const tier = router.query.tier ? takeFirst(router.query.tier) : undefined;\n  return (\n    <Div className=\"max-lg:mx-4 lg:mx-20\">\n      <MarkdownContent content={info} config={{}} />\n      {/* {router.isReady ? (\n        <FunctionForm\n          tsFunction={FormIndex}\n          initialValues={[\"\", \"\", tier, \"daily\", \"Hello there!\"]}\n        />\n      ) : null} */}\n      <ALink href=\"/offers\">Not sure? Check the offers</ALink>\n      <ALink href=\"/login\">Admin login</ALink>\n    </Div>\n  );\n}\" of kind \"ArrowFunction\""
+      ],
+      "buildSucceeded": true,
+      "indexImportExportError": "",
+      "lintProblems": []
+    },
+    "hasGeneratedDependenciesIndexed": false,
+    "lastRebuildAt": 1671193680354,
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 7,
+        "lines": 245,
+        "characters": 7303,
+        "bytes": 7303
+      },
+      "dataSize": {
+        "numberOfFiles": 9,
+        "lines": 256,
+        "characters": 6958,
+        "bytes": 6958
+      },
+      "textSize": {
+        "numberOfFiles": 2,
+        "lines": 56,
+        "characters": 860,
+        "bytes": 860
+      },
+      "size": {
+        "bytes": 15121,
+        "characters": 15121,
+        "lines": 557,
+        "numberOfFiles": 18
+      }
+    },
+    "folderNameIndexed": "generative-web",
+    "relativeOperationLocationPathIndexed": "operations/tools/ai",
+    "classificationIndexed": "ui-web",
+    "coreDependenciesIndexed": [
+      "useEffect",
+      "useState"
+    ],
+    "operationDependenciesIndexed": [
+      "StoreProvider",
+      "MyLayout",
+      "AlertProvider",
+      "ModalProvider",
+      "ToastContainer",
+      "Div",
+      "P",
+      "Timeline",
+      "readerPageGetStaticProps",
+      "Dataset",
+      "MarkdownContent",
+      "Div",
+      "useStore",
+      "setConfig",
+      "Div",
+      "FunctionForm",
+      "FancyLoader",
+      "showStandardResponse",
+      "takeFirst",
+      "MarkdownContent",
+      "ALink",
+      "Div",
+      "useRouter"
+    ],
+    "packageDependenciesIndexed": [
+      "AppProps",
+      "QueryClient",
+      "QueryClientProvider",
+      "TwitterTimelineEmbed",
+      "useRouter"
+    ]
+  },
+  "name": "generative-web",
+  "slug": "generative-web",
+  "id": "moysshxfxsmwyftybcshjufe"
+}

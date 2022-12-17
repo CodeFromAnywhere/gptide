@@ -1,0 +1,77 @@
+{
+  "createdAt": 1670071391648,
+  "updatedAt": 1670071391648,
+  "deletedAt": 0,
+  "createdFirstAt": 1670071391648,
+  "version": "0.0.1",
+  "main": "build/index.js",
+  "source": "src/index.ts",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "name": "ai-types",
+  "operation": {
+    "hasGeneratedDependenciesIndexed": false,
+    "buildResultIndexed": {
+      "buildSucceeded": true,
+      "indexImportExportError": "",
+      "lintProblems": []
+    },
+    "lastRebuildAt": 1671105371670,
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 9,
+        "lines": 263,
+        "characters": 7497,
+        "bytes": 7497
+      },
+      "dataSize": {
+        "numberOfFiles": 2,
+        "lines": 114,
+        "characters": 3507,
+        "bytes": 3507
+      },
+      "textSize": {
+        "numberOfFiles": 2,
+        "lines": 305,
+        "characters": 5729,
+        "bytes": 5729
+      },
+      "size": {
+        "bytes": 16733,
+        "characters": 16733,
+        "lines": 682,
+        "numberOfFiles": 13
+      }
+    },
+    "folderNameIndexed": "ai-types",
+    "relativeOperationLocationPathIndexed": "operations/tools/ai",
+    "classificationIndexed": "cjs",
+    "coreDependenciesIndexed": [],
+    "operationDependenciesIndexed": [
+      "DefaultModelType",
+      "SlugModelType",
+      "SlugModelType",
+      "FileType",
+      "DefaultModelType",
+      "BackendAsset",
+      "DefaultModelType",
+      "BackendAsset",
+      "Frontmatter"
+    ],
+    "packageDependenciesIndexed": []
+  },
+  "dependencies": {
+    "model-types": "0.0.1",
+    "filename-conventions": "0.0.1",
+    "asset-type": "0.0.1",
+    "matter-types": "0.0.1"
+  },
+  "slug": "ai-types",
+  "id": "rzgsitofuukkatcuriaoazvg"
+}

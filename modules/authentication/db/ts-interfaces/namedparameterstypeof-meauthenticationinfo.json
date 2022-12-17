@@ -1,0 +1,33 @@
+{
+  "createdAt": 1670528763474,
+  "updatedAt": 1670528763474,
+  "deletedAt": 0,
+  "createdFirstAt": 1670528763474,
+  "id": "namedparameterstypeof-meauthenticationinfo",
+  "name": "NamedParameters<typeof MeAuthenticationInfo>",
+  "slug": "namedparameterstypeof-meauthenticationinfo",
+  "operationRelativeTypescriptFilePath": "src/MeAuthenticationInfo.tsx",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof MeAuthenticationInfo>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "createdAt": 1670528032073,
+  "updatedAt": 1670528032073,
+  "deletedAt": 0,
+  "createdFirstAt": 1670528032073,
+  "id": "email",
+  "name": "Email",
+  "slug": "email",
+  "operationRelativeTypescriptFilePath": "src/common.ts",
+  "hasGeneric": false,
+  "isExported": true,
+  "rawText": "\n\nexport type Email = string;",
+  "extensions": [],
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "string"
+    },
+    "simplifiedSchema": {
+      "type": "string"
+    },
+    "typeCoverage": 0,
+    "rawType": "Email",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

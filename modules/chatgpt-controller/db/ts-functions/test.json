@@ -1,0 +1,36 @@
+{
+  "createdAt": 1671115094546,
+  "updatedAt": 1671115094546,
+  "deletedAt": 0,
+  "createdFirstAt": 1671115094546,
+  "isApiExposed": true,
+  "isExported": false,
+  "groupAuthorization": {},
+  "operationRelativeTypescriptFilePath": "src/test.ts",
+  "commentsInside": [],
+  "rawText": " async () => {\n  const { isSuccessful, message, result } = await openAIChat({\n    prompt: `who is elon musk\n    can tell me his total net \n    worth?`,\n  });\n  console.log({ isSuccessful, message, result });\n  // const result2 = await openAIChat({\n  //   prompt: \"what is apple?\",\n  //   thread: thread,\n  // });\n  // console.log({ result2 });\n  // const result3 = await openAIChat({\n  //   prompt: \"explain quantum computing\",\n  // });\n  // console.log({ result3 });\n}",
+  "name": "test",
+  "slug": "test",
+  "parameters": [],
+  "description": "",
+  "returnType": {
+    "rawType": "any",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "maxIndentationDepth": 2,
+  "size": {
+    "characters": 469,
+    "lines": 17,
+    "bytes": 469,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 28,
+    "linesPerFile": 17,
+    "numberOfFiles": 1
+  },
+  "id": "lmdpmkwzzqvlzcaojtuxqrsm"
+}

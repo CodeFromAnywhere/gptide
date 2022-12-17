@@ -1,0 +1,24 @@
+{
+  "createdAt": 1671116849096,
+  "updatedAt": 1671116849096,
+  "deletedAt": 0,
+  "createdFirstAt": 1671116849096,
+  "classification": "const",
+  "comments": [],
+  "isExported": false,
+  "name": "{ getDbModel }",
+  "slug": "get-db-model",
+  "operationRelativeTypescriptFilePath": "src/crud/useInfiniteGetDbModel.ts",
+  "type": {
+    "rawType": "any",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "api",
+  "description": "",
+  "id": "imlfahsrtdkopmuhdyrearys"
+}

@@ -1,0 +1,75 @@
+{
+  "createdAt": 1668328690922,
+  "updatedAt": 1668328690922,
+  "deletedAt": 0,
+  "createdFirstAt": 1668328690922,
+  "id": "tqWQClwFnPpjYMtz",
+  "dependencies": {
+    "js-util": "0.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "test": "node ./build/cli.js",
+    "up": "npm version patch -f",
+    "pub": "yarn up && npm publish"
+  },
+  "source": "src/index.ts",
+  "version": "0.0.1",
+  "name": "filename-conventions",
+  "language": "english",
+  "slug": "filename-conventions",
+  "operation": {
+    "buildResultIndexed": {
+      "buildSucceeded": true,
+      "dependenciesBuildsFailed": false,
+      "indexErrors": [],
+      "indexImportExportError": "",
+      "indexInteracesErrors": [],
+      "lintProblems": []
+    },
+    "classificationIndexed": "cjs",
+    "coreDependenciesIndexed": [],
+    "folderNameIndexed": "filename-conventions",
+    "hasGeneratedDependenciesIndexed": false,
+    "lastPullTimeAtIndexed": 0,
+    "lastRebuildAt": 1670216196510,
+    "operationDependenciesIndexed": [
+      "makeArray"
+    ],
+    "packageDependenciesIndexed": [],
+    "relativeOperationLocationPathIndexed": "operations/tools/conventions",
+    "markdown": "Any functions and variables related to filename conventions\n",
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 5,
+        "lines": 169,
+        "characters": 4699,
+        "bytes": 4699
+      },
+      "dataSize": {
+        "numberOfFiles": 2,
+        "lines": 115,
+        "characters": 2694,
+        "bytes": 2694
+      },
+      "textSize": {
+        "numberOfFiles": 2,
+        "lines": 167,
+        "characters": 3199,
+        "bytes": 3199
+      },
+      "size": {
+        "bytes": 10592,
+        "characters": 10592,
+        "lines": 451,
+        "numberOfFiles": 9
+      }
+    },
+    "hasGeneratedImportsIndexed": false
+  }
+}

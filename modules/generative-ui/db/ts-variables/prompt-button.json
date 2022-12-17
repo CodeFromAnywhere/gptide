@@ -1,0 +1,33 @@
+{
+  "createdAt": 1671194267607,
+  "updatedAt": 1671194267607,
+  "deletedAt": 0,
+  "createdFirstAt": 1671194267607,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "PromptButton",
+  "slug": "prompt-button",
+  "operationRelativeTypescriptFilePath": "src/components/PromptButton.tsx",
+  "type": {
+    "rawType": "(props: { item: import(\"/Users/king/King/operations/tools/ai/ai-types/build/ContextualPrompt\").ContextualPrompt; markdown: string | null; projectRelativeFilePath: string; }) => JSX.Element",
+    "typeDefinition": {
+      "type": "object",
+      "properties": {},
+      "optional": false
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false,
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    }
+  },
+  "value": "(props: {\n  item: ContextualPrompt;\n  markdown: string | null;\n  projectRelativeFilePath: string;\n}) => {\n  const { item, markdown, projectRelativeFilePath } = props;\n  const admin = useAdmin(projectRelativeFilePath);\n  const router = useRouter();\n  const showPromptAlert = usePromptResultAlert();\n\n  const title = `${item.isFavorite ? \"⭐️ \" : \"\"}${item.title || item.name}`;\n\n  return (\n    <Tooltip\n      tooltip={\n        admin.isAdminActive ? (\n          <Div>\n            {item.title}\n            <ClickableIcon\n              emoji=\"🗑 Delete\"\n              onClick={async () => {\n                // delete prompt\n                const apiResult = await api.deleteDbModel(\n                  \"ContextualPrompt\",\n                  item.id\n                );\n\n                showStandardResponse(apiResult);\n\n                if (apiResult?.result?.isSuccesful) {\n                  admin.refetch?.();\n                }\n              }}\n            />\n            <ClickableIcon\n              emoji=\"✏️ Edit\"\n              onClick={() => {\n                // go to upsert ContextualPrompt db page.\n                router.push(`/edit/ContextualPrompt?id=${item.id}`);\n              }}\n            />\n          </Div>\n        ) : null\n      }\n      placement=\"top\"\n    >\n      <NavButton\n        onClick={async () => {\n          if (!markdown) return;\n          await processPrompt({\n            contextualPromptSlug: item.slug,\n            showPromptAlert,\n            contextualContent: {\n              contextContent: markdown,\n              contextSelection: null,\n              context_projectRelativeFilePath: projectRelativeFilePath,\n            },\n          });\n\n          router.replace({\n            query: {\n              queryPath: router.query.queryPath,\n              variant: item.slug,\n            },\n          });\n        }}\n        title={title}\n      />\n    </Tooltip>\n  );\n}",
+  "description": "",
+  "id": "andonpoqjvylslpbxsmavkok"
+}

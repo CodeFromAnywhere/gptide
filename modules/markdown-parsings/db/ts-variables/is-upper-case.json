@@ -1,0 +1,33 @@
+{
+  "createdAt": 1670590130924,
+  "updatedAt": 1670590130924,
+  "deletedAt": 0,
+  "createdFirstAt": 1670590130924,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "isUpperCase",
+  "slug": "is-upper-case",
+  "operationRelativeTypescriptFilePath": "src/tsFunctionToMarkdownString.ts",
+  "type": {
+    "rawType": "(text: string) => boolean",
+    "typeDefinition": {
+      "type": "object",
+      "properties": {},
+      "optional": false
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false,
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    }
+  },
+  "value": "(text: string) => {\n  return text.toUpperCase() === text;\n}",
+  "description": "",
+  "id": "lxiwnueqxaorsocxzztkemry"
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1668448614846,
+  "updatedAt": 1668448614846,
+  "deletedAt": 0,
+  "createdFirstAt": 1668448614846,
+  "classification": "const",
+  "comments": [],
+  "isExported": false,
+  "name": "message",
+  "slug": "message",
+  "operationRelativeTypescriptFilePath": "src/cli/yo.cli.ts",
+  "type": {
+    "rawType": "any",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "wordArray.join(\" \")",
+  "description": "",
+  "id": "wlrivgemrhuqpdouoizrqfoi"
+}

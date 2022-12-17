@@ -1,0 +1,18 @@
+[
+  {
+    "createdAt": 1671185236179,
+    "updatedAt": 1671185236179,
+    "deletedAt": 0,
+    "createdFirstAt": 1671185236179,
+    "name": "Comment",
+    "slug": "comment",
+    "operationRelativeTypescriptFilePath": "src/MarkdownContent.tsx",
+    "comment": "Renders a markdown string (without frontmatter)",
+    "rawStatement": "export const MarkdownContent = (props: {\n  content: string;\n  config: MarkdownParseRenderConfig;\n}): JSX.Element => {\n  const { config, content } = props;\n\n  if (!content) return <Div>No content</Div>;\n\n  return <MarkdownContentRender content={content} config={config} />;\n};",
+    "parameters": {},
+    "types": [],
+    "firstLine": 5,
+    "lastLine": 8,
+    "id": "yjybiotyhmxjiyjzpyyauapq"
+  }
+]

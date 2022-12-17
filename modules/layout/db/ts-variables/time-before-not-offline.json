@@ -1,0 +1,24 @@
+{
+  "createdAt": 1671116914825,
+  "updatedAt": 1671116914825,
+  "deletedAt": 0,
+  "createdFirstAt": 1671116914825,
+  "classification": "const",
+  "comments": [],
+  "isExported": false,
+  "name": "timeBeforeNotOffline",
+  "slug": "time-before-not-offline",
+  "operationRelativeTypescriptFilePath": "src/PingApi.tsx",
+  "type": {
+    "rawType": "{}",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "10000",
+  "description": "",
+  "id": "ogoojwcgfcqyvegkznnzfqxq"
+}

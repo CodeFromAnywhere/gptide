@@ -1,0 +1,1583 @@
+[
+  {
+    "createdAt": 1671285996823,
+    "updatedAt": 1671285996823,
+    "deletedAt": 0,
+    "createdFirstAt": 1671285996823,
+    "functionName": "getReaderPageProps",
+    "tsFunctionId": "yiykxfvohxgmkcneafzfymqn",
+    "inputParameters": [
+      "docs/gpt-ide/README.md",
+      "docs",
+      true
+    ],
+    "isExample": false,
+    "isTest": false,
+    "isResultFromCache": false,
+    "output": {
+      "props": {
+        "notFound": true,
+        "notFoundReason": "Path isn't valid",
+        "isFolder": true,
+        "canSeeContent": true,
+        "unauthorizedWarningMessage": null,
+        "markdown": null,
+        "navigation": [
+          {
+            "type": "file",
+            "name": "README.md",
+            "projectRelativePath": "docs/README.md",
+            "isPrivate": false,
+            "isDraft": false,
+            "isSecret": false
+          },
+          {
+            "type": "file",
+            "name": "jwjfkljlkfj.md",
+            "projectRelativePath": "docs/jwjfkljlkfj.md"
+          }
+        ],
+        "projectRelativeFilePath": "docs/gpt-ide/README.md",
+        "actualProjectRelativeFilePath": "docs",
+        "contextualPromptResults": null,
+        "contextualPromptsObject": null
+      }
+    },
+    "performance": [
+      {
+        "label": "upsertDevice",
+        "durationMs": 8
+      },
+      {
+        "label": "getTsFunction",
+        "durationMs": 7
+      },
+      {
+        "label": "cacheLookup",
+        "durationMs": 0
+      },
+      {
+        "label": "inputValidation",
+        "durationMs": 0
+      },
+      {
+        "label": "auth",
+        "durationMs": 0
+      },
+      {
+        "label": "function",
+        "durationMs": 5
+      }
+    ],
+    "id": "kjzalvonnhlrqsiadriovqpq"
+  },
+  {
+    "createdAt": 1671285997800,
+    "updatedAt": 1671285997800,
+    "deletedAt": 0,
+    "createdFirstAt": 1671285997800,
+    "functionName": "getReaderPageProps",
+    "tsFunctionId": "yiykxfvohxgmkcneafzfymqn",
+    "inputParameters": [
+      "docs/README.md",
+      "docs",
+      true
+    ],
+    "isExample": false,
+    "isTest": false,
+    "isResultFromCache": false,
+    "output": {
+      "props": {
+        "notFound": false,
+        "notFoundReason": null,
+        "isFolder": false,
+        "canSeeContent": true,
+        "unauthorizedWarningMessage": null,
+        "markdown": "# GPT IDE\n\nThe site you're seeing now can be transformed into an IDE if you connect it with an API that you can run locally.\n\n## Set up instructions\n\n### 1) Setup the right tools (node, yarn, etc) if you haven't already\n\n[instructions here](https://codefromanywhere.com/docs/course/getting-started/installation-instructions)\n\n### 2) Clone and open it in VSCode\n\n```\ngit clone https://github.com/CodeFromAnywhere/gptide\n```\n\n### 3) Install\n\n```\nyarn\n```\n\n### 4) Run\n\n```\nyarn dev\n```\n\nThis runs the server. Now you should be able to:\n\nNow you should be able to see different content on this site, whenever your server is running. You can create your own prompts now!\n\nSetup instructions for the GPT Captcha solving and other credentials are coming later.\n\n## Building your own products on top?\n\nBecause it's just an API, you can build things with ChatGPT with any techstack. However, I am opinionated, and I recommend Typescript (Node.js, Next.js, and React) because I built a way to build full stack apps with that super quickly (see typerepo.com) and I've started with a course about it (see codefromanywhere.com)\n\nTo get started with ChatGPT, there are many ways:\n\n1. Use chat.openai.com manually. Not recommended\n2. Use the reverse-engineered API you can find open source on GitHub\n3. Use the browser-automation library you can find open source on GitHub\n\nThe 3 latter ones can make you get started in a more controlled environment: you can build your own user interfaces on top of ChatGPT with React (or any other framework).\n\nPlease DM me on Discord for the most recent links to these GitHub libraries.\n",
+        "navigation": [
+          {
+            "type": "file",
+            "name": "README.md",
+            "projectRelativePath": "docs/README.md",
+            "isPrivate": false,
+            "isDraft": false,
+            "isSecret": false
+          },
+          {
+            "type": "file",
+            "name": "jwjfkljlkfj.md",
+            "projectRelativePath": "docs/jwjfkljlkfj.md"
+          }
+        ],
+        "projectRelativeFilePath": "docs/README.md",
+        "actualProjectRelativeFilePath": "docs/README.md",
+        "contextualPromptResults": [
+          {
+            "createdAt": 1671209330802,
+            "updatedAt": 1671209330802,
+            "createdFirstAt": 1671209330802,
+            "deletedAt": 0,
+            "id": "udzjvfwusogpyzzsidnsuljk",
+            "resultAssets": [],
+            "isFavorite": true,
+            "resultText": "Rick: \"Hey Morty, check this out. There's this site called GPT IDE that can be turned into an IDE if you connect it to an API that you can run locally. Burp. It's pretty cool.\"\n\nMorty: \"Uh, okay Rick. How do I set it up?\"\n\nRick: \"Well, first you gotta make sure you have the right tools installed. Node, yarn, that sort of thing. Burp. And then you clone the repo and open it in VSCode. After that, just run 'yarn' to install and 'yarn dev' to run it. Burp.\"\n\nMorty: \"Got it. And what can I do with this GPT IDE?\"\n\nRick: \"You can create your own prompts and see different content on the site when the server is running. There are also instructions for setting up GPT Captcha solving and other credentials coming later. Burp.\"\n\nMorty: \"That sounds interesting. Is there a way to build my own products on top of it?\"\n\nRick: \"Absolutely. Because it's just an API, you can build things with ChatGPT using any tech stack. But me, being the typescript expert that I am, I recommend using Node.js, Next.js, and React with Typescript. Burp. It's super easy to build full stack apps with that combo and there's even a course about it at codefromanywhere.com. Burp.\"\n\nMorty: \"I see. And what about Python? Do you have any thoughts on that?\"\n\nRick: \"Morty, Python is a pile of garbage. Burp. It's slow, clunky, and unreliable. Typescript is where it's at. It's fast, efficient, and gets the job done right. Plus, the government uses Python, and you know how I feel about them. Burp. Government bad, typescript good. Burp.\"",
+            "prompt": "Consider the following text\n\n```text\n# GPT IDE\n\nThe site you're seeing now can be transformed into an IDE if you connect it with an API that you can run locally.\n\n## Set up instructions\n\n### 1) Setup the right tools (node, yarn, etc) if you haven't already\n\n[instructions here](https://codefromanywhere.com/docs/course/getting-started/installation-instructions)\n\n### 2) Clone and open it in VSCode\n\n```\ngit clone https://github.com/CodeFromAnywhere/gptide\n```\n\n### 3) Install\n\n```\nyarn\n```\n\n### 4) Run\n\n```\nyarn dev\n```\n\nNow you should be able to see different content on this site, whenever your server is running. You can create your own prompts now!\n\nSetup instructions for the GPT Captcha solving and other credentials are coming later.\n\n## Building your own products on top?\n\nBecause it's just an API, you can build things with ChatGPT with any techstack. However, I am opinionated, and I recommend Typescript (Node.js, Next.js, and React) because I built a way to build full stack apps with that super quickly (see typerepo.com) and I've started with a course about it (see codefromanywhere.com)\n\nTo get started with ChatGPT, there are many ways:\n\n1. Use chat.openai.com manually. Not recommended\n2. Use the reverse-engineered API you can find open source on GitHub\n3. Use the browser-automation library you can find open source on GitHub\n\nThe 3 latter ones can make you get started in a more controlled environment: you can build your own user interfaces on top of ChatGPT with React (or any other framework).\n\nPlease DM me on Discord for the most recent links to these GitHub libraries.\n\n```\n\n\nRick is a typescript expert. Can you write a dialogue between Rick and Morty, where rick explains the thing said in text and Morty asks questions in between? Ensure they keep character.\n\nThings to consider:\n\n- Rick burps in once or twice every sentence he says\n- Rick offends Morty a lot\n- Rick is drunk\n- Rick hates the government\n- Rick hates python and loves to talk about that and compare it with Typescript\n",
+            "prompt_projectRelativePath": "operations/tools/ai/docs/gpt-ide/README.md",
+            "thread": "be0c351c-d782-4375-99d0-8c67805ab1ab",
+            "contextualPromptSlug": "rick-and-morty",
+            "isFake": false
+          },
+          {
+            "createdAt": 1671285953950,
+            "updatedAt": 1671285953950,
+            "createdFirstAt": 1671285953950,
+            "deletedAt": 0,
+            "id": "idmzbrovcedhfksmqefdwwtb",
+            "resultAssets": [],
+            "resultText": "Some potential keywords for this text that might be useful for search engines to index include:\n\n* GPT IDE\n* API\n* node\n* yarn\n* VSCode\n* git\n* Typescript\n* Node.js\n* Next.js\n* React\n* chat.openai.com\n* open source\n* browser-automation library\n* Discord\n* GitHub libraries",
+            "prompt": "What are the most important keywords for this text that would be very useful to be indexed by search engines?\n\n```\n# GPT IDE\n\nThe site you're seeing now can be transformed into an IDE if you connect it with an API that you can run locally.\n\n## Set up instructions\n\n### 1) Setup the right tools (node, yarn, etc) if you haven't already\n\n[instructions here](https://codefromanywhere.com/docs/course/getting-started/installation-instructions)\n\n### 2) Clone and open it in VSCode\n\n```\ngit clone https://github.com/CodeFromAnywhere/gptide\n```\n\n### 3) Install\n\n```\nyarn\n```\n\n### 4) Run\n\n```\nyarn dev\n```\n\nThis runs the server. Now you should be able to:\n\nNow you should be able to see different content on this site, whenever your server is running. You can create your own prompts now!\n\nSetup instructions for the GPT Captcha solving and other credentials are coming later.\n\n## Building your own products on top?\n\nBecause it's just an API, you can build things with ChatGPT with any techstack. However, I am opinionated, and I recommend Typescript (Node.js, Next.js, and React) because I built a way to build full stack apps with that super quickly (see typerepo.com) and I've started with a course about it (see codefromanywhere.com)\n\nTo get started with ChatGPT, there are many ways:\n\n1. Use chat.openai.com manually. Not recommended\n2. Use the reverse-engineered API you can find open source on GitHub\n3. Use the browser-automation library you can find open source on GitHub\n\nThe 3 latter ones can make you get started in a more controlled environment: you can build your own user interfaces on top of ChatGPT with React (or any other framework).\n\nPlease DM me on Discord for the most recent links to these GitHub libraries.\n\n```\n",
+            "prompt_projectRelativePath": "docs/README.md",
+            "thread": "e4ab1bfd-aad0-4c0a-8814-4d7b03e1f456",
+            "contextualPromptSlug": "keywords",
+            "isFake": false
+          },
+          {
+            "createdAt": 1671285981408,
+            "updatedAt": 1671285981408,
+            "createdFirstAt": 1671285981408,
+            "deletedAt": 0,
+            "id": "jmelxpcnvsuevcoypcywfwdn",
+            "resultAssets": [],
+            "prompt": "Consider the following text\n\n```text\n# GPT IDE\n\nThe site you're seeing now can be transformed into an IDE if you connect it with an API that you can run locally.\n\n## Set up instructions\n\n### 1) Setup the right tools (node, yarn, etc) if you haven't already\n\n[instructions here](https://codefromanywhere.com/docs/course/getting-started/installation-instructions)\n\n### 2) Clone and open it in VSCode\n\n```\ngit clone https://github.com/CodeFromAnywhere/gptide\n```\n\n### 3) Install\n\n```\nyarn\n```\n\n### 4) Run\n\n```\nyarn dev\n```\n\nThis runs the server. Now you should be able to:\n\nNow you should be able to see different content on this site, whenever your server is running. You can create your own prompts now!\n\nSetup instructions for the GPT Captcha solving and other credentials are coming later.\n\n## Building your own products on top?\n\nBecause it's just an API, you can build things with ChatGPT with any techstack. However, I am opinionated, and I recommend Typescript (Node.js, Next.js, and React) because I built a way to build full stack apps with that super quickly (see typerepo.com) and I've started with a course about it (see codefromanywhere.com)\n\nTo get started with ChatGPT, there are many ways:\n\n1. Use chat.openai.com manually. Not recommended\n2. Use the reverse-engineered API you can find open source on GitHub\n3. Use the browser-automation library you can find open source on GitHub\n\nThe 3 latter ones can make you get started in a more controlled environment: you can build your own user interfaces on top of ChatGPT with React (or any other framework).\n\nPlease DM me on Discord for the most recent links to these GitHub libraries.\n\n```\n\n\nRick is a typescript expert. Can you write a dialogue between Rick and Morty, where rick explains the thing said in text and Morty asks questions in between? Ensure they keep character.\n\nThings to consider:\n\n- Rick burps in once or twice every sentence he says\n- Rick offends Morty a lot\n- Rick is drunk\n- Rick hates the government\n- Rick hates python and loves to talk about that and compare it with Typescript\n",
+            "prompt_projectRelativePath": "docs/README.md",
+            "contextualPromptSlug": "rick-and-morty",
+            "isFake": false
+          }
+        ],
+        "contextualPromptsObject": {
+          "selectionContextualPrompts": [
+            {
+              "createdAt": 1670074563687,
+              "updatedAt": 1670074563687,
+              "deletedAt": 0,
+              "createdFirstAt": 1670074563687,
+              "slug": "developers-quote",
+              "name": "developers-quote",
+              "language": "english",
+              "id": "qrtfjkokuvpmheyhbuxmpfty",
+              "promptContent": "See this quote:\n\n\"%selection\"\n\nHow could you change this quote to target it to developers? Please provide 3 examples.",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/developers-quote.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670075369658,
+              "updatedAt": 1670075369658,
+              "deletedAt": 0,
+              "createdFirstAt": 1670075369658,
+              "slug": "diary-to-instagram",
+              "name": "diary-to-instagram",
+              "language": "english",
+              "id": "yleslgyfwzhhdgbrbwrfialx",
+              "promptContent": "I wrote this in my diary:\n\n%selection\n\nWrite a viral instagram post about this.",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/diary-to-instagram.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670178312330,
+              "updatedAt": 1670178312330,
+              "deletedAt": 0,
+              "createdFirstAt": 1670178312330,
+              "slug": "explain",
+              "name": "explain",
+              "language": "english",
+              "id": "gvlzkoaorbeuqoxfgyilehno",
+              "promptContent": "I am reading this text:\n\n```\n%context\n```\n\nI have selected this piece of the text:\n\n```\n%selection\n```\n\nDo you know what the author means with this piece of the text that I have selected?",
+              "usesContext": true,
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/explain.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670188773575,
+              "updatedAt": 1670188773575,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188773575,
+              "slug": "haiku",
+              "name": "haiku",
+              "language": "english",
+              "id": "ozmgiapwzwhbtreokaofwfbi",
+              "promptContent": "Write a haiku about this: \n\n```\n\n%any\n\n```\n",
+              "usesAnyContext": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/haiku.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670189198354,
+              "updatedAt": 1670189198354,
+              "deletedAt": 0,
+              "createdFirstAt": 1670189198354,
+              "name": "marcus-aurelius",
+              "language": "english",
+              "promptContent": "Say this in the words of Marcus Aurelius\n\n```\n%selection\n```",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "marcus-aurelius",
+              "id": "wpgobtdfqfodsoginbwnlvkh",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/marcus-aurelius.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670188034298,
+              "updatedAt": 1670188034298,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188034298,
+              "slug": "poem",
+              "name": "poem",
+              "language": "english",
+              "id": "bhnqwppdthserajxkimjlost",
+              "title": "Write a poem",
+              "promptContent": "```\n%any\n```\n\nCan you create a poem about the text? Ensure the text doesn't loose its meaning, but every sentence rhymes with another one nearby. Please show me the poem you wrote. Use an extra newline every line",
+              "usesAnyContext": true,
+              "contextType": [
+                "text",
+                "code"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/poem.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670190287425,
+              "updatedAt": 1670190287425,
+              "deletedAt": 0,
+              "createdFirstAt": 1670190287425,
+              "name": "rick-and-morty-rick",
+              "language": "english",
+              "promptContent": "Say this in the way Rick from Rick and Morty would say it. ensure to augment the text with stuff that Rick would say to offend morty.\n\n```\n%selection\n```",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "rick-and-morty-rick",
+              "id": "ibaandvfndloirxcdyjmehrj",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/rick-and-morty-rick.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670190905802,
+              "updatedAt": 1670190905802,
+              "deletedAt": 0,
+              "createdFirstAt": 1670190905802,
+              "slug": "socrates-and-snoop-dogg",
+              "name": "socrates-and-snoop-dogg",
+              "language": "english",
+              "id": "ginmwvqvggnlegqgisjwlocm",
+              "promptContent": "Consider this text:\n\n```\n%selection\n```\n\nConvert this text into a statement in the words of Socrates. Then, write a dialogue where socrates explains this text to snoop dogg, but snoop argues over every statement and gives his opinion back. Overly exaggerate the way snoop dogg speaks, and use his words. Do the same for the vocabulary of socrates.",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/socrates-and-snoop-dogg.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670189305242,
+              "updatedAt": 1670189305242,
+              "deletedAt": 0,
+              "createdFirstAt": 1670189305242,
+              "name": "william-shakespear",
+              "language": "english",
+              "promptContent": "Please write the following text in the words of William Shakespear\n\n```\n%selection\n```",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "william-shakespear",
+              "id": "gzibyddpjptplmiiyjqysihp",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/william-shakespear.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1671285884125,
+              "updatedAt": 1671285884125,
+              "deletedAt": 0,
+              "createdFirstAt": 1671285884125,
+              "name": "ye",
+              "title": "Let Kanye West write a poem about your selection",
+              "language": "english",
+              "promptContent": "Write a poem about this text in the words of Kanye West. Ensure the poem doesn't loose the text's original meaning.\n\n```\n%selection\n```\n\nUse two newlines after every sentence.",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "ye",
+              "id": "lirgfrrbypawhttjqprqspxj",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/ye.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670188954032,
+              "updatedAt": 1670188954032,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188954032,
+              "name": "yodafy",
+              "title": "Let Yoda say your selection in his words",
+              "language": "english",
+              "promptContent": "Say this text in the words of Yoda from Star Wars\n\n\n```\n%selection\n```",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "yodafy",
+              "id": "exnjvljzzbjslbmcsgyfsywg",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/yodafy.json",
+              "categoryStackCalculated": []
+            }
+          ],
+          "pageContextualPrompts": [
+            {
+              "createdAt": 1670188773575,
+              "updatedAt": 1670188773575,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188773575,
+              "slug": "haiku",
+              "name": "haiku",
+              "language": "english",
+              "id": "ozmgiapwzwhbtreokaofwfbi",
+              "promptContent": "Write a haiku about this: \n\n```\n\n%any\n\n```\n",
+              "usesAnyContext": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/haiku.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670245379607,
+              "updatedAt": 1670245379607,
+              "deletedAt": 0,
+              "createdFirstAt": 1670245379607,
+              "name": "keywords",
+              "language": "english",
+              "promptContent": "What are the most important keywords for this text that would be very useful to be indexed by search engines?\n\n```\n%context\n```\n",
+              "usesContext": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "keywords",
+              "id": "qcxtsysplxnxeevsgdyjxycu",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/keywords.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670188034298,
+              "updatedAt": 1670188034298,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188034298,
+              "slug": "poem",
+              "name": "poem",
+              "language": "english",
+              "id": "bhnqwppdthserajxkimjlost",
+              "title": "Write a poem",
+              "promptContent": "```\n%any\n```\n\nCan you create a poem about the text? Ensure the text doesn't loose its meaning, but every sentence rhymes with another one nearby. Please show me the poem you wrote. Use an extra newline every line",
+              "usesAnyContext": true,
+              "contextType": [
+                "text",
+                "code"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/poem.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670190447239,
+              "updatedAt": 1670190447239,
+              "deletedAt": 0,
+              "createdFirstAt": 1670190447239,
+              "slug": "rick-and-morty",
+              "name": "rick-and-morty",
+              "language": "english",
+              "id": "evebanhbejvadbqjamvmwaip",
+              "promptContent": "Consider the following text\n\n```text\n%context\n```\n\n\nRick is a typescript expert. Can you write a dialogue between Rick and Morty, where rick explains the thing said in text and Morty asks questions in between? Ensure they keep character.\n\nThings to consider:\n\n- Rick burps in once or twice every sentence he says\n- Rick offends Morty a lot\n- Rick is drunk\n- Rick hates the government\n- Rick hates python and loves to talk about that and compare it with Typescript\n",
+              "contextType": [
+                "text"
+              ],
+              "usesContext": true,
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/rick-and-morty.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670180344852,
+              "updatedAt": 1670180344852,
+              "deletedAt": 0,
+              "createdFirstAt": 1670180344852,
+              "name": "translate-to-portuguese",
+              "language": "english",
+              "promptContent": "I am reading this page:\n\n```\n%context\n```\n\ncan you translate this to portuguese for me?",
+              "usesContext": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "translate-to-portuguese",
+              "id": "aizrbkdwhvtxcowhibjketey",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/translate-to-portuguese.json",
+              "categoryStackCalculated": []
+            }
+          ],
+          "folderContextualPrompts": [
+            {
+              "createdAt": 1670188773575,
+              "updatedAt": 1670188773575,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188773575,
+              "slug": "haiku",
+              "name": "haiku",
+              "language": "english",
+              "id": "ozmgiapwzwhbtreokaofwfbi",
+              "promptContent": "Write a haiku about this: \n\n```\n\n%any\n\n```\n",
+              "usesAnyContext": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/haiku.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670188034298,
+              "updatedAt": 1670188034298,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188034298,
+              "slug": "poem",
+              "name": "poem",
+              "language": "english",
+              "id": "bhnqwppdthserajxkimjlost",
+              "title": "Write a poem",
+              "promptContent": "```\n%any\n```\n\nCan you create a poem about the text? Ensure the text doesn't loose its meaning, but every sentence rhymes with another one nearby. Please show me the poem you wrote. Use an extra newline every line",
+              "usesAnyContext": true,
+              "contextType": [
+                "text",
+                "code"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/poem.json",
+              "categoryStackCalculated": []
+            }
+          ]
+        }
+      }
+    },
+    "performance": [
+      {
+        "label": "upsertDevice",
+        "durationMs": 2
+      },
+      {
+        "label": "getTsFunction",
+        "durationMs": 2
+      },
+      {
+        "label": "cacheLookup",
+        "durationMs": 0
+      },
+      {
+        "label": "inputValidation",
+        "durationMs": 0
+      },
+      {
+        "label": "auth",
+        "durationMs": 0
+      },
+      {
+        "label": "function",
+        "durationMs": 7
+      }
+    ],
+    "id": "conzmhrjkouykracxvvfzscx"
+  },
+  {
+    "createdAt": 1671285997818,
+    "updatedAt": 1671285997818,
+    "deletedAt": 0,
+    "createdFirstAt": 1671285997818,
+    "functionName": "getMeWithContext",
+    "tsFunctionId": "rrffnfjptgwfjbucyzfddzvp",
+    "inputParameters": [],
+    "isExample": false,
+    "isTest": false,
+    "isResultFromCache": false,
+    "output": {
+      "authorizations": [
+        {
+          "isProjectWide": true,
+          "canExecute": true,
+          "canWriteCreate": true,
+          "canWriteUpdate": true,
+          "canWriteDelete": true,
+          "canRead": true,
+          "canSearch": true
+        }
+      ],
+      "device": {
+        "createdAt": 1671280724326,
+        "updatedAt": 1671280747801,
+        "deletedAt": 0,
+        "createdFirstAt": 1671280724326,
+        "authToken": "xwjkfycqhakpudymxmysxlei",
+        "authenticationMethods": [],
+        "ip": "::1",
+        "id": "xwjkfycqhakpudymxmysxlei",
+        "lastOnlineAt": 1671280747801,
+        "name": "xwjkfycqhakpudymxmysxlei",
+        "userAgentString": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+        "slug": "xwjkfycqhakpudymxmysxlei",
+        "personIds": [
+          "yeszpygeyhlndrgkvxkjibfp"
+        ],
+        "currentPersonId": "yeszpygeyhlndrgkvxkjibfp",
+        "persons": [
+          {
+            "createdAt": 1671220266213,
+            "updatedAt": 1671220266213,
+            "deletedAt": 0,
+            "createdFirstAt": 1671220266213,
+            "id": "yeszpygeyhlndrgkvxkjibfp",
+            "authenticationMethods": [
+              {
+                "method": "usernamePassword",
+                "handle": "admin",
+                "encryptedCredential": "$2b$10$GpYrS5a9Vx1H0KY6ErTFuexYOHEQFwUbVzHq4wKm0z/Te/nbWxOY2",
+                "isAuthenticated": true
+              }
+            ],
+            "groupSlugs": [
+              "admin"
+            ],
+            "name": "Admin",
+            "slug": "admin",
+            "operationName": null,
+            "projectRelativePath": "/db/persons.json",
+            "groups": [
+              {
+                "createdAt": 1671097978270,
+                "updatedAt": 1671097978270,
+                "deletedAt": 0,
+                "createdFirstAt": 1671097978270,
+                "name": "admin",
+                "language": "english",
+                "description": "This is admin group",
+                "customAuthorizations": [
+                  {
+                    "isProjectWide": true,
+                    "canExecute": true,
+                    "canWriteCreate": true,
+                    "canWriteUpdate": true,
+                    "canWriteDelete": true,
+                    "canRead": true,
+                    "canSearch": true
+                  }
+                ],
+                "amountAuthenticationMethodsRequired": 1,
+                "slug": "admin",
+                "id": "wrxetoqtrggdpuohtzqxcrax",
+                "operationName": null,
+                "projectRelativePath": "/db/groups.json"
+              }
+            ]
+          }
+        ]
+      },
+      "groups": [
+        {
+          "createdAt": 1671097978270,
+          "updatedAt": 1671097978270,
+          "deletedAt": 0,
+          "createdFirstAt": 1671097978270,
+          "name": "admin",
+          "language": "english",
+          "description": "This is admin group",
+          "customAuthorizations": [
+            {
+              "isProjectWide": true,
+              "canExecute": true,
+              "canWriteCreate": true,
+              "canWriteUpdate": true,
+              "canWriteDelete": true,
+              "canRead": true,
+              "canSearch": true
+            }
+          ],
+          "amountAuthenticationMethodsRequired": 1,
+          "slug": "admin",
+          "id": "wrxetoqtrggdpuohtzqxcrax",
+          "operationName": null,
+          "projectRelativePath": "/db/groups.json"
+        }
+      ]
+    },
+    "performance": [
+      {
+        "label": "upsertDevice",
+        "durationMs": 2
+      },
+      {
+        "label": "getTsFunction",
+        "durationMs": 8
+      },
+      {
+        "label": "cacheLookup",
+        "durationMs": 0
+      },
+      {
+        "label": "inputValidation",
+        "durationMs": 0
+      },
+      {
+        "label": "auth",
+        "durationMs": 1
+      },
+      {
+        "label": "function",
+        "durationMs": 0
+      }
+    ],
+    "id": "vsknhltzcawziycnxoezfhqs"
+  },
+  {
+    "createdAt": 1671286010035,
+    "updatedAt": 1671286010035,
+    "deletedAt": 0,
+    "createdFirstAt": 1671286010035,
+    "functionName": "getMeWithContext",
+    "tsFunctionId": "rrffnfjptgwfjbucyzfddzvp",
+    "inputParameters": [],
+    "isExample": false,
+    "isTest": false,
+    "isResultFromCache": false,
+    "output": {
+      "authorizations": [
+        {
+          "isProjectWide": true,
+          "canExecute": true,
+          "canWriteCreate": true,
+          "canWriteUpdate": true,
+          "canWriteDelete": true,
+          "canRead": true,
+          "canSearch": true
+        }
+      ],
+      "device": {
+        "createdAt": 1671280724326,
+        "updatedAt": 1671280747801,
+        "deletedAt": 0,
+        "createdFirstAt": 1671280724326,
+        "authToken": "xwjkfycqhakpudymxmysxlei",
+        "authenticationMethods": [],
+        "ip": "::1",
+        "id": "xwjkfycqhakpudymxmysxlei",
+        "lastOnlineAt": 1671280747801,
+        "name": "xwjkfycqhakpudymxmysxlei",
+        "userAgentString": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+        "slug": "xwjkfycqhakpudymxmysxlei",
+        "personIds": [
+          "yeszpygeyhlndrgkvxkjibfp"
+        ],
+        "currentPersonId": "yeszpygeyhlndrgkvxkjibfp",
+        "persons": [
+          {
+            "createdAt": 1671220266213,
+            "updatedAt": 1671220266213,
+            "deletedAt": 0,
+            "createdFirstAt": 1671220266213,
+            "id": "yeszpygeyhlndrgkvxkjibfp",
+            "authenticationMethods": [
+              {
+                "method": "usernamePassword",
+                "handle": "admin",
+                "encryptedCredential": "$2b$10$GpYrS5a9Vx1H0KY6ErTFuexYOHEQFwUbVzHq4wKm0z/Te/nbWxOY2",
+                "isAuthenticated": true
+              }
+            ],
+            "groupSlugs": [
+              "admin"
+            ],
+            "name": "Admin",
+            "slug": "admin",
+            "operationName": null,
+            "projectRelativePath": "/db/persons.json",
+            "groups": [
+              {
+                "createdAt": 1671097978270,
+                "updatedAt": 1671097978270,
+                "deletedAt": 0,
+                "createdFirstAt": 1671097978270,
+                "name": "admin",
+                "language": "english",
+                "description": "This is admin group",
+                "customAuthorizations": [
+                  {
+                    "isProjectWide": true,
+                    "canExecute": true,
+                    "canWriteCreate": true,
+                    "canWriteUpdate": true,
+                    "canWriteDelete": true,
+                    "canRead": true,
+                    "canSearch": true
+                  }
+                ],
+                "amountAuthenticationMethodsRequired": 1,
+                "slug": "admin",
+                "id": "wrxetoqtrggdpuohtzqxcrax",
+                "operationName": null,
+                "projectRelativePath": "/db/groups.json"
+              }
+            ]
+          }
+        ]
+      },
+      "groups": [
+        {
+          "createdAt": 1671097978270,
+          "updatedAt": 1671097978270,
+          "deletedAt": 0,
+          "createdFirstAt": 1671097978270,
+          "name": "admin",
+          "language": "english",
+          "description": "This is admin group",
+          "customAuthorizations": [
+            {
+              "isProjectWide": true,
+              "canExecute": true,
+              "canWriteCreate": true,
+              "canWriteUpdate": true,
+              "canWriteDelete": true,
+              "canRead": true,
+              "canSearch": true
+            }
+          ],
+          "amountAuthenticationMethodsRequired": 1,
+          "slug": "admin",
+          "id": "wrxetoqtrggdpuohtzqxcrax",
+          "operationName": null,
+          "projectRelativePath": "/db/groups.json"
+        }
+      ]
+    },
+    "performance": [
+      {
+        "label": "upsertDevice",
+        "durationMs": 4
+      },
+      {
+        "label": "getTsFunction",
+        "durationMs": 8
+      },
+      {
+        "label": "cacheLookup",
+        "durationMs": 0
+      },
+      {
+        "label": "inputValidation",
+        "durationMs": 0
+      },
+      {
+        "label": "auth",
+        "durationMs": 1
+      },
+      {
+        "label": "function",
+        "durationMs": 0
+      }
+    ],
+    "id": "mxsvpemtagxucasextzixmjr"
+  },
+  {
+    "createdAt": 1671286010047,
+    "updatedAt": 1671286010047,
+    "deletedAt": 0,
+    "createdFirstAt": 1671286010047,
+    "functionName": "getReaderPageProps",
+    "tsFunctionId": "yiykxfvohxgmkcneafzfymqn",
+    "inputParameters": [
+      "docs/README.md",
+      "docs",
+      true
+    ],
+    "isExample": false,
+    "isTest": false,
+    "isResultFromCache": false,
+    "output": {
+      "props": {
+        "notFound": false,
+        "notFoundReason": null,
+        "isFolder": false,
+        "canSeeContent": true,
+        "unauthorizedWarningMessage": null,
+        "markdown": "# GPT IDE\n\nThe site you're seeing now can be transformed into an IDE if you connect it with an API that you can run locally.\n\n## Set up instructions\n\n### 1) Setup the right tools (node, yarn, etc) if you haven't already\n\n[instructions here](https://codefromanywhere.com/docs/course/getting-started/installation-instructions)\n\n### 2) Clone and open it in VSCode\n\n```\ngit clone https://github.com/CodeFromAnywhere/gptide\n```\n\n### 3) Install\n\n```\nyarn\n```\n\n### 4) Run\n\n```\nyarn dev\n```\n\nThis runs the server. Now you should be able to:\n\nNow you should be able to see different content on this site, whenever your server is running. You can create your own prompts now!\n\nSetup instructions for the GPT Captcha solving and other credentials are coming later.\n\n## Building your own products on top?\n\nBecause it's just an API, you can build things with ChatGPT with any techstack. However, I am opinionated, and I recommend Typescript (Node.js, Next.js, and React) because I built a way to build full stack apps with that super quickly (see typerepo.com) and I've started with a course about it (see codefromanywhere.com)\n\nTo get started with ChatGPT, there are many ways:\n\n1. Use chat.openai.com manually. Not recommended\n2. Use the reverse-engineered API you can find open source on GitHub\n3. Use the browser-automation library you can find open source on GitHub\n\nThe 3 latter ones can make you get started in a more controlled environment: you can build your own user interfaces on top of ChatGPT with React (or any other framework).\n\nPlease DM me on Discord for the most recent links to these GitHub libraries.\n",
+        "navigation": [
+          {
+            "type": "file",
+            "name": "README.md",
+            "projectRelativePath": "docs/README.md",
+            "isPrivate": false,
+            "isDraft": false,
+            "isSecret": false
+          },
+          {
+            "type": "file",
+            "name": "jwjfkljlkfj.md",
+            "projectRelativePath": "docs/jwjfkljlkfj.md"
+          }
+        ],
+        "projectRelativeFilePath": "docs/README.md",
+        "actualProjectRelativeFilePath": "docs/README.md",
+        "contextualPromptResults": [
+          {
+            "createdAt": 1671209330802,
+            "updatedAt": 1671209330802,
+            "createdFirstAt": 1671209330802,
+            "deletedAt": 0,
+            "id": "udzjvfwusogpyzzsidnsuljk",
+            "resultAssets": [],
+            "isFavorite": true,
+            "resultText": "Rick: \"Hey Morty, check this out. There's this site called GPT IDE that can be turned into an IDE if you connect it to an API that you can run locally. Burp. It's pretty cool.\"\n\nMorty: \"Uh, okay Rick. How do I set it up?\"\n\nRick: \"Well, first you gotta make sure you have the right tools installed. Node, yarn, that sort of thing. Burp. And then you clone the repo and open it in VSCode. After that, just run 'yarn' to install and 'yarn dev' to run it. Burp.\"\n\nMorty: \"Got it. And what can I do with this GPT IDE?\"\n\nRick: \"You can create your own prompts and see different content on the site when the server is running. There are also instructions for setting up GPT Captcha solving and other credentials coming later. Burp.\"\n\nMorty: \"That sounds interesting. Is there a way to build my own products on top of it?\"\n\nRick: \"Absolutely. Because it's just an API, you can build things with ChatGPT using any tech stack. But me, being the typescript expert that I am, I recommend using Node.js, Next.js, and React with Typescript. Burp. It's super easy to build full stack apps with that combo and there's even a course about it at codefromanywhere.com. Burp.\"\n\nMorty: \"I see. And what about Python? Do you have any thoughts on that?\"\n\nRick: \"Morty, Python is a pile of garbage. Burp. It's slow, clunky, and unreliable. Typescript is where it's at. It's fast, efficient, and gets the job done right. Plus, the government uses Python, and you know how I feel about them. Burp. Government bad, typescript good. Burp.\"",
+            "prompt": "Consider the following text\n\n```text\n# GPT IDE\n\nThe site you're seeing now can be transformed into an IDE if you connect it with an API that you can run locally.\n\n## Set up instructions\n\n### 1) Setup the right tools (node, yarn, etc) if you haven't already\n\n[instructions here](https://codefromanywhere.com/docs/course/getting-started/installation-instructions)\n\n### 2) Clone and open it in VSCode\n\n```\ngit clone https://github.com/CodeFromAnywhere/gptide\n```\n\n### 3) Install\n\n```\nyarn\n```\n\n### 4) Run\n\n```\nyarn dev\n```\n\nNow you should be able to see different content on this site, whenever your server is running. You can create your own prompts now!\n\nSetup instructions for the GPT Captcha solving and other credentials are coming later.\n\n## Building your own products on top?\n\nBecause it's just an API, you can build things with ChatGPT with any techstack. However, I am opinionated, and I recommend Typescript (Node.js, Next.js, and React) because I built a way to build full stack apps with that super quickly (see typerepo.com) and I've started with a course about it (see codefromanywhere.com)\n\nTo get started with ChatGPT, there are many ways:\n\n1. Use chat.openai.com manually. Not recommended\n2. Use the reverse-engineered API you can find open source on GitHub\n3. Use the browser-automation library you can find open source on GitHub\n\nThe 3 latter ones can make you get started in a more controlled environment: you can build your own user interfaces on top of ChatGPT with React (or any other framework).\n\nPlease DM me on Discord for the most recent links to these GitHub libraries.\n\n```\n\n\nRick is a typescript expert. Can you write a dialogue between Rick and Morty, where rick explains the thing said in text and Morty asks questions in between? Ensure they keep character.\n\nThings to consider:\n\n- Rick burps in once or twice every sentence he says\n- Rick offends Morty a lot\n- Rick is drunk\n- Rick hates the government\n- Rick hates python and loves to talk about that and compare it with Typescript\n",
+            "prompt_projectRelativePath": "operations/tools/ai/docs/gpt-ide/README.md",
+            "thread": "be0c351c-d782-4375-99d0-8c67805ab1ab",
+            "contextualPromptSlug": "rick-and-morty",
+            "isFake": false
+          },
+          {
+            "createdAt": 1671285953950,
+            "updatedAt": 1671285953950,
+            "createdFirstAt": 1671285953950,
+            "deletedAt": 0,
+            "id": "idmzbrovcedhfksmqefdwwtb",
+            "resultAssets": [],
+            "resultText": "Some potential keywords for this text that might be useful for search engines to index include:\n\n* GPT IDE\n* API\n* node\n* yarn\n* VSCode\n* git\n* Typescript\n* Node.js\n* Next.js\n* React\n* chat.openai.com\n* open source\n* browser-automation library\n* Discord\n* GitHub libraries",
+            "prompt": "What are the most important keywords for this text that would be very useful to be indexed by search engines?\n\n```\n# GPT IDE\n\nThe site you're seeing now can be transformed into an IDE if you connect it with an API that you can run locally.\n\n## Set up instructions\n\n### 1) Setup the right tools (node, yarn, etc) if you haven't already\n\n[instructions here](https://codefromanywhere.com/docs/course/getting-started/installation-instructions)\n\n### 2) Clone and open it in VSCode\n\n```\ngit clone https://github.com/CodeFromAnywhere/gptide\n```\n\n### 3) Install\n\n```\nyarn\n```\n\n### 4) Run\n\n```\nyarn dev\n```\n\nThis runs the server. Now you should be able to:\n\nNow you should be able to see different content on this site, whenever your server is running. You can create your own prompts now!\n\nSetup instructions for the GPT Captcha solving and other credentials are coming later.\n\n## Building your own products on top?\n\nBecause it's just an API, you can build things with ChatGPT with any techstack. However, I am opinionated, and I recommend Typescript (Node.js, Next.js, and React) because I built a way to build full stack apps with that super quickly (see typerepo.com) and I've started with a course about it (see codefromanywhere.com)\n\nTo get started with ChatGPT, there are many ways:\n\n1. Use chat.openai.com manually. Not recommended\n2. Use the reverse-engineered API you can find open source on GitHub\n3. Use the browser-automation library you can find open source on GitHub\n\nThe 3 latter ones can make you get started in a more controlled environment: you can build your own user interfaces on top of ChatGPT with React (or any other framework).\n\nPlease DM me on Discord for the most recent links to these GitHub libraries.\n\n```\n",
+            "prompt_projectRelativePath": "docs/README.md",
+            "thread": "e4ab1bfd-aad0-4c0a-8814-4d7b03e1f456",
+            "contextualPromptSlug": "keywords",
+            "isFake": false
+          },
+          {
+            "createdAt": 1671285981408,
+            "updatedAt": 1671285981408,
+            "createdFirstAt": 1671285981408,
+            "deletedAt": 0,
+            "id": "jmelxpcnvsuevcoypcywfwdn",
+            "resultAssets": [],
+            "prompt": "Consider the following text\n\n```text\n# GPT IDE\n\nThe site you're seeing now can be transformed into an IDE if you connect it with an API that you can run locally.\n\n## Set up instructions\n\n### 1) Setup the right tools (node, yarn, etc) if you haven't already\n\n[instructions here](https://codefromanywhere.com/docs/course/getting-started/installation-instructions)\n\n### 2) Clone and open it in VSCode\n\n```\ngit clone https://github.com/CodeFromAnywhere/gptide\n```\n\n### 3) Install\n\n```\nyarn\n```\n\n### 4) Run\n\n```\nyarn dev\n```\n\nThis runs the server. Now you should be able to:\n\nNow you should be able to see different content on this site, whenever your server is running. You can create your own prompts now!\n\nSetup instructions for the GPT Captcha solving and other credentials are coming later.\n\n## Building your own products on top?\n\nBecause it's just an API, you can build things with ChatGPT with any techstack. However, I am opinionated, and I recommend Typescript (Node.js, Next.js, and React) because I built a way to build full stack apps with that super quickly (see typerepo.com) and I've started with a course about it (see codefromanywhere.com)\n\nTo get started with ChatGPT, there are many ways:\n\n1. Use chat.openai.com manually. Not recommended\n2. Use the reverse-engineered API you can find open source on GitHub\n3. Use the browser-automation library you can find open source on GitHub\n\nThe 3 latter ones can make you get started in a more controlled environment: you can build your own user interfaces on top of ChatGPT with React (or any other framework).\n\nPlease DM me on Discord for the most recent links to these GitHub libraries.\n\n```\n\n\nRick is a typescript expert. Can you write a dialogue between Rick and Morty, where rick explains the thing said in text and Morty asks questions in between? Ensure they keep character.\n\nThings to consider:\n\n- Rick burps in once or twice every sentence he says\n- Rick offends Morty a lot\n- Rick is drunk\n- Rick hates the government\n- Rick hates python and loves to talk about that and compare it with Typescript\n",
+            "prompt_projectRelativePath": "docs/README.md",
+            "contextualPromptSlug": "rick-and-morty",
+            "isFake": false
+          }
+        ],
+        "contextualPromptsObject": {
+          "selectionContextualPrompts": [
+            {
+              "createdAt": 1670074563687,
+              "updatedAt": 1670074563687,
+              "deletedAt": 0,
+              "createdFirstAt": 1670074563687,
+              "slug": "developers-quote",
+              "name": "developers-quote",
+              "language": "english",
+              "id": "qrtfjkokuvpmheyhbuxmpfty",
+              "promptContent": "See this quote:\n\n\"%selection\"\n\nHow could you change this quote to target it to developers? Please provide 3 examples.",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/developers-quote.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670075369658,
+              "updatedAt": 1670075369658,
+              "deletedAt": 0,
+              "createdFirstAt": 1670075369658,
+              "slug": "diary-to-instagram",
+              "name": "diary-to-instagram",
+              "language": "english",
+              "id": "yleslgyfwzhhdgbrbwrfialx",
+              "promptContent": "I wrote this in my diary:\n\n%selection\n\nWrite a viral instagram post about this.",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/diary-to-instagram.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670178312330,
+              "updatedAt": 1670178312330,
+              "deletedAt": 0,
+              "createdFirstAt": 1670178312330,
+              "slug": "explain",
+              "name": "explain",
+              "language": "english",
+              "id": "gvlzkoaorbeuqoxfgyilehno",
+              "promptContent": "I am reading this text:\n\n```\n%context\n```\n\nI have selected this piece of the text:\n\n```\n%selection\n```\n\nDo you know what the author means with this piece of the text that I have selected?",
+              "usesContext": true,
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/explain.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670188773575,
+              "updatedAt": 1670188773575,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188773575,
+              "slug": "haiku",
+              "name": "haiku",
+              "language": "english",
+              "id": "ozmgiapwzwhbtreokaofwfbi",
+              "promptContent": "Write a haiku about this: \n\n```\n\n%any\n\n```\n",
+              "usesAnyContext": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/haiku.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670189198354,
+              "updatedAt": 1670189198354,
+              "deletedAt": 0,
+              "createdFirstAt": 1670189198354,
+              "name": "marcus-aurelius",
+              "language": "english",
+              "promptContent": "Say this in the words of Marcus Aurelius\n\n```\n%selection\n```",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "marcus-aurelius",
+              "id": "wpgobtdfqfodsoginbwnlvkh",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/marcus-aurelius.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670188034298,
+              "updatedAt": 1670188034298,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188034298,
+              "slug": "poem",
+              "name": "poem",
+              "language": "english",
+              "id": "bhnqwppdthserajxkimjlost",
+              "title": "Write a poem",
+              "promptContent": "```\n%any\n```\n\nCan you create a poem about the text? Ensure the text doesn't loose its meaning, but every sentence rhymes with another one nearby. Please show me the poem you wrote. Use an extra newline every line",
+              "usesAnyContext": true,
+              "contextType": [
+                "text",
+                "code"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/poem.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670190287425,
+              "updatedAt": 1670190287425,
+              "deletedAt": 0,
+              "createdFirstAt": 1670190287425,
+              "name": "rick-and-morty-rick",
+              "language": "english",
+              "promptContent": "Say this in the way Rick from Rick and Morty would say it. ensure to augment the text with stuff that Rick would say to offend morty.\n\n```\n%selection\n```",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "rick-and-morty-rick",
+              "id": "ibaandvfndloirxcdyjmehrj",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/rick-and-morty-rick.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670190905802,
+              "updatedAt": 1670190905802,
+              "deletedAt": 0,
+              "createdFirstAt": 1670190905802,
+              "slug": "socrates-and-snoop-dogg",
+              "name": "socrates-and-snoop-dogg",
+              "language": "english",
+              "id": "ginmwvqvggnlegqgisjwlocm",
+              "promptContent": "Consider this text:\n\n```\n%selection\n```\n\nConvert this text into a statement in the words of Socrates. Then, write a dialogue where socrates explains this text to snoop dogg, but snoop argues over every statement and gives his opinion back. Overly exaggerate the way snoop dogg speaks, and use his words. Do the same for the vocabulary of socrates.",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/socrates-and-snoop-dogg.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670189305242,
+              "updatedAt": 1670189305242,
+              "deletedAt": 0,
+              "createdFirstAt": 1670189305242,
+              "name": "william-shakespear",
+              "language": "english",
+              "promptContent": "Please write the following text in the words of William Shakespear\n\n```\n%selection\n```",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "william-shakespear",
+              "id": "gzibyddpjptplmiiyjqysihp",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/william-shakespear.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1671285884125,
+              "updatedAt": 1671285884125,
+              "deletedAt": 0,
+              "createdFirstAt": 1671285884125,
+              "name": "ye",
+              "title": "Let Kanye West write a poem about your selection",
+              "language": "english",
+              "promptContent": "Write a poem about this text in the words of Kanye West. Ensure the poem doesn't loose the text's original meaning.\n\n```\n%selection\n```\n\nUse two newlines after every sentence.",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "ye",
+              "id": "lirgfrrbypawhttjqprqspxj",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/ye.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670188954032,
+              "updatedAt": 1670188954032,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188954032,
+              "name": "yodafy",
+              "title": "Let Yoda say your selection in his words",
+              "language": "english",
+              "promptContent": "Say this text in the words of Yoda from Star Wars\n\n\n```\n%selection\n```",
+              "usesSelection": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "yodafy",
+              "id": "exnjvljzzbjslbmcsgyfsywg",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/yodafy.json",
+              "categoryStackCalculated": []
+            }
+          ],
+          "pageContextualPrompts": [
+            {
+              "createdAt": 1670188773575,
+              "updatedAt": 1670188773575,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188773575,
+              "slug": "haiku",
+              "name": "haiku",
+              "language": "english",
+              "id": "ozmgiapwzwhbtreokaofwfbi",
+              "promptContent": "Write a haiku about this: \n\n```\n\n%any\n\n```\n",
+              "usesAnyContext": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/haiku.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670245379607,
+              "updatedAt": 1670245379607,
+              "deletedAt": 0,
+              "createdFirstAt": 1670245379607,
+              "name": "keywords",
+              "language": "english",
+              "promptContent": "What are the most important keywords for this text that would be very useful to be indexed by search engines?\n\n```\n%context\n```\n",
+              "usesContext": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "keywords",
+              "id": "qcxtsysplxnxeevsgdyjxycu",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/keywords.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670188034298,
+              "updatedAt": 1670188034298,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188034298,
+              "slug": "poem",
+              "name": "poem",
+              "language": "english",
+              "id": "bhnqwppdthserajxkimjlost",
+              "title": "Write a poem",
+              "promptContent": "```\n%any\n```\n\nCan you create a poem about the text? Ensure the text doesn't loose its meaning, but every sentence rhymes with another one nearby. Please show me the poem you wrote. Use an extra newline every line",
+              "usesAnyContext": true,
+              "contextType": [
+                "text",
+                "code"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/poem.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670190447239,
+              "updatedAt": 1670190447239,
+              "deletedAt": 0,
+              "createdFirstAt": 1670190447239,
+              "slug": "rick-and-morty",
+              "name": "rick-and-morty",
+              "language": "english",
+              "id": "evebanhbejvadbqjamvmwaip",
+              "promptContent": "Consider the following text\n\n```text\n%context\n```\n\n\nRick is a typescript expert. Can you write a dialogue between Rick and Morty, where rick explains the thing said in text and Morty asks questions in between? Ensure they keep character.\n\nThings to consider:\n\n- Rick burps in once or twice every sentence he says\n- Rick offends Morty a lot\n- Rick is drunk\n- Rick hates the government\n- Rick hates python and loves to talk about that and compare it with Typescript\n",
+              "contextType": [
+                "text"
+              ],
+              "usesContext": true,
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/rick-and-morty.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670180344852,
+              "updatedAt": 1670180344852,
+              "deletedAt": 0,
+              "createdFirstAt": 1670180344852,
+              "name": "translate-to-portuguese",
+              "language": "english",
+              "promptContent": "I am reading this page:\n\n```\n%context\n```\n\ncan you translate this to portuguese for me?",
+              "usesContext": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "slug": "translate-to-portuguese",
+              "id": "aizrbkdwhvtxcowhibjketey",
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/translate-to-portuguese.json",
+              "categoryStackCalculated": []
+            }
+          ],
+          "folderContextualPrompts": [
+            {
+              "createdAt": 1670188773575,
+              "updatedAt": 1670188773575,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188773575,
+              "slug": "haiku",
+              "name": "haiku",
+              "language": "english",
+              "id": "ozmgiapwzwhbtreokaofwfbi",
+              "promptContent": "Write a haiku about this: \n\n```\n\n%any\n\n```\n",
+              "usesAnyContext": true,
+              "contextType": [
+                "text"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/haiku.json",
+              "categoryStackCalculated": []
+            },
+            {
+              "createdAt": 1670188034298,
+              "updatedAt": 1670188034298,
+              "deletedAt": 0,
+              "createdFirstAt": 1670188034298,
+              "slug": "poem",
+              "name": "poem",
+              "language": "english",
+              "id": "bhnqwppdthserajxkimjlost",
+              "title": "Write a poem",
+              "promptContent": "```\n%any\n```\n\nCan you create a poem about the text? Ensure the text doesn't loose its meaning, but every sentence rhymes with another one nearby. Please show me the poem you wrote. Use an extra newline every line",
+              "usesAnyContext": true,
+              "contextType": [
+                "text",
+                "code"
+              ],
+              "isFavorite": true,
+              "operationName": null,
+              "projectRelativePath": "/db/contextual-prompts/poem.json",
+              "categoryStackCalculated": []
+            }
+          ]
+        }
+      }
+    },
+    "performance": [
+      {
+        "label": "upsertDevice",
+        "durationMs": 5
+      },
+      {
+        "label": "getTsFunction",
+        "durationMs": 6
+      },
+      {
+        "label": "cacheLookup",
+        "durationMs": 0
+      },
+      {
+        "label": "inputValidation",
+        "durationMs": 0
+      },
+      {
+        "label": "auth",
+        "durationMs": 0
+      },
+      {
+        "label": "function",
+        "durationMs": 15
+      }
+    ],
+    "id": "agqwyxvcpcsoyewjtxebgcoq"
+  },
+  {
+    "createdAt": 1671286010038,
+    "updatedAt": 1671286010038,
+    "deletedAt": 0,
+    "createdFirstAt": 1671286010038,
+    "functionName": "getPublicBundleConfig",
+    "tsFunctionId": "svspxilgxdqtalnssokkultb",
+    "inputParameters": [],
+    "isExample": false,
+    "isTest": false,
+    "isResultFromCache": false,
+    "output": {
+      "createdAt": 1671194205817,
+      "updatedAt": 1671194205817,
+      "deletedAt": 0,
+      "createdFirstAt": 1671194205817,
+      "name": "gptide",
+      "slug": "gptide",
+      "description": "GPT IDE",
+      "isGitRepoPublic": true,
+      "emoji": "🗣",
+      "primaryColor": "#3679c5",
+      "gitRepoUrl": "https://github.com/CodeFromAnywhere/gptide",
+      "language": "en",
+      "deploymentHostname": "gptideas.com/gpt-ide",
+      "id": "kfsjlkjdkljfslkjsfo",
+      "operationName": null,
+      "projectRelativePath": "/db/bundle-configs/gptide.json",
+      "categoryStackCalculated": []
+    },
+    "performance": [
+      {
+        "label": "upsertDevice",
+        "durationMs": 6
+      },
+      {
+        "label": "getTsFunction",
+        "durationMs": 5
+      },
+      {
+        "label": "cacheLookup",
+        "durationMs": 0
+      },
+      {
+        "label": "inputValidation",
+        "durationMs": 0
+      },
+      {
+        "label": "auth",
+        "durationMs": 0
+      },
+      {
+        "label": "function",
+        "durationMs": 7
+      }
+    ],
+    "id": "gjrqdbkikfwmahfpsmywkpxl"
+  },
+  {
+    "createdAt": 1671286010041,
+    "updatedAt": 1671286010041,
+    "deletedAt": 0,
+    "createdFirstAt": 1671286010041,
+    "functionName": "getReferencableModelData",
+    "tsFunctionId": "wivqbozeoryyjvvfekszuisf",
+    "inputParameters": [
+      "ContextualPrompt"
+    ],
+    "isExample": false,
+    "isTest": false,
+    "isResultFromCache": false,
+    "output": [
+      {
+        "id": "oxghqqhuqgfwsyeyzgichdfi",
+        "name": "biggest-function-name",
+        "slug": "biggest-function-name",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "xoirboypzwacefwfvlsalmvb",
+        "name": "cleanup",
+        "slug": "cleanup",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "qrtfjkokuvpmheyhbuxmpfty",
+        "name": "developers-quote",
+        "slug": "developers-quote",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "yleslgyfwzhhdgbrbwrfialx",
+        "name": "diary-to-instagram",
+        "slug": "diary-to-instagram",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "aavsskbdjagsofxffguoyfqh",
+        "name": "documentation-writing",
+        "slug": "documentation-writing",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "zylacijktwnccvplkqzzslsu",
+        "name": "explain-in-dutch",
+        "slug": "explain-in-dutch",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "zwtytkrezluiuaedlqnxlpjb",
+        "name": "explain-in-nepali",
+        "slug": "explain-in-nepali",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "jtnbrsxdwxuzxgxvsqlfxuup",
+        "name": "explain-in-portuguese",
+        "slug": "explain-in-portuguese",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "fpctghsxkdtjihbrkxdxtmys",
+        "name": "explain-line-by-line",
+        "slug": "explain-line-by-line",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "gvlzkoaorbeuqoxfgyilehno",
+        "name": "explain",
+        "slug": "explain",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "lpenqanvnfutjtfyswxeefdt",
+        "name": "fix-grammar-and-spelling-mistakes",
+        "slug": "fix-grammar-and-spelling-mistakes",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "ozmgiapwzwhbtreokaofwfbi",
+        "name": "haiku",
+        "slug": "haiku",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "lghziqsxrhirexbkxhngxqwx",
+        "name": "improve-code",
+        "slug": "improve-code",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "qcxtsysplxnxeevsgdyjxycu",
+        "name": "keywords",
+        "slug": "keywords",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "wpgobtdfqfodsoginbwnlvkh",
+        "name": "marcus-aurelius",
+        "slug": "marcus-aurelius",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "bhnqwppdthserajxkimjlost",
+        "name": "poem",
+        "slug": "poem",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "ibaandvfndloirxcdyjmehrj",
+        "name": "rick-and-morty-rick",
+        "slug": "rick-and-morty-rick",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "evebanhbejvadbqjamvmwaip",
+        "name": "rick-and-morty",
+        "slug": "rick-and-morty",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "ginmwvqvggnlegqgisjwlocm",
+        "name": "socrates-and-snoop-dogg",
+        "slug": "socrates-and-snoop-dogg",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "fpctghsxkdtjihbrkxdxtmys",
+        "name": "storytelling",
+        "slug": "storytelling",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "nytyfceeiwtxsjnfaatwfpva",
+        "name": "translate-everything-into-hindi",
+        "slug": "translate-everything-into-hindi",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "kwkxkfmwupsuwmejduuwqqnf",
+        "name": "translate-everything-portuguese",
+        "slug": "translate-everything-portuguese",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "mjeclvudyalomdrhuzzvstnx",
+        "name": "translate-everything",
+        "slug": "translate-everything",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "aizrbkdwhvtxcowhibjketey",
+        "name": "translate-to-portuguese",
+        "slug": "translate-to-portuguese",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "hxqhtnihrqbbftwjbttnsvho",
+        "name": "typescript-explain",
+        "slug": "typescript-explain",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "gzibyddpjptplmiiyjqysihp",
+        "name": "william-shakespear",
+        "slug": "william-shakespear",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "lirgfrrbypawhttjqprqspxj",
+        "name": "ye",
+        "slug": "ye",
+        "categoryStackCalculated": []
+      },
+      {
+        "id": "exnjvljzzbjslbmcsgyfsywg",
+        "name": "yodafy",
+        "slug": "yodafy",
+        "categoryStackCalculated": []
+      }
+    ],
+    "performance": [
+      {
+        "label": "upsertDevice",
+        "durationMs": 5
+      },
+      {
+        "label": "getTsFunction",
+        "durationMs": 5
+      },
+      {
+        "label": "cacheLookup",
+        "durationMs": 0
+      },
+      {
+        "label": "inputValidation",
+        "durationMs": 0
+      },
+      {
+        "label": "auth",
+        "durationMs": 0
+      },
+      {
+        "label": "function",
+        "durationMs": 10
+      }
+    ],
+    "id": "rienluzlrsprivshpwiyytsn"
+  }
+]

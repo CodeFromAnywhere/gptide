@@ -1,0 +1,24 @@
+{
+  "createdAt": 1671116541944,
+  "updatedAt": 1671116541944,
+  "deletedAt": 0,
+  "createdFirstAt": 1671116541944,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "{ StoreProvider, useStore }",
+  "slug": "store-provider-use-store",
+  "operationRelativeTypescriptFilePath": "src/store.ts",
+  "type": {
+    "rawType": "any",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "createStore(apiStoreInitialValues)",
+  "description": "This is only needed if api storage is ALL you need.",
+  "id": "lbrxxmueokdfmrnpurggtykq"
+}

@@ -1,0 +1,33 @@
+{
+  "createdAt": 1671222674667,
+  "updatedAt": 1671222674667,
+  "deletedAt": 0,
+  "createdFirstAt": 1671222674667,
+  "classification": "const",
+  "comments": [],
+  "isExported": true,
+  "name": "getStaticProps",
+  "slug": "get-static-props",
+  "operationRelativeTypescriptFilePath": "src/pages/[...queryPath].tsx",
+  "type": {
+    "rawType": "(context: import(\"/Users/king/King/operations/tools/purpose/codebase-introspection/reader/next-types/build/types\").GetStaticPropsContext<import(\"/Users/king/King/operations/tools/purpose/codebase-introspection/reader/next-types/build/types\").ParsedUrlQuery, import(\"/Users/king/King/operations/tools/purpose/codebase-introspection/reader/next-types/build/types\").PreviewData>) => Promise<{ props: import(\"/Users/king/King/operations/tools/ai/ai-types/build/ReaderProps\").ReaderProps; }>",
+    "typeDefinition": {
+      "type": "object",
+      "properties": {},
+      "optional": false
+    },
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": true,
+    "isPrimitive": false,
+    "isEnumLiteral": false,
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    }
+  },
+  "value": "readerPageGetStaticProps",
+  "description": "",
+  "id": "hwhswgdmvgptawgilzwouycr"
+}

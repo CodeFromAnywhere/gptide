@@ -1,0 +1,113 @@
+{
+  "createdAt": 1668328816458,
+  "updatedAt": 1668328816458,
+  "deletedAt": 0,
+  "createdFirstAt": 1668328816458,
+  "id": "IPFeFRXDRUiclwih",
+  "author": "",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "js-util": "0.0.1",
+    "log": "0.0.1",
+    "graceful-fs": "*",
+    "recursive-types": "0.0.1",
+    "filename-conventions": "0.0.1",
+    "write-to-assets": "0.0.1"
+  },
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "initpub": "npm publish --access public",
+    "pub": "npm version patch --force && npm publish",
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "source": "src/index.ts",
+  "version": "1.0.5",
+  "name": "fs-util",
+  "language": "english",
+  "slug": "fs-util",
+  "operation": {
+    "buildResultIndexed": {
+      "buildSucceeded": true,
+      "indexImportExportError": "",
+      "indexInteracesErrors": [
+        "No schema/definitions found for /Users/king/King/operations/tools/control-fs/fs-util/src/files.ts. Error: TypeError: Cannot read properties of undefined (reading 'getId')"
+      ],
+      "lintProblems": []
+    },
+    "classificationIndexed": "cjs",
+    "coreDependenciesIndexed": [],
+    "folderNameIndexed": "fs-util",
+    "lastPullTimeAtIndexed": 0,
+    "lastRebuildAt": 1670527107697,
+    "operationDependenciesIndexed": [
+      "log",
+      "trimSlashes",
+      "ChildObject",
+      "sum",
+      "ChildObject",
+      "generatedFolders",
+      "notEmpty",
+      "sum",
+      "makeArray",
+      "notEmpty",
+      "writeToAssets"
+    ],
+    "packageDependenciesIndexed": [
+      "constants",
+      "rmSync",
+      "existsSync",
+      "accessSync",
+      "cpSync",
+      "promisify",
+      "cp",
+      "PathLike",
+      "Dir",
+      "Dirent",
+      "Stats",
+      "parse",
+      "basename",
+      "delimiter",
+      "dirname",
+      "extname",
+      "format",
+      "isAbsolute",
+      "join",
+      "normalize",
+      "resolve",
+      "sep",
+      "relative"
+    ],
+    "relativeOperationLocationPathIndexed": "operations/tools/control-fs",
+    "markdown": "General purpose wrapper around `node:fs` and `node:path` that should be used instead of those, because it removes some of its painpoints, removes unneeded stuff, and adds some other useful functions.\n",
+    "sizeIndexed": {
+      "codeSize": {
+        "numberOfFiles": 17,
+        "lines": 704,
+        "characters": 18223,
+        "bytes": 18223
+      },
+      "dataSize": {
+        "numberOfFiles": 3,
+        "lines": 31623,
+        "characters": 902190,
+        "bytes": 902190
+      },
+      "textSize": {
+        "numberOfFiles": 2,
+        "lines": 642,
+        "characters": 12520,
+        "bytes": 12520
+      },
+      "size": {
+        "bytes": 932933,
+        "characters": 932933,
+        "lines": 32969,
+        "numberOfFiles": 22
+      }
+    },
+    "hasGeneratedDependenciesIndexed": false,
+    "hasGeneratedImportsIndexed": false
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "createdAt": 1671223187306,
+  "updatedAt": 1671223187306,
+  "deletedAt": 0,
+  "createdFirstAt": 1671223187306,
+  "isApiExposed": true,
+  "isExported": true,
+  "groupAuthorization": {},
+  "operationRelativeTypescriptFilePath": "src/readerPageGetStatic.ts",
+  "commentsInside": [],
+  "rawText": " async (\n  context: GetStaticPropsContext\n) => {\n  const projectRoot = getProjectRoot();\n  if (!projectRoot) {\n    console.log(\"NO PROJECTROOT\");\n\n    const props: ReaderProps = {\n      notFound: true,\n      notFoundReason: \"No projectroot\",\n    };\n\n    return { props };\n  }\n\n  // the queryPath from\n  const queryPath = context.params?.queryPath;\n  const realQueryPath = queryPath ? makeArray(queryPath).join(\"/\") : \"\";\n\n  const basePath = process.env.NEXT_PUBLIC_BASEPATH;\n  // can probably also fetch the domain using the api, right? I might be able to determine what the basepath is based on an environment variable.\n  // console.log({ basePath });\n\n  const realBasePath = basePath\n    ? path.join(projectRoot, basePath)\n    : projectRoot;\n\n  const absoluteQueryPath = path.join(realBasePath, realQueryPath);\n\n  const projectRelativeFilePath = makeRelative(absoluteQueryPath, projectRoot);\n\n  const staticPropResult = omitUndefinedValues(\n    await getReaderPageProps(projectRelativeFilePath, basePath)\n  );\n\n  return staticPropResult;\n\n  /*{\n    ...props,\n    // This number has a big impact on how the site works, but I think it would be great to have a once a day re-generation. The reason for this, is that the user needs to wait anyway, and isn't coming back to the same site easily. With this system we'd have a super low footprint on the api.\n\n    // TODO: when revalidating, we should always try to get the newest data throug the api (local stuff), and ensure the database gets updated with that accordingly. If that's not available, we can use the database as a fallback, so we never get a 404.\n    // revalidate: 1,\n    // if you do it live with fallback, we can't find the base rotpath\n  };*/\n}",
+  "name": "readerPageGetStaticProps",
+  "slug": "reader-page-get-static-props",
+  "parameters": [
+    {
+      "name": "context",
+      "schema": {
+        "$ref": "#/definitions/GetStaticPropsContext"
+      },
+      "simplifiedSchema": {
+        "fullComment": "",
+        "properties": [
+          {
+            "name": "params",
+            "required": false,
+            "schema": {
+              "fullComment": "",
+              "properties": [],
+              "type": "object"
+            }
+          },
+          {
+            "name": "preview",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "previewData",
+            "required": false,
+            "schema": {
+              "properties": [],
+              "type": "object"
+            }
+          },
+          {
+            "name": "locale",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "locales",
+            "required": false,
+            "schema": {
+              "items": [
+                {
+                  "schema": {
+                    "type": "string"
+                  },
+                  "name": null
+                }
+              ],
+              "type": "array"
+            }
+          },
+          {
+            "name": "defaultLocale",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "type": "object"
+      },
+      "required": true
+    }
+  ],
+  "description": "",
+  "returnType": {
+    "rawType": "unknown",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "maxIndentationDepth": 3,
+  "size": {
+    "characters": 1709,
+    "lines": 46,
+    "bytes": 1709,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 37,
+    "linesPerFile": 46,
+    "numberOfFiles": 1
+  },
+  "id": "sjwhvczpyndzzagzvriwrmsh"
+}

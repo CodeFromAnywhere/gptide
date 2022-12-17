@@ -1,0 +1,74 @@
+[
+  {
+    "createdAt": 1668334946841,
+    "updatedAt": 1668334946841,
+    "deletedAt": 0,
+    "createdFirstAt": 1668334946841,
+    "name": "readCsvFile",
+    "slug": "read-csv-file",
+    "operationRelativeTypescriptFilePath": "src/index.ts",
+    "comments": [],
+    "type": "value",
+    "id": "jgeuqtyrfjlhsqskhgynpyij"
+  },
+  {
+    "createdAt": 1668334946841,
+    "updatedAt": 1668334946841,
+    "deletedAt": 0,
+    "createdFirstAt": 1668334946841,
+    "name": "readCsvFileSync",
+    "slug": "read-csv-file-sync",
+    "operationRelativeTypescriptFilePath": "src/index.ts",
+    "comments": [],
+    "type": "value",
+    "id": "odiuwilwecmzrzyjuhfoabep"
+  },
+  {
+    "createdAt": 1668334946841,
+    "updatedAt": 1668334946841,
+    "deletedAt": 0,
+    "createdFirstAt": 1668334946841,
+    "name": "test",
+    "slug": "test",
+    "operationRelativeTypescriptFilePath": "src/index.ts",
+    "comments": [],
+    "type": "value",
+    "id": "rvfgktihnwylbrcwkhdzymub"
+  },
+  {
+    "createdAt": 1668334946841,
+    "updatedAt": 1668334946841,
+    "deletedAt": 0,
+    "createdFirstAt": 1668334946841,
+    "name": "readCsvFile",
+    "slug": "read-csv-file",
+    "operationRelativeTypescriptFilePath": "src/readCsvFile.ts",
+    "comments": [],
+    "type": "value",
+    "id": "lyepgcbflifydwptbhshkzxu"
+  },
+  {
+    "createdAt": 1668334946841,
+    "updatedAt": 1668334946841,
+    "deletedAt": 0,
+    "createdFirstAt": 1668334946841,
+    "name": "readCsvFileSync",
+    "slug": "read-csv-file-sync",
+    "operationRelativeTypescriptFilePath": "src/readCsvFile.ts",
+    "comments": [],
+    "type": "value",
+    "id": "jqtvbdmodvoozkkbdsuqyfqd"
+  },
+  {
+    "createdAt": 1668334946841,
+    "updatedAt": 1668334946841,
+    "deletedAt": 0,
+    "createdFirstAt": 1668334946841,
+    "name": "test",
+    "slug": "test",
+    "operationRelativeTypescriptFilePath": "src/readCsvFile.ts",
+    "comments": [],
+    "type": "value",
+    "id": "isongghmzccfothofjsacwvf"
+  }
+]

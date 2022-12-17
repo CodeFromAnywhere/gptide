@@ -1,0 +1,24 @@
+{
+  "createdAt": 1668448614845,
+  "updatedAt": 1668448614845,
+  "deletedAt": 0,
+  "createdFirstAt": 1668448614845,
+  "classification": "const",
+  "comments": [],
+  "isExported": false,
+  "name": "wordArray",
+  "slug": "word-array",
+  "operationRelativeTypescriptFilePath": "src/cli/yo.cli.ts",
+  "type": {
+    "rawType": "any",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "value": "process.argv.slice(2)",
+  "description": "",
+  "id": "vpcxfqjsbcktfmozriztfnus"
+}

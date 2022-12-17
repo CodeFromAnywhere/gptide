@@ -1,0 +1,22 @@
+[
+  {
+    "createdAt": 1671220266213,
+    "updatedAt": 1671220266213,
+    "deletedAt": 0,
+    "createdFirstAt": 1671220266213,
+    "id": "yeszpygeyhlndrgkvxkjibfp",
+    "authenticationMethods": [
+      {
+        "method": "usernamePassword",
+        "handle": "admin",
+        "encryptedCredential": "$2b$10$GpYrS5a9Vx1H0KY6ErTFuexYOHEQFwUbVzHq4wKm0z/Te/nbWxOY2",
+        "isAuthenticated": true
+      }
+    ],
+    "groupSlugs": [
+      "admin"
+    ],
+    "name": "Admin",
+    "slug": "admin"
+  }
+]

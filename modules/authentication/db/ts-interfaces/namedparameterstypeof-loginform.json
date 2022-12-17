@@ -1,0 +1,33 @@
+{
+  "createdAt": 1670528755327,
+  "updatedAt": 1670528755327,
+  "deletedAt": 0,
+  "createdFirstAt": 1670528755327,
+  "id": "namedparameterstypeof-loginform",
+  "name": "NamedParameters<typeof LoginForm>",
+  "slug": "namedparameterstypeof-loginform",
+  "operationRelativeTypescriptFilePath": "src/LoginForm.tsx",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof LoginForm>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

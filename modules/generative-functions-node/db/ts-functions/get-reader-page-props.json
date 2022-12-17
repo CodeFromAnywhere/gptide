@@ -1,0 +1,59 @@
+{
+  "createdAt": 1671230425899,
+  "updatedAt": 1671230425899,
+  "deletedAt": 0,
+  "createdFirstAt": 1671230425899,
+  "isApiExposed": true,
+  "isExported": true,
+  "groupAuthorization": {},
+  "operationRelativeTypescriptFilePath": "src/getReaderPageProps.ts",
+  "commentsInside": [],
+  "rawText": " async (\n  projectRelativeFilePath?: string,\n  /**\n   * Good to know in case the path requested can't be found (will show basePath root dir)\n   */\n  basePath?: string\n) => {\n  // console.log(\"getReaderPageProps:\", { projectRelativeFilePath });\n  const projectRoot = getProjectRoot();\n  if (!projectRoot) {\n    return { props: { notFound: true, notFoundReason: \"No projectroot\" } };\n  }\n\n  if (!projectRelativeFilePath) {\n    return {\n      props: {\n        notFound: true,\n        notFoundReason: \"No path given\",\n        projectRelativeFilePath: null,\n      },\n    };\n  }\n  const absoluteQueryPath = path.join(projectRoot, projectRelativeFilePath);\n  const pathExists = fs.existsSync(absoluteQueryPath);\n\n  const isValidPath =\n    pathExists &&\n    ((await fs.stat(absoluteQueryPath)).isFile() ||\n      (await fs.stat(absoluteQueryPath)).isDirectory());\n\n  // overwrite path if it doesn't seem to exist\n  // it seems that this works fine, but it may be much better to find the closest relative path that DOES exist instead of immediately going to the basePath. especially useful for sharing URL's while someone changed the filename, for example. you then still end up in the right folder. this dynamic resolving is quite interesting for me, so let's try to do it right!\n  const currentAbsolutePath = isValidPath\n    ? absoluteQueryPath\n    : basePath\n    ? path.join(projectRoot, basePath)\n    : projectRoot;\n\n  const stat = await fs.stat(currentAbsolutePath);\n  const isFile = stat.isFile();\n  const isFolder = stat.isDirectory();\n\n  if (!isFile && !isFolder) {\n    // should never happen\n    console.log(\n      \"Not file, not folder (shouldn't happen, unless your basePath is incorrect, maybe.\"\n    );\n    return {\n      props: { notFound: true, notFoundReason: \"Is no file or no folder\" },\n    };\n  }\n\n  const folderPath = isFile\n    ? path.parse(currentAbsolutePath).dir\n    : currentAbsolutePath;\n\n  const dirents = await fs.readdir(folderPath, {\n    withFileTypes: true,\n    encoding: \"utf8\",\n  });\n\n  const isDev = process.env.NODE_ENV === \"development\";\n\n  const readmeDirent = dirents.find(\n    (x) => x.name.toLowerCase() === \"readme.md\"\n  );\n\n  const readmePath = readmeDirent\n    ? path.join(folderPath, readmeDirent.name)\n    : undefined;\n  const readmeFrontmatter = readmePath\n    ? (await readMarkdownFile(readmePath))?.parameters\n    : undefined;\n  const canSeeFolder = readmePath\n    ? canSeeFileContent(readmeFrontmatter, isDev)\n    : true;\n  // TODO: look in all readmes from basePath until the folder we are, to see if this should be allowed to see.\n\n  const navigation: FolderContent[] = (\n    await Promise.all(\n      dirents.map(async (dirent) => {\n        // TODO: think about it. Maybe we should do something with symbolic links because we don't want to go deep forever, it could actually be nice to use this feature of the OS as well!\"\n\n        const ignoredFilesFolders = [\".DS_Store\", \".index\"];\n        if (ignoredFilesFolders.includes(dirent.name)) return;\n\n        const fullPath = path.join(folderPath, dirent.name);\n\n        const type = dirent.isDirectory()\n          ? \"folder\"\n          : dirent.isSymbolicLink()\n          ? \"link\"\n          : dirent.isFile()\n          ? \"file\"\n          : \"unknown\";\n\n        const firstFile =\n          type === \"folder\" ? await getFirstFile(fullPath) : undefined;\n\n        /**\n         * If it's a markdown file, take its parameters\n         * If it's a folder, take the parameters of the REAMDE in that folder.\n         */\n        const frontmatter =\n          getExtension(dirent.name) === \"md\"\n            ? (await readMarkdownFile(fullPath))?.parameters\n            : type === \"folder\"\n            ? (await readMarkdownFile(path.join(fullPath, \"README.md\")))\n                ?.parameters\n            : undefined;\n        const folderContent: FolderContent = {\n          type,\n          name: dirent.name,\n          firstFile,\n          frontmatter,\n\n          projectRelativePath: makeRelative(\n            path.join(folderPath, dirent.name),\n            projectRoot\n          ),\n        };\n\n        return folderContent;\n      })\n    )\n  )\n    .filter(notEmpty)\n    .map(({ frontmatter, ...other }) => {\n      const folderContent: FolderContent = {\n        ...other,\n        ...expandFrontmatter(frontmatter),\n      };\n      return folderContent;\n    })\n    .filter((file) => {\n      // filter out the files that should be HIDDEN\n      return canSeeFile(file, isDev);\n    })\n    .map(omitUndefinedValues);\n\n  const markdownParse = isFile\n    ? await readMarkdownFile(currentAbsolutePath)\n    : null;\n\n  const allowedOtherExtensions = [\".ts\", \".tsx\", \".json\"];\n\n  const pathParse = path.parse(currentAbsolutePath);\n\n  const rawContent =\n    isFile && allowedOtherExtensions.includes(pathParse.ext)\n      ? await fs.readFile(currentAbsolutePath, \"utf8\")\n      : undefined;\n\n  // TODO: in case of a folder, we might be able to show an indexed thing based on the information of this emptyness (just the files and folders around it). This could provide a lot of interesting content already.\n  const canSeeContent = canSeeFileContent(markdownParse?.parameters, isDev);\n  const fileContentString =\n    !canSeeContent || !canSeeFolder || !isFile\n      ? null\n      : markdownParse\n      ? markdownParse.raw\n      : rawContent\n      ? rawContent\n      : null;\n\n  const augmentedResult = await augmentMarkdown(fileContentString, {\n    // for now no code yet, it's too slow\n    augmentCode: false,\n    augmentContextualPrompts: false,\n    augmentContextualPromptResults: true,\n    augmentStatements: true,\n    augmentWords: true,\n    externalHost: undefined,\n    markdown_projectRelativeFilePath: currentAbsolutePath,\n  });\n\n  const props: ReaderProps = {\n    notFound: !isValidPath,\n    notFoundReason: isValidPath ? null : \"Path isn't valid\",\n    isFolder,\n    canSeeContent,\n    unauthorizedWarningMessage: canSeeContent\n      ? null\n      : \"You have to be premium to see this. [Click here to see our offers](/offers)\",\n    markdown: augmentedResult?.augmentedMarkdown || rawContent || null,\n    navigation,\n    projectRelativeFilePath,\n    actualProjectRelativeFilePath: makeRelative(\n      currentAbsolutePath,\n      projectRoot\n    ),\n    contextualPromptResults: augmentedResult?.contextualPromptResults || null,\n    contextualPromptsObject: augmentedResult?.contextualPromptsObject || null,\n  };\n\n  console.log(currentAbsolutePath, props.notFound, props.notFoundReason);\n  return { props };\n}",
+  "name": "getReaderPageProps",
+  "slug": "get-reader-page-props",
+  "parameters": [
+    {
+      "name": "projectRelativeFilePath",
+      "schema": {
+        "type": "string"
+      },
+      "simplifiedSchema": {
+        "type": "string"
+      },
+      "required": false
+    },
+    {
+      "name": "basePath",
+      "schema": {
+        "type": "string",
+        "description": "Good to know in case the path requested can't be found (will show basePath root dir)"
+      },
+      "simplifiedSchema": {
+        "fullComment": "Good to know in case the path requested can't be found (will show basePath root dir)",
+        "type": "string"
+      },
+      "required": false
+    }
+  ],
+  "description": "NB: this thing doesn't know about the basepath, it allows any path in the project.\n\nIdea: would it be easy to allow for path outside of project as well?",
+  "returnType": {
+    "rawType": "unknown",
+    "typeCoverage": 0,
+    "isArray": false,
+    "isEnum": false,
+    "isObject": false,
+    "isPrimitive": false,
+    "isEnumLiteral": false
+  },
+  "maxIndentationDepth": 8,
+  "size": {
+    "characters": 6621,
+    "lines": 199,
+    "bytes": 6621,
+    "bytesPerCharacter": 1,
+    "charactersPerLine": 33,
+    "linesPerFile": 199,
+    "numberOfFiles": 1
+  },
+  "id": "yiykxfvohxgmkcneafzfymqn"
+}

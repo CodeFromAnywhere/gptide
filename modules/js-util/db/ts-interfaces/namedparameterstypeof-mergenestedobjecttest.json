@@ -1,0 +1,33 @@
+{
+  "createdAt": 1671116971786,
+  "updatedAt": 1671116971786,
+  "deletedAt": 0,
+  "createdFirstAt": 1671116971786,
+  "id": "namedparameterstypeof-mergenestedobjecttest",
+  "name": "NamedParameters<typeof mergeNestedObjectTest>",
+  "slug": "namedparameterstypeof-mergenestedobjecttest",
+  "operationRelativeTypescriptFilePath": "src/mergeNestedObject.test.ts",
+  "hasGeneric": false,
+  "isExported": false,
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "NamedParameters<typeof mergeNestedObjectTest>",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}
