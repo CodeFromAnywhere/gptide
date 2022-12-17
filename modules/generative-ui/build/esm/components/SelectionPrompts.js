@@ -56,7 +56,7 @@ export var SelectionPrompts = function (props) {
     var showPromptAlert = usePromptResultAlert();
     var alert = useAlert();
     var selectionContextualPrompts = props.selectionContextualPrompts, contentString = props.contentString, projectRelativeFilePath = props.projectRelativeFilePath;
-    var admin = useAdmin(projectRelativeFilePath);
+    var admin = useAdmin();
     var contextSelection = useLastSelection();
     /**
      * TODO: also sort them here based on which selection you make (`.contextualContent.contextSelection`) and your settings (probably isFavorite first, but other sorting may be beneficial.

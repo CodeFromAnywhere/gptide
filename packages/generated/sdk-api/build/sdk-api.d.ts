@@ -514,24 +514,12 @@ export declare const sdk: {
     }>;
     getContextualPrompts: (contextType?: import("filename-conventions").FileType | undefined, scopeProjectRelativePath?: string | undefined, isDev?: boolean | undefined) => Promise<import("ai-types").ContextualPromptsObject>;
     getFolderRelativeScopeDbFilePath: (filename?: string | undefined) => string;
-    getReaderPageProps: (projectRelativeFilePath?: string | undefined, basePath?: string | undefined, isAdmin?: boolean | undefined) => Promise<{
-        props: {
-            notFound: boolean;
-            notFoundReason: string;
-            projectRelativeFilePath: null;
-        };
-    } | {
+    getReaderPageProps: (basePath: string, queryPath: string, isAdmin?: boolean | undefined) => Promise<{
         props: import("ai-types").ReaderProps;
     }>;
     makeMarkdownLink: (text: string, url?: string | undefined, alt?: string | undefined) => string;
     readerPageGetStaticPaths: import("next-types").GetStaticPaths<import("next-types").ParsedUrlQuery>;
     readerPageGetStaticProps: (context: import("next-types").GetStaticPropsContext<import("next-types").ParsedUrlQuery, import("next-types").PreviewData>) => Promise<{
-        props: {
-            notFound: boolean;
-            notFoundReason: string;
-            projectRelativeFilePath: null;
-        };
-    } | {
         props: import("ai-types").ReaderProps;
     }>;
     getImportedDependencies: ({ operationFolderPath, }: {

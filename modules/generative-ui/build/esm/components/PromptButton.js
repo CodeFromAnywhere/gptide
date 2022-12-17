@@ -46,7 +46,7 @@ import { NavButton } from "./NavButton";
 import { useAdmin } from "./useAdmin";
 export var PromptButton = function (props) {
     var item = props.item, markdown = props.markdown, projectRelativeFilePath = props.projectRelativeFilePath;
-    var admin = useAdmin(projectRelativeFilePath);
+    var admin = useAdmin();
     var router = useRouter();
     var showPromptAlert = usePromptResultAlert();
     var title = "".concat(item.isFavorite ? "⭐️ " : "").concat(item.title || item.name);

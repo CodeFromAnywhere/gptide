@@ -4,13 +4,7 @@ NB: this thing doesn't know about the basepath, it allows any path in the projec
 
 Idea: would it be easy to allow for path outside of project as well?
  */
-export declare const getReaderPageProps: (projectRelativeFilePath?: string, basePath?: string, isAdmin?: boolean) => Promise<{
-    props: {
-        notFound: boolean;
-        notFoundReason: string;
-        projectRelativeFilePath: null;
-    };
-} | {
+export declare const getReaderPageProps: (basePath: string, queryPath: string, isAdmin?: boolean) => Promise<{
     props: ReaderProps;
 }>;
 //# sourceMappingURL=getReaderPageProps.d.ts.map

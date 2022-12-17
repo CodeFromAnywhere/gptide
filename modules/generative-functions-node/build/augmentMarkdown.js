@@ -81,9 +81,8 @@ LATER:
 */
 var augmentMarkdown = function (markdown, config) { return __awaiter(void 0, void 0, void 0, function () {
     var _a, isAdmin, augmentCode, augmentContextualPrompts, augmentContextualPromptResults, augmentStatements, augmentWords, markdown_projectRelativeFilePath, externalHost, fileType, augmentedWordObject, _b, isDev, _c, databaseContextualPromptSlugs, contextualPromptsObject, contextualPromptResults, _d, wordMatrixs, _e, mappedWordMatrix, wordCombinations, _f, statements, _g, markdownWithCodespanAugmentation, markdownAfterContextualPromptResults, markdownAfterStatements, markdownAfterWordCombinations, augmentedMarkdown;
-    var _h;
-    return __generator(this, function (_j) {
-        switch (_j.label) {
+    return __generator(this, function (_h) {
+        switch (_h.label) {
             case 0:
                 if (!markdown || markdown.trim() === "") {
                     // no markdown, just return the input
@@ -96,34 +95,38 @@ var augmentMarkdown = function (markdown, config) { return __awaiter(void 0, voi
                 if (!augmentCode) return [3 /*break*/, 2];
                 return [4 /*yield*/, (0, augmented_word_node_1.getAugmentedWordObject)()];
             case 1:
-                _b = _j.sent();
+                _b = _h.sent();
                 return [3 /*break*/, 3];
             case 2:
                 _b = undefined;
-                _j.label = 3;
+                _h.label = 3;
             case 3:
                 augmentedWordObject = _b;
                 isDev = isAdmin || process.env.NODE_ENV !== "production";
                 return [4 /*yield*/, (0, getContextualPrompts_1.getContextualPrompts)(fileType === "other" ? undefined : fileType, undefined, isDev)];
             case 4:
-                _c = _j.sent(), databaseContextualPromptSlugs = _c.databaseContextualPromptSlugs, contextualPromptsObject = __rest(_c, ["databaseContextualPromptSlugs"]);
+                _c = _h.sent(), databaseContextualPromptSlugs = _c.databaseContextualPromptSlugs, contextualPromptsObject = __rest(_c, ["databaseContextualPromptSlugs"]);
                 if (!augmentContextualPromptResults) return [3 /*break*/, 6];
                 return [4 /*yield*/, (0, getContextualPromptResults_1.getContextualPromptResults)({
                         promptSlugs: databaseContextualPromptSlugs,
                         prompt_projectRelativePath: markdown_projectRelativeFilePath,
                     })];
             case 5:
-                _d = ((_h = (_j.sent())) === null || _h === void 0 ? void 0 : _h.filter(function (x) { return (isDev ? true : !x.isFake && x.isFavorite); })) || [];
+                _d = ((_h.sent()) || []).filter(function (x) {
+                    if (isDev)
+                        return true;
+                    return !x.isFake && x.isFavorite;
+                });
                 return [3 /*break*/, 7];
             case 6:
                 _d = [];
-                _j.label = 7;
+                _h.label = 7;
             case 7:
                 contextualPromptResults = _d;
                 if (!augmentWords) return [3 /*break*/, 9];
                 return [4 /*yield*/, database_1.db.get("WordMatrix")];
             case 8:
-                _e = (_j.sent()).map(function (x) {
+                _e = (_h.sent()).map(function (x) {
                     return (0, js_util_1.getSubsetFromObject)(x, [
                         "slug",
                         "name",
@@ -141,28 +144,28 @@ var augmentMarkdown = function (markdown, config) { return __awaiter(void 0, voi
                 return [3 /*break*/, 10];
             case 9:
                 _e = [];
-                _j.label = 10;
+                _h.label = 10;
             case 10:
                 wordMatrixs = _e;
                 mappedWordMatrix = (0, js_util_1.createMappedObject)(wordMatrixs, "slug");
                 if (!augmentWords) return [3 /*break*/, 12];
                 return [4 /*yield*/, database_1.db.get("WordCombination")];
             case 11:
-                _f = _j.sent();
+                _f = _h.sent();
                 return [3 /*break*/, 13];
             case 12:
                 _f = [];
-                _j.label = 13;
+                _h.label = 13;
             case 13:
                 wordCombinations = _f;
                 if (!augmentStatements) return [3 /*break*/, 15];
                 return [4 /*yield*/, database_1.db.get("Statement")];
             case 14:
-                _g = _j.sent();
+                _g = _h.sent();
                 return [3 /*break*/, 16];
             case 15:
                 _g = [];
-                _j.label = 16;
+                _h.label = 16;
             case 16:
                 statements = _g;
                 markdownWithCodespanAugmentation = markdown

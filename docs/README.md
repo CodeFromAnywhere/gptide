@@ -6,6 +6,8 @@ The site you're seeing now can be transformed into an IDE if you connect it with
 
 ### 1) Setup the right tools (node, yarn, etc) if you haven't already
 
+You need Chrome for this tool, please install chrome [here](https://www.google.com/chrome)
+
 [instructions here](https://codefromanywhere.com/docs/course/getting-started/installation-instructions)
 
 ### 2) Clone and open it in VSCode
@@ -26,9 +28,7 @@ yarn
 yarn dev
 ```
 
-This runs the server. Now you should be able to:
-
-Now you should be able to see different content on this site, whenever your server is running. You can create your own prompts now!
+This runs the server. Now you should be able to see different content on this site, whenever your server is running. You can create your own prompts now!
 
 Setup instructions for the GPT Captcha solving and other credentials are coming later.
 

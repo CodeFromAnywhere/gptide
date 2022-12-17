@@ -1,12 +1,6 @@
 import { GetStaticPaths, GetStaticPropsContext } from "next-types";
 import { ReaderProps } from "ai-types";
 export declare const readerPageGetStaticProps: (context: GetStaticPropsContext) => Promise<{
-    props: {
-        notFound: boolean;
-        notFoundReason: string;
-        projectRelativeFilePath: null;
-    };
-} | {
     props: ReaderProps;
 }>;
 /**

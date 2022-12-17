@@ -56,11 +56,11 @@ import { useStore } from "./store";
 import { useAdmin } from "./useAdmin";
 import { useVariantResult } from "./useVariant";
 export var VariantSelector = function (props) {
-    var projectRelativeFilePath = props.projectRelativeFilePath, contextualPromptResults = props.contextualPromptResults, folderPath = props.folderPath, isFolder = props.isFolder, filename = props.filename;
+    var contextualPromptResults = props.contextualPromptResults, folderPath = props.folderPath, isFolder = props.isFolder, filename = props.filename;
     var router = useRouter();
     var _a = useStore("generativeWeb.defaultVariant"), defaultVariant = _a[0], setDefaultVariant = _a[1];
     var _b = useStore("generativeWeb.isEditing"), isEditing = _b[0], setIsEditing = _b[1];
-    var admin = useAdmin(projectRelativeFilePath);
+    var admin = useAdmin();
     var variantResult = useVariantResult(contextualPromptResults);
     var resultItems = (contextualPromptResults === null || contextualPromptResults === void 0 ? void 0 : contextualPromptResults.map(function (x) {
         var item = {

@@ -20,7 +20,7 @@
     "hasGeneratedDependenciesIndexed": false,
     "buildResultIndexed": {
       "indexInteracesErrors": [
-        "No schema/definitions found for /Users/king/King/operations/tools/ai/generative-functions-node/src/readerPageGetStatic.ts. Error: TypeError: Invalid value used as weak map key"
+        "No schema/definitions found for /Users/king/King/operations/tools/ai/generative-functions-node/src/augmentMarkdown.ts. Error: TypeError: Cannot read properties of undefined (reading 'getId')"
       ],
       "buildSucceeded": true,
       "indexImportExportError": "",

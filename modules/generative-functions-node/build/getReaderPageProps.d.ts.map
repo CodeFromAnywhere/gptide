@@ -1,1 +1,1 @@
-{"version":3,"file":"getReaderPageProps.d.ts","sourceRoot":"","sources":["../src/getReaderPageProps.ts"],"names":[],"mappings":"AAAA,OAAO,EAAiB,WAAW,EAAE,MAAM,UAAU,CAAC;AAetD;;;;GAIG;AACH,eAAO,MAAM,kBAAkB,6BACH,MAAM,aAIrB,MAAM,YAIP,OAAO;;;;;;;;EAmMlB,CAAC"}
+{"version":3,"file":"getReaderPageProps.d.ts","sourceRoot":"","sources":["../src/getReaderPageProps.ts"],"names":[],"mappings":"AAAA,OAAO,EAAiB,WAAW,EAAE,MAAM,UAAU,CAAC;AAgBtD;;;;GAIG;AACH,eAAO,MAAM,kBAAkB,aAInB,MAAM,aAIL,MAAM,YAIP,OAAO;;EAiKlB,CAAC"}

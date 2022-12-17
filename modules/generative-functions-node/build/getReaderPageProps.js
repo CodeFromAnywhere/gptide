@@ -65,97 +65,64 @@ var get_path_1 = require("get-path");
 var js_util_1 = require("js-util");
 var read_markdown_file_1 = require("read-markdown-file");
 var augmentMarkdown_1 = require("./augmentMarkdown");
+var findClosestAbsolutePath_1 = require("./findClosestAbsolutePath");
 var general_1 = require("./general");
 /**
 NB: this thing doesn't know about the basepath, it allows any path in the project.
 
 Idea: would it be easy to allow for path outside of project as well?
  */
-var getReaderPageProps = function (projectRelativeFilePath, 
+var getReaderPageProps = function (
 /**
- * Good to know in case the path requested can't be found (will show basePath root dir)
+ * BasePath for this project
  */
 basePath, 
+/**
+ * QueryPath as in the URL
+ */
+queryPath, 
 /**
  * If true, isDev will be overwritten to be false, even in prod
  */
 isAdmin) { return __awaiter(void 0, void 0, void 0, function () {
-    var projectRoot, absoluteQueryPath, pathExists, isValidPath, _a, _b, currentAbsolutePath, stat, isFile, isFolder, folderPath, dirents, isDev, readmeDirent, readmePath, readmeFrontmatter, _c, canSeeFolder, navigation, markdownParse, _d, allowedOtherExtensions, pathParse, rawContent, _e, canSeeContent, fileContentString, augmentedResult, props;
-    var _f;
-    return __generator(this, function (_g) {
-        switch (_g.label) {
+    var projectRoot, expectedAbsolutePath, _a, absoluteQueryPath, isFile, isFolder, isValidPath, folderPath, dirents, isDev, readmeDirent, readmePath, readmeFrontmatter, _b, canSeeFolder, navigation, markdownParse, _c, allowedOtherExtensions, pathParse, rawContent, _d, canSeeContent, fileContentString, augmentedResult, props;
+    var _e;
+    return __generator(this, function (_f) {
+        switch (_f.label) {
             case 0:
                 projectRoot = (0, get_path_1.getProjectRoot)();
                 if (!projectRoot) {
                     return [2 /*return*/, { props: { notFound: true, notFoundReason: "No projectroot" } }];
                 }
-                if (!projectRelativeFilePath) {
-                    return [2 /*return*/, {
-                            props: {
-                                notFound: true,
-                                notFoundReason: "No path given",
-                                projectRelativeFilePath: null,
-                            },
-                        }];
-                }
-                absoluteQueryPath = fs_util_1.path.join(projectRoot, projectRelativeFilePath);
-                pathExists = fs_util_1.fs.existsSync(absoluteQueryPath);
-                _a = pathExists;
-                if (!_a) return [3 /*break*/, 4];
-                return [4 /*yield*/, fs_util_1.fs.stat(absoluteQueryPath)];
+                expectedAbsolutePath = fs_util_1.path.join(projectRoot, basePath, queryPath);
+                return [4 /*yield*/, (0, findClosestAbsolutePath_1.findClosestAbsolutePath)(expectedAbsolutePath)];
             case 1:
-                _b = (_g.sent()).isFile();
-                if (_b) return [3 /*break*/, 3];
-                return [4 /*yield*/, fs_util_1.fs.stat(absoluteQueryPath)];
-            case 2:
-                _b = (_g.sent()).isDirectory();
-                _g.label = 3;
-            case 3:
-                _a = (_b);
-                _g.label = 4;
-            case 4:
-                isValidPath = _a;
-                currentAbsolutePath = isValidPath
-                    ? absoluteQueryPath
-                    : basePath
-                        ? fs_util_1.path.join(projectRoot, basePath)
-                        : projectRoot;
-                return [4 /*yield*/, fs_util_1.fs.stat(currentAbsolutePath)];
-            case 5:
-                stat = _g.sent();
-                isFile = stat.isFile();
-                isFolder = stat.isDirectory();
-                if (!isFile && !isFolder) {
-                    // should never happen
-                    console.log("Not file, not folder (shouldn't happen, unless your basePath is incorrect, maybe.");
-                    return [2 /*return*/, {
-                            props: { notFound: true, notFoundReason: "Is no file or no folder" },
-                        }];
-                }
+                _a = _f.sent(), absoluteQueryPath = _a.absoluteQueryPath, isFile = _a.isFile, isFolder = _a.isFolder;
+                isValidPath = absoluteQueryPath === expectedAbsolutePath;
                 folderPath = isFile
-                    ? fs_util_1.path.parse(currentAbsolutePath).dir
-                    : currentAbsolutePath;
+                    ? fs_util_1.path.parse(absoluteQueryPath).dir
+                    : absoluteQueryPath;
                 return [4 /*yield*/, fs_util_1.fs.readdir(folderPath, {
                         withFileTypes: true,
                         encoding: "utf8",
                     })];
-            case 6:
-                dirents = _g.sent();
+            case 2:
+                dirents = _f.sent();
                 isDev = process.env.NODE_ENV === "development";
                 readmeDirent = dirents.find(function (x) { return x.name.toLowerCase() === "readme.md"; });
                 readmePath = readmeDirent
                     ? fs_util_1.path.join(folderPath, readmeDirent.name)
                     : undefined;
-                if (!readmePath) return [3 /*break*/, 8];
+                if (!readmePath) return [3 /*break*/, 4];
                 return [4 /*yield*/, (0, read_markdown_file_1.readMarkdownFile)(readmePath)];
-            case 7:
-                _c = (_f = (_g.sent())) === null || _f === void 0 ? void 0 : _f.parameters;
-                return [3 /*break*/, 9];
-            case 8:
-                _c = undefined;
-                _g.label = 9;
-            case 9:
-                readmeFrontmatter = _c;
+            case 3:
+                _b = (_e = (_f.sent())) === null || _e === void 0 ? void 0 : _e.parameters;
+                return [3 /*break*/, 5];
+            case 4:
+                _b = undefined;
+                _f.label = 5;
+            case 5:
+                readmeFrontmatter = _b;
                 canSeeFolder = readmePath
                     ? (0, general_1.canSeeFileContent)(readmeFrontmatter, isDev)
                     : true;
@@ -216,8 +183,8 @@ isAdmin) { return __awaiter(void 0, void 0, void 0, function () {
                             }
                         });
                     }); }))];
-            case 10:
-                navigation = (_g.sent())
+            case 6:
+                navigation = (_f.sent())
                     .filter(js_util_1.notEmpty)
                     .map(function (_a) {
                     var frontmatter = _a.frontmatter, other = __rest(_a, ["frontmatter"]);
@@ -229,28 +196,28 @@ isAdmin) { return __awaiter(void 0, void 0, void 0, function () {
                     return (0, general_1.canSeeFile)(file, isDev);
                 })
                     .map(js_util_1.omitUndefinedValues);
-                if (!isFile) return [3 /*break*/, 12];
-                return [4 /*yield*/, (0, read_markdown_file_1.readMarkdownFile)(currentAbsolutePath)];
-            case 11:
-                _d = _g.sent();
-                return [3 /*break*/, 13];
-            case 12:
-                _d = null;
-                _g.label = 13;
-            case 13:
-                markdownParse = _d;
+                if (!isFile) return [3 /*break*/, 8];
+                return [4 /*yield*/, (0, read_markdown_file_1.readMarkdownFile)(absoluteQueryPath)];
+            case 7:
+                _c = _f.sent();
+                return [3 /*break*/, 9];
+            case 8:
+                _c = null;
+                _f.label = 9;
+            case 9:
+                markdownParse = _c;
                 allowedOtherExtensions = [".ts", ".tsx", ".json"];
-                pathParse = fs_util_1.path.parse(currentAbsolutePath);
-                if (!(isFile && allowedOtherExtensions.includes(pathParse.ext))) return [3 /*break*/, 15];
-                return [4 /*yield*/, fs_util_1.fs.readFile(currentAbsolutePath, "utf8")];
-            case 14:
-                _e = _g.sent();
-                return [3 /*break*/, 16];
-            case 15:
-                _e = undefined;
-                _g.label = 16;
-            case 16:
-                rawContent = _e;
+                pathParse = fs_util_1.path.parse(absoluteQueryPath);
+                if (!(isFile && allowedOtherExtensions.includes(pathParse.ext))) return [3 /*break*/, 11];
+                return [4 /*yield*/, fs_util_1.fs.readFile(absoluteQueryPath, "utf8")];
+            case 10:
+                _d = _f.sent();
+                return [3 /*break*/, 12];
+            case 11:
+                _d = undefined;
+                _f.label = 12;
+            case 12:
+                rawContent = _d;
                 canSeeContent = (0, general_1.canSeeFileContent)(markdownParse === null || markdownParse === void 0 ? void 0 : markdownParse.parameters, isDev);
                 fileContentString = !canSeeContent || !canSeeFolder || !isFile
                     ? null
@@ -268,13 +235,15 @@ isAdmin) { return __awaiter(void 0, void 0, void 0, function () {
                         augmentStatements: true,
                         augmentWords: true,
                         externalHost: undefined,
-                        markdown_projectRelativeFilePath: (0, fs_util_js_1.makeRelative)(currentAbsolutePath, projectRoot),
+                        markdown_projectRelativeFilePath: (0, fs_util_js_1.makeRelative)(absoluteQueryPath, projectRoot),
                     })];
-            case 17:
-                augmentedResult = _g.sent();
+            case 13:
+                augmentedResult = _f.sent();
                 props = {
                     notFound: !isValidPath,
-                    notFoundReason: isValidPath ? null : "Path isn't valid",
+                    notFoundReason: isValidPath
+                        ? null
+                        : "Path isn't valid: ".concat(expectedAbsolutePath, ". We found ").concat(absoluteQueryPath),
                     isFolder: isFolder,
                     canSeeContent: canSeeContent,
                     unauthorizedWarningMessage: canSeeContent
@@ -282,12 +251,10 @@ isAdmin) { return __awaiter(void 0, void 0, void 0, function () {
                         : "You have to be premium to see this. [Click here to see our offers](/offers)",
                     markdown: (augmentedResult === null || augmentedResult === void 0 ? void 0 : augmentedResult.augmentedMarkdown) || rawContent || null,
                     navigation: navigation,
-                    projectRelativeFilePath: projectRelativeFilePath,
-                    actualProjectRelativeFilePath: (0, fs_util_js_1.makeRelative)(currentAbsolutePath, projectRoot),
+                    actualProjectRelativeFilePath: (0, fs_util_js_1.makeRelative)(absoluteQueryPath, projectRoot),
                     contextualPromptResults: (augmentedResult === null || augmentedResult === void 0 ? void 0 : augmentedResult.contextualPromptResults) || null,
                     contextualPromptsObject: (augmentedResult === null || augmentedResult === void 0 ? void 0 : augmentedResult.contextualPromptsObject) || null,
                 };
-                console.log(currentAbsolutePath, props.notFound, props.notFoundReason);
                 return [2 /*return*/, { props: props }];
         }
     });

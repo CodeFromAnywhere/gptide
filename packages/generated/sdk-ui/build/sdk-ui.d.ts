@@ -530,7 +530,7 @@ export declare const sdk: {
         projectRelativeFilePath?: string | undefined;
     }) => JSX.Element;
     setConfig: (apiUrl: string, disableAdmin: boolean) => void;
-    useAdmin: (projectRelativeFilePath?: string | undefined) => {
+    useAdmin: () => {
         isAdminActive: boolean;
         isLoading?: boolean | undefined;
         refetch?: (<TPageData>(options?: (import("react-query").RefetchOptions & import("react-query").RefetchQueryFilters<TPageData>) | undefined) => Promise<import("react-query").QueryObserverResult<import("api-types").ApiReturnType<"getReaderPageProps">, unknown>>) | undefined;

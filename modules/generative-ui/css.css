@@ -635,6 +635,11 @@ video {
   font-weight: 700;
 }
 
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -662,6 +667,11 @@ video {
 }
 
 @media not all and (min-width: 1024px) {
+  .max-lg\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .max-lg\:hidden {
     display: none;
   }
@@ -677,6 +687,11 @@ video {
   .lg\:mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+  }
+
+  .lg\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .lg\:block {

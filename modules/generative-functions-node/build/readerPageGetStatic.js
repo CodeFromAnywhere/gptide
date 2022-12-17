@@ -44,30 +44,27 @@ var get_path_1 = require("get-path");
 var fs_util_js_1 = require("fs-util-js");
 var js_util_1 = require("js-util");
 var readerPageGetStaticProps = function (context) { return __awaiter(void 0, void 0, void 0, function () {
-    var projectRoot, props, queryPath, realQueryPath, basePath, realBasePath, absoluteQueryPath, projectRelativeFilePath, staticPropResult, _a;
+    var projectRoot, props, basePath, queryPath, realQueryPathArray, realQueryPath, staticPropResult, _a;
     var _b;
     return __generator(this, function (_c) {
         switch (_c.label) {
             case 0:
                 projectRoot = (0, get_path_1.getProjectRoot)();
                 if (!projectRoot) {
+                    // NB: this can happen on revalidation and blocked static requests, because we aren't using .projectRoot file anywhere. It's fine
                     console.log("NO PROJECTROOT");
                     props = {
                         notFound: true,
-                        notFoundReason: "No projectroot",
+                        notFoundReason: "This file cannot be found.",
                     };
                     return [2 /*return*/, { props: props }];
                 }
-                queryPath = (_b = context.params) === null || _b === void 0 ? void 0 : _b.queryPath;
-                realQueryPath = queryPath ? (0, js_util_1.makeArray)(queryPath).join("/") : "";
                 basePath = process.env.NEXT_PUBLIC_BASEPATH;
-                realBasePath = basePath
-                    ? fs_util_1.path.join(projectRoot, basePath)
-                    : projectRoot;
-                absoluteQueryPath = fs_util_1.path.join(realBasePath, realQueryPath);
-                projectRelativeFilePath = (0, fs_util_js_1.makeRelative)(absoluteQueryPath, projectRoot);
+                queryPath = (_b = context.params) === null || _b === void 0 ? void 0 : _b.queryPath;
+                realQueryPathArray = queryPath ? (0, js_util_1.makeArray)(queryPath) : [];
+                realQueryPath = realQueryPathArray.join("/");
                 _a = js_util_1.omitUndefinedValues;
-                return [4 /*yield*/, (0, getReaderPageProps_1.getReaderPageProps)(projectRelativeFilePath, basePath)];
+                return [4 /*yield*/, (0, getReaderPageProps_1.getReaderPageProps)(basePath || "", realQueryPath, false)];
             case 1:
                 staticPropResult = _a.apply(void 0, [_c.sent()]);
                 return [2 /*return*/, staticPropResult];
@@ -91,8 +88,6 @@ var readerPageGetStaticPaths = function () { return __awaiter(void 0, void 0, vo
         switch (_a.label) {
             case 0:
                 basePath = process.env.NEXT_PUBLIC_BASEPATH;
-                // can probably also fetch the domain using the api, right? I might be able to determine what the basepath is based on an environment variable.
-                console.log({ basePath: basePath });
                 projectRoot = (0, get_path_1.getProjectRoot)();
                 if (!projectRoot) {
                     console.log("NO PROJECTROOT");

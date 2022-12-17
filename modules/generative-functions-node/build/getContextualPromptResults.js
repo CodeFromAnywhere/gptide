@@ -58,8 +58,10 @@ var getContextualPromptResults = function (config) { return __awaiter(void 0, vo
             case 0:
                 _a = (0, js_util_1.destructureOptionalObject)(config), prompt_projectRelativePath = _a.prompt_projectRelativePath, promptSlugs = _a.promptSlugs;
                 projectRoot = (0, get_path_1.getProjectRoot)();
-                if (!projectRoot)
+                if (!projectRoot) {
+                    console.log("NO projectroot in getContextualPromptResults.ts");
                     return [2 /*return*/, null];
+                }
                 prompt_absolutePath = prompt_projectRelativePath
                     ? fs_util_1.path.join(projectRoot, prompt_projectRelativePath)
                     : undefined;
@@ -102,6 +104,11 @@ var getContextualPromptResults = function (config) { return __awaiter(void 0, vo
                     : onlyForPath;
                 if (!prompt_projectRelativePath || !pathParse || !prompt_absolutePath) {
                     // we don't need the .index one
+                    console.log("No .index needed", {
+                        prompt_projectRelativePath: prompt_projectRelativePath,
+                        pathParse: pathParse,
+                        prompt_absolutePath: prompt_absolutePath,
+                    });
                     return [2 /*return*/, onlyForPrompts];
                 }
                 contextualPromptResultsJsonPath = isFile
@@ -111,6 +118,9 @@ var getContextualPromptResults = function (config) { return __awaiter(void 0, vo
                         : undefined;
                 if (!contextualPromptResultsJsonPath ||
                     !fs_util_1.fs.existsSync(contextualPromptResultsJsonPath)) {
+                    console.log("results json path doesn't exist", {
+                        contextualPromptResultsJsonPath: contextualPromptResultsJsonPath,
+                    });
                     return [2 /*return*/, onlyForPrompts];
                 }
                 return [4 /*yield*/, (0, read_json_file_1.readJsonFile)(contextualPromptResultsJsonPath)];

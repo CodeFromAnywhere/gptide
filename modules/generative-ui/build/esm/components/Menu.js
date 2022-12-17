@@ -47,8 +47,8 @@ import { useAlert } from "react-with-native-alert";
 import { makeRelative } from "fs-util-js";
 import { useAdmin } from "./useAdmin";
 export var Menu = function (props) {
-    var projectRelativeFilePath = props.projectRelativeFilePath, isFolder = props.isFolder, navigation = props.navigation, folderPath = props.folderPath, filename = props.filename, contextualPromptsObject = props.contextualPromptsObject, fileContextualPromptResults = props.fileContextualPromptResults, selectionContextualPromptResults = props.selectionContextualPromptResults, thePrompts = props.thePrompts, notFound = props.notFound;
-    var admin = useAdmin(projectRelativeFilePath);
+    var isFolder = props.isFolder, navigation = props.navigation, folderPath = props.folderPath, filename = props.filename, contextualPromptsObject = props.contextualPromptsObject, fileContextualPromptResults = props.fileContextualPromptResults, selectionContextualPromptResults = props.selectionContextualPromptResults, thePrompts = props.thePrompts, notFound = props.notFound;
+    var admin = useAdmin();
     var basePath = process.env.NEXT_PUBLIC_BASEPATH;
     var updateFrontmatter = function (projectRelativePath, newFrontmatter) { return __awaiter(void 0, void 0, void 0, function () {
         var apiResult;
@@ -356,7 +356,7 @@ export var Menu = function (props) {
                         : "📄"
                     : "📂";
                 var basePath = process.env.NEXT_PUBLIC_BASEPATH;
-                var projectRelativePath = "".concat(basePath).concat(href.startsWith("/") ? href : "/".concat(href));
+                var projectRelativePath = "".concat(basePath || "").concat(href.startsWith("/") ? href : "/".concat(href));
                 return (React.createElement(NavButton, { openContextMenuProps: admin.isAdminActive ? openContextMenuProps : undefined, isActive: filename === navItem.name, href: href, id: projectRelativePath, title: "".concat(icon, " ").concat(navItem.name, " ").concat(extraIcons) }));
             }),
             admin.isAdminActive ? (React.createElement(React.Fragment, null,

@@ -62,11 +62,11 @@ export var ReaderPage = function (props) {
     var _c = useStore("generativeWeb.isEditing"), isEditing = _c[0], setIsEditing = _c[1];
     var _d = useStore("api.customUrl"), customUrl = _d[0], setCustomUrl = _d[1], customUrlInfo = _d[2];
     var _e = useStore("api.authToken"), _ = _e[0], setAuthToken = _e[1];
-    var admin = useAdmin(props.projectRelativeFilePath);
+    var admin = useAdmin();
     var queryPath = router.asPath.slice(1);
     var showPromptAlert = usePromptResultAlert();
     var alert = useAlert();
-    var markdown = props.markdown, contextualPromptResults = props.contextualPromptResults, contextualPromptsObject = props.contextualPromptsObject, projectRelativeFilePath = props.projectRelativeFilePath, navigation = props.navigation, isFolder = props.isFolder, canSeeContent = props.canSeeContent, unauthorizedWarningMessage = props.unauthorizedWarningMessage, notFound = props.notFound;
+    var markdown = props.markdown, actualProjectRelativeFilePath = props.actualProjectRelativeFilePath, contextualPromptResults = props.contextualPromptResults, contextualPromptsObject = props.contextualPromptsObject, navigation = props.navigation, isFolder = props.isFolder, canSeeContent = props.canSeeContent, unauthorizedWarningMessage = props.unauthorizedWarningMessage, notFound = props.notFound;
     var onFocus = function () { return __awaiter(void 0, void 0, void 0, function () {
         var localUrl, isAlive;
         return __generator(this, function (_a) {
@@ -113,11 +113,11 @@ export var ReaderPage = function (props) {
         };
     }, []);
     var projectRelativeBaseFolderPath = isFolder
-        ? projectRelativeFilePath
-        : getFolderJs(projectRelativeFilePath);
+        ? actualProjectRelativeFilePath
+        : getFolderJs(actualProjectRelativeFilePath);
     var filename = isFolder
         ? undefined
-        : getFileOrFolderName(projectRelativeFilePath);
+        : getFileOrFolderName(actualProjectRelativeFilePath);
     var thePrompts = isFolder
         ? (contextualPromptsObject === null || contextualPromptsObject === void 0 ? void 0 : contextualPromptsObject.folderContextualPrompts) || []
         : (contextualPromptsObject === null || contextualPromptsObject === void 0 ? void 0 : contextualPromptsObject.pageContextualPrompts) || [];
@@ -150,23 +150,23 @@ export var ReaderPage = function (props) {
         fileContextualPromptResults: fileContextualPromptResults,
         selectionContextualPromptResults: selectionContextualPromptResults,
         projectRelativeBaseFolderPath: projectRelativeBaseFolderPath,
-        projectRelativeMarkdownFilePath: projectRelativeFilePath,
+        projectRelativeMarkdownFilePath: actualProjectRelativeFilePath,
         disableSelectionContextMenu: true,
         selectionPrompts: contextualPromptsObject === null || contextualPromptsObject === void 0 ? void 0 : contextualPromptsObject.selectionContextualPrompts,
     };
     var renderEditContent = function () {
         return (React.createElement(Div, { className: "flex flex-1 flex-col lg:h-full lg:overflow-y-scroll" },
             React.createElement(ClickableIcon, { emoji: isEditing ? "🪄" : "✏️", onClick: function () { return setIsEditing(!isEditing); } }),
-            projectRelativeFilePath ? (React.createElement(FileWriter, { projectRelativeFilePath: projectRelativeFilePath, markdownModelName: "CreatorMarkdownFile", initialWriterView: "edit", disabledMenuItems: ["view", "presentation", "config"] })) : null));
+            actualProjectRelativeFilePath ? (React.createElement(FileWriter, { projectRelativeFilePath: actualProjectRelativeFilePath, markdownModelName: "CreatorMarkdownFile", initialWriterView: "edit", disabledMenuItems: ["view", "presentation", "config"] })) : null));
     };
     var pageContent = (React.createElement(Div, { className: "flex flex-1 flex-col lg:h-full lg:overflow-y-scroll" },
         sidebarHidden ? (React.createElement(Div, { className: "max-lg:hidden lg:block flex justify-end" },
             React.createElement(ClickableIcon, { emoji: "<<", onClick: function () { return setSidebarHidden(false); } }))) : null,
         React.createElement(BreadCrumbs, { path: queryPath }),
-        React.createElement(VariantSelector, { projectRelativeFilePath: projectRelativeFilePath, folderPath: folderPath, isFolder: isFolder, filename: filename, contextualPromptResults: fileContextualPromptResults }),
+        React.createElement(VariantSelector, { projectRelativeFilePath: actualProjectRelativeFilePath, folderPath: folderPath, isFolder: isFolder, filename: filename, contextualPromptResults: fileContextualPromptResults }),
         React.createElement(Div, { className: "p-1" },
             React.createElement(MarkdownContent, { config: markdownContentConfig, content: contentString })),
-        React.createElement(SelectionPrompts, { contentString: contentString, projectRelativeFilePath: projectRelativeFilePath, selectionContextualPrompts: (_a = props.contextualPromptsObject) === null || _a === void 0 ? void 0 : _a.selectionContextualPrompts }),
+        React.createElement(SelectionPrompts, { contentString: contentString, projectRelativeFilePath: actualProjectRelativeFilePath, selectionContextualPrompts: (_a = props.contextualPromptsObject) === null || _a === void 0 ? void 0 : _a.selectionContextualPrompts }),
         React.createElement(Div, null,
             React.createElement(P, { className: "font-bold" }, "File"),
             React.createElement(Div, { className: "flex flex-row flex-wrap" },
@@ -191,7 +191,7 @@ export var ReaderPage = function (props) {
                                     return [4 /*yield*/, processPrompt({
                                             contextualContent: {
                                                 contextContent: contentString,
-                                                context_projectRelativeFilePath: projectRelativeFilePath,
+                                                context_projectRelativeFilePath: actualProjectRelativeFilePath,
                                             },
                                             showPromptAlert: showPromptAlert,
                                             customPromptContent: customPromptContent,
@@ -205,7 +205,7 @@ export var ReaderPage = function (props) {
                     }); } })),
                 admin.isAdminActive
                     ? thePrompts.map(function (prompt) {
-                        return (React.createElement(PromptButton, { key: "prompt".concat(prompt.id), item: prompt, markdown: markdown, projectRelativeFilePath: projectRelativeFilePath }));
+                        return (React.createElement(PromptButton, { key: "prompt".concat(prompt.id), item: prompt, markdown: markdown, projectRelativeFilePath: actualProjectRelativeFilePath }));
                     })
                     : null)),
         isFolder && admin.isAdminActive ? (React.createElement(Div, null,
@@ -237,7 +237,7 @@ export var ReaderPage = function (props) {
                 React.createElement(MarkdownContent, { config: markdownContentConfig, content: result.resultText })));
         })));
     return (React.createElement(Div, { className: "lg:flex lg:flex-row h-full" },
-        React.createElement(Menu, { notFound: notFound, projectRelativeFilePath: projectRelativeFilePath, folderPath: folderPath, filename: filename, isFolder: isFolder, navigation: navigation, contextualPromptsObject: contextualPromptsObject, fileContextualPromptResults: fileContextualPromptResults, selectionContextualPromptResults: selectionContextualPromptResults, thePrompts: thePrompts }),
+        React.createElement(Menu, { notFound: notFound, projectRelativeFilePath: actualProjectRelativeFilePath, folderPath: folderPath, filename: filename, isFolder: isFolder, navigation: navigation, contextualPromptsObject: contextualPromptsObject, fileContextualPromptResults: fileContextualPromptResults, selectionContextualPromptResults: selectionContextualPromptResults, thePrompts: thePrompts }),
         isEditing ? renderEditContent() : pageContent,
         variantsOnLg));
 };
