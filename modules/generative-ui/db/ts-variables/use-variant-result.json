@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671194288277,
-  "updatedAt": 1671194288277,
+  "createdAt": 1671317460232,
+  "updatedAt": 1671317460232,
   "deletedAt": 0,
-  "createdFirstAt": 1671194288277,
+  "createdFirstAt": 1671317460232,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -29,5 +29,5 @@
   },
   "value": "(\n  fileContextualPromptResults?: ContextualPromptResult[] | null\n) => {\n  const router = useRouter();\n  const [defaultVariant] = useStore(\"generativeWeb.defaultVariant\");\n\n  /**\n   * Variant either comes from URL or from the stored default variant slug from localStorage\n   */\n  const variantResultPromptSlug = router.query?.variant\n    ? takeFirst(router.query.variant)\n    : defaultVariant\n    ? defaultVariant\n    : undefined;\n\n  const variantResult = fileContextualPromptResults?.find(\n    (x) => x.contextualPromptSlug === variantResultPromptSlug\n  );\n\n  return variantResult;\n}",
   "description": "",
-  "id": "qctnwqdisfpqgkysszvgovix"
+  "id": "gzisleremijvmnkhvbdzsjil"
 }

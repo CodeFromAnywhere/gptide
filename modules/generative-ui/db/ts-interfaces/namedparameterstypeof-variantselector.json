@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671194276258,
-  "updatedAt": 1671194276258,
+  "createdAt": 1671363923895,
+  "updatedAt": 1671363923895,
   "deletedAt": 0,
-  "createdFirstAt": 1671194276258,
+  "createdFirstAt": 1671363923895,
   "id": "namedparameterstypeof-variantselector",
   "name": "NamedParameters<typeof VariantSelector>",
   "slug": "namedparameterstypeof-variantselector",
@@ -40,9 +40,7 @@
             }
           },
           "required": [
-            "projectRelativeFilePath",
-            "folderPath",
-            "isFolder"
+            "folderPath"
           ],
           "additionalProperties": false
         }
@@ -61,7 +59,7 @@
             "properties": [
               {
                 "name": "projectRelativeFilePath",
-                "required": true,
+                "required": false,
                 "schema": {
                   "type": "string"
                 }
@@ -75,7 +73,7 @@
               },
               {
                 "name": "isFolder",
-                "required": true,
+                "required": false,
                 "schema": {
                   "type": "boolean"
                 }
@@ -320,6 +318,14 @@
                             "required": false,
                             "schema": {
                               "fullComment": "Unique ID for this thread, generated if not given to the prompt",
+                              "type": "string"
+                            }
+                          },
+                          {
+                            "name": "noteContent",
+                            "required": false,
+                            "schema": {
+                              "fullComment": "Note you can attach to the Prompt result.",
                               "type": "string"
                             }
                           }

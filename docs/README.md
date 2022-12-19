@@ -1,6 +1,6 @@
 # GPT IDE
 
-The site you're seeing now can be transformed into an IDE if you connect it with an API that you can run locally.
+The site you're seeing now can be transformed into an IDE if you connect it with an API that you can run locally. In order to do this, you can follow the below set up instructions. You don't need to be very technical for this, as long as you have a computer and know how to install some software, you should be fine!
 
 # Set up instructions
 
@@ -18,7 +18,7 @@ Other recommended devtools can be found [here](https://codefromanywhere.com/docs
 
 ## 2) Clone and open it in your code editor
 
-Open a terminal, and clone the repo. You can use [VSCode](https://code.visualstudio.com/)), or simply your terminal if you don't want to change anything.
+Open a terminal, and clone the repo. You can use [VSCode](https://code.visualstudio.com/), or simply your terminal if you don't want to change anything.
 
 ```
 git clone https://github.com/CodeFromAnywhere/gptide
@@ -56,14 +56,11 @@ You can create a new prompt with "Free-form prompt" or you can just use a pre-cr
 
 # Building your own products on top?
 
-Because it's just an API, you can build things with ChatGPT with any techstack. However, I am opinionated, and I recommend Typescript (Node.js, Next.js, and React) because I built a way to build full stack apps with that super quickly (see typerepo.com) and I've started with a course about it (see codefromanywhere.com)
+Because it's just an API, you can build things with ChatGPT with any techstack. However, I am opinionated, and I recommend Typescript (Node.js, Next.js, and React) because I built a way to build full stack apps with that super quickly (see [typerepo](https://typerepo.com)) and I've started with a course about it (see [codefromanywhere](https://codefromanywhere.com))
 
 To get started with ChatGPT, there are many ways:
 
-1. Use chat.openai.com manually. Not recommended
-2. Use the reverse-engineered API you can find open source on GitHub
-3. Use the browser-automation library you can find open source on GitHub
-
-The 3 latter ones can make you get started in a more controlled environment: you can build your own user interfaces on top of ChatGPT with React (or any other framework).
-
-Please DM me on Discord for the most recent links to these GitHub libraries.
+- Use [chat.openai.com](https://chat.openai.com/) manually. Not recommended, it is painfully slow and often down
+- Use the reverse-engineered API you can find open source [on GitHub](https://github.com/acheong08/ChatGPT) (seems archived)
+- Use the browser-automation library you can find open source [on GitHub](https://github.com/transitive-bullshit/chatgpt-api)
+- Build your system against the headless GPT IDE API. See `headless-gpt-ide.md` for more details!

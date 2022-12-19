@@ -43,13 +43,13 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 };
-import * as React from "react";
 import { api } from "api";
 import { ClickableIcon } from "clickable-icon";
 import { showStandardResponse } from "cool-toast";
 import { withoutExtension } from "fs-util-js";
 import { ALink } from "next-a-link";
-import { Div } from "react-with-native";
+import * as React from "react";
+import { Div, P } from "react-with-native";
 import { useRouter } from "react-with-native-router";
 import { Select } from "react-with-native-select";
 import { useStore } from "./store";
@@ -86,12 +86,13 @@ export var VariantSelector = function (props) {
     };
     return (React.createElement(Div, { className: " \n    lg:flex-row lg:w-full w-min" },
         React.createElement(Div, { className: "dark:bg-gray-700 dark:hover:bg-gray-600 rounded-md border border-black p-2 m-1 cursor-pointer flex flex-row" },
+            React.createElement(P, null, "Variant:"),
             React.createElement(Select, { className: "bg-transparent", title: "Test", onChange: withValue, value: items.find(function (x) { return x.value === (variantResult === null || variantResult === void 0 ? void 0 : variantResult.contextualPromptSlug); }), options: items }),
-            (variantResult === null || variantResult === void 0 ? void 0 : variantResult.id) ? (React.createElement(ALink, { href: "".concat(folderPath, "/.index/").concat(isFolder ? "" : filename ? withoutExtension(filename) : "") }, "\uD83C\uDF10")) : null,
-            ((variantResult === null || variantResult === void 0 ? void 0 : variantResult.contextualPromptSlug) || null) !== defaultVariant ? (React.createElement(ClickableIcon, { emoji: "\uD83D\uDCCC", onClick: function () {
+            (variantResult === null || variantResult === void 0 ? void 0 : variantResult.id) ? (React.createElement(ALink, { href: "".concat(folderPath, "/.index/").concat(isFolder ? "" : filename ? withoutExtension(filename) : "") }, "Go to index")) : null,
+            ((variantResult === null || variantResult === void 0 ? void 0 : variantResult.contextualPromptSlug) || null) !== defaultVariant ? (React.createElement(ClickableIcon, { emoji: "\uD83D\uDCCC Pin", onClick: function () {
                     return setDefaultVariant((variantResult === null || variantResult === void 0 ? void 0 : variantResult.contextualPromptSlug) || null);
                 } })) : null,
-            admin.isAdminActive && !variantResult ? (React.createElement(ClickableIcon, { emoji: isEditing ? "🪄" : "✏️", onClick: function () { return setIsEditing(!isEditing); } })) : null,
+            admin.isAdminActive && !variantResult ? (React.createElement(ClickableIcon, { emoji: isEditing ? "🪄 Reader" : "✏️ Writer", onClick: function () { return setIsEditing(!isEditing); } })) : null,
             variantResult && admin.isAdminActive ? (
             // delete, star/unstar
             React.createElement(Div, { className: "flex flex-row" },

@@ -19,6 +19,7 @@ export declare const operations: {
     authentication: string;
     "big-button": string;
     breadcrumbs: string;
+    "browser-types": string;
     "bundle-types": string;
     "bundle-util": string;
     "chatgpt-controller": string;
@@ -116,6 +117,7 @@ export declare const operations: {
     "port-conventions": string;
     "prompt-components": string;
     "puppeteer-utils": string;
+    "queue-types": string;
     "react-with-native": string;
     "react-with-native-alert": string;
     "react-with-native-form": string;
@@ -154,7 +156,6 @@ export declare const operations: {
     "social-media-types": string;
     "string-to-json": string;
     "text-or-binary": string;
-    timeline: string;
     "todo-types": string;
     tooltip: string;
     "try-parse-json": string;
@@ -162,7 +163,6 @@ export declare const operations: {
     "ui-util": string;
     "use-on-screen": string;
     "use-url-store": string;
-    "vscode-open": string;
     "watch-all": string;
     "watch-types": string;
     "webpage-types": string;

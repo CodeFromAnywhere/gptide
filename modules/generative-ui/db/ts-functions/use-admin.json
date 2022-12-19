@@ -1,28 +1,17 @@
 {
-  "createdAt": 1671226728499,
-  "updatedAt": 1671226728499,
+  "createdAt": 1671317447125,
+  "updatedAt": 1671317447125,
   "deletedAt": 0,
-  "createdFirstAt": 1671226728499,
+  "createdFirstAt": 1671317447125,
   "isApiExposed": true,
   "isExported": true,
   "groupAuthorization": {},
   "operationRelativeTypescriptFilePath": "src/components/useAdmin.ts",
   "commentsInside": [],
-  "rawText": " (projectRelativeFilePath?: string) => {\n  const { refetch, isLoading } = queries.useGetReaderPageProps(\n    projectRelativeFilePath,\n    process.env.NEXT_PUBLIC_BASEPATH\n  );\n\n  const meQuery = queries.useGetMeWithContext();\n\n  const isAdmin = !!meQuery.data?.result?.groups?.find(\n    (x: Group) => x.slug === \"admin\"\n  );\n\n  const [config] = useStore(\"generativeWeb.config\");\n\n  const isAdminActive = isAdmin && !config.disableAdmin;\n  const result: {\n    isAdminActive: boolean;\n    isLoading?: boolean;\n    refetch?: typeof refetch;\n  } = isAdminActive\n    ? {\n        isAdminActive,\n        isLoading,\n        refetch,\n      }\n    : { isAdminActive };\n\n  return result;\n}",
+  "rawText": " () => {\n  const queryPath = useQueryPath();\n  const { refetch, isLoading } = queries.useGetReaderPageProps(\n    process.env.NEXT_PUBLIC_BASEPATH || \"\",\n    queryPath,\n    true\n  );\n\n  const meQuery = queries.useGetMeWithContext();\n\n  const isAdmin = !!meQuery.data?.result?.groups?.find(\n    (x: Group) => x.slug === \"admin\"\n  );\n\n  const [config] = useStore(\"generativeWeb.config\");\n\n  const isAdminActive = isAdmin && !config.disableAdmin;\n  const result: {\n    isAdminActive: boolean;\n    isLoading?: boolean;\n    refetch?: typeof refetch;\n  } = isAdminActive\n    ? {\n        isAdminActive,\n        isLoading,\n        refetch,\n      }\n    : { isAdminActive };\n\n  return result;\n}",
   "name": "useAdmin",
   "slug": "use-admin",
-  "parameters": [
-    {
-      "name": "projectRelativeFilePath",
-      "schema": {
-        "type": "string"
-      },
-      "simplifiedSchema": {
-        "type": "string"
-      },
-      "required": false
-    }
-  ],
+  "parameters": [],
   "description": "Useful hook to make a static site dynamic for administrator",
   "returnType": {
     "rawType": "{ isAdminActive: boolean; isLoading?: boolean | undefined; refetch?: (<TPageData>(options?: (import(\"/Users/king/King/operations/node_modules/react-query/types/core/types\").RefetchOptions & import(\"/Users/king/King/operations/node_modules/react-query/types/core/types\").RefetchQueryFilters<TPageData>) | undefined) => Promise<import(\"/Users/king/King/operations/node_modules/react-query/types/core/types\").QueryObserverResult<TData, TError>>) | undefined; }",
@@ -81,13 +70,13 @@
   },
   "maxIndentationDepth": 4,
   "size": {
-    "characters": 736,
-    "lines": 29,
-    "bytes": 736,
+    "characters": 742,
+    "lines": 31,
+    "bytes": 742,
     "bytesPerCharacter": 1,
-    "charactersPerLine": 25,
-    "linesPerFile": 29,
+    "charactersPerLine": 24,
+    "linesPerFile": 31,
     "numberOfFiles": 1
   },
-  "id": "hgyxvigazawllnfwzakkwtnr"
+  "id": "tsjsapnbglmwawbydqmpjegn"
 }

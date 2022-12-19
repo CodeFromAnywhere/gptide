@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671208464027,
-  "updatedAt": 1671208464027,
+  "createdAt": 1671315243641,
+  "updatedAt": 1671315243641,
   "deletedAt": 0,
-  "createdFirstAt": 1671208464027,
+  "createdFirstAt": 1671315243641,
   "id": "namedparameterstypeof-getfolderrelativescopedbfilepath",
   "name": "NamedParameters<typeof getFolderRelativeScopeDbFilePath>",
   "slug": "namedparameterstypeof-getfolderrelativescopedbfilepath",

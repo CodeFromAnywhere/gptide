@@ -1,9 +1,9 @@
 [
   {
-    "createdAt": 1671193673334,
-    "updatedAt": 1671193673334,
+    "createdAt": 1671315406484,
+    "updatedAt": 1671315406484,
     "deletedAt": 0,
-    "createdFirstAt": 1671193673334,
+    "createdFirstAt": 1671315406484,
     "name": "Comment",
     "slug": "comment",
     "operationRelativeTypescriptFilePath": "src/pages/offers.tsx",
@@ -13,6 +13,6 @@
     "types": [],
     "firstLine": 4,
     "lastLine": 11,
-    "id": "swmxzjcuaxycxixxshgswmeo"
+    "id": "dturgwokaabiolfgkjahrokm"
   }
 ]

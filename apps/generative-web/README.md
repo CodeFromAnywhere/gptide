@@ -9,7 +9,7 @@ generative-web (`OperationClassification` ui-web)
 
 # Internal
 
-<details><summary>Show internal (6)</summary>
+<details><summary>Show internal (3)</summary>
     
   # `<MyApp />`
 
@@ -23,29 +23,9 @@ generative-web (`OperationClassification` ui-web)
 
 
 
-## `<SettingsPage />`
-
-| Input      |    |    |
-| ---------- | -- | -- |
-| - | | |
-| **Output** | `JSX.Element`   |    |
-
-
-
-## `<TextWriter />`
-
-| Input      |    |    |
-| ---------- | -- | -- |
-| - | | |
-| **Output** | `JSX.Element`   |    |
-
-
-
 ## 📄 getStaticPaths (exported const)
 
 ## 📄 getStaticProps (exported const)
-
-## 📄 TextWriter (exported const)
 
   </details>
 

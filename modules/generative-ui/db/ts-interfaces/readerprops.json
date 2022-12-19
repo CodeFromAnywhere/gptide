@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671228253331,
-  "updatedAt": 1671228253331,
+  "createdAt": 1671364235246,
+  "updatedAt": 1671364235246,
   "deletedAt": 0,
-  "createdFirstAt": 1671228253331,
+  "createdFirstAt": 1671364235246,
   "id": "readerprops",
   "name": "ReaderProps",
   "slug": "readerprops",
@@ -94,8 +94,9 @@
             }
           ]
         },
-        "projectRelativeFilePath": {
-          "type": "string"
+        "actualProjectRelativeFilePath": {
+          "type": "string",
+          "description": "Project relative file path that is actually used"
         },
         "navigation": {
           "type": "array",
@@ -170,9 +171,10 @@
           }
         },
         {
-          "name": "projectRelativeFilePath",
+          "name": "actualProjectRelativeFilePath",
           "required": false,
           "schema": {
+            "fullComment": "Project relative file path that is actually used",
             "type": "string"
           }
         },

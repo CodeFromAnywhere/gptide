@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export declare const MyLayout: (props: {
     pageProps: any;
     nextPage: any;

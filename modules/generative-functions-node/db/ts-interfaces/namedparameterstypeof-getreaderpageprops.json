@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671230415109,
-  "updatedAt": 1671230415109,
+  "createdAt": 1671315248521,
+  "updatedAt": 1671315248521,
   "deletedAt": 0,
-  "createdFirstAt": 1671230415109,
+  "createdFirstAt": 1671315248521,
   "id": "namedparameterstypeof-getreaderpageprops",
   "name": "NamedParameters<typeof getReaderPageProps>",
   "slug": "namedparameterstypeof-getreaderpageprops",
@@ -17,31 +17,49 @@
     "typeDefinition": {
       "type": "object",
       "properties": {
-        "projectRelativeFilePath": {
-          "type": "string"
-        },
         "basePath": {
           "type": "string",
-          "description": "Good to know in case the path requested can't be found (will show basePath root dir)"
+          "description": "BasePath for this project"
+        },
+        "queryPath": {
+          "type": "string",
+          "description": "QueryPath as in the URL"
+        },
+        "isAdmin": {
+          "type": "boolean",
+          "description": "If true, isDev will be overwritten to be false, even in prod"
         }
       },
+      "required": [
+        "basePath",
+        "queryPath"
+      ],
       "additionalProperties": false
     },
     "simplifiedSchema": {
       "properties": [
         {
-          "name": "projectRelativeFilePath",
-          "required": false,
+          "name": "basePath",
+          "required": true,
           "schema": {
+            "fullComment": "BasePath for this project",
             "type": "string"
           }
         },
         {
-          "name": "basePath",
+          "name": "queryPath",
+          "required": true,
+          "schema": {
+            "fullComment": "QueryPath as in the URL",
+            "type": "string"
+          }
+        },
+        {
+          "name": "isAdmin",
           "required": false,
           "schema": {
-            "fullComment": "Good to know in case the path requested can't be found (will show basePath root dir)",
-            "type": "string"
+            "fullComment": "If true, isDev will be overwritten to be false, even in prod",
+            "type": "boolean"
           }
         }
       ],

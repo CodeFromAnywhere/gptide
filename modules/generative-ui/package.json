@@ -36,7 +36,9 @@
     "peer-types": "0.0.1",
     "react-with-native-select": "2.0.7",
     "next": "*",
-    "react": "*"
+    "react": "*",
+    "function-form": "0.0.1",
+    "fancy-loader": "0.0.1"
   },
   "devDependencies": {
     "@types/marked": "^4.0.7",
@@ -73,37 +75,37 @@
     "hasGeneratedDependenciesIndexed": false,
     "buildResultIndexed": {
       "indexInteracesErrors": [
-        "No schema/definitions found for /Users/king/King/operations/tools/ai/generative-ui/src/components/SelectionPrompts.tsx. Error: Error: Unknown type \"function\""
+        "No schema/definitions found for /Users/king/King/operations/tools/ai/generative-ui/src/components/Shareable.tsx. Error: Error: Unknown node \"new (props: P) => Component<P, any>\" of kind \"ConstructorType\""
       ],
       "buildSucceeded": true,
       "indexImportExportError": "",
       "lintProblems": []
     },
-    "lastRebuildAt": 1671194290844,
+    "lastRebuildAt": 1671317465884,
     "sizeIndexed": {
       "codeSize": {
-        "numberOfFiles": 12,
-        "lines": 1310,
-        "characters": 40837,
-        "bytes": 40837
+        "numberOfFiles": 15,
+        "lines": 1478,
+        "characters": 45926,
+        "bytes": 45926
       },
       "dataSize": {
         "numberOfFiles": 2,
-        "lines": 228,
-        "characters": 5812,
-        "bytes": 5812
+        "lines": 237,
+        "characters": 6011,
+        "bytes": 6011
       },
       "textSize": {
         "numberOfFiles": 2,
-        "lines": 153,
-        "characters": 3285,
-        "bytes": 3285
+        "lines": 197,
+        "characters": 4192,
+        "bytes": 4192
       },
       "size": {
-        "bytes": 49934,
-        "characters": 49934,
-        "lines": 1691,
-        "numberOfFiles": 16
+        "bytes": 56129,
+        "characters": 56129,
+        "lines": 1912,
+        "numberOfFiles": 19
       }
     },
     "folderNameIndexed": "generative-ui",
@@ -137,11 +139,15 @@
       "api",
       "ClickableIcon",
       "showStandardResponse",
+      "warningToast",
       "processPrompt",
       "usePromptResultAlert",
       "Div",
+      "P",
       "useRouter",
       "Tooltip",
+      "MarkdownContent",
+      "useAlert",
       "ReaderProps",
       "BreadCrumbs",
       "ClickableIcon",
@@ -155,6 +161,9 @@
       "P",
       "useAlert",
       "useRouter",
+      "apiWithConfig",
+      "ReaderProps",
+      "queries",
       "ContextualPrompt",
       "api",
       "showStandardResponse",
@@ -165,6 +174,10 @@
       "useAlert",
       "useLastSelection",
       "setItem",
+      "Div",
+      "FunctionForm",
+      "FancyLoader",
+      "showStandardResponse",
       "createStore",
       "apiStoreInitialValues",
       "nestedMenuStoreInitialValues",
@@ -173,6 +186,8 @@
       "dbCrudInitialValues",
       "queries",
       "Group",
+      "makeArray",
+      "useRouter",
       "ContextualPromptResult",
       "takeFirst",
       "useRouter",
@@ -183,6 +198,7 @@
       "withoutExtension",
       "ALink",
       "Div",
+      "P",
       "useRouter",
       "Item",
       "Select"

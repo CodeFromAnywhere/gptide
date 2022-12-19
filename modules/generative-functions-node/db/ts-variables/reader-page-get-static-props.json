@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671223187554,
-  "updatedAt": 1671223187554,
+  "createdAt": 1671315254746,
+  "updatedAt": 1671315254746,
   "deletedAt": 0,
-  "createdFirstAt": 1671223187554,
+  "createdFirstAt": 1671315254746,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -27,7 +27,7 @@
       "type": "object"
     }
   },
-  "value": "async (\n  context: GetStaticPropsContext\n) => {\n  const projectRoot = getProjectRoot();\n  if (!projectRoot) {\n    console.log(\"NO PROJECTROOT\");\n\n    const props: ReaderProps = {\n      notFound: true,\n      notFoundReason: \"No projectroot\",\n    };\n\n    return { props };\n  }\n\n  // the queryPath from\n  const queryPath = context.params?.queryPath;\n  const realQueryPath = queryPath ? makeArray(queryPath).join(\"/\") : \"\";\n\n  const basePath = process.env.NEXT_PUBLIC_BASEPATH;\n  // can probably also fetch the domain using the api, right? I might be able to determine what the basepath is based on an environment variable.\n  // console.log({ basePath });\n\n  const realBasePath = basePath\n    ? path.join(projectRoot, basePath)\n    : projectRoot;\n\n  const absoluteQueryPath = path.join(realBasePath, realQueryPath);\n\n  const projectRelativeFilePath = makeRelative(absoluteQueryPath, projectRoot);\n\n  const staticPropResult = omitUndefinedValues(\n    await getReaderPageProps(projectRelativeFilePath, basePath)\n  );\n\n  return staticPropResult;\n\n  /*{\n    ...props,\n    // This number has a big impact on how the site works, but I think it would be great to have a once a day re-generation. The reason for this, is that the user needs to wait anyway, and isn't coming back to the same site easily. With this system we'd have a super low footprint on the api.\n\n    // TODO: when revalidating, we should always try to get the newest data throug the api (local stuff), and ensure the database gets updated with that accordingly. If that's not available, we can use the database as a fallback, so we never get a 404.\n    // revalidate: 1,\n    // if you do it live with fallback, we can't find the base rotpath\n  };*/\n}",
+  "value": "async (\n  context: GetStaticPropsContext\n) => {\n  const projectRoot = getProjectRoot();\n  if (!projectRoot) {\n    // NB: this can happen on revalidation and blocked static requests, because we aren't using .projectRoot file anywhere. It's fine\n    console.log(\"NO PROJECTROOT\");\n\n    const props: ReaderProps = {\n      notFound: true,\n      notFoundReason: \"This file cannot be found.\",\n    };\n\n    return { props };\n  }\n\n  const basePath = process.env.NEXT_PUBLIC_BASEPATH;\n\n  // the queryPath from\n  const queryPath = context.params?.queryPath;\n  const realQueryPathArray = queryPath ? makeArray(queryPath) : [];\n  const realQueryPath = realQueryPathArray.join(\"/\");\n\n  const staticPropResult = omitUndefinedValues(\n    await getReaderPageProps(basePath || \"\", realQueryPath, false)\n  );\n\n  return staticPropResult;\n}",
   "description": "",
-  "id": "jtftrpnuzlmqwevqffhfqxmj"
+  "id": "iuxysgcvmcnvkgoylupsqosl"
 }

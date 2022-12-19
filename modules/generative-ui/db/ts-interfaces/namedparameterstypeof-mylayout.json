@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671217841975,
-  "updatedAt": 1671217841975,
+  "createdAt": 1671317375526,
+  "updatedAt": 1671317375526,
   "deletedAt": 0,
-  "createdFirstAt": 1671217841975,
+  "createdFirstAt": 1671317375526,
   "id": "namedparameterstypeof-mylayout",
   "name": "NamedParameters<typeof MyLayout>",
   "slug": "namedparameterstypeof-mylayout",

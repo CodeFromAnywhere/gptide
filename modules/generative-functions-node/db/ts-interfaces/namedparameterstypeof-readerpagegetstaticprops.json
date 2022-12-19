@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671223185832,
-  "updatedAt": 1671223185832,
+  "createdAt": 1671315252230,
+  "updatedAt": 1671315252230,
   "deletedAt": 0,
-  "createdFirstAt": 1671223185832,
+  "createdFirstAt": 1671315252230,
   "id": "namedparameterstypeof-readerpagegetstaticprops",
   "name": "NamedParameters<typeof readerPageGetStaticProps>",
   "slug": "namedparameterstypeof-readerpagegetstaticprops",

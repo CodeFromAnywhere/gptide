@@ -1,14 +1,14 @@
 {
-  "createdAt": 1671226810191,
-  "updatedAt": 1671226810191,
+  "createdAt": 1671317405717,
+  "updatedAt": 1671317405717,
   "deletedAt": 0,
-  "createdFirstAt": 1671226810191,
+  "createdFirstAt": 1671317405717,
   "isApiExposed": true,
   "isExported": true,
   "groupAuthorization": {},
   "operationRelativeTypescriptFilePath": "src/components/ReaderPageNext.tsx",
   "commentsInside": [],
-  "rawText": " (props: ReaderProps) => {\n  // props provide the static data for the website\n\n  const basePath = process.env.NEXT_PUBLIC_BASEPATH;\n  const readerPageQuery = queries.useGetReaderPageProps(\n    props.projectRelativeFilePath,\n    basePath\n  );\n  const queryProps = readerPageQuery.data?.result?.props;\n\n  // either use the props returned from the query or from the static site\n  const realProps = queryProps?.projectRelativeFilePath ? queryProps : props;\n\n  return <ReaderPage {...realProps} />;\n}",
+  "rawText": " (props: ReaderProps) => {\n  // props provide the static data for the website\n  const queryPath = useQueryPath();\n  const basePath = process.env.NEXT_PUBLIC_BASEPATH;\n\n  const readerPageQuery = queries.useGetReaderPageProps(\n    basePath || \"\",\n    queryPath,\n    true\n  );\n\n  const queryProps = readerPageQuery.data?.result?.props;\n\n  // either use the props returned from the query or from the static site\n  const realProps = queryProps?.actualProjectRelativeFilePath\n    ? queryProps\n    : props;\n\n  return <ReaderPage {...realProps} />;\n}",
   "name": "ReaderPageNext",
   "slug": "reader-page-next",
   "parameters": [
@@ -80,9 +80,10 @@
             }
           },
           {
-            "name": "projectRelativeFilePath",
+            "name": "actualProjectRelativeFilePath",
             "required": false,
             "schema": {
+              "fullComment": "Project relative file path that is actually used",
               "type": "string"
             }
           },
@@ -199,13 +200,13 @@
   },
   "maxIndentationDepth": 2,
   "size": {
-    "characters": 628,
-    "lines": 15,
-    "bytes": 628,
+    "characters": 675,
+    "lines": 20,
+    "bytes": 675,
     "bytesPerCharacter": 1,
-    "charactersPerLine": 42,
-    "linesPerFile": 15,
+    "charactersPerLine": 34,
+    "linesPerFile": 20,
     "numberOfFiles": 1
   },
-  "id": "ttdfgbfqykjaxyswucbaczrh"
+  "id": "zjtcexqisemtruvumcgzdmsj"
 }

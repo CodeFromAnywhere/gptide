@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671226805420,
-  "updatedAt": 1671226805420,
+  "createdAt": 1671317403066,
+  "updatedAt": 1671317403066,
   "deletedAt": 0,
-  "createdFirstAt": 1671226805420,
+  "createdFirstAt": 1671317403066,
   "id": "namedparameterstypeof-readerpagenext",
   "name": "NamedParameters<typeof ReaderPageNext>",
   "slug": "namedparameterstypeof-readerpagenext",
@@ -94,9 +94,10 @@
                 }
               },
               {
-                "name": "projectRelativeFilePath",
+                "name": "actualProjectRelativeFilePath",
                 "required": false,
                 "schema": {
+                  "fullComment": "Project relative file path that is actually used",
                   "type": "string"
                 }
               },

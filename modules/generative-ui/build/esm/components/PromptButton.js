@@ -37,21 +37,25 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 import * as React from "react";
 import { api } from "api";
 import { ClickableIcon } from "clickable-icon";
-import { showStandardResponse } from "cool-toast";
+import { showStandardResponse, warningToast } from "cool-toast";
 import { processPrompt, usePromptResultAlert } from "prompt-components";
-import { Div } from "react-with-native";
+import { Div, P } from "react-with-native";
 import { useRouter } from "react-with-native-router";
 import { Tooltip } from "tooltip";
 import { NavButton } from "./NavButton";
 import { useAdmin } from "./useAdmin";
+import { MarkdownContent } from "markdown";
+import { useAlert } from "react-with-native-alert";
 export var PromptButton = function (props) {
     var item = props.item, markdown = props.markdown, projectRelativeFilePath = props.projectRelativeFilePath;
     var admin = useAdmin();
     var router = useRouter();
     var showPromptAlert = usePromptResultAlert();
+    var alert = useAlert();
     var title = "".concat(item.isFavorite ? "⭐️ " : "").concat(item.title || item.name);
-    return (React.createElement(Tooltip, { tooltip: admin.isAdminActive ? (React.createElement(Div, null,
-            item.title,
+    return (React.createElement(Tooltip, { hoverTimeout: 100, tooltip: admin.isAdminActive ? (React.createElement(Div, null,
+            React.createElement(P, null, title),
+            item.description ? (React.createElement(MarkdownContent, { content: item.description, config: {} })) : null,
             React.createElement(ClickableIcon, { emoji: "\uD83D\uDDD1 Delete", onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
                     var apiResult;
                     var _a, _b;
@@ -71,6 +75,25 @@ export var PromptButton = function (props) {
             React.createElement(ClickableIcon, { emoji: "\u270F\uFE0F Edit", onClick: function () {
                     // go to upsert ContextualPrompt db page.
                     router.push("/edit/ContextualPrompt?id=".concat(item.id));
+                } }),
+            React.createElement(ClickableIcon, { emoji: "\uD83D\uDCA5 Apply on folder", onClick: function () {
+                    alert === null || alert === void 0 ? void 0 : alert("Apply on folder", "You're going to apply the prompt ".concat(item.name, " on this whole folder. Are you sure?"), [
+                        { style: "cancel", text: "cancel" },
+                        {
+                            style: "default",
+                            text: "Yes",
+                            onPress: function () {
+                                warningToast("Not implemented yet. Coming soon");
+                            },
+                        },
+                        {
+                            style: "destructive",
+                            text: "Yes, recursive",
+                            onPress: function () {
+                                warningToast("Not implemented yet. Coming soon");
+                            },
+                        },
+                    ]);
                 } }))) : null, placement: "top" },
         React.createElement(NavButton, { onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
                 return __generator(this, function (_a) {
@@ -98,6 +121,6 @@ export var PromptButton = function (props) {
                             return [2 /*return*/];
                     }
                 });
-            }); }, title: title })));
+            }); }, title: item.title || item.name })));
 };
 //# sourceMappingURL=PromptButton.js.map

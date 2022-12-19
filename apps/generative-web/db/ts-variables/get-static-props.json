@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671222674667,
-  "updatedAt": 1671222674667,
+  "createdAt": 1671315392254,
+  "updatedAt": 1671315392254,
   "deletedAt": 0,
-  "createdFirstAt": 1671222674667,
+  "createdFirstAt": 1671315392254,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -29,5 +29,5 @@
   },
   "value": "readerPageGetStaticProps",
   "description": "",
-  "id": "hwhswgdmvgptawgilzwouycr"
+  "id": "xpxqbwxhmpdcoskftqffucnm"
 }

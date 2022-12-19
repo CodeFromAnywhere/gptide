@@ -26,31 +26,31 @@
       "indexImportExportError": "",
       "lintProblems": []
     },
-    "lastRebuildAt": 1671208476835,
+    "lastRebuildAt": 1671315262071,
     "sizeIndexed": {
       "codeSize": {
-        "numberOfFiles": 5,
-        "lines": 900,
-        "characters": 30718,
-        "bytes": 30718
+        "numberOfFiles": 7,
+        "lines": 952,
+        "characters": 31719,
+        "bytes": 31719
       },
       "dataSize": {
         "numberOfFiles": 2,
-        "lines": 172,
-        "characters": 5086,
-        "bytes": 5086
+        "lines": 171,
+        "characters": 5071,
+        "bytes": 5071
       },
       "textSize": {
         "numberOfFiles": 2,
-        "lines": 288,
-        "characters": 10018,
-        "bytes": 10018
+        "lines": 299,
+        "characters": 10385,
+        "bytes": 10385
       },
       "size": {
-        "bytes": 45822,
-        "characters": 45822,
-        "lines": 1360,
-        "numberOfFiles": 9
+        "bytes": 47175,
+        "characters": 47175,
+        "lines": 1422,
+        "numberOfFiles": 11
       }
     },
     "folderNameIndexed": "generative-functions-node",
@@ -68,6 +68,11 @@
       "notEmpty",
       "getAugmentedWordObject",
       "WordMatrix",
+      "fs",
+      "getFolderJs",
+      "FolderContent",
+      "fs",
+      "Frontmatter",
       "db",
       "fs",
       "path",
@@ -87,28 +92,25 @@
       "ContextualPromptsObject",
       "FolderContent",
       "ReaderProps",
-      "canSee",
       "fs",
       "path",
       "getExtension",
-      "getProjectRoot",
       "makeRelative",
+      "getProjectRoot",
       "notEmpty",
       "omitUndefinedValues",
-      "Frontmatter",
       "readMarkdownFile",
-      "ReaderProps",
       "path",
       "explore",
       "getProjectRoot",
       "makeRelative",
       "makeArray",
-      "omitUndefinedValues"
-    ],
-    "packageDependenciesIndexed": [
+      "omitUndefinedValues",
       "GetStaticPaths",
-      "GetStaticProps"
-    ]
+      "GetStaticPropsContext",
+      "ReaderProps"
+    ],
+    "packageDependenciesIndexed": []
   },
   "dependencies": {
     "ai-types": "0.0.1",

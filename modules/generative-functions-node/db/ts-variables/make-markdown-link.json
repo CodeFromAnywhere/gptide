@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671291483673,
-  "updatedAt": 1671291483673,
+  "createdAt": 1671315229686,
+  "updatedAt": 1671315229686,
   "deletedAt": 0,
-  "createdFirstAt": 1671291483673,
+  "createdFirstAt": 1671315229686,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -29,5 +29,5 @@
   },
   "value": "(text: string, url?: string, alt?: string) => {\n  return `[${text}](${url || \"#\"}${\n    alt ? ` \"${alt.replaceAll(\"\\n\", \"<br>\").replaceAll('\"', '\\\\\"')}\"` : \"\"\n  })`;\n}",
   "description": "function that writes markdown for a text + url + alt. This may differ per platform in the end, for now I'll use my own: `[\"text\"(alt)](url)`",
-  "id": "zbkotudlobogqevmlmiwevyd"
+  "id": "ajmqxgpgrsqlaatlogohaksw"
 }

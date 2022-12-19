@@ -6,15 +6,6 @@ generative-ui (`OperationClassification` ui-esm)
 
 # Api reference
 
-## `<Dataset />`
-
-| Input      |    |    |
-| ---------- | -- | -- |
-| - | | |
-| **Output** | `JSX.Element`   |    |
-
-
-
 ## `<MyLayout />`
 
 | Input      |    |    |
@@ -24,33 +15,24 @@ generative-ui (`OperationClassification` ui-esm)
 
 
 
-## setConfig()
+## `<SettingsPage />`
 
 | Input      |    |    |
 | ---------- | -- | -- |
-| apiUrl | string |  |,| disableAdmin | boolean |  |
-| **Output** |    |    |
+| - | | |
+| **Output** | `JSX.Element`   |    |
 
 
-
-## 📄 Dataset (exported const)
 
 ## 📄 MyLayout (exported const)
 
-## 📄 setConfig (exported const)
+## 📄 SettingsPage (exported const)
 
-# Internal
-
-<details><summary>Show internal (17)</summary>
-    
-  # `<Menu />`
-
-
-
+## `<Dataset />`
 
 | Input      |    |    |
 | ---------- | -- | -- |
-| props | { projectRelativeFilePath: string, <br />folderPath?: string, <br />filename?: string, <br />isFolder?: boolean, <br />navigation: `FolderContent`[], <br />contextualPromptsObject: {  }, <br />fileContextualPromptResults?: `ContextualPromptResult`[], <br />thePrompts: `ContextualPrompt`[], <br />selectionContextualPromptResults?: `ContextualPromptResult`[], <br /> } |  |
+| - | | |
 | **Output** | `JSX.Element`   |    |
 
 
@@ -64,11 +46,47 @@ generative-ui (`OperationClassification` ui-esm)
 
 
 
+## `<ReaderPageNext />`
+
+ReaderPage to export for next project. Uses either the props from the next server, or if they're available, the props from the query.
+
+
+| Input      |    |    |
+| ---------- | -- | -- |
+| props | `ReaderProps` |  |
+| **Output** | `JSX.Element`   |    |
+
+
+
+## 📄 Dataset (exported const)
+
+## 📄 NavButton (exported const)
+
+## 📄 ReaderPageNext (exported const)
+
+ReaderPage to export for next project. Uses either the props from the next server, or if they're available, the props from the query.
+
+# Internal
+
+<details><summary>Show internal (19)</summary>
+    
+  # `<Menu />`
+
+
+
+
+| Input      |    |    |
+| ---------- | -- | -- |
+| props | { notFound?: boolean, <br />projectRelativeFilePath?: string, <br />folderPath?: string, <br />filename?: string, <br />isFolder?: boolean, <br />navigation?: `FolderContent`[], <br />contextualPromptsObject?: {  }, <br />fileContextualPromptResults?: `ContextualPromptResult`[], <br />thePrompts: `ContextualPrompt`[], <br />selectionContextualPromptResults?: `ContextualPromptResult`[], <br /> } |  |
+| **Output** | `JSX.Element`   |    |
+
+
+
 ## `<PromptButton />`
 
 | Input      |    |    |
 | ---------- | -- | -- |
-| props | { item: `ContextualPrompt`, <br />markdown: string, <br />projectRelativeFilePath: string, <br /> } |  |
+| props | { item: `ContextualPrompt`, <br />markdown?: string, <br />projectRelativeFilePath?: string, <br /> } |  |
 | **Output** | `JSX.Element`   |    |
 
 
@@ -91,6 +109,15 @@ generative-ui (`OperationClassification` ui-esm)
 
 
 
+## setConfig()
+
+| Input      |    |    |
+| ---------- | -- | -- |
+| apiUrl | string |  |,| disableAdmin | boolean |  |
+| **Output** |    |    |
+
+
+
 ## useAdmin()
 
 Useful hook to make a static site dynamic for administrator
@@ -98,8 +125,20 @@ Useful hook to make a static site dynamic for administrator
 
 | Input      |    |    |
 | ---------- | -- | -- |
-| projectRelativeFilePath | string |  |
+| - | | |
 | **Output** | { isAdminActive: boolean, <br />isLoading?: boolean, <br />refetch?: {  }, <br /> }   |    |
+
+
+
+## useQueryPath()
+
+Returns the queryPath of your URL without everything after ? and #
+
+
+| Input      |    |    |
+| ---------- | -- | -- |
+| - | | |
+| **Output** |    |    |
 
 
 
@@ -116,14 +155,12 @@ Useful hook to make a static site dynamic for administrator
 
 | Input      |    |    |
 | ---------- | -- | -- |
-| props | { projectRelativeFilePath: string, <br />folderPath: string, <br />isFolder: boolean, <br />filename?: string, <br />contextualPromptResults?: `ContextualPromptResult`[], <br /> } |  |
+| props | { projectRelativeFilePath?: string, <br />folderPath: string, <br />isFolder?: boolean, <br />filename?: string, <br />contextualPromptResults?: `ContextualPromptResult`[], <br /> } |  |
 | **Output** | `JSX.Element`   |    |
 
 
 
 ## 📄 Menu (exported const)
-
-## 📄 NavButton (exported const)
 
 ## 📄 PromptButton (exported const)
 
@@ -131,11 +168,18 @@ Useful hook to make a static site dynamic for administrator
 
 ## 📄 SelectionPrompts (exported const)
 
+## 📄 setConfig (exported const)
+
 ## 📄 { StoreProvider, useStore } (exported const)
 
 ## 📄 useAdmin (exported const)
 
 Useful hook to make a static site dynamic for administrator
+
+
+## 📄 useQueryPath (exported const)
+
+Returns the queryPath of your URL without everything after ? and #
 
 
 ## 📄 useVariantResult (exported const)

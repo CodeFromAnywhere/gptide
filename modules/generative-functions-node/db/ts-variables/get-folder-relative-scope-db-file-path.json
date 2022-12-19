@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671208465707,
-  "updatedAt": 1671208465707,
+  "createdAt": 1671315246450,
+  "updatedAt": 1671315246450,
   "deletedAt": 0,
-  "createdFirstAt": 1671208465707,
+  "createdFirstAt": 1671315246450,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -29,5 +29,5 @@
   },
   "value": "(filename?: string) => {\n  return filename\n    ? `.index/${filename}/contextual-prompts.json`\n    : `.index/contextual-prompts.json`;\n}",
   "description": "Function to centralise the convention of the db file location of a scoped prompt",
-  "id": "qajnqyvzezyfoknoplavorux"
+  "id": "rnzvzlcvztzpoyovdhxmjffi"
 }

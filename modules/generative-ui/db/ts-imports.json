@@ -1,9 +1,9 @@
 [
   {
-    "createdAt": 1671194232395,
-    "updatedAt": 1671194232395,
+    "createdAt": 1671317348917,
+    "updatedAt": 1671317348917,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232395,
+    "createdFirstAt": 1671317348917,
     "name": "queries",
     "slug": "queries",
     "type": "value",
@@ -14,13 +14,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "okhgnqnvmksldqlfphkrciyd"
+    "id": "gemacfdgqeumcplxrnzhpwqh"
   },
   {
-    "createdAt": 1671194232395,
-    "updatedAt": 1671194232395,
+    "createdAt": 1671317348917,
+    "updatedAt": 1671317348917,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232395,
+    "createdFirstAt": 1671317348917,
     "name": "MarkdownContent",
     "slug": "markdown-content",
     "type": "value",
@@ -31,13 +31,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "wlsromlktbtddhvbwhxnckkb"
+    "id": "jemyvvgmwdivhhnthdslprsv"
   },
   {
-    "createdAt": 1671194232395,
-    "updatedAt": 1671194232395,
+    "createdAt": 1671317348918,
+    "updatedAt": 1671317348918,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232395,
+    "createdFirstAt": 1671317348918,
     "name": "Div",
     "slug": "div",
     "type": "value",
@@ -48,13 +48,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "tpfgjqilrtagxpdzzwqdcsqy"
+    "id": "cjkqonjseosrctixfnscsfat"
   },
   {
-    "createdAt": 1671194232396,
-    "updatedAt": 1671194232396,
+    "createdAt": 1671317348918,
+    "updatedAt": 1671317348918,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232396,
+    "createdFirstAt": 1671317348918,
     "name": "ContextualPrompt",
     "slug": "contextual-prompt",
     "type": "type",
@@ -66,13 +66,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "ojjfrhkpjxynwcvupidfafxj"
+    "id": "taaqslzirbcukkegjcuyyssg"
   },
   {
-    "createdAt": 1671194232396,
-    "updatedAt": 1671194232396,
+    "createdAt": 1671317348918,
+    "updatedAt": 1671317348918,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232396,
+    "createdFirstAt": 1671317348918,
     "name": "ContextualPromptResult",
     "slug": "contextual-prompt-result",
     "type": "type",
@@ -84,13 +84,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "wocuzqvvzoglhgsevkdzbfox"
+    "id": "npzuofyoowhvuvrtembnbtmx"
   },
   {
-    "createdAt": 1671194232396,
-    "updatedAt": 1671194232396,
+    "createdAt": 1671317348918,
+    "updatedAt": 1671317348918,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232396,
+    "createdFirstAt": 1671317348918,
     "name": "ContextualPromptsObject",
     "slug": "contextual-prompts-object",
     "type": "type",
@@ -102,13 +102,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "ikozybngaptxhymaslvckqhk"
+    "id": "dmhfxjodjrudgpabezrikriz"
   },
   {
-    "createdAt": 1671194232396,
-    "updatedAt": 1671194232396,
+    "createdAt": 1671317348919,
+    "updatedAt": 1671317348919,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232396,
+    "createdFirstAt": 1671317348919,
     "name": "FolderContent",
     "slug": "folder-content",
     "type": "type",
@@ -120,13 +120,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "peqrtcknqcxxjjmcmsatmphb"
+    "id": "ngdklyilaquqzvxpwgvqktve"
   },
   {
-    "createdAt": 1671194232396,
-    "updatedAt": 1671194232396,
+    "createdAt": 1671317348919,
+    "updatedAt": 1671317348919,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232396,
+    "createdFirstAt": 1671317348919,
     "name": "api",
     "slug": "api",
     "type": "value",
@@ -137,13 +137,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "dqypogidruvbwvkjbayxluwe"
+    "id": "dpqmqmsfhdaiayznckallhbb"
   },
   {
-    "createdAt": 1671194232397,
-    "updatedAt": 1671194232397,
+    "createdAt": 1671317348919,
+    "updatedAt": 1671317348919,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232397,
+    "createdFirstAt": 1671317348919,
     "name": "showStandardResponse",
     "slug": "show-standard-response",
     "type": "value",
@@ -154,13 +154,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "dimhnqvrlztrsptdrmgfxelc"
+    "id": "rqopdhtoqvkrxbhbdcbxrvsc"
   },
   {
-    "createdAt": 1671194232397,
-    "updatedAt": 1671194232397,
+    "createdAt": 1671317348920,
+    "updatedAt": 1671317348920,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232397,
+    "createdFirstAt": 1671317348920,
     "name": "getFileOrFolderName",
     "slug": "get-file-or-folder-name",
     "type": "value",
@@ -171,13 +171,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "rgqganqqchxbhrqqnadwdokx"
+    "id": "abjwbfmslqdagtwufvjcczen"
   },
   {
-    "createdAt": 1671194232397,
-    "updatedAt": 1671194232397,
+    "createdAt": 1671317348920,
+    "updatedAt": 1671317348920,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232397,
+    "createdFirstAt": 1671317348920,
     "name": "getFolderJs",
     "slug": "get-folder-js",
     "type": "value",
@@ -188,13 +188,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "hwcfsoyfjlmhgucpiyiudgrs"
+    "id": "ciefxsmflfgljaaozizqapur"
   },
   {
-    "createdAt": 1671194232397,
-    "updatedAt": 1671194232397,
+    "createdAt": 1671317348920,
+    "updatedAt": 1671317348920,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232397,
+    "createdFirstAt": 1671317348920,
     "name": "useContextMenu",
     "slug": "use-context-menu",
     "type": "value",
@@ -205,13 +205,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "ympcpwwmrnylbktuhqxdrgff"
+    "id": "durzbbpwfuhrsbbpfdahmzlc"
   },
   {
-    "createdAt": 1671194232397,
-    "updatedAt": 1671194232397,
+    "createdAt": 1671317348920,
+    "updatedAt": 1671317348920,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232397,
+    "createdFirstAt": 1671317348920,
     "name": "notEmpty",
     "slug": "not-empty",
     "type": "value",
@@ -222,13 +222,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "otbincxfdfhsqlbmjqdycdgi"
+    "id": "cqjxjielaxwkfedzuowaewsv"
   },
   {
-    "createdAt": 1671194232397,
-    "updatedAt": 1671194232397,
+    "createdAt": 1671317348921,
+    "updatedAt": 1671317348921,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232397,
+    "createdFirstAt": 1671317348921,
     "name": "Div",
     "slug": "div",
     "type": "value",
@@ -239,13 +239,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "kjscxwwzmrsgabxykeiaqune"
+    "id": "mfymgkqsxfbbghqmovikhltm"
   },
   {
-    "createdAt": 1671194232398,
-    "updatedAt": 1671194232398,
+    "createdAt": 1671317348921,
+    "updatedAt": 1671317348921,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232398,
+    "createdFirstAt": 1671317348921,
     "name": "P",
     "slug": "p",
     "type": "value",
@@ -256,13 +256,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "aajhpmdnvriloovfakofsdsy"
+    "id": "xquzjisamrozslbzgjpufopk"
   },
   {
-    "createdAt": 1671194232398,
-    "updatedAt": 1671194232398,
+    "createdAt": 1671317348921,
+    "updatedAt": 1671317348921,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232398,
+    "createdFirstAt": 1671317348921,
     "name": "useRouter",
     "slug": "use-router",
     "module": "react-with-native-router",
@@ -272,13 +272,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "qmrzxremuhoqnwfvbbxaeqlk"
+    "id": "yvnftuuwzmstvyeipatzfwpq"
   },
   {
-    "createdAt": 1671194232398,
-    "updatedAt": 1671194232398,
+    "createdAt": 1671317348921,
+    "updatedAt": 1671317348921,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232398,
+    "createdFirstAt": 1671317348921,
     "name": "NavButton",
     "slug": "nav-button",
     "module": "./NavButton",
@@ -288,13 +288,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "hcjqmxujwlcyhxyydkqaqsln"
+    "id": "wgcrzcrumouikijnbvkaftyn"
   },
   {
-    "createdAt": 1671194232398,
-    "updatedAt": 1671194232398,
+    "createdAt": 1671317348921,
+    "updatedAt": 1671317348921,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232398,
+    "createdFirstAt": 1671317348921,
     "name": "useAlert",
     "slug": "use-alert",
     "type": "value",
@@ -305,13 +305,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "fwbefgjhbatwhnqfawayqbxt"
+    "id": "epzdtvjclpwtssqajedlkunt"
   },
   {
-    "createdAt": 1671194232398,
-    "updatedAt": 1671194232398,
+    "createdAt": 1671317348921,
+    "updatedAt": 1671317348921,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232398,
+    "createdFirstAt": 1671317348921,
     "name": "makeRelative",
     "slug": "make-relative",
     "type": "value",
@@ -322,13 +322,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "cujhfldgxadhzajjivyryxnx"
+    "id": "omqfojpzbtjdqmsuhyiymuio"
   },
   {
-    "createdAt": 1671194232398,
-    "updatedAt": 1671194232398,
+    "createdAt": 1671317348922,
+    "updatedAt": 1671317348922,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232398,
+    "createdFirstAt": 1671317348922,
     "name": "useAdmin",
     "slug": "use-admin",
     "module": "./useAdmin",
@@ -338,13 +338,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "ewpysoexvywgsodbuqdkdzbl"
+    "id": "hkxsscwbkbozxiwgufmizcmy"
   },
   {
-    "createdAt": 1671194232398,
-    "updatedAt": 1671194232398,
+    "createdAt": 1671317348922,
+    "updatedAt": 1671317348922,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232398,
+    "createdFirstAt": 1671317348922,
     "name": "AuthenticationLayout",
     "slug": "authentication-layout",
     "type": "value",
@@ -355,13 +355,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "bfrezqrzbwnpyjnksombkdux"
+    "id": "jxwpobxnzpevgqdbefjpfssi"
   },
   {
-    "createdAt": 1671194232398,
-    "updatedAt": 1671194232398,
+    "createdAt": 1671317348922,
+    "updatedAt": 1671317348922,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232398,
+    "createdFirstAt": 1671317348922,
     "name": "useRouter",
     "slug": "use-router",
     "module": "next/router",
@@ -371,13 +371,13 @@
     "classification": "package",
     "isAbsolute": true,
     "isModuleFromMonorepo": false,
-    "id": "swbbaoyxnlqpyqjdlbjaqwkn"
+    "id": "shspabaliilzevaonritgwdy"
   },
   {
-    "createdAt": 1671194232399,
-    "updatedAt": 1671194232399,
+    "createdAt": 1671317348922,
+    "updatedAt": 1671317348922,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232399,
+    "createdFirstAt": 1671317348922,
     "name": "ALink",
     "slug": "alink",
     "type": "value",
@@ -388,13 +388,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "mxemmkjncgelfjgpqshtdgjd"
+    "id": "amohkixdzgtszjjutrmhyouf"
   },
   {
-    "createdAt": 1671194232399,
-    "updatedAt": 1671194232399,
+    "createdAt": 1671317348922,
+    "updatedAt": 1671317348922,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232399,
+    "createdFirstAt": 1671317348922,
     "name": "P",
     "slug": "p",
     "type": "value",
@@ -405,13 +405,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "edhnwzwnifezaqdhndbpodck"
+    "id": "rkivbantjehfvictieaizogj"
   },
   {
-    "createdAt": 1671194232399,
-    "updatedAt": 1671194232399,
+    "createdAt": 1671317348923,
+    "updatedAt": 1671317348923,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232399,
+    "createdFirstAt": 1671317348923,
     "name": "ContextualPrompt",
     "slug": "contextual-prompt",
     "type": "type",
@@ -423,13 +423,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "gtbdadjsitbxvvekvyttqtft"
+    "id": "umnqirrhbvunmayfdzcvcfhq"
   },
   {
-    "createdAt": 1671194232399,
-    "updatedAt": 1671194232399,
+    "createdAt": 1671317348923,
+    "updatedAt": 1671317348923,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232399,
+    "createdFirstAt": 1671317348923,
     "name": "api",
     "slug": "api",
     "type": "value",
@@ -440,13 +440,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "ijqkqyurarntihhqguzpdbnp"
+    "id": "bdlvjbswktvammdhcgkjyakn"
   },
   {
-    "createdAt": 1671194232399,
-    "updatedAt": 1671194232399,
+    "createdAt": 1671317348923,
+    "updatedAt": 1671317348923,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232399,
+    "createdFirstAt": 1671317348923,
     "name": "ClickableIcon",
     "slug": "clickable-icon",
     "type": "value",
@@ -457,13 +457,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "jxkgzvubpmrmsetyavmbkaxo"
+    "id": "jeouhlvnjzvwkjygzzqftfef"
   },
   {
-    "createdAt": 1671194232399,
-    "updatedAt": 1671194232399,
+    "createdAt": 1671317348923,
+    "updatedAt": 1671317348923,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232399,
+    "createdFirstAt": 1671317348923,
     "name": "showStandardResponse",
     "slug": "show-standard-response",
     "type": "value",
@@ -474,13 +474,30 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "neekvhxmpsixkbnftvlhbrnf"
+    "id": "ekluysiklkmueugiqwtewzte"
   },
   {
-    "createdAt": 1671194232400,
-    "updatedAt": 1671194232400,
+    "createdAt": 1671317348923,
+    "updatedAt": 1671317348923,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232400,
+    "createdFirstAt": 1671317348923,
+    "name": "warningToast",
+    "slug": "warning-toast",
+    "type": "value",
+    "module": "cool-toast",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/PromptButton.tsx",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "ljhigdrxylpikhauxxlspuxz"
+  },
+  {
+    "createdAt": 1671317348924,
+    "updatedAt": 1671317348924,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348924,
     "name": "processPrompt",
     "slug": "process-prompt",
     "type": "value",
@@ -491,13 +508,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "kctfwltfruizjkrguatqngov"
+    "id": "osxdjpfgmpiyczseajdowuad"
   },
   {
-    "createdAt": 1671194232401,
-    "updatedAt": 1671194232401,
+    "createdAt": 1671317348924,
+    "updatedAt": 1671317348924,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232401,
+    "createdFirstAt": 1671317348924,
     "name": "usePromptResultAlert",
     "slug": "use-prompt-result-alert",
     "type": "value",
@@ -508,13 +525,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "hofatsumkkuvzwoofwigivrd"
+    "id": "ityudykibwlvvcouudmdmvry"
   },
   {
-    "createdAt": 1671194232401,
-    "updatedAt": 1671194232401,
+    "createdAt": 1671317348924,
+    "updatedAt": 1671317348924,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232401,
+    "createdFirstAt": 1671317348924,
     "name": "Div",
     "slug": "div",
     "type": "value",
@@ -525,13 +542,30 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "mkayvbnmhocofeemcotvqich"
+    "id": "znlmyjpiubmcisgmjmyneanq"
   },
   {
-    "createdAt": 1671194232401,
-    "updatedAt": 1671194232401,
+    "createdAt": 1671317348924,
+    "updatedAt": 1671317348924,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232401,
+    "createdFirstAt": 1671317348924,
+    "name": "P",
+    "slug": "p",
+    "type": "value",
+    "module": "react-with-native",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/PromptButton.tsx",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "dnlikpplpdvlahksydobqhui"
+  },
+  {
+    "createdAt": 1671317348925,
+    "updatedAt": 1671317348925,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348925,
     "name": "useRouter",
     "slug": "use-router",
     "module": "react-with-native-router",
@@ -541,13 +575,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "gdemormatjkauumhsxiqlklp"
+    "id": "loihotxkiiyvbetvsbdhmcxi"
   },
   {
-    "createdAt": 1671194232401,
-    "updatedAt": 1671194232401,
+    "createdAt": 1671317348925,
+    "updatedAt": 1671317348925,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232401,
+    "createdFirstAt": 1671317348925,
     "name": "Tooltip",
     "slug": "tooltip",
     "type": "value",
@@ -558,13 +592,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "mznynjcqmobdwuqnfbygtsjo"
+    "id": "yayyocktxlxosbofxgfqrlno"
   },
   {
-    "createdAt": 1671194232401,
-    "updatedAt": 1671194232401,
+    "createdAt": 1671317348925,
+    "updatedAt": 1671317348925,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232401,
+    "createdFirstAt": 1671317348925,
     "name": "NavButton",
     "slug": "nav-button",
     "module": "./NavButton",
@@ -574,13 +608,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "pjjfrtzqszrdawpivqfxfttp"
+    "id": "hgdzubjsfbfbzawtgxoecgqt"
   },
   {
-    "createdAt": 1671194232401,
-    "updatedAt": 1671194232401,
+    "createdAt": 1671317348925,
+    "updatedAt": 1671317348925,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232401,
+    "createdFirstAt": 1671317348925,
     "name": "useAdmin",
     "slug": "use-admin",
     "module": "./useAdmin",
@@ -590,13 +624,47 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "zpmpwkruihsuldheniagtgck"
+    "id": "fjngurkbdtamntlcxyfqbcuh"
   },
   {
-    "createdAt": 1671194232402,
-    "updatedAt": 1671194232402,
+    "createdAt": 1671317348925,
+    "updatedAt": 1671317348925,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232402,
+    "createdFirstAt": 1671317348925,
+    "name": "MarkdownContent",
+    "slug": "markdown-content",
+    "type": "value",
+    "module": "markdown",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/PromptButton.tsx",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "gnzmixjdmjkctjjbsriukouk"
+  },
+  {
+    "createdAt": 1671317348925,
+    "updatedAt": 1671317348925,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348925,
+    "name": "useAlert",
+    "slug": "use-alert",
+    "type": "value",
+    "module": "react-with-native-alert",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/PromptButton.tsx",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "kmoibwruybarjlqdaorostrt"
+  },
+  {
+    "createdAt": 1671317348926,
+    "updatedAt": 1671317348926,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348926,
     "name": "ReaderProps",
     "slug": "reader-props",
     "type": "type",
@@ -608,13 +676,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "xrndnihjjoerbyzfqpwevfhi"
+    "id": "gvrbaobbugfcgqjacwpfdkde"
   },
   {
-    "createdAt": 1671194232402,
-    "updatedAt": 1671194232402,
+    "createdAt": 1671317348926,
+    "updatedAt": 1671317348926,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232402,
+    "createdFirstAt": 1671317348926,
     "name": "BreadCrumbs",
     "slug": "bread-crumbs",
     "type": "value",
@@ -625,13 +693,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "aahgoybbwepfwndoboahuhay"
+    "id": "ntyjzobwqvyyxxdtegmbkuct"
   },
   {
-    "createdAt": 1671194232402,
-    "updatedAt": 1671194232402,
+    "createdAt": 1671317348926,
+    "updatedAt": 1671317348926,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232402,
+    "createdFirstAt": 1671317348926,
     "name": "ClickableIcon",
     "slug": "clickable-icon",
     "type": "value",
@@ -642,13 +710,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "fcbcxmicesddyxmsmlibamnk"
+    "id": "hdzbyigjtbbempkhrsixvkyq"
   },
   {
-    "createdAt": 1671194232402,
-    "updatedAt": 1671194232402,
+    "createdAt": 1671317348926,
+    "updatedAt": 1671317348926,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232402,
+    "createdFirstAt": 1671317348926,
     "name": "FileWriter",
     "slug": "file-writer",
     "type": "value",
@@ -659,13 +727,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "iburgaxrtpybzzahdvlpjtfp"
+    "id": "ybgashlieexbwkqxykfuzqhp"
   },
   {
-    "createdAt": 1671194232402,
-    "updatedAt": 1671194232402,
+    "createdAt": 1671317348926,
+    "updatedAt": 1671317348926,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232402,
+    "createdFirstAt": 1671317348926,
     "name": "getFileOrFolderName",
     "slug": "get-file-or-folder-name",
     "type": "value",
@@ -676,13 +744,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "roggrnivjnvmlxnzwehrsmrc"
+    "id": "knngqhdyvinubaamhkcuijcd"
   },
   {
-    "createdAt": 1671194232402,
-    "updatedAt": 1671194232402,
+    "createdAt": 1671317348926,
+    "updatedAt": 1671317348926,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232402,
+    "createdFirstAt": 1671317348926,
     "name": "getFolderJs",
     "slug": "get-folder-js",
     "type": "value",
@@ -693,13 +761,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "srgmerbuuccncgydaeqlehns"
+    "id": "ncxwyuepnaculpbsgnwhdyjl"
   },
   {
-    "createdAt": 1671194232402,
-    "updatedAt": 1671194232402,
+    "createdAt": 1671317348927,
+    "updatedAt": 1671317348927,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232402,
+    "createdFirstAt": 1671317348927,
     "name": "MarkdownContent",
     "slug": "markdown-content",
     "type": "value",
@@ -710,13 +778,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "rbtkqfxiejfqlifmarzgmbuq"
+    "id": "pefakufhjfxxqfhowjajbcdu"
   },
   {
-    "createdAt": 1671194232403,
-    "updatedAt": 1671194232403,
+    "createdAt": 1671317348927,
+    "updatedAt": 1671317348927,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232403,
+    "createdFirstAt": 1671317348927,
     "name": "processPrompt",
     "slug": "process-prompt",
     "type": "value",
@@ -727,13 +795,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "wrxyflzdwexufllrurctkugw"
+    "id": "vpxdtgfzlempfgarhipahokx"
   },
   {
-    "createdAt": 1671194232403,
-    "updatedAt": 1671194232403,
+    "createdAt": 1671317348927,
+    "updatedAt": 1671317348927,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232403,
+    "createdFirstAt": 1671317348927,
     "name": "usePromptResultAlert",
     "slug": "use-prompt-result-alert",
     "type": "value",
@@ -744,13 +812,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "knkfbrvzuqwzzsmwhkusapbj"
+    "id": "mbkohxrdmvjotzmwwmichznr"
   },
   {
-    "createdAt": 1671194232403,
-    "updatedAt": 1671194232403,
+    "createdAt": 1671317348927,
+    "updatedAt": 1671317348927,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232403,
+    "createdFirstAt": 1671317348927,
     "name": "useState",
     "slug": "use-state",
     "module": "react",
@@ -760,13 +828,13 @@
     "classification": "react",
     "isAbsolute": true,
     "isModuleFromMonorepo": false,
-    "id": "nekbxdfzyrctgkqzzkbnuzht"
+    "id": "vppdazyhtovtxbfggrcmlrcg"
   },
   {
-    "createdAt": 1671194232403,
-    "updatedAt": 1671194232403,
+    "createdAt": 1671317348927,
+    "updatedAt": 1671317348927,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232403,
+    "createdFirstAt": 1671317348927,
     "name": "Div",
     "slug": "div",
     "type": "value",
@@ -777,13 +845,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "narpmnptnhqmirhhytcafatu"
+    "id": "gqvlxcflujbdvqjaasnsogjv"
   },
   {
-    "createdAt": 1671194232403,
-    "updatedAt": 1671194232403,
+    "createdAt": 1671317348927,
+    "updatedAt": 1671317348927,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232403,
+    "createdFirstAt": 1671317348927,
     "name": "P",
     "slug": "p",
     "type": "value",
@@ -794,13 +862,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "ieuzgfvuceyzlunfnvqrgsdl"
+    "id": "vpbydnpdptuacujjkpkbzqlo"
   },
   {
-    "createdAt": 1671194232403,
-    "updatedAt": 1671194232403,
+    "createdAt": 1671317348928,
+    "updatedAt": 1671317348928,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232403,
+    "createdFirstAt": 1671317348928,
     "name": "useAlert",
     "slug": "use-alert",
     "type": "value",
@@ -811,13 +879,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "zixcpeelyfknmnhmhbbizeye"
+    "id": "frufmpblnhwjapyxcrgcwjxu"
   },
   {
-    "createdAt": 1671194232403,
-    "updatedAt": 1671194232403,
+    "createdAt": 1671317348928,
+    "updatedAt": 1671317348928,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232403,
+    "createdFirstAt": 1671317348928,
     "name": "useRouter",
     "slug": "use-router",
     "module": "react-with-native-router",
@@ -827,13 +895,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "axjtiztyktiirrwrmspvezop"
+    "id": "amjisqdjjgsxcpritbcpdybu"
   },
   {
-    "createdAt": 1671194232403,
-    "updatedAt": 1671194232403,
+    "createdAt": 1671317348928,
+    "updatedAt": 1671317348928,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232403,
+    "createdFirstAt": 1671317348928,
     "name": "Menu",
     "slug": "menu",
     "module": "./Menu",
@@ -843,13 +911,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "rofsaonyvrpmrbwuhxppsxsc"
+    "id": "yjpovhfgkqqngpaicrjyqcxi"
   },
   {
-    "createdAt": 1671194232403,
-    "updatedAt": 1671194232403,
+    "createdAt": 1671317348928,
+    "updatedAt": 1671317348928,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232403,
+    "createdFirstAt": 1671317348928,
     "name": "NavButton",
     "slug": "nav-button",
     "module": "./NavButton",
@@ -859,13 +927,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "wmfnlvzvurotfeaqojyiymbk"
+    "id": "tadqowubloiewjkgjswofnbc"
   },
   {
-    "createdAt": 1671194232404,
-    "updatedAt": 1671194232404,
+    "createdAt": 1671317348928,
+    "updatedAt": 1671317348928,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232404,
+    "createdFirstAt": 1671317348928,
     "name": "PromptButton",
     "slug": "prompt-button",
     "module": "./PromptButton",
@@ -875,13 +943,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "qryrpwziaokriuydxjumflqq"
+    "id": "syosdwxnduprhzwykpfpxtcw"
   },
   {
-    "createdAt": 1671194232404,
-    "updatedAt": 1671194232404,
+    "createdAt": 1671317348928,
+    "updatedAt": 1671317348928,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232404,
+    "createdFirstAt": 1671317348928,
     "name": "SelectionPrompts",
     "slug": "selection-prompts",
     "module": "./SelectionPrompts",
@@ -891,13 +959,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "kifayjkumwvswjrabohhpzny"
+    "id": "htthkatjyfgwsrlwowbmodxe"
   },
   {
-    "createdAt": 1671194232404,
-    "updatedAt": 1671194232404,
+    "createdAt": 1671317348929,
+    "updatedAt": 1671317348929,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232404,
+    "createdFirstAt": 1671317348929,
     "name": "useStore",
     "slug": "use-store",
     "module": "./store",
@@ -907,13 +975,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "fikjgvneczsubtuixcnusbyk"
+    "id": "vftctctcjcsueeeuzxeahaur"
   },
   {
-    "createdAt": 1671194232404,
-    "updatedAt": 1671194232404,
+    "createdAt": 1671317348929,
+    "updatedAt": 1671317348929,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232404,
+    "createdFirstAt": 1671317348929,
     "name": "useAdmin",
     "slug": "use-admin",
     "module": "./useAdmin",
@@ -923,13 +991,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "ktjkxnuxlgrsqkusftnbhtnd"
+    "id": "yviymkwxeayjeepuavpbvmkg"
   },
   {
-    "createdAt": 1671194232404,
-    "updatedAt": 1671194232404,
+    "createdAt": 1671317348929,
+    "updatedAt": 1671317348929,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232404,
+    "createdFirstAt": 1671317348929,
     "name": "useVariantResult",
     "slug": "use-variant-result",
     "module": "./useVariant",
@@ -939,13 +1007,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "fgxfazdxgajsriuamnetmcqs"
+    "id": "amopdjsxvduzsvxqiccjjoxa"
   },
   {
-    "createdAt": 1671194232404,
-    "updatedAt": 1671194232404,
+    "createdAt": 1671317348929,
+    "updatedAt": 1671317348929,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232404,
+    "createdFirstAt": 1671317348929,
     "name": "VariantSelector",
     "slug": "variant-selector",
     "module": "./VariantSelector",
@@ -955,13 +1023,97 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "vfcebyevijgqltykvnlomebh"
+    "id": "jkduwacvbyuhdjovjgqimzgm"
   },
   {
-    "createdAt": 1671194232404,
-    "updatedAt": 1671194232404,
+    "createdAt": 1671317348929,
+    "updatedAt": 1671317348929,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232404,
+    "createdFirstAt": 1671317348929,
+    "name": "apiWithConfig",
+    "slug": "api-with-config",
+    "type": "value",
+    "module": "api",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/ReaderPage.tsx",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "glgyzwtsnfuofkiddajxydyi"
+  },
+  {
+    "createdAt": 1671317348930,
+    "updatedAt": 1671317348930,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348930,
+    "name": "ReaderProps",
+    "slug": "reader-props",
+    "type": "type",
+    "hasGeneric": false,
+    "module": "ai-types",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/ReaderPageNext.tsx",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "bldspnyepmviosnhgjfwrjuw"
+  },
+  {
+    "createdAt": 1671317348930,
+    "updatedAt": 1671317348930,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348930,
+    "name": "queries",
+    "slug": "queries",
+    "type": "value",
+    "module": "api",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/ReaderPageNext.tsx",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "pzrxexutyivzsjhrshhnbmid"
+  },
+  {
+    "createdAt": 1671317348930,
+    "updatedAt": 1671317348930,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348930,
+    "name": "ReaderPage",
+    "slug": "reader-page",
+    "module": "./ReaderPage",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/ReaderPageNext.tsx",
+    "classification": "internal",
+    "isAbsolute": false,
+    "isModuleFromMonorepo": false,
+    "id": "mamwydrvaedqzekosiwjjnvw"
+  },
+  {
+    "createdAt": 1671317348930,
+    "updatedAt": 1671317348930,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348930,
+    "name": "useQueryPath",
+    "slug": "use-query-path",
+    "module": "./useQueryPath",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/ReaderPageNext.tsx",
+    "classification": "internal",
+    "isAbsolute": false,
+    "isModuleFromMonorepo": false,
+    "id": "yqhbfrktrhjadygbdhwcuwos"
+  },
+  {
+    "createdAt": 1671317348930,
+    "updatedAt": 1671317348930,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348930,
     "name": "ContextualPrompt",
     "slug": "contextual-prompt",
     "type": "type",
@@ -973,13 +1125,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "ypyifdikvlcyexurwexhmmba"
+    "id": "syqmblcwfxbyptlstivbpjqp"
   },
   {
-    "createdAt": 1671194232405,
-    "updatedAt": 1671194232405,
+    "createdAt": 1671317348930,
+    "updatedAt": 1671317348930,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232405,
+    "createdFirstAt": 1671317348930,
     "name": "api",
     "slug": "api",
     "type": "value",
@@ -990,13 +1142,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "paaeybemckecsjgbsjxlznxv"
+    "id": "bspmlkoqjqhiwhzylxbydnug"
   },
   {
-    "createdAt": 1671194232405,
-    "updatedAt": 1671194232405,
+    "createdAt": 1671317348931,
+    "updatedAt": 1671317348931,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232405,
+    "createdFirstAt": 1671317348931,
     "name": "showStandardResponse",
     "slug": "show-standard-response",
     "type": "value",
@@ -1007,13 +1159,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "lpimlgppkxqdnlsxapxgnwdd"
+    "id": "glkyvwulbmyipmmnqwycdkow"
   },
   {
-    "createdAt": 1671194232405,
-    "updatedAt": 1671194232405,
+    "createdAt": 1671317348931,
+    "updatedAt": 1671317348931,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232405,
+    "createdFirstAt": 1671317348931,
     "name": "processPrompt",
     "slug": "process-prompt",
     "type": "value",
@@ -1024,13 +1176,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "cftftdfwpvwonsikceopirba"
+    "id": "tongephjqmipswursozvvblj"
   },
   {
-    "createdAt": 1671194232405,
-    "updatedAt": 1671194232405,
+    "createdAt": 1671317348931,
+    "updatedAt": 1671317348931,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232405,
+    "createdFirstAt": 1671317348931,
     "name": "usePromptResultAlert",
     "slug": "use-prompt-result-alert",
     "type": "value",
@@ -1041,13 +1193,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "ivezowlcznlcbfawdjdelfze"
+    "id": "fjcmehxidzibwntjizcpsxtf"
   },
   {
-    "createdAt": 1671194232405,
-    "updatedAt": 1671194232405,
+    "createdAt": 1671317348931,
+    "updatedAt": 1671317348931,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232405,
+    "createdFirstAt": 1671317348931,
     "name": "Div",
     "slug": "div",
     "type": "value",
@@ -1058,13 +1210,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "ekhmyzktwzohuyjnusbeamfj"
+    "id": "yuvxedmapbjepdwedwjrlpyu"
   },
   {
-    "createdAt": 1671194232405,
-    "updatedAt": 1671194232405,
+    "createdAt": 1671317348931,
+    "updatedAt": 1671317348931,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232405,
+    "createdFirstAt": 1671317348931,
     "name": "P",
     "slug": "p",
     "type": "value",
@@ -1075,13 +1227,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "vvyuatbdqbgsmxnsidgneoqd"
+    "id": "lovabkjavtxhorvxbkplqlps"
   },
   {
-    "createdAt": 1671194232405,
-    "updatedAt": 1671194232405,
+    "createdAt": 1671317348931,
+    "updatedAt": 1671317348931,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232405,
+    "createdFirstAt": 1671317348931,
     "name": "useAlert",
     "slug": "use-alert",
     "type": "value",
@@ -1092,13 +1244,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "lbsrpkepvwkkmiuxhtyljtom"
+    "id": "xvpybobqpucepnruysoxmjrk"
   },
   {
-    "createdAt": 1671194232405,
-    "updatedAt": 1671194232405,
+    "createdAt": 1671317348932,
+    "updatedAt": 1671317348932,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232405,
+    "createdFirstAt": 1671317348932,
     "name": "useLastSelection",
     "slug": "use-last-selection",
     "type": "value",
@@ -1109,13 +1261,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "dajjkfolrneohuseonjwjudd"
+    "id": "ominmkyuwkgpmibwajdtpsts"
   },
   {
-    "createdAt": 1671194232406,
-    "updatedAt": 1671194232406,
+    "createdAt": 1671317348932,
+    "updatedAt": 1671317348932,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232406,
+    "createdFirstAt": 1671317348932,
     "name": "NavButton",
     "slug": "nav-button",
     "module": "./NavButton",
@@ -1125,13 +1277,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "tmfxtecwwldmroutupuxikyv"
+    "id": "ojvwexhuvvhvndbcallzpjbe"
   },
   {
-    "createdAt": 1671194232406,
-    "updatedAt": 1671194232406,
+    "createdAt": 1671317348932,
+    "updatedAt": 1671317348932,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232406,
+    "createdFirstAt": 1671317348932,
     "name": "useAdmin",
     "slug": "use-admin",
     "module": "./useAdmin",
@@ -1141,13 +1293,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "uluulyfxodtxtqsyffhhiepd"
+    "id": "ysojrvabzjkbilbbemdehqgg"
   },
   {
-    "createdAt": 1671194232406,
-    "updatedAt": 1671194232406,
+    "createdAt": 1671317348932,
+    "updatedAt": 1671317348932,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232406,
+    "createdFirstAt": 1671317348932,
     "name": "setItem",
     "slug": "set-item",
     "type": "value",
@@ -1158,13 +1310,113 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "pmwfnncmtvejlsitwytnyvzs"
+    "id": "ywbofrkeuzdfmhprziaggdmw"
   },
   {
-    "createdAt": 1671194232406,
-    "updatedAt": 1671194232406,
+    "createdAt": 1671317348932,
+    "updatedAt": 1671317348932,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232406,
+    "createdFirstAt": 1671317348932,
+    "name": "useStore",
+    "slug": "use-store",
+    "module": "./store",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/SettingsPage.tsx",
+    "classification": "internal",
+    "isAbsolute": false,
+    "isModuleFromMonorepo": false,
+    "id": "cxzswpcrpzuqclfrkkzdihlz"
+  },
+  {
+    "createdAt": 1671317348932,
+    "updatedAt": 1671317348932,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348932,
+    "name": "setConfig",
+    "slug": "set-config",
+    "module": "./setConfig",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/SettingsPage.tsx",
+    "classification": "internal",
+    "isAbsolute": false,
+    "isModuleFromMonorepo": false,
+    "id": "wukhidqupntymielncxxeojt"
+  },
+  {
+    "createdAt": 1671317348933,
+    "updatedAt": 1671317348933,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348933,
+    "name": "Div",
+    "slug": "div",
+    "type": "value",
+    "module": "react-with-native",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/SettingsPage.tsx",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "lzvanmskgmtufnijfglwfdhj"
+  },
+  {
+    "createdAt": 1671317348933,
+    "updatedAt": 1671317348933,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348933,
+    "name": "FunctionForm",
+    "slug": "function-form",
+    "type": "value",
+    "module": "function-form",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/SettingsPage.tsx",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "badkofgwbtmpdbykusfjsqvs"
+  },
+  {
+    "createdAt": 1671317348933,
+    "updatedAt": 1671317348933,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348933,
+    "name": "FancyLoader",
+    "slug": "fancy-loader",
+    "type": "value",
+    "module": "fancy-loader",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/SettingsPage.tsx",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "smutwnzsmcsswlwqwseeiwyz"
+  },
+  {
+    "createdAt": 1671317348933,
+    "updatedAt": 1671317348933,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348933,
+    "name": "showStandardResponse",
+    "slug": "show-standard-response",
+    "type": "value",
+    "module": "cool-toast",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/SettingsPage.tsx",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "kmjbypxphgkdrtkqzlhssgdv"
+  },
+  {
+    "createdAt": 1671317348933,
+    "updatedAt": 1671317348933,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348933,
     "name": "createStore",
     "slug": "create-store",
     "type": "value",
@@ -1175,13 +1427,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "lkebefuydpdxyocnxgsremfa"
+    "id": "ofgknhcfbsqbofnkhdhscwki"
   },
   {
-    "createdAt": 1671194232406,
-    "updatedAt": 1671194232406,
+    "createdAt": 1671317348933,
+    "updatedAt": 1671317348933,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232406,
+    "createdFirstAt": 1671317348933,
     "name": "apiStoreInitialValues",
     "slug": "api-store-initial-values",
     "type": "value",
@@ -1192,13 +1444,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "ffsmkwplaenfkrjrxevjmnmk"
+    "id": "bmhfxwafqmvpbqvzjjmyketx"
   },
   {
-    "createdAt": 1671194232406,
-    "updatedAt": 1671194232406,
+    "createdAt": 1671317348933,
+    "updatedAt": 1671317348933,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232406,
+    "createdFirstAt": 1671317348933,
     "name": "nestedMenuStoreInitialValues",
     "slug": "nested-menu-store-initial-values",
     "type": "value",
@@ -1209,13 +1461,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "jogcpvaemhpbttqevjitmzld"
+    "id": "pjklvcbujnatroelwgvtqskr"
   },
   {
-    "createdAt": 1671194232406,
-    "updatedAt": 1671194232406,
+    "createdAt": 1671317348934,
+    "updatedAt": 1671317348934,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232406,
+    "createdFirstAt": 1671317348934,
     "name": "writerInitialValues",
     "slug": "writer-initial-values",
     "type": "value",
@@ -1226,13 +1478,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "wcqjcstkmoleybfichflvjew"
+    "id": "wjyjfdajkzeqlekxehnbilaz"
   },
   {
-    "createdAt": 1671194232406,
-    "updatedAt": 1671194232406,
+    "createdAt": 1671317348934,
+    "updatedAt": 1671317348934,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232406,
+    "createdFirstAt": 1671317348934,
     "name": "fileTabsInitialValues",
     "slug": "file-tabs-initial-values",
     "type": "value",
@@ -1243,13 +1495,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "fbfjwpvwcyyzpwkfhbtqgsdc"
+    "id": "wxshzqulvftnclqfpytiogzx"
   },
   {
-    "createdAt": 1671194232407,
-    "updatedAt": 1671194232407,
+    "createdAt": 1671317348934,
+    "updatedAt": 1671317348934,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232407,
+    "createdFirstAt": 1671317348934,
     "name": "dbCrudInitialValues",
     "slug": "db-crud-initial-values",
     "type": "value",
@@ -1260,13 +1512,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "gipnqlhydhegfaujqvyliaku"
+    "id": "kspfrcyvvafaiorpckfvwefa"
   },
   {
-    "createdAt": 1671194232407,
-    "updatedAt": 1671194232407,
+    "createdAt": 1671317348934,
+    "updatedAt": 1671317348934,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232407,
+    "createdFirstAt": 1671317348934,
     "name": "queries",
     "slug": "queries",
     "type": "value",
@@ -1277,13 +1529,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "toxdcncrlfkyldzywbdtrhul"
+    "id": "mwqqurgupipadfzhcbuivimg"
   },
   {
-    "createdAt": 1671194232407,
-    "updatedAt": 1671194232407,
+    "createdAt": 1671317348934,
+    "updatedAt": 1671317348934,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232407,
+    "createdFirstAt": 1671317348934,
     "name": "Group",
     "slug": "group",
     "type": "type",
@@ -1295,13 +1547,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "dwqsnjwxadelpqbaszigqlpx"
+    "id": "scrihnjvhouriibajvefgetm"
   },
   {
-    "createdAt": 1671194232407,
-    "updatedAt": 1671194232407,
+    "createdAt": 1671317348934,
+    "updatedAt": 1671317348934,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232407,
+    "createdFirstAt": 1671317348934,
     "name": "useStore",
     "slug": "use-store",
     "module": "./store",
@@ -1311,13 +1563,62 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "fftohqktqkpjfgaqirxhokfg"
+    "id": "wownpajlplvgsicuuvqsjojd"
   },
   {
-    "createdAt": 1671194232407,
-    "updatedAt": 1671194232407,
+    "createdAt": 1671317348935,
+    "updatedAt": 1671317348935,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232407,
+    "createdFirstAt": 1671317348935,
+    "name": "useQueryPath",
+    "slug": "use-query-path",
+    "module": "./useQueryPath",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/useAdmin.ts",
+    "classification": "internal",
+    "isAbsolute": false,
+    "isModuleFromMonorepo": false,
+    "id": "esptxresihnnmciywwxiborw"
+  },
+  {
+    "createdAt": 1671317348935,
+    "updatedAt": 1671317348935,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348935,
+    "name": "makeArray",
+    "slug": "make-array",
+    "type": "value",
+    "module": "js-util",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/useQueryPath.ts",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "ukxrsndsynkqmkpggxyloakd"
+  },
+  {
+    "createdAt": 1671317348935,
+    "updatedAt": 1671317348935,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348935,
+    "name": "useRouter",
+    "slug": "use-router",
+    "module": "react-with-native-router",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/useQueryPath.ts",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "inzuklkgweubwwvvikybzrhh"
+  },
+  {
+    "createdAt": 1671317348935,
+    "updatedAt": 1671317348935,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348935,
     "name": "ContextualPromptResult",
     "slug": "contextual-prompt-result",
     "type": "type",
@@ -1329,13 +1630,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "exfyysacdxyqluekcsytbysj"
+    "id": "zyuxokyprxytmpfgzykqpbbh"
   },
   {
-    "createdAt": 1671194232407,
-    "updatedAt": 1671194232407,
+    "createdAt": 1671317348935,
+    "updatedAt": 1671317348935,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232407,
+    "createdFirstAt": 1671317348935,
     "name": "takeFirst",
     "slug": "take-first",
     "type": "value",
@@ -1346,13 +1647,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "kgrebgmvrnmaijiitxvsylkm"
+    "id": "ukbrphkhaulbhxbwqpmimsau"
   },
   {
-    "createdAt": 1671194232407,
-    "updatedAt": 1671194232407,
+    "createdAt": 1671317348935,
+    "updatedAt": 1671317348935,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232407,
+    "createdFirstAt": 1671317348935,
     "name": "useRouter",
     "slug": "use-router",
     "module": "react-with-native-router",
@@ -1362,13 +1663,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "sibvjuknnsmyqxvnusenvcfz"
+    "id": "fupeluxvrgibaswjvcveutdv"
   },
   {
-    "createdAt": 1671194232407,
-    "updatedAt": 1671194232407,
+    "createdAt": 1671317348936,
+    "updatedAt": 1671317348936,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232407,
+    "createdFirstAt": 1671317348936,
     "name": "useStore",
     "slug": "use-store",
     "module": "./store",
@@ -1378,13 +1679,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "htooyvwgpvwiwvhqicndapuw"
+    "id": "zhvcqkbxkhnigyhpyildkdeq"
   },
   {
-    "createdAt": 1671194232408,
-    "updatedAt": 1671194232408,
+    "createdAt": 1671317348936,
+    "updatedAt": 1671317348936,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232408,
+    "createdFirstAt": 1671317348936,
     "name": "ContextualPromptResult",
     "slug": "contextual-prompt-result",
     "type": "type",
@@ -1396,13 +1697,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "dlxbakuyodytgitlamwhcwds"
+    "id": "uzedhhcyvnqmbikjsclylzji"
   },
   {
-    "createdAt": 1671194232408,
-    "updatedAt": 1671194232408,
+    "createdAt": 1671317348936,
+    "updatedAt": 1671317348936,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232408,
+    "createdFirstAt": 1671317348936,
     "name": "api",
     "slug": "api",
     "type": "value",
@@ -1413,13 +1714,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "smsjrnrjidowurqdkhfttjmj"
+    "id": "mmwtinkvnkogtojymzlyzyvw"
   },
   {
-    "createdAt": 1671194232408,
-    "updatedAt": 1671194232408,
+    "createdAt": 1671317348936,
+    "updatedAt": 1671317348936,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232408,
+    "createdFirstAt": 1671317348936,
     "name": "ClickableIcon",
     "slug": "clickable-icon",
     "type": "value",
@@ -1430,13 +1731,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "bxrunvivzqigectrobxrbiiq"
+    "id": "kdyiybbjklgspxeofwqncspp"
   },
   {
-    "createdAt": 1671194232408,
-    "updatedAt": 1671194232408,
+    "createdAt": 1671317348936,
+    "updatedAt": 1671317348936,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232408,
+    "createdFirstAt": 1671317348936,
     "name": "showStandardResponse",
     "slug": "show-standard-response",
     "type": "value",
@@ -1447,13 +1748,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "mpyztjogbeqfyebfzdnwcvfr"
+    "id": "qumeievnedxedgapdxphriaq"
   },
   {
-    "createdAt": 1671194232408,
-    "updatedAt": 1671194232408,
+    "createdAt": 1671317348936,
+    "updatedAt": 1671317348936,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232408,
+    "createdFirstAt": 1671317348936,
     "name": "withoutExtension",
     "slug": "without-extension",
     "type": "value",
@@ -1464,13 +1765,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "jgowvsbvqnofwcstuqgknafm"
+    "id": "eixadvoucubsjyuklcfskshl"
   },
   {
-    "createdAt": 1671194232408,
-    "updatedAt": 1671194232408,
+    "createdAt": 1671317348937,
+    "updatedAt": 1671317348937,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232408,
+    "createdFirstAt": 1671317348937,
     "name": "ALink",
     "slug": "alink",
     "type": "value",
@@ -1481,13 +1782,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "retwebdhgmesviondifqnqck"
+    "id": "fxhyvzixzjnvgujrxzhdhsjy"
   },
   {
-    "createdAt": 1671194232408,
-    "updatedAt": 1671194232408,
+    "createdAt": 1671317348937,
+    "updatedAt": 1671317348937,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232408,
+    "createdFirstAt": 1671317348937,
     "name": "Div",
     "slug": "div",
     "type": "value",
@@ -1498,13 +1799,30 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "xvrrkrjbblekfowqrhcsfybz"
+    "id": "liqxihwyrmpppzvdfseurram"
   },
   {
-    "createdAt": 1671194232408,
-    "updatedAt": 1671194232408,
+    "createdAt": 1671317348937,
+    "updatedAt": 1671317348937,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232408,
+    "createdFirstAt": 1671317348937,
+    "name": "P",
+    "slug": "p",
+    "type": "value",
+    "module": "react-with-native",
+    "isModuleResolved": true,
+    "comments": [],
+    "operationRelativeTypescriptFilePath": "src/components/VariantSelector.tsx",
+    "classification": "operation",
+    "isAbsolute": true,
+    "isModuleFromMonorepo": true,
+    "id": "olclmxbgbdwxelomgskgzlif"
+  },
+  {
+    "createdAt": 1671317348937,
+    "updatedAt": 1671317348937,
+    "deletedAt": 0,
+    "createdFirstAt": 1671317348937,
     "name": "useRouter",
     "slug": "use-router",
     "module": "react-with-native-router",
@@ -1514,13 +1832,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "hbzppjoqdfwubgtuivuxjemn"
+    "id": "cnirvhjzvhcyvlmwdxkttuxr"
   },
   {
-    "createdAt": 1671194232408,
-    "updatedAt": 1671194232408,
+    "createdAt": 1671317348937,
+    "updatedAt": 1671317348937,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232408,
+    "createdFirstAt": 1671317348937,
     "name": "Item",
     "slug": "item",
     "type": "type",
@@ -1532,13 +1850,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "xdlkmjxglvvucmllsjmlmbpc"
+    "id": "rxedfgpsnwaipcdeltnfxyua"
   },
   {
-    "createdAt": 1671194232409,
-    "updatedAt": 1671194232409,
+    "createdAt": 1671317348937,
+    "updatedAt": 1671317348937,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232409,
+    "createdFirstAt": 1671317348937,
     "name": "Select",
     "slug": "select",
     "type": "value",
@@ -1549,13 +1867,13 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "rzydqgzpazlhvdhlvvqeggmu"
+    "id": "hwccszrxxtfqplsliwcjtuvq"
   },
   {
-    "createdAt": 1671194232409,
-    "updatedAt": 1671194232409,
+    "createdAt": 1671317348938,
+    "updatedAt": 1671317348938,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232409,
+    "createdFirstAt": 1671317348938,
     "name": "useStore",
     "slug": "use-store",
     "module": "./store",
@@ -1565,13 +1883,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "dviposrunyltgifrlainejol"
+    "id": "akdofaoidrhooovhnfincjoa"
   },
   {
-    "createdAt": 1671194232409,
-    "updatedAt": 1671194232409,
+    "createdAt": 1671317348938,
+    "updatedAt": 1671317348938,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232409,
+    "createdFirstAt": 1671317348938,
     "name": "useAdmin",
     "slug": "use-admin",
     "module": "./useAdmin",
@@ -1581,13 +1899,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "yghxgxsyagghtlhcvsttukei"
+    "id": "kjwnqhmyfekrmjsmrtlvfzhh"
   },
   {
-    "createdAt": 1671194232409,
-    "updatedAt": 1671194232409,
+    "createdAt": 1671317348938,
+    "updatedAt": 1671317348938,
     "deletedAt": 0,
-    "createdFirstAt": 1671194232409,
+    "createdFirstAt": 1671317348938,
     "name": "useVariantResult",
     "slug": "use-variant-result",
     "module": "./useVariant",
@@ -1597,6 +1915,6 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "vziolagwtfkngmurjxkboluy"
+    "id": "yhutdvjfxofglruscdahrlii"
   }
 ]

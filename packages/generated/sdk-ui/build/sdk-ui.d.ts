@@ -477,6 +477,7 @@ export declare const sdk: {
     Tooltip: (props: {
         tooltip: import("react").ReactElement<any, string | import("react").JSXElementConstructor<any>> | null;
         children: import("react").ReactNode;
+        hoverTimeout?: number | undefined;
         placement?: import("@popperjs/core").Placement | undefined;
     }) => JSX.Element;
     useOnScreen: typeof useOnScreen;
@@ -530,11 +531,13 @@ export declare const sdk: {
         projectRelativeFilePath?: string | undefined;
     }) => JSX.Element;
     setConfig: (apiUrl: string, disableAdmin: boolean) => void;
+    SettingsPage: () => JSX.Element;
     useAdmin: () => {
         isAdminActive: boolean;
         isLoading?: boolean | undefined;
         refetch?: (<TPageData>(options?: (import("react-query").RefetchOptions & import("react-query").RefetchQueryFilters<TPageData>) | undefined) => Promise<import("react-query").QueryObserverResult<import("api-types").ApiReturnType<"getReaderPageProps">, unknown>>) | undefined;
     };
+    useQueryPath: () => string;
     useVariantResult: (fileContextualPromptResults?: import("ai-types").ContextualPromptResult[] | null | undefined) => import("ai-types").ContextualPromptResult | undefined;
     VariantSelector: (props: {
         projectRelativeFilePath?: string | undefined;
@@ -593,8 +596,16 @@ export declare const sdk: {
     Share: (props: {
         contextText?: string | undefined;
     }) => JSX.Element;
+    Shareable: (props: {
+        children: import("react").ReactNode;
+    }) => JSX.Element;
     useAllText: () => string | undefined;
     useLastSelection: (isDisabled?: boolean | undefined) => string | null;
+    useProjectRelativeScreenshot: () => {
+        getImage: () => void;
+        projectRelativeFilePath: string | null;
+        ref: import("react").RefObject<HTMLDivElement>;
+    };
     ShortMarkdownPlayer: (props: {
         shortMarkdown?: import("short-markdown-types").ShortMarkdown | undefined;
         projectRelativeFilePath?: string | undefined;
@@ -619,10 +630,6 @@ export declare const sdk: {
         }[];
         toggle: (targetIndex: number) => () => void;
     };
-    Timeline: (props: {
-        items: import("timeline").TimelineItemType[];
-        isHorizontal?: boolean | undefined;
-    }) => JSX.Element;
     Completion: (props: {
         augmentedWord: import("augmented-word-types").AugmentedWord;
         augmentedWordObject?: import("js-util").MappedObject<import("augmented-word-types").AugmentedWord> | undefined;

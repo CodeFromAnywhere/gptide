@@ -8,7 +8,7 @@ generative-functions-node (`OperationClassification` node-cjs)
 
 # Internal
 
-<details><summary>Show internal (26)</summary>
+<details><summary>Show internal (28)</summary>
     
   # augmentMarkdown()
 
@@ -66,6 +66,15 @@ import webMarkdownFileTsInterface from "markdown-types/db/ts-interfaces/webmarkd
 | ---------- | -- | -- |
 | frontmatter (optional) | `Frontmatter` |  |
 | **Output** | {  }   |    |
+
+
+
+## findClosestAbsolutePath()
+
+| Input      |    |    |
+| ---------- | -- | -- |
+| absoluteQueryPath | string |  |
+| **Output** |    |    |
 
 
 
@@ -146,7 +155,7 @@ Idea: would it be easy to allow for path outside of project as well?
 
 | Input      |    |    |
 | ---------- | -- | -- |
-| projectRelativeFilePath (optional) | string |  |
+| basePath | string | BasePath for this project |,| queryPath | string | QueryPath as in the URL |,| isAdmin (optional) | boolean | If true, isDev will be overwritten to be false, even in prod |
 | **Output** |    |    |
 
 
@@ -185,7 +194,7 @@ Ther are other workarounds here to make sure it ends up in the bundle.
 
 | Input      |    |    |
 | ---------- | -- | -- |
-| - | | |
+| context | `GetStaticPropsContext` |  |
 | **Output** |    |    |
 
 
@@ -220,6 +229,8 @@ import webMarkdownFileTsInterface from "markdown-types/db/ts-interfaces/webmarkd
 
 
 ## 📄 expandFrontmatter (exported const)
+
+## 📄 findClosestAbsolutePath (exported const)
 
 ## 📄 getContextualPromptResults (exported const)
 

@@ -1,12 +1,12 @@
 {
-  "createdAt": 1671228225663,
-  "updatedAt": 1671228225663,
+  "createdAt": 1671363923896,
+  "updatedAt": 1671363923896,
   "deletedAt": 0,
-  "createdFirstAt": 1671228225663,
+  "createdFirstAt": 1671363923896,
   "id": "contextualpromptresult",
   "name": "ContextualPromptResult",
   "slug": "contextualpromptresult",
-  "operationRelativeTypescriptFilePath": "src/components/Menu.tsx",
+  "operationRelativeTypescriptFilePath": "src/components/VariantSelector.tsx",
   "hasGeneric": false,
   "isExported": false,
   "isOperationIndex": false,
@@ -92,6 +92,10 @@
         "thread": {
           "type": "string",
           "description": "Unique ID for this thread, generated if not given to the prompt"
+        },
+        "noteContent": {
+          "type": "string",
+          "description": "Note you can attach to the Prompt result."
         }
       },
       "required": [
@@ -335,6 +339,14 @@
           "required": false,
           "schema": {
             "fullComment": "Unique ID for this thread, generated if not given to the prompt",
+            "type": "string"
+          }
+        },
+        {
+          "name": "noteContent",
+          "required": false,
+          "schema": {
+            "fullComment": "Note you can attach to the Prompt result.",
             "type": "string"
           }
         }

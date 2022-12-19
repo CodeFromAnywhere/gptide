@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671194255046,
-  "updatedAt": 1671194255046,
+  "createdAt": 1671317365540,
+  "updatedAt": 1671317365540,
   "deletedAt": 0,
-  "createdFirstAt": 1671194255046,
+  "createdFirstAt": 1671317365540,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -29,5 +29,5 @@
   },
   "value": "() => {\n  const categoriesQuery = queries.useGetContextualPromptCategories();\n\n  return (\n    <Div id=\"dataset\" className=\"h-screen overflow-y-scroll\">\n      <MarkdownContent\n        config={{}}\n        content={`\\`\\`\\`json\\n${JSON.stringify(\n          categoriesQuery.data?.result,\n          undefined,\n          2\n        )}\\n\\`\\`\\``}\n      />\n    </Div>\n  );\n}",
   "description": "",
-  "id": "iodncsxuhccnswjqyxudpwlz"
+  "id": "vwgxbbuwongvdtyszejmyewr"
 }

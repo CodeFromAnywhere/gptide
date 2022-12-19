@@ -1,110 +1,86 @@
 [
   {
-    "createdAt": 1671193656903,
-    "updatedAt": 1671193656903,
+    "createdAt": 1671315380408,
+    "updatedAt": 1671315380408,
     "deletedAt": 0,
-    "createdFirstAt": 1671193656903,
-    "name": "TextWriter",
-    "slug": "text-writer",
-    "operationRelativeTypescriptFilePath": "src/index.ts",
-    "comments": [],
-    "type": "value",
-    "id": "uxoqboaevainoifmylzdacll"
-  },
-  {
-    "createdAt": 1671193656904,
-    "updatedAt": 1671193656904,
-    "deletedAt": 0,
-    "createdFirstAt": 1671193656904,
+    "createdFirstAt": 1671315380408,
     "name": "getStaticProps",
     "slug": "get-static-props",
     "operationRelativeTypescriptFilePath": "src/index.ts",
     "comments": [],
     "type": "value",
-    "id": "gptwlsxrpfggfjnpxbekxgsc"
+    "id": "ccikdtchapaghtblgqmcksbl"
   },
   {
-    "createdAt": 1671193656904,
-    "updatedAt": 1671193656904,
+    "createdAt": 1671315380408,
+    "updatedAt": 1671315380408,
     "deletedAt": 0,
-    "createdFirstAt": 1671193656904,
+    "createdFirstAt": 1671315380408,
     "name": "default",
     "slug": "default",
     "operationRelativeTypescriptFilePath": "src/pages/_app.tsx",
     "comments": [],
     "type": "value",
-    "id": "pjbvpnjdyjhouzuizokbxrgf"
+    "id": "vaxwwehosyukqezxfnxujsdn"
   },
   {
-    "createdAt": 1671193656904,
-    "updatedAt": 1671193656904,
+    "createdAt": 1671315380408,
+    "updatedAt": 1671315380408,
     "deletedAt": 0,
-    "createdFirstAt": 1671193656904,
-    "name": "TextWriter",
-    "slug": "text-writer",
-    "operationRelativeTypescriptFilePath": "src/pages/index.tsx",
-    "comments": [],
-    "type": "value",
-    "id": "lhqxtdrrauevsgfyqbgpuozc"
-  },
-  {
-    "createdAt": 1671193656904,
-    "updatedAt": 1671193656904,
-    "deletedAt": 0,
-    "createdFirstAt": 1671193656904,
+    "createdFirstAt": 1671315380408,
     "name": "default",
     "slug": "default",
     "operationRelativeTypescriptFilePath": "src/pages/index.tsx",
     "comments": [],
     "type": "value",
-    "id": "bpgjirjlrmynarzoqplswlbo"
+    "id": "ukdvootryltwqmektvtlfvah"
   },
   {
-    "createdAt": 1671193656904,
-    "updatedAt": 1671193656904,
+    "createdAt": 1671315380408,
+    "updatedAt": 1671315380408,
     "deletedAt": 0,
-    "createdFirstAt": 1671193656904,
+    "createdFirstAt": 1671315380408,
     "name": "getStaticProps",
     "slug": "get-static-props",
     "operationRelativeTypescriptFilePath": "src/pages/index.tsx",
     "comments": [],
     "type": "value",
-    "id": "efsthhiqyoomngmclmlzmmrc"
+    "id": "pzhjfcdbrpoxsvvzjervpopg"
   },
   {
-    "createdAt": 1671193656904,
-    "updatedAt": 1671193656904,
+    "createdAt": 1671315380408,
+    "updatedAt": 1671315380408,
     "deletedAt": 0,
-    "createdFirstAt": 1671193656904,
+    "createdFirstAt": 1671315380408,
     "name": "default",
     "slug": "default",
     "operationRelativeTypescriptFilePath": "src/pages/offers.tsx",
     "comments": [],
     "type": "value",
-    "id": "mepwmtnfkxfkqsskkrysugxd"
+    "id": "zypiwgvnvkwnkbfedgebreoi"
   },
   {
-    "createdAt": 1671193656905,
-    "updatedAt": 1671193656905,
+    "createdAt": 1671315380408,
+    "updatedAt": 1671315380408,
     "deletedAt": 0,
-    "createdFirstAt": 1671193656905,
+    "createdFirstAt": 1671315380408,
     "name": "default",
     "slug": "default",
     "operationRelativeTypescriptFilePath": "src/pages/settings.tsx",
     "comments": [],
     "type": "value",
-    "id": "fqyzzekanaxxpudwfjeguatu"
+    "id": "yuxqkbzcdvuxhvzlloqyledc"
   },
   {
-    "createdAt": 1671193656905,
-    "updatedAt": 1671193656905,
+    "createdAt": 1671315380408,
+    "updatedAt": 1671315380408,
     "deletedAt": 0,
-    "createdFirstAt": 1671193656905,
+    "createdFirstAt": 1671315380408,
     "name": "default",
     "slug": "default",
     "operationRelativeTypescriptFilePath": "src/pages/signup.tsx",
     "comments": [],
     "type": "value",
-    "id": "pfupikxqpgznztyksnznvstk"
+    "id": "woswwvzzogsifcuvwapplcwr"
   }
 ]

@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671193667252,
-  "updatedAt": 1671193667252,
+  "createdAt": 1671315397028,
+  "updatedAt": 1671315397028,
   "deletedAt": 0,
-  "createdFirstAt": 1671193667252,
+  "createdFirstAt": 1671315397028,
   "isApiExposed": false,
   "name": "MyApp",
   "slug": "my-app",
@@ -36,5 +36,5 @@
   },
   "rawText": "\n\n// Only holds serverRuntimeConfig and publicRuntimeConfig\n\nfunction MyApp({ Component, pageProps }: AppProps) {\n  const title = process.env.NEXT_PUBLIC_TITLE;\n  const description =\n    \"Learn mode about the impact of ChatGPT and other LLM's! GPT Ideas presents a database of prompts for you to learn from and start building!\";\n  return (\n    <QueryClientProvider client={queryClient}>\n      <Head>\n        <title>{title}</title>\n\n        <link\n          rel=\"stylesheet\"\n          href=\"https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/default.min.css\"\n        />\n        <meta property=\"og:description\" content={description} />\n        <meta property=\"og:image\" content=\"head-explosion.png\" />\n\n        <meta name=\"description\" content={description} />\n      </Head>\n      <ToastContainer />\n      <AlertProvider>\n        <ModalProvider>\n          <StoreProvider>\n            <MyLayout pageProps={pageProps} nextPage={Component} />\n          </StoreProvider>\n        </ModalProvider>\n      </AlertProvider>\n    </QueryClientProvider>\n  );\n}",
   "maxIndentationDepth": 6,
-  "id": "jqldstasobvpnoiqyjghvrgg"
+  "id": "rwmoeshpksuyjrljhmlqjdlq"
 }

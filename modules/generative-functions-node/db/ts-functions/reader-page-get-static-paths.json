@@ -1,15 +1,15 @@
 {
-  "createdAt": 1671223187306,
-  "updatedAt": 1671223187306,
+  "createdAt": 1671315254354,
+  "updatedAt": 1671315254354,
   "deletedAt": 0,
-  "createdFirstAt": 1671223187306,
+  "createdFirstAt": 1671315254354,
   "isApiExposed": true,
   "isExported": true,
   "groupAuthorization": {},
   "explicitTypeName": "GetStaticPaths",
   "operationRelativeTypescriptFilePath": "src/readerPageGetStatic.ts",
   "commentsInside": [],
-  "rawText": " async () => {\n  // TODO: what does context.locale do? can we use that for the domain or so? because it's the only context we have here , so that might be super useful\n\n  const basePath = process.env.NEXT_PUBLIC_BASEPATH;\n  // can probably also fetch the domain using the api, right? I might be able to determine what the basepath is based on an environment variable.\n  console.log({ basePath });\n\n  const projectRoot = getProjectRoot();\n  if (!projectRoot) {\n    console.log(\"NO PROJECTROOT\");\n    return { fallback: \"blocking\", paths: [] };\n  }\n\n  const realBasePath = basePath\n    ? path.join(projectRoot, basePath)\n    : projectRoot;\n\n  const paths = (\n    await explore({ basePath: realBasePath, includeFoldersWithResults: true })\n  ).map((x) => x.path);\n\n  // for now, let's just generate the props every time. later we can fetch the actual paths here, but that would require lots of calculation, so this might actually be fine since it will cache the result. We can also make the page load until the props are provided. I need to read the docs about it to make it all super smooth\n  return {\n    paths: paths.map((path) => {\n      const queryPath = makeRelative(path, realBasePath).split(\"/\");\n      return {\n        params: {\n          queryPath,\n        },\n      };\n    }),\n    // TODO: Maybe needs to be \"false\"?\n    fallback: \"blocking\",\n  };\n}",
+  "rawText": " async () => {\n  // TODO: what does context.locale do? can we use that for the domain or so? because it's the only context we have here , so that might be super useful\n\n  const basePath = process.env.NEXT_PUBLIC_BASEPATH;\n  // can probably also fetch the domain using the api, right? I might be able to determine what the basepath is based on an environment variable.\n\n  const projectRoot = getProjectRoot();\n  if (!projectRoot) {\n    console.log(\"NO PROJECTROOT\");\n    return { fallback: \"blocking\", paths: [] };\n  }\n\n  const realBasePath = basePath\n    ? path.join(projectRoot, basePath)\n    : projectRoot;\n\n  const paths = (\n    await explore({ basePath: realBasePath, includeFoldersWithResults: true })\n  ).map((x) => x.path);\n\n  // for now, let's just generate the props every time. later we can fetch the actual paths here, but that would require lots of calculation, so this might actually be fine since it will cache the result. We can also make the page load until the props are provided. I need to read the docs about it to make it all super smooth\n  return {\n    paths: paths.map((path) => {\n      const queryPath = makeRelative(path, realBasePath).split(\"/\");\n      return {\n        params: {\n          queryPath,\n        },\n      };\n    }),\n    // TODO: Maybe needs to be \"false\"?\n    fallback: \"blocking\",\n  };\n}",
   "name": "readerPageGetStaticPaths",
   "slug": "reader-page-get-static-paths",
   "parameters": [],
@@ -25,13 +25,13 @@
   },
   "maxIndentationDepth": 5,
   "size": {
-    "characters": 1698,
-    "lines": 41,
-    "bytes": 1698,
+    "characters": 1669,
+    "lines": 40,
+    "bytes": 1669,
     "bytesPerCharacter": 1,
-    "charactersPerLine": 41,
-    "linesPerFile": 41,
+    "charactersPerLine": 42,
+    "linesPerFile": 40,
     "numberOfFiles": 1
   },
-  "id": "feznqmmdpmgwxskmdtulzgwz"
+  "id": "nwyqgeupmjzysryrghhontea"
 }

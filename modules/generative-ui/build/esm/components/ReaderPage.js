@@ -54,6 +54,7 @@ import { useAdmin } from "./useAdmin";
 import { useVariantResult } from "./useVariant";
 import { VariantSelector } from "./VariantSelector";
 import { apiWithConfig } from "api";
+import { Shareable } from "share";
 var promo = "\uD83C\uDFDB Want more? [Sign up](/offers) for Premium content \uD83C\uDFDB\n\nI'm also organising a [\uD83E\uDD2F ChatGPT villa \uD83C\uDFDD](https://codefrombali.com \"Do you want to build something big from the ground up, do you want to do this in a small group of ambitious devs? Can we build the generative web together? Let's gooooo \uD83D\uDE80\") for dev-preneurs";
 export var ReaderPage = function (props) {
     var _a;
@@ -86,8 +87,8 @@ export var ReaderPage = function (props) {
                         setCustomUrl(localUrl);
                         // NB: Hardcoded?
                         setAuthToken("xwjkfycqhakpudymxmysxlei");
-                        alert === null || alert === void 0 ? void 0 : alert("Connected to localhost", "It seems your server is running locally, you're now connected.", [
-                            { text: "Okay", style: "default" },
+                        alert === null || alert === void 0 ? void 0 : alert("Connected to localhost", "It seems your server is running locally, you're now connected. You can now interact with your local file system to apply prompts on your own knowledge base!", [
+                            { text: "Okay", style: "default", onPress: function () { return router.reload(); } },
                             {
                                 text: "Undo",
                                 style: "destructive",
@@ -164,19 +165,20 @@ export var ReaderPage = function (props) {
             React.createElement(ClickableIcon, { emoji: "<<", onClick: function () { return setSidebarHidden(false); } }))) : null,
         React.createElement(BreadCrumbs, { path: queryPath }),
         React.createElement(VariantSelector, { projectRelativeFilePath: actualProjectRelativeFilePath, folderPath: folderPath, isFolder: isFolder, filename: filename, contextualPromptResults: fileContextualPromptResults }),
-        React.createElement(Div, { className: "p-1" },
-            React.createElement(MarkdownContent, { config: markdownContentConfig, content: contentString })),
+        React.createElement(Shareable, null,
+            React.createElement(Div, { className: "p-1" },
+                React.createElement(MarkdownContent, { config: markdownContentConfig, content: contentString }))),
         React.createElement(SelectionPrompts, { contentString: contentString, projectRelativeFilePath: actualProjectRelativeFilePath, selectionContextualPrompts: (_a = props.contextualPromptsObject) === null || _a === void 0 ? void 0 : _a.selectionContextualPrompts }),
         React.createElement(Div, null,
             React.createElement(P, { className: "font-bold" }, "File"),
             React.createElement(Div, { className: "flex flex-row flex-wrap" },
-                admin.isAdminActive ? (React.createElement(NavButton, { title: "\uD83C\uDFA4 Speak", onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
+                React.createElement(NavButton, { title: "\uD83C\uDFA4 Speak", onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
                         return __generator(this, function (_a) {
                             alert === null || alert === void 0 ? void 0 : alert("Coming soon", "coming soon");
                             return [2 /*return*/];
                         });
-                    }); } })) : null,
-                isFolder || !admin.isAdminActive ? null : (React.createElement(NavButton, { title: "\uD83D\uDD4A Free-form prompt", onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
+                    }); } }),
+                isFolder ? null : (React.createElement(NavButton, { title: "\uD83D\uDD4A Free-form prompt", onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
                         var question, name, realName, customPromptContent;
                         return __generator(this, function (_a) {
                             switch (_a.label) {
@@ -203,11 +205,9 @@ export var ReaderPage = function (props) {
                             }
                         });
                     }); } })),
-                admin.isAdminActive
-                    ? thePrompts.map(function (prompt) {
-                        return (React.createElement(PromptButton, { key: "prompt".concat(prompt.id), item: prompt, markdown: markdown, projectRelativeFilePath: actualProjectRelativeFilePath }));
-                    })
-                    : null)),
+                thePrompts.map(function (prompt) {
+                    return (React.createElement(PromptButton, { key: "prompt".concat(prompt.id), item: prompt, markdown: markdown, projectRelativeFilePath: actualProjectRelativeFilePath }));
+                }))),
         isFolder && admin.isAdminActive ? (React.createElement(Div, null,
             "Execute for all files",
             React.createElement(Div, { className: "flex flex-row flex-wrap" }, contextualPromptsObject === null || contextualPromptsObject === void 0 ? void 0 : contextualPromptsObject.pageContextualPrompts.map(function (prompt) {

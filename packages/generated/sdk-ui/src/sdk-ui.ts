@@ -168,7 +168,9 @@ import { ReaderPageNext } from "generative-ui";
 import { ReaderPage } from "generative-ui";
 import { SelectionPrompts } from "generative-ui";
 import { setConfig } from "generative-ui";
+import { SettingsPage } from "generative-ui";
 import { useAdmin } from "generative-ui";
+import { useQueryPath } from "generative-ui";
 import { useVariantResult } from "generative-ui";
 import { VariantSelector } from "generative-ui";
 import { getRealSrc } from "markdown";
@@ -190,13 +192,14 @@ import { FilePromptSelect } from "prompt-components";
 import { processPrompt } from "prompt-components";
 import { usePromptResultAlert } from "prompt-components";
 import { Share } from "share";
+import { Shareable } from "share";
 import { useAllText } from "share";
 import { useLastSelection } from "share";
+import { useProjectRelativeScreenshot } from "share";
 import { ShortMarkdownPlayer } from "short-markdown-writer-input";
 import { ShortMarkdownSlide } from "short-markdown-writer-input";
 import { ShortStudio } from "short-markdown-writer-input";
 import { useMultiAudio } from "short-markdown-writer-input";
-import { Timeline } from "timeline";
 import { Completion } from "writer-input";
 import { ContentEditableDivInput } from "writer-input";
 import { ContextTextArea } from "writer-input";
@@ -401,7 +404,9 @@ ReaderPageNext,
 ReaderPage,
 SelectionPrompts,
 setConfig,
+SettingsPage,
 useAdmin,
+useQueryPath,
 useVariantResult,
 VariantSelector,
 getRealSrc,
@@ -423,13 +428,14 @@ FilePromptSelect,
 processPrompt,
 usePromptResultAlert,
 Share,
+Shareable,
 useAllText,
 useLastSelection,
+useProjectRelativeScreenshot,
 ShortMarkdownPlayer,
 ShortMarkdownSlide,
 ShortStudio,
 useMultiAudio,
-Timeline,
 Completion,
 ContentEditableDivInput,
 ContextTextArea,

@@ -38,7 +38,8 @@
     "cool-toast": "0.0.0",
     "js-util": "0.0.1",
     "next-a-link": "0.0.1",
-    "react-with-native-router": "1.0.14"
+    "react-with-native-router": "1.0.14",
+    "generative-functions-node": "0.0.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.3.0",
@@ -61,59 +62,48 @@
       "lintProblems": []
     },
     "hasGeneratedDependenciesIndexed": false,
-    "lastRebuildAt": 1671193680354,
+    "lastRebuildAt": 1671315417630,
     "sizeIndexed": {
       "codeSize": {
         "numberOfFiles": 7,
-        "lines": 245,
-        "characters": 7303,
-        "bytes": 7303
+        "lines": 205,
+        "characters": 6059,
+        "bytes": 6059
       },
       "dataSize": {
-        "numberOfFiles": 9,
-        "lines": 256,
-        "characters": 6958,
-        "bytes": 6958
+        "numberOfFiles": 34,
+        "lines": 322,
+        "characters": 69936,
+        "bytes": 69936
       },
       "textSize": {
         "numberOfFiles": 2,
-        "lines": 56,
-        "characters": 860,
-        "bytes": 860
+        "lines": 36,
+        "characters": 577,
+        "bytes": 577
       },
       "size": {
-        "bytes": 15121,
-        "characters": 15121,
-        "lines": 557,
-        "numberOfFiles": 18
+        "bytes": 76572,
+        "characters": 76572,
+        "lines": 563,
+        "numberOfFiles": 43
       }
     },
     "folderNameIndexed": "generative-web",
     "relativeOperationLocationPathIndexed": "operations/tools/ai",
     "classificationIndexed": "ui-web",
-    "coreDependenciesIndexed": [
-      "useEffect",
-      "useState"
-    ],
+    "coreDependenciesIndexed": [],
     "operationDependenciesIndexed": [
       "StoreProvider",
       "MyLayout",
       "AlertProvider",
       "ModalProvider",
       "ToastContainer",
-      "Div",
-      "P",
-      "Timeline",
       "readerPageGetStaticProps",
-      "Dataset",
+      "ReaderPageNext",
       "MarkdownContent",
       "Div",
-      "useStore",
-      "setConfig",
-      "Div",
-      "FunctionForm",
-      "FancyLoader",
-      "showStandardResponse",
+      "SettingsPage",
       "takeFirst",
       "MarkdownContent",
       "ALink",
@@ -123,9 +113,7 @@
     "packageDependenciesIndexed": [
       "AppProps",
       "QueryClient",
-      "QueryClientProvider",
-      "TwitterTimelineEmbed",
-      "useRouter"
+      "QueryClientProvider"
     ]
   },
   "name": "generative-web",
