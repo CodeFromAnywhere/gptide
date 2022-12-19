@@ -10,6 +10,8 @@ Docs and a detailed guide for creating an app based on this will follow later, b
 - Monetisation (credit system on which you can build any packages on top as you wish)
 - Automations (cronjobs), Queue system (executing thousands of prompts at once), watch-system (executing prompts if certain things happen)
 
+On top of this, we also have a thorough integration of these api's with React. There's an `api` sdk available that has full typesafety for all these endpoints. I'm using [typerepo](https://typerepo.com) for this.
+
 I'm most interested in building these things on top of my headless solution:
 
 - Chrome Plugin
