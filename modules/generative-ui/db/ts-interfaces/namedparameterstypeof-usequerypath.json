@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671448757071,
-  "updatedAt": 1671448757071,
+  "createdAt": 1671506600599,
+  "updatedAt": 1671506600599,
   "deletedAt": 0,
-  "createdFirstAt": 1671448757071,
+  "createdFirstAt": 1671506600599,
   "id": "namedparameterstypeof-usequerypath",
   "name": "NamedParameters<typeof useQueryPath>",
   "slug": "namedparameterstypeof-usequerypath",

@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671502147618,
-  "updatedAt": 1671502147618,
+  "createdAt": 1671506588578,
+  "updatedAt": 1671506588578,
   "deletedAt": 0,
-  "createdFirstAt": 1671502147618,
+  "createdFirstAt": 1671506588578,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -20,5 +20,5 @@
   },
   "value": "createStore({\n  ...apiStoreInitialValues,\n  ...nestedMenuStoreInitialValues,\n  ...writerInitialValues,\n  ...fileTabsInitialValues,\n  ...dbCrudInitialValues,\n  ...generativeWebInitialValues,\n  ...tabsStoreInitialValues,\n})",
   "description": "",
-  "id": "dgbhsfaxtfcwfftfsaoegjkd"
+  "id": "fpaetroxcpfoujvoinzolrmm"
 }

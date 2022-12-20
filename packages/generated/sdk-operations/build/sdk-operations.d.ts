@@ -155,6 +155,7 @@ export declare const operations: {
     sms: string;
     "social-media-types": string;
     "string-to-json": string;
+    tabs: string;
     "text-or-binary": string;
     "todo-types": string;
     tooltip: string;

@@ -86,7 +86,7 @@ ReaderPage to export for next project. Uses either the props from the next serve
 
 | Input      |    |    |
 | ---------- | -- | -- |
-| props | { item: `ContextualPrompt`, <br />markdown?: string, <br />projectRelativeFilePath?: string, <br /> } |  |
+| props | { item: `ContextualPrompt`, <br />markdown?: string, <br />contextSelection?: string, <br />projectRelativeFilePath?: string, <br /> } |  |
 | **Output** | `JSX.Element`   |    |
 
 
@@ -113,7 +113,7 @@ ReaderPage to export for next project. Uses either the props from the next serve
 
 | Input      |    |    |
 | ---------- | -- | -- |
-| apiUrl | string |  |,| disableAdmin | boolean |  |
+| apiUrl | string |  |,| disableAdmin | boolean |  |,| customAbsoluteBasePaths | string[] | TITLE: Absolute base path of your file system to show |
 | **Output** |    |    |
 
 

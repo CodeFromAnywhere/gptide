@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671484650371,
-  "updatedAt": 1671484650371,
+  "createdAt": 1671506509425,
+  "updatedAt": 1671506509425,
   "deletedAt": 0,
-  "createdFirstAt": 1671484650371,
+  "createdFirstAt": 1671506509425,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -29,5 +29,5 @@
   },
   "value": "(props: {\n  onClick?: () => void;\n  href?: string;\n  isActive?: boolean;\n  title: string;\n  id?: string;\n  openContextMenuProps?: object;\n}) => {\n  const { href, title, onClick, isActive, openContextMenuProps, id } = props;\n\n  const className = ` ${\n    isActive ? \"dark:bg-blue-800\" : \"dark:bg-gray-700\"\n  } dark:hover:bg-gray-600 ${\n    isActive ? \"bg-blue-300\" : \"bg-gray-100\"\n  } light:hover:bg-gray-200 rounded-md border border-black p-2 my-1 mr-2 cursor-pointer lg:mr-4`;\n  if (onClick) {\n    return (\n      <P\n        id={id}\n        onClick={onClick}\n        className={className}\n        {...openContextMenuProps}\n      >\n        {title}\n      </P>\n    );\n  }\n\n  return (\n    <ALink id={id} href={href} className={className}>\n      <div id={id} {...openContextMenuProps}>\n        {title}\n      </div>\n    </ALink>\n  );\n}",
   "description": "",
-  "id": "uvnkzcihvxbgaocuuwhkjlid"
+  "id": "ckuilnftklbmjjdszwfryrjb"
 }

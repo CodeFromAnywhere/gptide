@@ -765,6 +765,7 @@ import { objectStringToJson } from "string-to-json";
 import { parseIfJson } from "string-to-json";
 import { parsePrimitiveJson } from "string-to-json";
 import { stringToJson } from "string-to-json";
+import { Tabs } from "tabs";
 import { getEncoding } from "text-or-binary";
 import { isBinary } from "text-or-binary";
 import { isText } from "text-or-binary";
@@ -1541,6 +1542,7 @@ objectStringToJson,
 parseIfJson,
 parsePrimitiveJson,
 stringToJson,
+Tabs,
 getEncoding,
 isBinary,
 isText,

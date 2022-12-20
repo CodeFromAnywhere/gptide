@@ -38,7 +38,8 @@
     "next": "*",
     "react": "*",
     "function-form": "0.0.1",
-    "fancy-loader": "0.0.1"
+    "fancy-loader": "0.0.1",
+    "tabs": "0.0.1"
   },
   "devDependencies": {
     "@types/marked": "^4.0.7",
@@ -75,36 +76,36 @@
     "hasGeneratedDependenciesIndexed": false,
     "buildResultIndexed": {
       "indexInteracesErrors": [
-        "No schema/definitions found for /Users/king/King/operations/tools/ai/generative-ui/src/components/NavButton.tsx. Error: Error: Unknown type \"function\""
+        "No schema/definitions found for /Users/king/King/operations/tools/ai/generative-ui/src/components/SelectionPrompts.tsx. Error: Error: Unknown type \"function\""
       ],
       "buildSucceeded": true,
       "indexImportExportError": "",
       "lintProblems": []
     },
-    "lastRebuildAt": 1671448763596,
+    "lastRebuildAt": 1671506619776,
     "sizeIndexed": {
       "codeSize": {
         "numberOfFiles": 15,
-        "lines": 1481,
-        "characters": 46010,
-        "bytes": 46010
+        "lines": 1592,
+        "characters": 49451,
+        "bytes": 49451
       },
       "dataSize": {
         "numberOfFiles": 2,
-        "lines": 236,
-        "characters": 5952,
-        "bytes": 5952
+        "lines": 238,
+        "characters": 5992,
+        "bytes": 5992
       },
       "textSize": {
         "numberOfFiles": 2,
         "lines": 197,
-        "characters": 4192,
-        "bytes": 4192
+        "characters": 4320,
+        "bytes": 4320
       },
       "size": {
-        "bytes": 56154,
-        "characters": 56154,
-        "lines": 1914,
+        "bytes": 59763,
+        "characters": 59763,
+        "lines": 2027,
         "numberOfFiles": 19
       }
     },
@@ -148,6 +149,7 @@
       "Tooltip",
       "MarkdownContent",
       "useAlert",
+      "getFolderJs",
       "ReaderProps",
       "BreadCrumbs",
       "ClickableIcon",
@@ -155,6 +157,7 @@
       "getFileOrFolderName",
       "getFolderJs",
       "MarkdownContent",
+      "Tabs",
       "processPrompt",
       "usePromptResultAlert",
       "Div",
@@ -174,6 +177,7 @@
       "P",
       "useAlert",
       "useLastSelection",
+      "ClickableIcon",
       "setItem",
       "Div",
       "FunctionForm",
@@ -185,6 +189,7 @@
       "writerInitialValues",
       "fileTabsInitialValues",
       "dbCrudInitialValues",
+      "tabsStoreInitialValues",
       "queries",
       "Group",
       "makeArray",

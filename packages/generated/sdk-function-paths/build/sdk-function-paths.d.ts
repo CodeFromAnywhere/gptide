@@ -1046,6 +1046,7 @@ export declare const sdkFunctionPaths: {
     parseIfJson: string;
     parsePrimitiveJson: string;
     stringToJson: string;
+    Tabs: string;
     getChunkBegin: string;
     getChunkEnd: string;
     getEncoding: string;

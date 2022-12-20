@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671448722801,
-  "updatedAt": 1671448722801,
+  "createdAt": 1671506485322,
+  "updatedAt": 1671506485322,
   "deletedAt": 0,
-  "createdFirstAt": 1671448722801,
+  "createdFirstAt": 1671506485322,
   "id": "namedparameterstypeof-menu",
   "name": "NamedParameters<typeof Menu>",
   "slug": "namedparameterstypeof-menu",

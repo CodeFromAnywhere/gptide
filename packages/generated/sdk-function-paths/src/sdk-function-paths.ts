@@ -1046,6 +1046,7 @@ export const sdkFunctionPaths = {
   "parseIfJson": "/modules/string-to-json/db/ts-functions/parse-if-json.json",
   "parsePrimitiveJson": "/modules/string-to-json/db/ts-functions/parse-primitive-json.json",
   "stringToJson": "/modules/string-to-json/db/ts-functions/string-to-json.json",
+  "Tabs": "/modules/tabs/db/ts-functions/tabs.json",
   "getChunkBegin": "/modules/text-or-binary/db/ts-functions/get-chunk-begin.json",
   "getChunkEnd": "/modules/text-or-binary/db/ts-functions/get-chunk-end.json",
   "getEncoding": "/modules/text-or-binary/db/ts-functions/get-encoding.json",

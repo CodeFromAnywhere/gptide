@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671448754852,
-  "updatedAt": 1671448754852,
+  "createdAt": 1671506595540,
+  "updatedAt": 1671506595540,
   "deletedAt": 0,
-  "createdFirstAt": 1671448754852,
+  "createdFirstAt": 1671506595540,
   "id": "namedparameterstypeof-useadmin",
   "name": "NamedParameters<typeof useAdmin>",
   "slug": "namedparameterstypeof-useadmin",

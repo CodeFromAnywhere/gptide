@@ -515,6 +515,10 @@ export declare const sdk: {
     parseIfJson: (string: string) => any;
     parsePrimitiveJson: <TForceType extends "string" | "number" | "boolean">(value: string, forceType?: TForceType | undefined) => TForceType extends "string" ? string | null | undefined : TForceType extends "number" ? number | null | undefined : TForceType extends "boolean" ? boolean | null | undefined : string | number | boolean | null | undefined;
     stringToJson: (value: string, isObject?: boolean | undefined) => import("string-to-json").JSONValue;
+    Tabs: (props: {
+        title?: string | undefined;
+        tabs: import("tabs").TabType[];
+    }) => JSX.Element;
     getEncoding: typeof getEncoding;
     isBinary: typeof isBinary;
     isText: typeof isText;
