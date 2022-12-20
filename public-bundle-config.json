@@ -13,7 +13,7 @@
   "language": "en",
   "deploymentHostname": "gptideas.com/gpt-ide",
   "id": "kfsjlkjdkljfslkjsfo",
+  "categoryStack": [],
   "operationName": null,
-  "projectRelativePath": "/db/bundle-configs/gptide.json",
-  "categoryStack": []
+  "projectRelativePath": "/db/bundle-configs/gptide.json"
 }
