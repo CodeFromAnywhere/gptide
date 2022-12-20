@@ -1,14 +1,14 @@
 {
-  "createdAt": 1671317378355,
-  "updatedAt": 1671317378355,
+  "createdAt": 1671494204923,
+  "updatedAt": 1671494204923,
   "deletedAt": 0,
-  "createdFirstAt": 1671317378355,
+  "createdFirstAt": 1671494204923,
   "isApiExposed": true,
   "isExported": true,
   "groupAuthorization": {},
   "operationRelativeTypescriptFilePath": "src/components/MyLayout.tsx",
   "commentsInside": [],
-  "rawText": " (props: { pageProps: any; nextPage: any }) => {\n  const { nextPage, pageProps } = props;\n  const router = useRouter();\n  // in index, we need this\n  if (router.isReady && router.pathname === \"/\") {\n    const Index = nextPage;\n    return <Index pageProps={pageProps} />;\n  }\n  return (\n    <AuthenticationLayout\n      overwriteDefaultPages={[\"signup\"]}\n      nextPage={nextPage}\n      pageProps={pageProps}\n    />\n  );\n}",
+  "rawText": " (props: { pageProps: any; nextPage: any }) => {\n  const { nextPage, pageProps } = props;\n  const router = useRouter();\n  // in index, we need this\n  if (router.isReady && router.pathname === \"/\") {\n    const Index = nextPage;\n    return <Index {...pageProps} />;\n  }\n  return (\n    <AuthenticationLayout\n      overwriteDefaultPages={[\"signup\"]}\n      nextPage={nextPage}\n      pageProps={pageProps}\n    />\n  );\n}",
   "name": "MyLayout",
   "slug": "my-layout",
   "parameters": [
@@ -66,13 +66,13 @@
   },
   "maxIndentationDepth": 3,
   "size": {
-    "characters": 420,
+    "characters": 413,
     "lines": 16,
-    "bytes": 420,
+    "bytes": 413,
     "bytesPerCharacter": 1,
     "charactersPerLine": 26,
     "linesPerFile": 16,
     "numberOfFiles": 1
   },
-  "id": "xagsvgpimkwvnwjvjtxoonkb"
+  "id": "rggjfjehyrwqywlxiduytcir"
 }

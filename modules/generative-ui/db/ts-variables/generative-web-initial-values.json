@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671317440266,
-  "updatedAt": 1671317440266,
+  "createdAt": 1671458786657,
+  "updatedAt": 1671458786657,
   "deletedAt": 0,
-  "createdFirstAt": 1671317440266,
+  "createdFirstAt": 1671458786657,
   "classification": "const",
   "comments": [],
   "isExported": false,
@@ -10,7 +10,7 @@
   "slug": "generative-web-initial-values",
   "operationRelativeTypescriptFilePath": "src/components/store.ts",
   "type": {
-    "rawType": "{ \"generativeWeb.defaultVariant\": string | null; \"generativeWeb.isEditing\": boolean; \"generativeWeb.config\": { disableAdmin?: boolean | undefined; }; }",
+    "rawType": "{ \"generativeWeb.defaultVariant\": string | null; \"generativeWeb.isEditing\": boolean; \"generativeWeb.config\": { disableAdmin?: boolean | undefined; customAbsoluteBasePaths?: string[] | undefined; activeCustomBasePath?: string | undefined; }; }",
     "typeDefinition": {
       "type": "object",
       "properties": {
@@ -25,6 +25,35 @@
           "properties": {
             "disableAdmin": {
               "type": "boolean"
+            },
+            "customAbsoluteBasePaths": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "allOf": [
+                  {
+                    "transform": [
+                      "trim"
+                    ]
+                  },
+                  {
+                    "minLength": 1
+                  }
+                ]
+              }
+            },
+            "activeCustomBasePath": {
+              "type": "string",
+              "allOf": [
+                {
+                  "transform": [
+                    "trim"
+                  ]
+                },
+                {
+                  "minLength": 1
+                }
+              ]
             }
           }
         }
@@ -69,6 +98,28 @@
                 "schema": {
                   "type": "boolean"
                 }
+              },
+              {
+                "name": "customAbsoluteBasePaths",
+                "required": false,
+                "schema": {
+                  "items": [
+                    {
+                      "schema": {
+                        "type": "string"
+                      },
+                      "name": null
+                    }
+                  ],
+                  "type": "array"
+                }
+              },
+              {
+                "name": "activeCustomBasePath",
+                "required": false,
+                "schema": {
+                  "type": "string"
+                }
               }
             ],
             "type": "object"
@@ -80,5 +131,5 @@
   },
   "value": "{\n  \"generativeWeb.defaultVariant\": null,\n  \"generativeWeb.isEditing\": false,\n  \"generativeWeb.config\": {},\n}",
   "description": "",
-  "id": "jontnxhhzeksauprerhbyvwp"
+  "id": "zfntpbcadqeqbyqptxmspook"
 }

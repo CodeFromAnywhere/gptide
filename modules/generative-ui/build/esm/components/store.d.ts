@@ -6,6 +6,11 @@ export declare const StoreProvider: ({ children }: {
     "generativeWeb.isEditing": boolean;
     "generativeWeb.config": {
         disableAdmin?: boolean;
+        /**
+         * Custom basepath array
+         */
+        customAbsoluteBasePaths?: string[];
+        activeCustomBasePath?: string;
     };
     "db-crud.datasetConfig": (import("code-types").DatasetConfig & {
         id?: string | undefined;

@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671317378765,
-  "updatedAt": 1671317378765,
+  "createdAt": 1671494205087,
+  "updatedAt": 1671494205087,
   "deletedAt": 0,
-  "createdFirstAt": 1671317378765,
+  "createdFirstAt": 1671494205087,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -27,7 +27,7 @@
       "type": "object"
     }
   },
-  "value": "(props: { pageProps: any; nextPage: any }) => {\n  const { nextPage, pageProps } = props;\n  const router = useRouter();\n  // in index, we need this\n  if (router.isReady && router.pathname === \"/\") {\n    const Index = nextPage;\n    return <Index pageProps={pageProps} />;\n  }\n  return (\n    <AuthenticationLayout\n      overwriteDefaultPages={[\"signup\"]}\n      nextPage={nextPage}\n      pageProps={pageProps}\n    />\n  );\n}",
+  "value": "(props: { pageProps: any; nextPage: any }) => {\n  const { nextPage, pageProps } = props;\n  const router = useRouter();\n  // in index, we need this\n  if (router.isReady && router.pathname === \"/\") {\n    const Index = nextPage;\n    return <Index {...pageProps} />;\n  }\n  return (\n    <AuthenticationLayout\n      overwriteDefaultPages={[\"signup\"]}\n      nextPage={nextPage}\n      pageProps={pageProps}\n    />\n  );\n}",
   "description": "",
-  "id": "iowdcasnfcdxzyzboqkvguju"
+  "id": "hpbpoopzpnodnyyfqvdxwfol"
 }

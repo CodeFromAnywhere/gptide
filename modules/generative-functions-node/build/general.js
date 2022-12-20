@@ -1,9 +1,79 @@
-"use strict";var __awaiter=this&&this.__awaiter||function(e,t,r,n){return new(r||(r=Promise))((function(i,o){function a(e){try{l(n.next(e))}catch(e){o(e)}}function u(e){try{l(n.throw(e))}catch(e){o(e)}}function l(e){var t;e.done?i(e.value):(t=e.value,t instanceof r?t:new r((function(e){e(t)}))).then(a,u)}l((n=n.apply(e,t||[])).next())}))},__generator=this&&this.__generator||function(e,t){var r,n,i,o,a={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return o={next:u(0),throw:u(1),return:u(2)},"function"==typeof Symbol&&(o[Symbol.iterator]=function(){return this}),o;function u(o){return function(u){return function(o){if(r)throw new TypeError("Generator is already executing.");for(;a;)try{if(r=1,n&&(i=2&o[0]?n.return:o[0]?n.throw||((i=n.return)&&i.call(n),0):n.next)&&!(i=i.call(n,o[1])).done)return i;switch(n=0,i&&(o=[2&o[0],i.value]),o[0]){case 0:case 1:i=o;break;case 4:return a.label++,{value:o[1],done:!1};case 5:a.label++,n=o[1],o=[0];continue;case 7:o=a.ops.pop(),a.trys.pop();continue;default:if(!(i=a.trys,(i=i.length>0&&i[i.length-1])||6!==o[0]&&2!==o[0])){a=0;continue}if(3===o[0]&&(!i||o[1]>i[0]&&o[1]<i[3])){a.label=o[1];break}if(6===o[0]&&a.label<i[1]){a.label=i[1],i=o;break}if(i&&a.label<i[2]){a.label=i[2],a.ops.push(o);break}i[2]&&a.ops.pop(),a.trys.pop();continue}o=t.call(e,a)}catch(e){o=[6,e],n=0}finally{r=i=0}if(5&o[0])throw o[1];return{value:o[0]?o[1]:void 0,done:!0}}([o,u])}}};Object.defineProperty(exports,"__esModule",{value:!0}),exports.canSeeFileContent=exports.canSeeFile=exports.expandFrontmatter=exports.getFirstFile=void 0;var fs_util_1=require("fs-util"),getFirstFile=function(e){return __awaiter(void 0,void 0,void 0,(function(){var t,r,n,i,o,a,u;return __generator(this,(function(l){switch(l.label){case 0:return[4/*yield*/,fs_util_1.fs.readdir(e,{encoding:"utf8",withFileTypes:!0})];case 1:return t=l.sent(),r=t.filter((function(e){return e.isFile()})),n=null===(o=r.find((function(e){return"readme.md"===e.name.toLowerCase()})))||void 0===o?void 0:o.name,i=null===(a=r.find((function(e){return e.name.startsWith("index.")})))||void 0===a?void 0:a.name,[2/*return*/,n||i||(null===(u=r[0])||void 0===u?void 0:u.name)||void 0]}}))}))};
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.canSeeFileContent = exports.canSeeFile = exports.expandFrontmatter = exports.getFirstFile = void 0;
+var fs_util_1 = require("fs-util");
 /**
  * Gets the first file in a directory:
  *
  * Either readme or index, or the first file it finds.
- */exports.getFirstFile=getFirstFile;var expandFrontmatter=function(e){return e?{isPrivate:"true"===e.isPrivate,authorizedGroup:e.authorizedGroup,isDraft:"true"===e.isDraft,isSecret:"true"===e.isSecret}:{}};exports.expandFrontmatter=expandFrontmatter;
+ */
+var getFirstFile = function (fullPath) { return __awaiter(void 0, void 0, void 0, function () {
+    var content, files, readme, index, firstFile;
+    var _a, _b, _c;
+    return __generator(this, function (_d) {
+        switch (_d.label) {
+            case 0: return [4 /*yield*/, fs_util_1.fs.readdir(fullPath, {
+                    encoding: "utf8",
+                    withFileTypes: true,
+                })];
+            case 1:
+                content = _d.sent();
+                files = content.filter(function (x) { return x.isFile(); });
+                readme = (_a = files.find(function (x) { return x.name.toLowerCase() === "readme.md"; })) === null || _a === void 0 ? void 0 : _a.name;
+                index = (_b = files.find(function (x) { return x.name.startsWith("index."); })) === null || _b === void 0 ? void 0 : _b.name;
+                firstFile = readme || index || ((_c = files[0]) === null || _c === void 0 ? void 0 : _c.name) || undefined;
+                return [2 /*return*/, firstFile];
+        }
+    });
+}); };
+exports.getFirstFile = getFirstFile;
+var expandFrontmatter = function (frontmatter) {
+    if (!frontmatter)
+        return {};
+    return {
+        isPrivate: frontmatter.isPrivate === "true",
+        authorizedGroup: frontmatter.authorizedGroup,
+        isDraft: frontmatter.isDraft === "true",
+        isSecret: frontmatter.isSecret === "true",
+    };
+};
+exports.expandFrontmatter = expandFrontmatter;
 /**
  * TODO: use something like this to ensure we have the type safety and not work with strings >.<
  *
@@ -13,13 +83,53 @@ import webMarkdownFileTsInterface from "markdown-types/db/ts-interfaces/webmarkd
 ```
 
  */
-var canSeeFile=function(e,t){
-// dev can always see it
-return!!t||(
-// no parameters seems fine
-!e||!e.isDraft&&!e.isSecret&&("premium"===e.authorizedGroup||"enterprise"===e.authorizedGroup||e.isPrivate,!0))};exports.canSeeFile=canSeeFile;var canSeeFileContent=function(e,t){var r,n;
-// dev can always see it
-return!!t||(
-// no parameters seems fine
-!e||"true"!==e.isDraft&&"true"!==e.isSecret&&("premium"!==(null===(r=e.authorizedGroup)||void 0===r?void 0:r.trim())&&"enterprise"!==(null===(n=e.authorizedGroup)||void 0===n?void 0:n.trim())&&"true"!==e.isPrivate))};exports.canSeeFileContent=canSeeFileContent;
+var canSeeFile = function (parameters, isDev) {
+    // dev can always see it
+    if (isDev) {
+        return true;
+    }
+    // no parameters seems fine
+    if (!parameters) {
+        return true;
+    }
+    if (parameters.isDraft || parameters.isSecret) {
+        return false;
+    }
+    if (parameters.authorizedGroup === "premium" ||
+        parameters.authorizedGroup === "enterprise") {
+        // for now we have no way to check if you're premium/enterprise, but we can still see them
+        return true;
+    }
+    if (parameters.isPrivate) {
+        // private files can still be seen, just not the content
+        return true;
+    }
+    return true;
+};
+exports.canSeeFile = canSeeFile;
+var canSeeFileContent = function (parameters, isDev) {
+    var _a, _b;
+    // dev can always see it
+    if (isDev) {
+        return true;
+    }
+    // no parameters seems fine
+    if (!parameters) {
+        return true;
+    }
+    if (parameters.isDraft === "true" || parameters.isSecret === "true") {
+        return false;
+    }
+    if (((_a = parameters.authorizedGroup) === null || _a === void 0 ? void 0 : _a.trim()) === "premium" ||
+        ((_b = parameters.authorizedGroup) === null || _b === void 0 ? void 0 : _b.trim()) === "enterprise") {
+        // for now we have no way to check if you're premium/enterprise
+        return false;
+    }
+    if (parameters.isPrivate === "true") {
+        //
+        return false;
+    }
+    return true;
+};
+exports.canSeeFileContent = canSeeFileContent;
 //# sourceMappingURL=general.js.map

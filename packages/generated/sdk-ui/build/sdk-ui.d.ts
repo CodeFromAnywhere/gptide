@@ -521,6 +521,7 @@ export declare const sdk: {
     PromptButton: (props: {
         item: import("ai-types").ContextualPrompt;
         markdown?: string | null | undefined;
+        contextSelection?: string | null | undefined;
         projectRelativeFilePath?: string | undefined;
     }) => JSX.Element;
     ReaderPageNext: (props: import("ai-types").ReaderProps) => JSX.Element;
@@ -530,7 +531,7 @@ export declare const sdk: {
         contentString: string;
         projectRelativeFilePath?: string | undefined;
     }) => JSX.Element;
-    setConfig: (apiUrl: string, disableAdmin: boolean) => void;
+    setConfig: (apiUrl: string, disableAdmin: boolean, customAbsoluteBasePaths: string[]) => void;
     SettingsPage: () => JSX.Element;
     useAdmin: () => {
         isAdminActive: boolean;
@@ -598,9 +599,14 @@ export declare const sdk: {
     }) => JSX.Element;
     Shareable: (props: {
         children: import("react").ReactNode;
+        description?: string | null | undefined;
+        contextFile_projectRelativeFilePath: string;
     }) => JSX.Element;
     useAllText: () => string | undefined;
-    useLastSelection: (isDisabled?: boolean | undefined) => string | null;
+    useLastSelection: (isDisabled?: boolean | undefined) => {
+        selection: string | null;
+        reset: () => void;
+    };
     useProjectRelativeScreenshot: () => {
         getImage: () => void;
         projectRelativeFilePath: string | null;

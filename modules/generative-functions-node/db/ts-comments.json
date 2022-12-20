@@ -1,9 +1,9 @@
 [
   {
-    "createdAt": 1671315255143,
-    "updatedAt": 1671315255143,
+    "createdAt": 1671493969642,
+    "updatedAt": 1671493969642,
     "deletedAt": 0,
-    "createdFirstAt": 1671315255143,
+    "createdFirstAt": 1671493969642,
     "name": "Comment",
     "slug": "comment",
     "operationRelativeTypescriptFilePath": "src/readerPageGetStatic.ts",
@@ -15,6 +15,6 @@
     ],
     "firstLine": 41,
     "lastLine": 50,
-    "id": "okqnecpqzomcwcclmmwwrhmq"
+    "id": "mltjpausxtvchnbkxisebwcd"
   }
 ]

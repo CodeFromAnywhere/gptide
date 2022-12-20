@@ -1,14 +1,14 @@
 {
-  "createdAt": 1671317405717,
-  "updatedAt": 1671317405717,
+  "createdAt": 1671458795333,
+  "updatedAt": 1671458795333,
   "deletedAt": 0,
-  "createdFirstAt": 1671317405717,
+  "createdFirstAt": 1671458795333,
   "isApiExposed": true,
   "isExported": true,
   "groupAuthorization": {},
   "operationRelativeTypescriptFilePath": "src/components/ReaderPageNext.tsx",
   "commentsInside": [],
-  "rawText": " (props: ReaderProps) => {\n  // props provide the static data for the website\n  const queryPath = useQueryPath();\n  const basePath = process.env.NEXT_PUBLIC_BASEPATH;\n\n  const readerPageQuery = queries.useGetReaderPageProps(\n    basePath || \"\",\n    queryPath,\n    true\n  );\n\n  const queryProps = readerPageQuery.data?.result?.props;\n\n  // either use the props returned from the query or from the static site\n  const realProps = queryProps?.actualProjectRelativeFilePath\n    ? queryProps\n    : props;\n\n  return <ReaderPage {...realProps} />;\n}",
+  "rawText": " (props: ReaderProps) => {\n  // props provide the static data for the website\n  const queryPath = useQueryPath();\n  const basePath = process.env.NEXT_PUBLIC_BASEPATH;\n  const [config] = useStore(\"generativeWeb.config\");\n\n  const readerPageQuery = queries.useGetReaderPageProps(\n    basePath,\n    queryPath,\n    true,\n    config.activeCustomBasePath\n  );\n\n  const queryProps = readerPageQuery.data?.result?.props;\n\n  // either use the props returned from the query or from the static site\n  const realProps = queryProps?.actualProjectRelativeFilePath\n    ? queryProps\n    : props;\n\n  return <ReaderPage {...realProps} />;\n}",
   "name": "ReaderPageNext",
   "slug": "reader-page-next",
   "parameters": [
@@ -200,13 +200,13 @@
   },
   "maxIndentationDepth": 2,
   "size": {
-    "characters": 675,
-    "lines": 20,
-    "bytes": 675,
+    "characters": 755,
+    "lines": 22,
+    "bytes": 755,
     "bytesPerCharacter": 1,
     "charactersPerLine": 34,
-    "linesPerFile": 20,
+    "linesPerFile": 22,
     "numberOfFiles": 1
   },
-  "id": "zjtcexqisemtruvumcgzdmsj"
+  "id": "tswrxugpozqpxwqjmiymswzv"
 }

@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671317403066,
-  "updatedAt": 1671317403066,
+  "createdAt": 1671458793449,
+  "updatedAt": 1671458793449,
   "deletedAt": 0,
-  "createdFirstAt": 1671317403066,
+  "createdFirstAt": 1671458793449,
   "id": "namedparameterstypeof-readerpagenext",
   "name": "NamedParameters<typeof ReaderPageNext>",
   "slug": "namedparameterstypeof-readerpagenext",

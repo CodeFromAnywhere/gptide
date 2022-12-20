@@ -53,14 +53,3 @@ _❗️ If you have any issues with the setup, please reach out, I'm trying to m
 # Prompting
 
 You can create a new prompt with "Free-form prompt" or you can just use a pre-created prompt from the menu. You can base prompts on your selection, as well as the context of the file. Your choice!
-
-# Building your own products on top?
-
-Because it's just an API, you can build things with ChatGPT with any techstack. However, I am opinionated, and I recommend Typescript (Node.js, Next.js, and React) because I built a way to build full stack apps with that super quickly (see [typerepo](https://typerepo.com)) and I've started with a course about it (see [codefromanywhere](https://codefromanywhere.com))
-
-To get started with ChatGPT, there are many ways:
-
-- Use [chat.openai.com](https://chat.openai.com/) manually. Not recommended, it is painfully slow and often down
-- Use the reverse-engineered API you can find open source [on GitHub](https://github.com/acheong08/ChatGPT) (seems archived)
-- Use the browser-automation library you can find open source [on GitHub](https://github.com/transitive-bullshit/chatgpt-api)
-- Build your system against the headless GPT IDE API. See `headless-gpt-ide.md` for more details!

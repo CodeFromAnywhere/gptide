@@ -86,7 +86,6 @@ export declare const sdkFunctionPaths: {
     addToken: string;
     ensureToken: string;
     findAssetParametersRecursively: string;
-    getAssetDirectlyApiUrl: string;
     getConversionInfoFromType: string;
     getExtensionFromAsset: string;
     getNameFromRelativePath: string;
@@ -310,6 +309,7 @@ export declare const sdkFunctionPaths: {
     frontmatterParseToString: string;
     frontmatterToObject: string;
     getFrontmatterValueString: string;
+    markdownModelTypeToMarkdownString: string;
     objectToFrontmatter: string;
     parseFrontmatterString: string;
     quotedOrNot: string;
@@ -548,6 +548,7 @@ export declare const sdkFunctionPaths: {
     hasAllLetters: string;
     insertAt: string;
     isAllTrue: string;
+    isArrayEqual: string;
     makeArray: string;
     mapAsync: string;
     mapItem: string;
@@ -736,7 +737,6 @@ export declare const sdkFunctionPaths: {
     generateRandomString: string;
     generateTime: string;
     isEmail: string;
-    markdownModelTypeToMarkdownString: string;
     getAssetInputType: string;
     getParameterContentType: string;
     isCalculatedParameter: string;
@@ -957,6 +957,7 @@ export declare const sdkFunctionPaths: {
     getKeysAtPathFromNestedObject: string;
     getMenuPagesObject: string;
     makeNestedObjectFromQueryPathObject: string;
+    mapChildObjectRecursive: string;
     nestedObjectToChildObject: string;
     nestedPathObjectToNestedMenuRecursive: string;
     nestifyQueryPathObjectRecursive: string;

@@ -54,8 +54,6 @@ import { useAdmin } from "./useAdmin";
 import { useVariantResult } from "./useVariant";
 import { VariantSelector } from "./VariantSelector";
 import { apiWithConfig } from "api";
-import { Shareable } from "share";
-var promo = "\uD83C\uDFDB Want more? [Sign up](/offers) for Premium content \uD83C\uDFDB\n\nI'm also organising a [\uD83E\uDD2F ChatGPT villa \uD83C\uDFDD](https://codefrombali.com \"Do you want to build something big from the ground up, do you want to do this in a small group of ambitious devs? Can we build the generative web together? Let's gooooo \uD83D\uDE80\") for dev-preneurs";
 export var ReaderPage = function (props) {
     var _a;
     var _b = useState(false), sidebarHidden = _b[0], setSidebarHidden = _b[1];
@@ -67,6 +65,9 @@ export var ReaderPage = function (props) {
     var queryPath = router.asPath.slice(1);
     var showPromptAlert = usePromptResultAlert();
     var alert = useAlert();
+    var promo = "**What to do now?**\n- [\uD83D\uDD7A Join our discord](https://discord.gg/gehCtKJk)".concat(admin.isAdminActive
+        ? ""
+        : "\n- [🧪 Install your server](/gpt-ide/README.md)", "\n- [\uD83C\uDFDB See my premium services and offers](/offers)\n- [\uD83E\uDD2F Join our AI hacker villa \uD83C\uDFDD](https://codefrombali.com)");
     var markdown = props.markdown, actualProjectRelativeFilePath = props.actualProjectRelativeFilePath, contextualPromptResults = props.contextualPromptResults, contextualPromptsObject = props.contextualPromptsObject, navigation = props.navigation, isFolder = props.isFolder, canSeeContent = props.canSeeContent, unauthorizedWarningMessage = props.unauthorizedWarningMessage, notFound = props.notFound;
     var onFocus = function () { return __awaiter(void 0, void 0, void 0, function () {
         var localUrl, isAlive;
@@ -158,19 +159,18 @@ export var ReaderPage = function (props) {
     var renderEditContent = function () {
         return (React.createElement(Div, { className: "flex flex-1 flex-col lg:h-full lg:overflow-y-scroll" },
             React.createElement(ClickableIcon, { emoji: isEditing ? "🪄" : "✏️", onClick: function () { return setIsEditing(!isEditing); } }),
-            actualProjectRelativeFilePath ? (React.createElement(FileWriter, { projectRelativeFilePath: actualProjectRelativeFilePath, markdownModelName: "CreatorMarkdownFile", initialWriterView: "edit", disabledMenuItems: ["view", "presentation", "config"] })) : null));
+            actualProjectRelativeFilePath ? (React.createElement(FileWriter, { projectRelativeFilePath: actualProjectRelativeFilePath, markdownModelName: "CreatorMarkdownFile", initialWriterView: "edit", disabledMenuItems: ["view", "config"] })) : null));
     };
     var pageContent = (React.createElement(Div, { className: "flex flex-1 flex-col lg:h-full lg:overflow-y-scroll" },
         sidebarHidden ? (React.createElement(Div, { className: "max-lg:hidden lg:block flex justify-end" },
             React.createElement(ClickableIcon, { emoji: "<<", onClick: function () { return setSidebarHidden(false); } }))) : null,
         React.createElement(BreadCrumbs, { path: queryPath }),
         React.createElement(VariantSelector, { projectRelativeFilePath: actualProjectRelativeFilePath, folderPath: folderPath, isFolder: isFolder, filename: filename, contextualPromptResults: fileContextualPromptResults }),
-        React.createElement(Shareable, null,
-            React.createElement(Div, { className: "p-1" },
-                React.createElement(MarkdownContent, { config: markdownContentConfig, content: contentString }))),
+        React.createElement(Div, { className: "p-1" },
+            React.createElement(MarkdownContent, { config: markdownContentConfig, content: contentString })),
         React.createElement(SelectionPrompts, { contentString: contentString, projectRelativeFilePath: actualProjectRelativeFilePath, selectionContextualPrompts: (_a = props.contextualPromptsObject) === null || _a === void 0 ? void 0 : _a.selectionContextualPrompts }),
         React.createElement(Div, null,
-            React.createElement(P, { className: "font-bold" }, "File"),
+            React.createElement(P, { className: "font-bold" }, "Apply a prompt on the whole file"),
             React.createElement(Div, { className: "flex flex-row flex-wrap" },
                 React.createElement(NavButton, { title: "\uD83C\uDFA4 Speak", onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
                         return __generator(this, function (_a) {
@@ -215,12 +215,14 @@ export var ReaderPage = function (props) {
                         alert === null || alert === void 0 ? void 0 : alert("Not implemented yet", "Execute a certain prompt for all files in a folder, recursively. Should not show the result immediately because these things should be queued and the result is too big to show immediately. There should be settings before you execute all prompts: recursively nested folders? how fast should it be executed? Which model? Etc.");
                     }, title: prompt.title || prompt.name }));
             })))) : null,
-        React.createElement(Div, { className: "py-10 mx-2" },
+        React.createElement(Div, { className: "pt-4 pb-12" },
             React.createElement(MarkdownContent, { content: promo, config: {} }))));
     var variantsOnLg = !fileContextualPromptResults ||
         sidebarHidden ||
         !fileContextualPromptResults.length ? null : (React.createElement(Div, { className: "lg:block max-lg:hidden lg:w-[280px] 2xl:w-[400px] lg:h-full lg:overflow-y-scroll" },
-        React.createElement(ClickableIcon, { emoji: "\u2573", onClick: function () { return setSidebarHidden(true); } }), fileContextualPromptResults === null || fileContextualPromptResults === void 0 ? void 0 :
+        React.createElement(Div, { className: "flex flex-row ml-3" },
+            React.createElement(ClickableIcon, { emoji: "\u2573", onClick: function () { return setSidebarHidden(true); } }),
+            React.createElement(P, { className: "ml-2 font-bold" }, "File Prompt Results")), fileContextualPromptResults === null || fileContextualPromptResults === void 0 ? void 0 :
         fileContextualPromptResults.map(function (result) {
             if (!result.resultText)
                 return null;

@@ -9,7 +9,6 @@ export declare const sdkInterfacePaths: {
     RunEveryPeriodEnum: string;
     TsFunction: string;
     AuthenticationMethodMethod: string;
-    CategoryChildObject: string;
     ContextualPrompt: string;
     FileType: string;
     FunctionContext: string;
@@ -67,6 +66,7 @@ export declare const sdkInterfacePaths: {
     StackCount: string;
     AiDemoApp: string;
     BackendAsset: string;
+    CategoryChildObject: string;
     ContextualContent: string;
     ContextualPromptInfo: string;
     ContextualPromptResult: string;
@@ -107,7 +107,6 @@ export declare const sdkInterfacePaths: {
     "NamedParameters<typeof addToken>": string;
     "NamedParameters<typeof ensureToken>": string;
     "NamedParameters<typeof findAssetParametersRecursively>": string;
-    "NamedParameters<typeof getAssetDirectlyApiUrl>": string;
     "NamedParameters<typeof getConversionInfoFromType>": string;
     "NamedParameters<typeof getExtensionFromAsset>": string;
     "NamedParameters<typeof getNameFromRelativePath>": string;
@@ -422,6 +421,7 @@ export declare const sdkInterfacePaths: {
     "NamedParameters<typeof frontmatterParseToString>": string;
     "NamedParameters<typeof frontmatterToObject>": string;
     "NamedParameters<typeof getFrontmatterValueString>": string;
+    "NamedParameters<typeof markdownModelTypeToMarkdownString>": string;
     "NamedParameters<typeof objectToFrontmatter>": string;
     "NamedParameters<typeof parseFrontmatterString>": string;
     "NamedParameters<typeof quotedOrNot>": string;
@@ -625,6 +625,7 @@ export declare const sdkInterfacePaths: {
     "NamedParameters<typeof concatenate>": string;
     "NamedParameters<typeof getParameterAtLocation>": string;
     "NamedParameters<typeof hasAllLetters>": string;
+    "NamedParameters<typeof isArrayEqual>": string;
     "NamedParameters<typeof mergeNestedObjectTest>": string;
     "NamedParameters<typeof replaceLastOccurence>": string;
     "NamedParameters<typeof reverseString>": string;

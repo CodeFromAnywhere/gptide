@@ -34,15 +34,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
 import * as React from "react";
 import { api } from "api";
 import { showStandardResponse } from "cool-toast";
@@ -52,12 +43,14 @@ import { useAlert } from "react-with-native-alert";
 import { useLastSelection } from "share";
 import { NavButton } from "./NavButton";
 import { useAdmin } from "./useAdmin";
+import { PromptButton } from "./PromptButton";
+import { ClickableIcon } from "clickable-icon";
 export var SelectionPrompts = function (props) {
     var showPromptAlert = usePromptResultAlert();
     var alert = useAlert();
     var selectionContextualPrompts = props.selectionContextualPrompts, contentString = props.contentString, projectRelativeFilePath = props.projectRelativeFilePath;
     var admin = useAdmin();
-    var contextSelection = useLastSelection();
+    var _a = useLastSelection(), contextSelection = _a.selection, reset = _a.reset;
     /**
      * TODO: also sort them here based on which selection you make (`.contextualContent.contextSelection`) and your settings (probably isFavorite first, but other sorting may be beneficial.
      */
@@ -85,7 +78,7 @@ export var SelectionPrompts = function (props) {
         : 0;
     var isStatement = selectionWordCount > 1;
     var isWord = selectionWordCount <= 4;
-    var selectionItems = __spreadArray([
+    var selectionItems = [
         {
             onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
                 var apiResult;
@@ -172,15 +165,21 @@ export var SelectionPrompts = function (props) {
                     React.createElement(P, null, "This button should let you record your voice so you can ask a question through human speech. The speech will be converted into text by whisper, it will then choose an existing prompt action, or if it can't find that, do a free-form prompt."),
                     React.createElement(P, null, "P.S. Would be nice if this option is there by default, also for other menus, or it's even accessible via other ways, but this is a great way to try it out first.")));
             },
-        }
-    ], promptItems, true);
+        },
+    ];
     return (React.createElement(Div, null,
-        React.createElement(P, { className: "font-bold" }, "Selection"),
-        React.createElement(P, null, contextSelection),
-        React.createElement(Div, { className: "flex flex-row flex-wrap" }, selectionItems
-            .filter(function (selectionItem) { return selectionItem.isEnabled; })
-            .map(function (item, index) {
-            return (React.createElement(NavButton, { title: item.title, onClick: item.onClick, key: "sele".concat(index) }));
-        }))));
+        React.createElement(P, { className: "font-bold" }, "Apply a prompt on your selection"),
+        React.createElement(Div, { className: "bg-black/20 dark:bg-white/20 flex flex-row justify-between rounded-md p-2 my-2" }, contextSelection ? (React.createElement(React.Fragment, null,
+            React.createElement(P, null, contextSelection),
+            React.createElement(ClickableIcon, { emoji: "\u274C", onClick: function () { return reset(); } }))) : (React.createElement(P, null, "Please select a piece of text first"))),
+        contextSelection ? (React.createElement(Div, { className: "flex flex-row flex-wrap" },
+            selectionItems
+                .filter(function (selectionItem) { return selectionItem.isEnabled; })
+                .map(function (item, index) {
+                return (React.createElement(NavButton, { title: item.title, onClick: item.onClick, key: "sele".concat(index) }));
+            }), selectionContextualPrompts === null || selectionContextualPrompts === void 0 ? void 0 :
+            selectionContextualPrompts.map(function (prompt) {
+                return (React.createElement(PromptButton, { key: "selectPrompt".concat(prompt.id), item: prompt, contextSelection: contextSelection, markdown: contentString, projectRelativeFilePath: projectRelativeFilePath }));
+            }))) : null));
 };
 //# sourceMappingURL=SelectionPrompts.js.map

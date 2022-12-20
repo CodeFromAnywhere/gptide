@@ -1,0 +1,21 @@
+{
+  "createdAt": 1671497848797,
+  "updatedAt": 1671497848797,
+  "deletedAt": 0,
+  "createdFirstAt": 1671497848797,
+  "name": "ye",
+  "title": "Let Kanye West write a poem about your selection",
+  "language": "english",
+  "promptContent": "Write a poem about this text in the words of Kanye West. Ensure the poem doesn't loose the text's original meaning.\n\n```\n%selection\n```\n\nUse two newlines after every sentence.",
+  "usesSelection": true,
+  "contextType": [
+    "text"
+  ],
+  "isFavorite": true,
+  "slug": "ye",
+  "id": "lirgfrrbypawhttjqprqspxj",
+  "categoryStack": [
+    "text",
+    "art"
+  ]
+}

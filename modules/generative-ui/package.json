@@ -75,25 +75,25 @@
     "hasGeneratedDependenciesIndexed": false,
     "buildResultIndexed": {
       "indexInteracesErrors": [
-        "No schema/definitions found for /Users/king/King/operations/tools/ai/generative-ui/src/components/Shareable.tsx. Error: Error: Unknown node \"new (props: P) => Component<P, any>\" of kind \"ConstructorType\""
+        "No schema/definitions found for /Users/king/King/operations/tools/ai/generative-ui/src/components/NavButton.tsx. Error: Error: Unknown type \"function\""
       ],
       "buildSucceeded": true,
       "indexImportExportError": "",
       "lintProblems": []
     },
-    "lastRebuildAt": 1671317465884,
+    "lastRebuildAt": 1671448763596,
     "sizeIndexed": {
       "codeSize": {
         "numberOfFiles": 15,
-        "lines": 1478,
-        "characters": 45926,
-        "bytes": 45926
+        "lines": 1481,
+        "characters": 46010,
+        "bytes": 46010
       },
       "dataSize": {
         "numberOfFiles": 2,
-        "lines": 237,
-        "characters": 6011,
-        "bytes": 6011
+        "lines": 236,
+        "characters": 5952,
+        "bytes": 5952
       },
       "textSize": {
         "numberOfFiles": 2,
@@ -102,9 +102,9 @@
         "bytes": 4192
       },
       "size": {
-        "bytes": 56129,
-        "characters": 56129,
-        "lines": 1912,
+        "bytes": 56154,
+        "characters": 56154,
+        "lines": 1914,
         "numberOfFiles": 19
       }
     },
@@ -162,6 +162,7 @@
       "useAlert",
       "useRouter",
       "apiWithConfig",
+      "Shareable",
       "ReaderProps",
       "queries",
       "ContextualPrompt",

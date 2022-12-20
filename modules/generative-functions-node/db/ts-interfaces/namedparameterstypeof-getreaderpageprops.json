@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671315248521,
-  "updatedAt": 1671315248521,
+  "createdAt": 1671493721173,
+  "updatedAt": 1671493721173,
   "deletedAt": 0,
-  "createdFirstAt": 1671315248521,
+  "createdFirstAt": 1671493721173,
   "id": "namedparameterstypeof-getreaderpageprops",
   "name": "NamedParameters<typeof getReaderPageProps>",
   "slug": "namedparameterstypeof-getreaderpageprops",
@@ -28,10 +28,13 @@
         "isAdmin": {
           "type": "boolean",
           "description": "If true, isDev will be overwritten to be false, even in prod"
+        },
+        "absoluteBasePath": {
+          "type": "string",
+          "description": "If given, will be used instead of basePath, if it exists."
         }
       },
       "required": [
-        "basePath",
         "queryPath"
       ],
       "additionalProperties": false
@@ -40,7 +43,7 @@
       "properties": [
         {
           "name": "basePath",
-          "required": true,
+          "required": false,
           "schema": {
             "fullComment": "BasePath for this project",
             "type": "string"
@@ -60,6 +63,14 @@
           "schema": {
             "fullComment": "If true, isDev will be overwritten to be false, even in prod",
             "type": "boolean"
+          }
+        },
+        {
+          "name": "absoluteBasePath",
+          "required": false,
+          "schema": {
+            "fullComment": "If given, will be used instead of basePath, if it exists.",
+            "type": "string"
           }
         }
       ],

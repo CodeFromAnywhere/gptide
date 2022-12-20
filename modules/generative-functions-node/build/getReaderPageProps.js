@@ -1,18 +1,281 @@
-"use strict";var __assign=this&&this.__assign||function(){return __assign=Object.assign||function(e){for(var t,n=1,r=arguments.length;n<r;n++)for(var a in t=arguments[n])Object.prototype.hasOwnProperty.call(t,a)&&(e[a]=t[a]);return e},__assign.apply(this,arguments)},__awaiter=this&&this.__awaiter||function(e,t,n,r){return new(n||(n=Promise))((function(a,o){function i(e){try{l(r.next(e))}catch(e){o(e)}}function s(e){try{l(r.throw(e))}catch(e){o(e)}}function l(e){var t;e.done?a(e.value):(t=e.value,t instanceof n?t:new n((function(e){e(t)}))).then(i,s)}l((r=r.apply(e,t||[])).next())}))},__generator=this&&this.__generator||function(e,t){var n,r,a,o,i={label:0,sent:function(){if(1&a[0])throw a[1];return a[1]},trys:[],ops:[]};return o={next:s(0),throw:s(1),return:s(2)},"function"==typeof Symbol&&(o[Symbol.iterator]=function(){return this}),o;function s(o){return function(s){return function(o){if(n)throw new TypeError("Generator is already executing.");for(;i;)try{if(n=1,r&&(a=2&o[0]?r.return:o[0]?r.throw||((a=r.return)&&a.call(r),0):r.next)&&!(a=a.call(r,o[1])).done)return a;switch(r=0,a&&(o=[2&o[0],a.value]),o[0]){case 0:case 1:a=o;break;case 4:return i.label++,{value:o[1],done:!1};case 5:i.label++,r=o[1],o=[0];continue;case 7:o=i.ops.pop(),i.trys.pop();continue;default:if(!(a=i.trys,(a=a.length>0&&a[a.length-1])||6!==o[0]&&2!==o[0])){i=0;continue}if(3===o[0]&&(!a||o[1]>a[0]&&o[1]<a[3])){i.label=o[1];break}if(6===o[0]&&i.label<a[1]){i.label=a[1],a=o;break}if(a&&i.label<a[2]){i.label=a[2],i.ops.push(o);break}a[2]&&i.ops.pop(),i.trys.pop();continue}o=t.call(e,i)}catch(e){o=[6,e],r=0}finally{n=a=0}if(5&o[0])throw o[1];return{value:o[0]?o[1]:void 0,done:!0}}([o,s])}}},__rest=this&&this.__rest||function(e,t){var n={};for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&t.indexOf(r)<0&&(n[r]=e[r]);if(null!=e&&"function"==typeof Object.getOwnPropertySymbols){var a=0;for(r=Object.getOwnPropertySymbols(e);a<r.length;a++)t.indexOf(r[a])<0&&Object.prototype.propertyIsEnumerable.call(e,r[a])&&(n[r[a]]=e[r[a]])}return n};Object.defineProperty(exports,"__esModule",{value:!0}),exports.getReaderPageProps=void 0;var fs_util_1=require("fs-util"),fs_util_js_1=require("fs-util-js"),get_path_1=require("get-path"),js_util_1=require("js-util"),read_markdown_file_1=require("read-markdown-file"),augmentMarkdown_1=require("./augmentMarkdown"),findClosestAbsolutePath_1=require("./findClosestAbsolutePath"),general_1=require("./general"),getReaderPageProps=function(
+"use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getReaderPageProps = void 0;
+var fs_util_1 = require("fs-util");
+var fs_util_js_1 = require("fs-util-js");
+var get_path_1 = require("get-path");
+var ai_functions_node_1 = require("ai-functions-node");
+var js_util_1 = require("js-util");
+var read_markdown_file_1 = require("read-markdown-file");
+var augmentMarkdown_1 = require("./augmentMarkdown");
+var findClosestAbsolutePath_1 = require("./findClosestAbsolutePath");
+var general_1 = require("./general");
+/**
+NB: this thing doesn't know about the basepath, it allows any path in the project.
+
+Idea: would it be easy to allow for path outside of project as well?
+ */
+var getReaderPageProps = function (
 /**
  * BasePath for this project
  */
-e,
+basePath, 
 /**
  * QueryPath as in the URL
  */
-t,
+queryPath, 
 /**
  * If true, isDev will be overwritten to be false, even in prod
  */
-n){return __awaiter(void 0,void 0,void 0,(function(){var r,a,o,i,s,l,u,c,_,d,f,p,m,h,g,v,b,w,y,P,j,k,F,x,R,O;return __generator(this,(function(C){switch(C.label){case 0:return(r=(0,get_path_1.getProjectRoot)())?(a=fs_util_1.path.join(r,e,t),[4/*yield*/,(0,findClosestAbsolutePath_1.findClosestAbsolutePath)(a)]):[2/*return*/,{props:{notFound:!0,notFoundReason:"No projectroot"}}];case 1:return o=C.sent(),i=o.absoluteQueryPath,s=o.isFile,l=o.isFolder,u=i===a,c=s?fs_util_1.path.parse(i).dir:i,[4/*yield*/,fs_util_1.fs.readdir(c,{withFileTypes:!0,encoding:"utf8"})];case 2:return _=C.sent(),d="development"===process.env.NODE_ENV,f=_.find((function(e){return"readme.md"===e.name.toLowerCase()})),(p=f?fs_util_1.path.join(c,f.name):void 0)?[4/*yield*/,(0,read_markdown_file_1.readMarkdownFile)(p)]:[3/*break*/,4];case 3:return h=null===(O=C.sent())||void 0===O?void 0:O.parameters,[3/*break*/,5];case 4:h=void 0,C.label=5;case 5:return m=h,g=!p||(0,general_1.canSeeFileContent)(m,d),[4/*yield*/,Promise.all(_.map((function(e){return __awaiter(void 0,void 0,void 0,(function(){var t,n,a,o,i,s,l,u,_;return __generator(this,(function(d){switch(d.label){case 0:return[".DS_Store",".index"].includes(e.name)?[2/*return*/]:(t=fs_util_1.path.join(c,e.name),"folder"!==(n=e.isDirectory()?"folder":e.isSymbolicLink()?"link":e.isFile()?"file":"unknown")?[3/*break*/,2]:[4/*yield*/,(0,general_1.getFirstFile)(t)]);case 1:return o=d.sent(),[3/*break*/,3];case 2:o=void 0,d.label=3;case 3:return a=o,"md"!==(0,fs_util_js_1.getExtension)(e.name)?[3/*break*/,5]:[4/*yield*/,(0,read_markdown_file_1.readMarkdownFile)(t)];case 4:return s=null===(u=d.sent())||void 0===u?void 0:u.parameters,[3/*break*/,9];case 5:return"folder"!==n?[3/*break*/,7]:[4/*yield*/,(0,read_markdown_file_1.readMarkdownFile)(fs_util_1.path.join(t,"README.md"))];case 6:return l=null===(_=d.sent())||void 0===_?void 0:_.parameters,[3/*break*/,8];case 7:l=void 0,d.label=8;case 8:s=l,d.label=9;case 9:return i=s,[2/*return*/,{type:n,name:e.name,firstFile:a,frontmatter:i,projectRelativePath:(0,fs_util_js_1.makeRelative)(fs_util_1.path.join(c,e.name),r)}]}}))}))})))];case 6:return v=C.sent().filter(js_util_1.notEmpty).map((function(e){var t=e.frontmatter,n=__rest(e,["frontmatter"]);return __assign(__assign({},n),(0,general_1.expandFrontmatter)(t))})).filter((function(e){
-// filter out the files that should be HIDDEN
-return(0,general_1.canSeeFile)(e,d)})).map(js_util_1.omitUndefinedValues),s?[4/*yield*/,(0,read_markdown_file_1.readMarkdownFile)(i)]:[3/*break*/,8];case 7:return w=C.sent(),[3/*break*/,9];case 8:w=null,C.label=9;case 9:return b=w,y=[".ts",".tsx",".json"],P=fs_util_1.path.parse(i),s&&y.includes(P.ext)?[4/*yield*/,fs_util_1.fs.readFile(i,"utf8")]:[3/*break*/,11];case 10:return k=C.sent(),[3/*break*/,12];case 11:k=void 0,C.label=12;case 12:return j=k,F=(0,general_1.canSeeFileContent)(null==b?void 0:b.parameters,d),x=F&&g&&s?b?b.raw:j||null:null,[4/*yield*/,(0,augmentMarkdown_1.augmentMarkdown)(x,{
-// for now no code yet, it's too slow
-isAdmin:n,augmentCode:!1,augmentContextualPrompts:!1,augmentContextualPromptResults:!0,augmentStatements:!0,augmentWords:!0,externalHost:void 0,markdown_projectRelativeFilePath:(0,fs_util_js_1.makeRelative)(i,r)})];case 13:return R=C.sent(),[2/*return*/,{props:{notFound:!u,notFoundReason:u?null:"Path isn't valid: ".concat(a,". We found ").concat(i),isFolder:l,canSeeContent:F,unauthorizedWarningMessage:F?null:"You have to be premium to see this. [Click here to see our offers](/offers)",markdown:(null==R?void 0:R.augmentedMarkdown)||j||null,navigation:v,actualProjectRelativeFilePath:(0,fs_util_js_1.makeRelative)(i,r),contextualPromptResults:(null==R?void 0:R.contextualPromptResults)||null,contextualPromptsObject:(null==R?void 0:R.contextualPromptsObject)||null}}]}}))}))};exports.getReaderPageProps=getReaderPageProps;
+isAdmin, 
+/**
+ * If given, will be used instead of basePath, if it exists.
+ */
+absoluteBasePath) { return __awaiter(void 0, void 0, void 0, function () {
+    var contextualPromptCategories, projectRoot, expectedAbsolutePath, _a, absoluteQueryPath, isFile, isFolder, isValidPath, folderPath, dirents, isDev, readmeDirent, readmePath, readmeFrontmatter, _b, canSeeFolder, navigation, markdownParse, _c, allowedOtherExtensions, pathParse, rawContent, _d, canSeeContent, fileContentString, augmentedResult, props;
+    var _e;
+    return __generator(this, function (_f) {
+        switch (_f.label) {
+            case 0: return [4 /*yield*/, (0, ai_functions_node_1.getContextualPromptCategories)()];
+            case 1:
+                contextualPromptCategories = _f.sent();
+                projectRoot = (0, get_path_1.getProjectRoot)();
+                if (!projectRoot) {
+                    return [2 /*return*/, {
+                            props: {
+                                notFound: true,
+                                notFoundReason: "No projectroot",
+                                contextualPromptCategories: contextualPromptCategories,
+                            },
+                        }];
+                }
+                expectedAbsolutePath = absoluteBasePath
+                    ? fs_util_1.path.join(absoluteBasePath, queryPath)
+                    : basePath
+                        ? fs_util_1.path.join(projectRoot, basePath, queryPath)
+                        : fs_util_1.path.join(projectRoot, queryPath);
+                return [4 /*yield*/, (0, findClosestAbsolutePath_1.findClosestAbsolutePath)(expectedAbsolutePath)];
+            case 2:
+                _a = _f.sent(), absoluteQueryPath = _a.absoluteQueryPath, isFile = _a.isFile, isFolder = _a.isFolder;
+                isValidPath = absoluteQueryPath === expectedAbsolutePath;
+                folderPath = isFile
+                    ? fs_util_1.path.parse(absoluteQueryPath).dir
+                    : absoluteQueryPath;
+                return [4 /*yield*/, fs_util_1.fs.readdir(folderPath, {
+                        withFileTypes: true,
+                        encoding: "utf8",
+                    })];
+            case 3:
+                dirents = _f.sent();
+                isDev = process.env.NODE_ENV === "development";
+                readmeDirent = dirents.find(function (x) { return x.name.toLowerCase() === "readme.md"; });
+                readmePath = readmeDirent
+                    ? fs_util_1.path.join(folderPath, readmeDirent.name)
+                    : undefined;
+                if (!readmePath) return [3 /*break*/, 5];
+                return [4 /*yield*/, (0, read_markdown_file_1.readMarkdownFile)(readmePath)];
+            case 4:
+                _b = (_e = (_f.sent())) === null || _e === void 0 ? void 0 : _e.parameters;
+                return [3 /*break*/, 6];
+            case 5:
+                _b = undefined;
+                _f.label = 6;
+            case 6:
+                readmeFrontmatter = _b;
+                canSeeFolder = readmePath
+                    ? (0, general_1.canSeeFileContent)(readmeFrontmatter, isDev)
+                    : true;
+                return [4 /*yield*/, Promise.all(dirents.map(function (dirent) { return __awaiter(void 0, void 0, void 0, function () {
+                        var ignoredFilesFolders, fullPath, type, firstFile, _a, frontmatter, _b, _c, folderContent;
+                        var _d, _e;
+                        return __generator(this, function (_f) {
+                            switch (_f.label) {
+                                case 0:
+                                    ignoredFilesFolders = [".DS_Store", ".index"];
+                                    if (ignoredFilesFolders.includes(dirent.name))
+                                        return [2 /*return*/];
+                                    fullPath = fs_util_1.path.join(folderPath, dirent.name);
+                                    type = dirent.isDirectory()
+                                        ? "folder"
+                                        : dirent.isSymbolicLink()
+                                            ? "link"
+                                            : dirent.isFile()
+                                                ? "file"
+                                                : "unknown";
+                                    if (!(type === "folder")) return [3 /*break*/, 2];
+                                    return [4 /*yield*/, (0, general_1.getFirstFile)(fullPath)];
+                                case 1:
+                                    _a = _f.sent();
+                                    return [3 /*break*/, 3];
+                                case 2:
+                                    _a = undefined;
+                                    _f.label = 3;
+                                case 3:
+                                    firstFile = _a;
+                                    if (!((0, fs_util_js_1.getExtension)(dirent.name) === "md")) return [3 /*break*/, 5];
+                                    return [4 /*yield*/, (0, read_markdown_file_1.readMarkdownFile)(fullPath)];
+                                case 4:
+                                    _b = (_d = (_f.sent())) === null || _d === void 0 ? void 0 : _d.parameters;
+                                    return [3 /*break*/, 9];
+                                case 5:
+                                    if (!(type === "folder")) return [3 /*break*/, 7];
+                                    return [4 /*yield*/, (0, read_markdown_file_1.readMarkdownFile)(fs_util_1.path.join(fullPath, "README.md"))];
+                                case 6:
+                                    _c = (_e = (_f.sent())) === null || _e === void 0 ? void 0 : _e.parameters;
+                                    return [3 /*break*/, 8];
+                                case 7:
+                                    _c = undefined;
+                                    _f.label = 8;
+                                case 8:
+                                    _b = _c;
+                                    _f.label = 9;
+                                case 9:
+                                    frontmatter = _b;
+                                    folderContent = {
+                                        type: type,
+                                        name: dirent.name,
+                                        firstFile: firstFile,
+                                        frontmatter: frontmatter,
+                                        projectRelativePath: (0, fs_util_js_1.makeRelative)(fs_util_1.path.join(folderPath, dirent.name), projectRoot),
+                                    };
+                                    return [2 /*return*/, folderContent];
+                            }
+                        });
+                    }); }))];
+            case 7:
+                navigation = (_f.sent())
+                    .filter(js_util_1.notEmpty)
+                    .map(function (_a) {
+                    var frontmatter = _a.frontmatter, other = __rest(_a, ["frontmatter"]);
+                    var folderContent = __assign(__assign({}, other), (0, general_1.expandFrontmatter)(frontmatter));
+                    return folderContent;
+                })
+                    .filter(function (file) {
+                    // filter out the files that should be HIDDEN
+                    return (0, general_1.canSeeFile)(file, isDev);
+                })
+                    .map(js_util_1.omitUndefinedValues);
+                if (!isFile) return [3 /*break*/, 9];
+                return [4 /*yield*/, (0, read_markdown_file_1.readMarkdownFile)(absoluteQueryPath)];
+            case 8:
+                _c = _f.sent();
+                return [3 /*break*/, 10];
+            case 9:
+                _c = null;
+                _f.label = 10;
+            case 10:
+                markdownParse = _c;
+                allowedOtherExtensions = [".ts", ".tsx", ".json"];
+                pathParse = fs_util_1.path.parse(absoluteQueryPath);
+                if (!(isFile && allowedOtherExtensions.includes(pathParse.ext))) return [3 /*break*/, 12];
+                return [4 /*yield*/, fs_util_1.fs.readFile(absoluteQueryPath, "utf8")];
+            case 11:
+                _d = _f.sent();
+                return [3 /*break*/, 13];
+            case 12:
+                _d = undefined;
+                _f.label = 13;
+            case 13:
+                rawContent = _d;
+                canSeeContent = (0, general_1.canSeeFileContent)(markdownParse === null || markdownParse === void 0 ? void 0 : markdownParse.parameters, isDev);
+                fileContentString = !canSeeContent || !canSeeFolder || !isFile
+                    ? null
+                    : markdownParse
+                        ? markdownParse.raw
+                        : rawContent
+                            ? rawContent
+                            : null;
+                return [4 /*yield*/, (0, augmentMarkdown_1.augmentMarkdown)(fileContentString, {
+                        // for now no code yet, it's too slow
+                        isAdmin: isAdmin,
+                        augmentCode: false,
+                        augmentContextualPrompts: false,
+                        augmentContextualPromptResults: true,
+                        augmentStatements: true,
+                        augmentWords: true,
+                        externalHost: undefined,
+                        markdown_projectRelativeFilePath: (0, fs_util_js_1.makeRelative)(absoluteQueryPath, projectRoot),
+                    })];
+            case 14:
+                augmentedResult = _f.sent();
+                props = {
+                    contextualPromptCategories: contextualPromptCategories,
+                    notFound: !isValidPath,
+                    notFoundReason: isValidPath
+                        ? null
+                        : "Path isn't valid: ".concat(expectedAbsolutePath, ". We found ").concat(absoluteQueryPath),
+                    isFolder: isFolder,
+                    canSeeContent: canSeeContent,
+                    unauthorizedWarningMessage: canSeeContent
+                        ? null
+                        : "You have to be premium to see this. [Click here to see our offers](/offers)",
+                    markdown: (augmentedResult === null || augmentedResult === void 0 ? void 0 : augmentedResult.augmentedMarkdown) || rawContent || null,
+                    navigation: navigation,
+                    actualProjectRelativeFilePath: (0, fs_util_js_1.makeRelative)(absoluteQueryPath, projectRoot),
+                    contextualPromptResults: (augmentedResult === null || augmentedResult === void 0 ? void 0 : augmentedResult.contextualPromptResults) || null,
+                    contextualPromptsObject: (augmentedResult === null || augmentedResult === void 0 ? void 0 : augmentedResult.contextualPromptsObject) || null,
+                };
+                return [2 /*return*/, { props: props }];
+        }
+    });
+}); };
+exports.getReaderPageProps = getReaderPageProps;
 //# sourceMappingURL=getReaderPageProps.js.map

@@ -1,14 +1,14 @@
 {
-  "createdAt": 1671317383094,
-  "updatedAt": 1671317383094,
+  "createdAt": 1671484650203,
+  "updatedAt": 1671484650203,
   "deletedAt": 0,
-  "createdFirstAt": 1671317383094,
+  "createdFirstAt": 1671484650203,
   "isApiExposed": true,
   "isExported": true,
   "groupAuthorization": {},
   "operationRelativeTypescriptFilePath": "src/components/NavButton.tsx",
   "commentsInside": [],
-  "rawText": " (props: {\n  onClick?: () => void;\n  href?: string;\n  isActive?: boolean;\n  title: string;\n  id?: string;\n  openContextMenuProps?: object;\n}) => {\n  const { href, title, onClick, isActive, openContextMenuProps, id } = props;\n\n  const className = ` ${\n    isActive ? \"dark:bg-blue-800\" : \"dark:bg-gray-700\"\n  } dark:hover:bg-gray-600 ${\n    isActive ? \"bg-blue-300\" : \"bg-gray-100\"\n  } light:hover:bg-gray-200 rounded-md border border-black p-2 m-1 cursor-pointer lg:mx-2`;\n  if (onClick) {\n    return (\n      <P\n        id={id}\n        onClick={onClick}\n        className={className}\n        {...openContextMenuProps}\n      >\n        {title}\n      </P>\n    );\n  }\n\n  return (\n    <ALink id={id} href={href} className={className}>\n      <div id={id} {...openContextMenuProps}>\n        {title}\n      </div>\n    </ALink>\n  );\n}",
+  "rawText": " (props: {\n  onClick?: () => void;\n  href?: string;\n  isActive?: boolean;\n  title: string;\n  id?: string;\n  openContextMenuProps?: object;\n}) => {\n  const { href, title, onClick, isActive, openContextMenuProps, id } = props;\n\n  const className = ` ${\n    isActive ? \"dark:bg-blue-800\" : \"dark:bg-gray-700\"\n  } dark:hover:bg-gray-600 ${\n    isActive ? \"bg-blue-300\" : \"bg-gray-100\"\n  } light:hover:bg-gray-200 rounded-md border border-black p-2 my-1 mr-2 cursor-pointer lg:mr-4`;\n  if (onClick) {\n    return (\n      <P\n        id={id}\n        onClick={onClick}\n        className={className}\n        {...openContextMenuProps}\n      >\n        {title}\n      </P>\n    );\n  }\n\n  return (\n    <ALink id={id} href={href} className={className}>\n      <div id={id} {...openContextMenuProps}>\n        {title}\n      </div>\n    </ALink>\n  );\n}",
   "name": "NavButton",
   "slug": "nav-button",
   "parameters": [],
@@ -28,13 +28,13 @@
   },
   "maxIndentationDepth": 4,
   "size": {
-    "characters": 824,
+    "characters": 830,
     "lines": 36,
-    "bytes": 824,
+    "bytes": 830,
     "bytesPerCharacter": 1,
     "charactersPerLine": 23,
     "linesPerFile": 36,
     "numberOfFiles": 1
   },
-  "id": "borsirfyxyxsoiyzpyorfpcv"
+  "id": "xxcvenmhteszglfvnvkhwrps"
 }

@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671317452772,
-  "updatedAt": 1671317452772,
+  "createdAt": 1671448758455,
+  "updatedAt": 1671448758455,
   "deletedAt": 0,
-  "createdFirstAt": 1671317452772,
+  "createdFirstAt": 1671448758455,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -29,5 +29,5 @@
   },
   "value": "() => {\n  const router = useRouter();\n  const queryPath = router.query.queryPath;\n  const realQueryPathArray = queryPath ? makeArray(queryPath) : [];\n\n  const realQueryPath = realQueryPathArray.join(\"/\");\n  return realQueryPath;\n}",
   "description": "Returns the queryPath of your URL without everything after ? and #",
-  "id": "xsypbbmbvljwnvllcslkustb"
+  "id": "zhrstqllgyrnehucckhusdea"
 }

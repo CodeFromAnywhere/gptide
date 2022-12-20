@@ -14,5 +14,6 @@
   "personIds": [
     "yeszpygeyhlndrgkvxkjibfp"
   ],
-  "currentPersonId": "yeszpygeyhlndrgkvxkjibfp"
+  "currentPersonId": "yeszpygeyhlndrgkvxkjibfp",
+  "categoryStack": []
 }

@@ -1,14 +1,14 @@
 {
-  "createdAt": 1671317432609,
-  "updatedAt": 1671317432609,
+  "createdAt": 1671458900683,
+  "updatedAt": 1671458900683,
   "deletedAt": 0,
-  "createdFirstAt": 1671317432609,
+  "createdFirstAt": 1671458900683,
   "isApiExposed": true,
   "isExported": true,
   "groupAuthorization": {},
   "operationRelativeTypescriptFilePath": "src/components/setConfig.ts",
   "commentsInside": [],
-  "rawText": " (apiUrl: string, disableAdmin: boolean) => {\n  setItem(\"api.customUrl\", apiUrl === \"\" ? null : apiUrl);\n  setItem(\"generativeWeb.config\", { disableAdmin });\n}",
+  "rawText": " (\n  apiUrl: string,\n  disableAdmin: boolean,\n  /**\n   * TITLE: Absolute base path of your file system to show\n   */\n  customAbsoluteBasePaths: string[]\n) => {\n  setItem(\"api.customUrl\", apiUrl === \"\" ? null : apiUrl);\n  setItem(\"generativeWeb.config\", { disableAdmin, customAbsoluteBasePaths });\n}",
   "name": "setConfig",
   "slug": "set-config",
   "parameters": [
@@ -31,6 +31,30 @@
         "type": "boolean"
       },
       "required": true
+    },
+    {
+      "name": "customAbsoluteBasePaths",
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "TITLE: Absolute base path of your file system to show"
+      },
+      "simplifiedSchema": {
+        "fullComment": "TITLE: Absolute base path of your file system to show",
+        "title": "Absolute base path of your file system to show",
+        "items": [
+          {
+            "schema": {
+              "type": "string"
+            },
+            "name": null
+          }
+        ],
+        "type": "array"
+      },
+      "required": true
     }
   ],
   "description": "",
@@ -45,13 +69,13 @@
   },
   "maxIndentationDepth": 1,
   "size": {
-    "characters": 159,
-    "lines": 4,
-    "bytes": 159,
+    "characters": 298,
+    "lines": 11,
+    "bytes": 298,
     "bytesPerCharacter": 1,
-    "charactersPerLine": 40,
-    "linesPerFile": 4,
+    "charactersPerLine": 27,
+    "linesPerFile": 11,
     "numberOfFiles": 1
   },
-  "id": "zcoyrfpdlnbowzmlisbifcso"
+  "id": "ejqyndbzvptbnocvkswvhthl"
 }

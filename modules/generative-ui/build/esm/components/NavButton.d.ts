@@ -1,3 +1,4 @@
+/// <reference types="react" />
 export declare const NavButton: (props: {
     onClick?: (() => void) | undefined;
     href?: string | undefined;
