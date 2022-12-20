@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671458786657,
-  "updatedAt": 1671458786657,
+  "createdAt": 1671502147618,
+  "updatedAt": 1671502147618,
   "deletedAt": 0,
-  "createdFirstAt": 1671458786657,
+  "createdFirstAt": 1671502147618,
   "classification": "const",
   "comments": [],
   "isExported": false,
@@ -131,5 +131,5 @@
   },
   "value": "{\n  \"generativeWeb.defaultVariant\": null,\n  \"generativeWeb.isEditing\": false,\n  \"generativeWeb.config\": {},\n}",
   "description": "",
-  "id": "zfntpbcadqeqbyqptxmspook"
+  "id": "wodjgegzumeoxvmirzubkyyg"
 }

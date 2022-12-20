@@ -1,7 +1,8 @@
 /// <reference types="react" />
 export declare const StoreProvider: ({ children }: {
     children: any;
-}) => JSX.Element, useStore: <K_1 extends "generativeWeb.config" | "generativeWeb.defaultVariant" | "generativeWeb.isEditing" | "db-crud.datasetConfig" | "db-crud.search" | "unsavedFiles" | "openPages" | "writerView" | "subtextConfig" | "subwordConfig" | "menu.expanded" | "menu.showMenu" | "menu.isMobileMenuEnabled" | "api.authToken" | "api.customUrl" | "api.timeoutAt">(key: K_1) => import("react-with-native-store").UseStoreResult<{
+}) => JSX.Element, useStore: <K_1 extends "generativeWeb.config" | "tabs.currentTab" | "generativeWeb.defaultVariant" | "generativeWeb.isEditing" | "db-crud.datasetConfig" | "db-crud.search" | "unsavedFiles" | "openPages" | "writerView" | "subtextConfig" | "subwordConfig" | "menu.expanded" | "menu.showMenu" | "menu.isMobileMenuEnabled" | "api.authToken" | "api.customUrl" | "api.timeoutAt">(key: K_1) => import("react-with-native-store").UseStoreResult<{
+    "tabs.currentTab": number;
     "generativeWeb.defaultVariant": string | null;
     "generativeWeb.isEditing": boolean;
     "generativeWeb.config": {

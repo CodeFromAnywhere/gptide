@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671485326284,
-  "updatedAt": 1671485326284,
+  "createdAt": 1671502892276,
+  "updatedAt": 1671502892276,
   "deletedAt": 0,
-  "createdFirstAt": 1671485326284,
+  "createdFirstAt": 1671502892276,
   "id": "readerprops",
   "name": "ReaderProps",
   "slug": "readerprops",
@@ -103,6 +103,10 @@
           "items": {
             "$ref": "#/definitions/FolderContent"
           }
+        },
+        "contextualPromptCategories": {
+          "$ref": "#/definitions/CategoryChildObject",
+          "description": "Should later be moved elsewhere"
         }
       },
       "additionalProperties": false,
@@ -267,6 +271,90 @@
               }
             ],
             "type": "array"
+          }
+        },
+        {
+          "name": "contextualPromptCategories",
+          "required": false,
+          "schema": {
+            "fullComment": "Should later be moved elsewhere\n\n\n\n",
+            "properties": [
+              {
+                "name": "category",
+                "required": false,
+                "schema": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "categoryStack",
+                "required": true,
+                "schema": {
+                  "items": [
+                    {
+                      "schema": {
+                        "type": "string"
+                      },
+                      "name": null
+                    }
+                  ],
+                  "type": "array"
+                }
+              },
+              {
+                "name": "count",
+                "required": true,
+                "schema": {
+                  "type": "number"
+                }
+              },
+              {
+                "name": "name",
+                "required": false,
+                "schema": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "title",
+                "required": false,
+                "schema": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "description",
+                "required": false,
+                "schema": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "pricing",
+                "required": false,
+                "schema": {
+                  "type": "string"
+                }
+              },
+              {
+                "name": "children",
+                "required": false,
+                "schema": {
+                  "items": [
+                    {
+                      "schema": {
+                        "circularRefName": "ChildObject<structure-t.d.ts-101-262-t.d.ts-88-263-t.d.ts-46-264-t.d.ts-0-314>",
+                        "properties": [],
+                        "type": "object"
+                      },
+                      "name": "ChildObject<structure-t.d.ts-101-262-t.d.ts-88-263-t.d.ts-46-264-t.d.ts-0-314>"
+                    }
+                  ],
+                  "type": "array"
+                }
+              }
+            ],
+            "type": "object"
           }
         }
       ],

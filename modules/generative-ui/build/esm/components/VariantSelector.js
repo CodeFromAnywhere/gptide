@@ -89,7 +89,6 @@ export var VariantSelector = function (props) {
             ((variantResult === null || variantResult === void 0 ? void 0 : variantResult.contextualPromptSlug) || null) !== defaultVariant ? (React.createElement(ClickableIcon, { emoji: "\uD83D\uDCCC", onClick: function () {
                     return setDefaultVariant((variantResult === null || variantResult === void 0 ? void 0 : variantResult.contextualPromptSlug) || null);
                 } })) : null,
-            admin.isAdminActive && !variantResult ? (React.createElement(ClickableIcon, { emoji: isEditing ? "🪄 Reader" : "✏️ Writer", onClick: function () { return setIsEditing(!isEditing); } })) : null,
             variantResult && admin.isAdminActive ? (
             // delete, star/unstar
             React.createElement(Div, { className: "flex flex-row" },
@@ -112,7 +111,7 @@ export var VariantSelector = function (props) {
                             }
                         });
                     }); } }),
-                React.createElement(ClickableIcon, { emoji: variantResult.isFavorite ? "⭐️" : "💩", onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
+                React.createElement(ClickableIcon, { emoji: variantResult.isFavorite ? "💩" : "⭐️", onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
                         var apiResult;
                         var _a, _b;
                         return __generator(this, function (_c) {

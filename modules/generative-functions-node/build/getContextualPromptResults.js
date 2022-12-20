@@ -118,9 +118,9 @@ var getContextualPromptResults = function (config) { return __awaiter(void 0, vo
                         : undefined;
                 if (!contextualPromptResultsJsonPath ||
                     !fs_util_1.fs.existsSync(contextualPromptResultsJsonPath)) {
-                    console.log("results json path doesn't exist", {
-                        contextualPromptResultsJsonPath: contextualPromptResultsJsonPath,
-                    });
+                    // console.log("results json path doesn't exist", {
+                    //   contextualPromptResultsJsonPath,
+                    // });
                     return [2 /*return*/, onlyForPrompts];
                 }
                 return [4 /*yield*/, (0, read_json_file_1.readJsonFile)(contextualPromptResultsJsonPath)];

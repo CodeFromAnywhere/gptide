@@ -486,6 +486,7 @@ export declare const sdk: {
         projectRelativeFilePath: string;
         initialWriterView?: import("writer-types").WriterViewEnum | undefined;
         disabledMenuItems?: string[] | undefined;
+        hideButtons?: boolean | undefined;
     }) => JSX.Element;
     OpenFileWriterPages: (props: {
         pagesObject: import("file-tabs").PagesObjectShape;

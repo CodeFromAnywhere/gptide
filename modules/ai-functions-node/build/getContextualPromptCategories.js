@@ -104,7 +104,7 @@ var getObjectForkKeyRecursively = function (stackCount, key, originalKey, items)
         });
         return object;
     });
-    console.log({ itemChildren: itemChildren, categoryStack: categoryStack });
+    //  console.log({ itemChildren, categoryStack });
     var children = categoryChildren.concat(itemChildren);
     var object = {
         category: firstCategory,
@@ -116,6 +116,20 @@ var getObjectForkKeyRecursively = function (stackCount, key, originalKey, items)
     return object;
 };
 exports.getObjectForkKeyRecursively = getObjectForkKeyRecursively;
+/**
+Pretty cool stuff!
+
+I've shown a way to count all nested categories and make a child object based on that
+
+TODO:
+
+- Currently, only supports unique category names due to not checking the full stack
+- needs to be formalised, generalised
+
+Another, possibly more direct way, would be to traverse the filesystem, in the case of `fs-orm`, because we have files for every item in json-single.
+
+
+*/
 var getContextualPromptCategories = function () { return __awaiter(void 0, void 0, void 0, function () {
     var contextualPrompts, stackCount, __root, stackCountWithoutRoot, categories, rootCategoryChildObject;
     return __generator(this, function (_a) {

@@ -57,6 +57,7 @@ import { NavButton } from "./NavButton";
 import { useAdmin } from "./useAdmin";
 import { MarkdownContent } from "markdown";
 import { useAlert } from "react-with-native-alert";
+import { getFolderJs } from "fs-util-js";
 export var PromptButton = function (props) {
     var item = props.item, markdown = props.markdown, projectRelativeFilePath = props.projectRelativeFilePath, contextSelection = props.contextSelection;
     var admin = useAdmin();
@@ -64,6 +65,7 @@ export var PromptButton = function (props) {
     var showPromptAlert = usePromptResultAlert();
     var alert = useAlert();
     var title = "".concat(item.isFavorite ? "⭐️ " : "").concat(item.title || item.name);
+    var projectRelativeFolderPath = getFolderJs(projectRelativeFilePath);
     return (React.createElement(Tooltip, { hoverTimeout: 100, tooltip: React.createElement(Div, null,
             React.createElement(P, { className: "font-bold text-xl" }, title),
             item.description ? (React.createElement(MarkdownContent, { content: item.description, config: {} })) : null,
@@ -123,25 +125,53 @@ export var PromptButton = function (props) {
                         return [2 /*return*/];
                     });
                 }); } }),
-            contextSelection ? (React.createElement(ClickableIcon, { emoji: "\uD83D\uDCA5 Apply on folder", onClick: function () {
+            contextSelection ? null : (React.createElement(ClickableIcon, { emoji: "\uD83D\uDCA5 Apply on folder", onClick: function () {
+                    if (!projectRelativeFolderPath)
+                        return;
                     alert === null || alert === void 0 ? void 0 : alert("Apply on folder", "You're going to apply the prompt ".concat(item.name, " on all files in the folder. Are you sure?"), [
                         { style: "cancel", text: "cancel" },
                         {
                             style: "default",
                             text: "Yes",
-                            onPress: function () {
-                                warningToast("Not implemented yet. Coming soon");
-                            },
+                            onPress: function () { return __awaiter(void 0, void 0, void 0, function () {
+                                var apiResult;
+                                return __generator(this, function (_a) {
+                                    switch (_a.label) {
+                                        case 0: return [4 /*yield*/, api.processPromptOnFolder({
+                                                projectRelativeFolderPath: projectRelativeFolderPath,
+                                                promptSlug: item.slug,
+                                                isRecursive: false,
+                                            })];
+                                        case 1:
+                                            apiResult = _a.sent();
+                                            showStandardResponse(apiResult);
+                                            return [2 /*return*/];
+                                    }
+                                });
+                            }); },
                         },
                         {
                             style: "destructive",
                             text: "Yes, recursive",
-                            onPress: function () {
-                                warningToast("Not implemented yet. Coming soon");
-                            },
+                            onPress: function () { return __awaiter(void 0, void 0, void 0, function () {
+                                var apiResult;
+                                return __generator(this, function (_a) {
+                                    switch (_a.label) {
+                                        case 0: return [4 /*yield*/, api.processPromptOnFolder({
+                                                projectRelativeFolderPath: projectRelativeFolderPath,
+                                                promptSlug: item.slug,
+                                                isRecursive: true,
+                                            })];
+                                        case 1:
+                                            apiResult = _a.sent();
+                                            showStandardResponse(apiResult);
+                                            return [2 /*return*/];
+                                    }
+                                });
+                            }); },
                         },
                     ]);
-                } })) : null), placement: "top" },
+                } }))), placement: "top" },
         React.createElement(NavButton, { onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
                 return __generator(this, function (_a) {
                     switch (_a.label) {

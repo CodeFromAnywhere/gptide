@@ -56,7 +56,6 @@ var readerPageGetStaticProps = function (context) { return __awaiter(void 0, voi
                     props = {
                         notFound: true,
                         notFoundReason: "This file cannot be found.",
-                        contextualPromptCategories: { category: "test", count: 999 },
                     };
                     return [2 /*return*/, { props: props }];
                 }

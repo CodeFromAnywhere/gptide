@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671483990231,
-  "updatedAt": 1671483990231,
+  "createdAt": 1671504363966,
+  "updatedAt": 1671504363966,
   "deletedAt": 0,
-  "createdFirstAt": 1671483990231,
+  "createdFirstAt": 1671504363966,
   "id": "namedparameterstypeof-promptbutton",
   "name": "NamedParameters<typeof PromptButton>",
   "slug": "namedparameterstypeof-promptbutton",

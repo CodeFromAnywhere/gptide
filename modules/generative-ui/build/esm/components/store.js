@@ -16,10 +16,11 @@ import { nestedMenuStoreInitialValues } from "nested-menu";
 import { writerInitialValues } from "writer-input";
 import { fileTabsInitialValues } from "file-tabs";
 import { dbCrudInitialValues } from "db-crud";
+import { tabsStoreInitialValues } from "tabs";
 var generativeWebInitialValues = {
     "generativeWeb.defaultVariant": null,
     "generativeWeb.isEditing": false,
     "generativeWeb.config": {},
 };
-export var StoreProvider = (_a = createStore(__assign(__assign(__assign(__assign(__assign(__assign({}, apiStoreInitialValues), nestedMenuStoreInitialValues), writerInitialValues), fileTabsInitialValues), dbCrudInitialValues), generativeWebInitialValues)), _a.StoreProvider), useStore = _a.useStore;
+export var StoreProvider = (_a = createStore(__assign(__assign(__assign(__assign(__assign(__assign(__assign({}, apiStoreInitialValues), nestedMenuStoreInitialValues), writerInitialValues), fileTabsInitialValues), dbCrudInitialValues), generativeWebInitialValues), tabsStoreInitialValues)), _a.StoreProvider), useStore = _a.useStore;
 //# sourceMappingURL=store.js.map

@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671475821083,
-  "updatedAt": 1671475821083,
+  "createdAt": 1671502414855,
+  "updatedAt": 1671502414855,
   "deletedAt": 0,
-  "createdFirstAt": 1671475821083,
+  "createdFirstAt": 1671502414855,
   "id": "namedparameterstypeof-variantselector",
   "name": "NamedParameters<typeof VariantSelector>",
   "slug": "namedparameterstypeof-variantselector",
