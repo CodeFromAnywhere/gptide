@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671505933685,
-  "updatedAt": 1671505933685,
+  "createdAt": 1671553060051,
+  "updatedAt": 1671553060051,
   "deletedAt": 0,
-  "createdFirstAt": 1671505933685,
+  "createdFirstAt": 1671553060051,
   "id": "namedparameterstypeof-deletepromptresult",
   "name": "NamedParameters<typeof deletePromptResult>",
   "slug": "namedparameterstypeof-deletepromptresult",

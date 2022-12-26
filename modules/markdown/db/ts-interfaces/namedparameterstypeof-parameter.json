@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671318485843,
-  "updatedAt": 1671318485843,
+  "createdAt": 1671554532185,
+  "updatedAt": 1671554532185,
   "deletedAt": 0,
-  "createdFirstAt": 1671318485843,
+  "createdFirstAt": 1671554532185,
   "id": "namedparameterstypeof-parameter",
   "name": "NamedParameters<typeof Parameter>",
   "slug": "namedparameterstypeof-parameter",

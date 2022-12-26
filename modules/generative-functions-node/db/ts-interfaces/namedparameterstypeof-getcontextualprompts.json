@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671315243641,
-  "updatedAt": 1671315243641,
+  "createdAt": 1671553289923,
+  "updatedAt": 1671553289923,
   "deletedAt": 0,
-  "createdFirstAt": 1671315243641,
+  "createdFirstAt": 1671553289923,
   "id": "namedparameterstypeof-getcontextualprompts",
   "name": "NamedParameters<typeof getContextualPrompts>",
   "slug": "namedparameterstypeof-getcontextualprompts",

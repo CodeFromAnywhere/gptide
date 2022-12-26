@@ -12,7 +12,7 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.notEmpty = exports.sumAllKeys = exports.sumObjectParameters = exports.getObjectFromParamsString = exports.takeFirst = exports.makeArray = exports.onlyUnique2 = exports.onlyUnique = exports.isAllTrue = exports.groupByKey = exports.createEnum = exports.apply = exports.sum = exports.noEmptyString = void 0;
+exports.notEmpty = exports.sumAllKeys = exports.sumObjectParameters = exports.getObjectFromParamsString = exports.takeFirst = exports.makeArray = exports.onlyDuplicates = exports.onlyUnique2 = exports.onlyUnique = exports.isAllTrue = exports.groupByKey = exports.createEnum = exports.apply = exports.sum = exports.noEmptyString = void 0;
 var mergeObjectsArray_1 = require("./mergeObjectsArray");
 var noEmptyString = function (input) {
     if (input === "")
@@ -109,6 +109,13 @@ var onlyUnique2 = function (isEqualFn) {
     };
 };
 exports.onlyUnique2 = onlyUnique2;
+var onlyDuplicates = function (isEqualFn) {
+    return function (value, index, self) {
+        return (self.findIndex(function (v) { return (isEqualFn ? isEqualFn(v, value) : v === value); }) !==
+            index);
+    };
+};
+exports.onlyDuplicates = onlyDuplicates;
 /**
  * if something is not an array, returns it as the first element of an array
  *

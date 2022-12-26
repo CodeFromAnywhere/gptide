@@ -122,7 +122,7 @@ Properties:
 | projectRelativePath  | string |  |
 | operationRelativePath (optional) | string |  |
 | id  | string |  |
-| categoryStackCalculated (optional) | array |  |
+| categoryStack (optional) | array |  |
 | path (optional) | string |  |
 | main (optional) | string |  |
 | source (optional) | string |  |
@@ -338,7 +338,7 @@ Properties:
 | projectRelativePath  | string |  |
 | operationRelativePath (optional) | string |  |
 | id  | string |  |
-| categoryStackCalculated (optional) | array |  |
+| categoryStack (optional) | array |  |
 | modelName  | string |  |
 | price (optional) | number |  |
 | defaultView (optional) | string |  |
@@ -414,7 +414,7 @@ Properties:
 | projectRelativePath  | string |  |
 | operationRelativePath (optional) | string |  |
 | id  | string |  |
-| categoryStackCalculated (optional) | array |  |
+| categoryStack (optional) | array |  |
 | functionName  | string |  |
 | tsFunctionId  | string |  |
 | inputParameters (optional) | array |  |
@@ -1416,7 +1416,7 @@ Properties:
 | projectRelativePath  | string |  |
 | operationRelativePath (optional) | string |  |
 | id  | string |  |
-| categoryStackCalculated (optional) | array |  |
+| categoryStack (optional) | array |  |
 
 
 

@@ -15,6 +15,7 @@ import { getEncoding } from "text-or-binary";
 import { isBinary } from "text-or-binary";
 import { isText } from "text-or-binary";
 export declare const sdk: {
+    addEmojiToEveryWord: import("ai-types").PromptFunction;
     addStatement: (statement: string, importancy?: number | undefined, agreement?: number | undefined) => Promise<{
         isSuccessful: boolean;
         message?: string | undefined;
@@ -28,7 +29,6 @@ export declare const sdk: {
     cleanup: import("ai-types").PromptFunction;
     controlChatGptWrapper: (prompt: string, isHeadless: boolean | undefined, thread: string | undefined, controller: "playwright" | "puppeteer" | "faker") => Promise<import("ai-types").ProcessPromptFunctionResult>;
     controlChatGpt: (prompt: string, headless?: boolean | undefined) => Promise<import("ai-types").ProcessPromptFunctionResult>;
-    convertTo1337speak: import("ai-types").PromptFunction;
     deletePromptResult: (projectRelativePath: string, id: string) => Promise<{
         isSuccessful: boolean;
     }>;
@@ -39,26 +39,35 @@ export declare const sdk: {
     explainInDutch: import("ai-types").PromptFunction;
     explainInNepali: import("ai-types").PromptFunction;
     explainInPortuguese: import("ai-types").PromptFunction;
+    explainLineByLine: import("ai-types").PromptFunction;
     explain: import("ai-types").PromptFunction;
     fixGrammarAndSpellingMistakes: import("ai-types").PromptFunction;
+    followUpQuestions: import("ai-types").PromptFunction;
     getContextualPromptCategories: () => Promise<import("ai-types").CategoryChildObject>;
     getContextualPromptResultJsonFilePath: (projectRelativePath?: string | undefined) => Promise<string | undefined>;
     getContextualPrompt: (contextualPromptSlug: string | undefined, customPromptContent: string | undefined, saveNewPromptWithName: string | null, contextType: import("filename-conventions").FileType | undefined) => Promise<(Omit<import("ai-types").ContextualPrompt, import("model-types").OptionalForCreationKeys<import("ai-types").ContextualPrompt>> & Partial<Pick<import("ai-types").ContextualPrompt, import("model-types").OptionalForCreationKeys<import("ai-types").ContextualPrompt>>> & {
         slug: string;
     }) | undefined>;
     getObjectForkKeyRecursively: (stackCount: import("ai-functions-node").StackCount, key: string, originalKey: string, items: import("ai-types").ContextualPrompt[]) => import("ai-types").CategoryChildObject | undefined;
+    getToolFunctions: {
+        (): Promise<import("code-types").TsFunction[]>;
+        isPublic: boolean;
+    };
     gptIdeasRegisterWithContext: (functionContext: import("function-context-type").FunctionContext, name: string, email: string, tier: "free" | "indie" | "startup" | "sponsor", newsletter: "daily" | "weekly" | "unsubscribe", message?: string | undefined) => Promise<{
         isSuccessful: boolean;
         message: string;
     }>;
     haiku: import("ai-types").PromptFunction;
+    hookOneliners: import("ai-types").PromptFunction;
     improveCode: import("ai-types").PromptFunction;
-    keywords: import("ai-types").PromptFunction;
+    investorPitch: import("ai-types").PromptFunction;
     marcusAurelius: import("ai-types").PromptFunction;
+    opposite: import("ai-types").PromptFunction;
+    outlineToInvestorPitch: import("ai-types").PromptFunction;
     poem: import("ai-types").PromptFunction;
     processChatGptPrompt: (config: import("ai-functions-node").ProcessPromptProps) => Promise<import("ai-types").ProcessPromptFunctionResult>;
     processPromptOnFile: (projectRelativeFilePath: string, contextualPromptSlug: string) => Promise<import("ai-types").ProcessPromptFunctionResult>;
-    processPromptOnFolder: (config: {
+    processPromptOnFolderWithContext: (functionContext: import("function-context-type").FunctionContext, config: {
         projectRelativeFolderPath: string;
         promptSlug: string;
         isRecursive?: boolean | undefined;
@@ -67,6 +76,7 @@ export declare const sdk: {
         isSuccessful: boolean | undefined;
         message: string | undefined;
     }>;
+    quiz: import("ai-types").PromptFunction;
     removeAllFake: (basePath?: string | undefined) => Promise<{
         isSuccessful: boolean;
         message?: string | undefined;
@@ -78,6 +88,15 @@ export declare const sdk: {
     }>;
     socratesAndSnoopDogg: import("ai-types").PromptFunction;
     storytelling: import("ai-types").PromptFunction;
+    toolFunctionWithContext: {
+        (functionContext: import("function-context-type").FunctionContext, functionName: string, email: string, details: {
+            [parameterName: string]: any;
+        }): Promise<{
+            isSuccessful: boolean | undefined;
+            message: string;
+        }>;
+        isPublic: boolean;
+    };
     translateEverythingIntoHindi: import("ai-types").PromptFunction;
     translateEverythingPortuguese: import("ai-types").PromptFunction;
     translateEverything: import("ai-types").PromptFunction;
@@ -225,7 +244,7 @@ export declare const sdk: {
     cleanupTsDatabase: (operationName: string, manualProjectRoot?: string | undefined) => Promise<{
         amountRemoved: number;
     } | undefined>;
-    shouldDeleteTsModel: (tsModel: import("code-types").TsInterface | import("code-types").TsFunction | import("code-types").TsComment | import("code-types").TsBuildError | import("code-types").TsLintWarning | import("code-types").TsExport | import("code-types").TsImport | import("code-types").TsVariable, operationName: string, operationRelativePaths: string[]) => boolean;
+    shouldDeleteTsModel: (tsModel: import("code-types").TsFunction | import("code-types").TsInterface | import("code-types").TsComment | import("code-types").TsBuildError | import("code-types").TsLintWarning | import("code-types").TsExport | import("code-types").TsImport | import("code-types").TsVariable, operationName: string, operationRelativePaths: string[]) => boolean;
     copyCopyPairs: (copyPairs: import("collect-static-assets").CopyPair[]) => Promise<void[]>;
     copyReaderStaticAssets: (operationBasePath: string, allWebPages: import("webpage-types").WebPage<unknown>[]) => Promise<void>;
     findReaderStaticAssets: (readerWebPages: import("webpage-types").FileWebPage[]) => Promise<string[] | undefined>;
@@ -491,7 +510,7 @@ export declare const sdk: {
         manualProjectRoot?: string | undefined;
     }) => Promise<string | undefined>;
     isTestFn: (x: import("generate-index").ImportStatement) => boolean;
-    mapToImportStatement: (item: import("code-types").TsInterface | import("code-types").TsFunction | import("code-types").TsVariable, type: "function" | "interface" | "variable") => import("generate-index").ImportStatement;
+    mapToImportStatement: (item: import("code-types").TsFunction | import("code-types").TsInterface | import("code-types").TsVariable, type: "function" | "interface" | "variable") => import("generate-index").ImportStatement;
     augmentMarkdown: <T_9 extends string | null | undefined>(markdown: T_9, config?: {
         isAdmin?: boolean | undefined;
         augmentCode?: boolean | undefined;
@@ -673,7 +692,7 @@ export declare const sdk: {
         operationFolderPath: string;
     }) => Promise<string[]>;
     sendMail: (mailData: import("mail").MailDataFromOptional | import("mail").MailDataFromOptional[], isMultiple?: boolean | undefined) => Promise<import("@sendgrid/mail").ClientResponse | undefined>;
-    addDependantCount: (type: "tsFunction" | "tsVariable" | "tsInterface", imports: import("code-types").TsImport[]) => (item: import("code-types").TsInterface | import("code-types").TsFunction | import("code-types").TsVariable) => Promise<import("markdown-parsings").DependantCountObject>;
+    addDependantCount: (type: "tsFunction" | "tsVariable" | "tsInterface", imports: import("code-types").TsImport[]) => (item: import("code-types").TsFunction | import("code-types").TsInterface | import("code-types").TsVariable) => Promise<import("markdown-parsings").DependantCountObject>;
     bundleFolderWithMarkdown: (outlineTitle: string, markdownStrings: string[], resultFileName?: string | undefined) => Promise<{
         markdownParse: import("markdown-types").MarkdownParse;
         outlineString: string;
@@ -718,7 +737,7 @@ export declare const sdk: {
     getPublicMarkdownNestedPathObject: (absoluteFolderPath: string) => Promise<import("recursive-types").NestedObject<string>>;
     getTitlesRecursively: (chunk: import("markdown-types").MarkdownChunk) => import("markdown-parsings").NestedTitle[];
     getTypeDescriptorRecursive: (schema: import("json-schema").JSONSchema7, isMarkdown: boolean) => string;
-    isConventionFileStatement: (item: import("code-types").TsInterface | import("code-types").TsFunction | import("code-types").TsVariable, conventionFile: "test" | "cli") => boolean;
+    isConventionFileStatement: (item: import("code-types").TsFunction | import("code-types").TsInterface | import("code-types").TsVariable, conventionFile: "test" | "cli") => boolean;
     isUpperCase: (text: string) => boolean;
     makeOutlineMarkdownString: (title: string, urls: import("markdown-parsings").MergedMarkdownOutlineUrl[]) => string;
     makePropertiesTable: (properties: import("code-types").SimplifiedSchemaProperty[] | undefined) => string;

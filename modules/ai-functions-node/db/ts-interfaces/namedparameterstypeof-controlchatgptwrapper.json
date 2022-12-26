@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671505949884,
-  "updatedAt": 1671505949884,
+  "createdAt": 1671553093350,
+  "updatedAt": 1671553093350,
   "deletedAt": 0,
-  "createdFirstAt": 1671505949884,
+  "createdFirstAt": 1671553093350,
   "id": "namedparameterstypeof-controlchatgptwrapper",
   "name": "NamedParameters<typeof controlChatGptWrapper>",
   "slug": "namedparameterstypeof-controlchatgptwrapper",

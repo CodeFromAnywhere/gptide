@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671505944523,
-  "updatedAt": 1671505944523,
+  "createdAt": 1671553085670,
+  "updatedAt": 1671553085670,
   "deletedAt": 0,
-  "createdFirstAt": 1671505944523,
+  "createdFirstAt": 1671553085670,
   "id": "namedparameterstypeof-getcontextualpromptresultjsonfilepath",
   "name": "NamedParameters<typeof getContextualPromptResultJsonFilePath>",
   "slug": "namedparameterstypeof-getcontextualpromptresultjsonfilepath",

@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671101635853,
-  "updatedAt": 1671101635853,
+  "createdAt": 1671553690519,
+  "updatedAt": 1671553690519,
   "deletedAt": 0,
-  "createdFirstAt": 1671101635853,
+  "createdFirstAt": 1671553690519,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -29,5 +29,5 @@
   },
   "value": "async () => {\n  const webPages = await getWriterWebPages();\n  return getMenuPagesObject(webPages);\n}",
   "description": "",
-  "id": "sgppwivqxjfkkneudzzuedae"
+  "id": "ukhzcienymezslkxbsgzrwps"
 }

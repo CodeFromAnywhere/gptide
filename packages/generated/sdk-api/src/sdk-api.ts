@@ -1,3 +1,4 @@
+import { addEmojiToEveryWord } from "ai-functions-node";
 import { addStatement } from "ai-functions-node";
 import { addWord } from "ai-functions-node";
 import { biggestFunctionName } from "ai-functions-node";
@@ -5,7 +6,6 @@ import { checkQueue } from "ai-functions-node";
 import { cleanup } from "ai-functions-node";
 import { controlChatGptWrapper } from "ai-functions-node";
 import { controlChatGpt } from "ai-functions-node";
-import { convertTo1337speak } from "ai-functions-node";
 import { deletePromptResult } from "ai-functions-node";
 import { developersQuote } from "ai-functions-node";
 import { diaryToInstagram } from "ai-functions-node";
@@ -14,27 +14,35 @@ import { emojiAugmentation } from "ai-functions-node";
 import { explainInDutch } from "ai-functions-node";
 import { explainInNepali } from "ai-functions-node";
 import { explainInPortuguese } from "ai-functions-node";
+import { explainLineByLine } from "ai-functions-node";
 import { explain } from "ai-functions-node";
 import { fixGrammarAndSpellingMistakes } from "ai-functions-node";
+import { followUpQuestions } from "ai-functions-node";
 import { getContextualPromptCategories } from "ai-functions-node";
 import { getContextualPromptResultJsonFilePath } from "ai-functions-node";
 import { getContextualPrompt } from "ai-functions-node";
 import { getObjectForkKeyRecursively } from "ai-functions-node";
+import { getToolFunctions } from "ai-functions-node";
 import { gptIdeasRegisterWithContext } from "ai-functions-node";
 import { haiku } from "ai-functions-node";
+import { hookOneliners } from "ai-functions-node";
 import { improveCode } from "ai-functions-node";
-import { keywords } from "ai-functions-node";
+import { investorPitch } from "ai-functions-node";
 import { marcusAurelius } from "ai-functions-node";
+import { opposite } from "ai-functions-node";
+import { outlineToInvestorPitch } from "ai-functions-node";
 import { poem } from "ai-functions-node";
 import { processChatGptPrompt } from "ai-functions-node";
 import { processPromptOnFile } from "ai-functions-node";
-import { processPromptOnFolder } from "ai-functions-node";
+import { processPromptOnFolderWithContext } from "ai-functions-node";
+import { quiz } from "ai-functions-node";
 import { removeAllFake } from "ai-functions-node";
 import { rickAndMortyRick } from "ai-functions-node";
 import { rickAndMorty } from "ai-functions-node";
 import { setIsFavoritePromptResult } from "ai-functions-node";
 import { socratesAndSnoopDogg } from "ai-functions-node";
 import { storytelling } from "ai-functions-node";
+import { toolFunctionWithContext } from "ai-functions-node";
 import { translateEverythingIntoHindi } from "ai-functions-node";
 import { translateEverythingPortuguese } from "ai-functions-node";
 import { translateEverything } from "ai-functions-node";
@@ -775,14 +783,14 @@ import { useCustomUrlStore } from "use-url-store";
 import { crudPageToWebPages } from "webpage-types";
 import { functionFormPageToWebPage } from "webpage-types";
 
-export const sdk = { addStatement,
+export const sdk = { addEmojiToEveryWord,
+addStatement,
 addWord,
 biggestFunctionName,
 checkQueue,
 cleanup,
 controlChatGptWrapper,
 controlChatGpt,
-convertTo1337speak,
 deletePromptResult,
 developersQuote,
 diaryToInstagram,
@@ -791,27 +799,35 @@ emojiAugmentation,
 explainInDutch,
 explainInNepali,
 explainInPortuguese,
+explainLineByLine,
 explain,
 fixGrammarAndSpellingMistakes,
+followUpQuestions,
 getContextualPromptCategories,
 getContextualPromptResultJsonFilePath,
 getContextualPrompt,
 getObjectForkKeyRecursively,
+getToolFunctions,
 gptIdeasRegisterWithContext,
 haiku,
+hookOneliners,
 improveCode,
-keywords,
+investorPitch,
 marcusAurelius,
+opposite,
+outlineToInvestorPitch,
 poem,
 processChatGptPrompt,
 processPromptOnFile,
-processPromptOnFolder,
+processPromptOnFolderWithContext,
+quiz,
 removeAllFake,
 rickAndMortyRick,
 rickAndMorty,
 setIsFavoritePromptResult,
 socratesAndSnoopDogg,
 storytelling,
+toolFunctionWithContext,
 translateEverythingIntoHindi,
 translateEverythingPortuguese,
 translateEverything,

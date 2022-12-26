@@ -137,7 +137,7 @@ export var PromptButton = function (props) {
                                 var apiResult;
                                 return __generator(this, function (_a) {
                                     switch (_a.label) {
-                                        case 0: return [4 /*yield*/, api.processPromptOnFolder({
+                                        case 0: return [4 /*yield*/, api.processPromptOnFolderWithContext({
                                                 projectRelativeFolderPath: projectRelativeFolderPath,
                                                 promptSlug: item.slug,
                                                 isRecursive: false,
@@ -157,7 +157,7 @@ export var PromptButton = function (props) {
                                 var apiResult;
                                 return __generator(this, function (_a) {
                                     switch (_a.label) {
-                                        case 0: return [4 /*yield*/, api.processPromptOnFolder({
+                                        case 0: return [4 /*yield*/, api.processPromptOnFolderWithContext({
                                                 projectRelativeFolderPath: projectRelativeFolderPath,
                                                 promptSlug: item.slug,
                                                 isRecursive: true,

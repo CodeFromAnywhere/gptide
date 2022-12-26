@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671318490247,
-  "updatedAt": 1671318490247,
+  "createdAt": 1671554539565,
+  "updatedAt": 1671554539565,
   "deletedAt": 0,
-  "createdFirstAt": 1671318490247,
+  "createdFirstAt": 1671554539565,
   "id": "namedparameterstypeof-getyoutubeid",
   "name": "NamedParameters<typeof getYoutubeId>",
   "slug": "namedparameterstypeof-getyoutubeid",

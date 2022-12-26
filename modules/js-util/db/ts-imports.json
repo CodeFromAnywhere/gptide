@@ -1,9 +1,9 @@
 [
   {
-    "createdAt": 1671116939868,
-    "updatedAt": 1671116939868,
+    "createdAt": 1671554819865,
+    "updatedAt": 1671554819865,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939868,
+    "createdFirstAt": 1671554819865,
     "name": "mergeObjectsArray",
     "slug": "merge-objects-array",
     "module": "./mergeObjectsArray",
@@ -13,13 +13,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "zwnpvposgflevyzumgqgtdpd"
+    "id": "xrgczwcaocdnermmlmrwwfzm"
   },
   {
-    "createdAt": 1671116939868,
-    "updatedAt": 1671116939868,
+    "createdAt": 1671554819866,
+    "updatedAt": 1671554819866,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939868,
+    "createdFirstAt": 1671554819866,
     "name": "mergeObjectsArray",
     "slug": "merge-objects-array",
     "module": "./mergeObjectsArray",
@@ -29,13 +29,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "nvokvnailbklouzsnklykfdk"
+    "id": "jocjhrwlduhdzmtapgcedcuf"
   },
   {
-    "createdAt": 1671116939868,
-    "updatedAt": 1671116939868,
+    "createdAt": 1671554819866,
+    "updatedAt": 1671554819866,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939868,
+    "createdFirstAt": 1671554819866,
     "name": "mapMany",
     "slug": "map-many",
     "module": "./mapMany",
@@ -45,13 +45,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "wdpsxapnvfwbkvhlnpfrqiph"
+    "id": "ljjnqtavzndcfhlhapdfpjui"
   },
   {
-    "createdAt": 1671116939868,
-    "updatedAt": 1671116939868,
+    "createdAt": 1671554819866,
+    "updatedAt": 1671554819866,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939868,
+    "createdFirstAt": 1671554819866,
     "name": "mergeNestedObject",
     "slug": "merge-nested-object",
     "module": "./mergeNestedObject",
@@ -61,13 +61,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "xvqoyonvjircvjuvwjpvzbhg"
+    "id": "mrtvfafctjrkilelipctudbo"
   },
   {
-    "createdAt": 1671116939868,
-    "updatedAt": 1671116939868,
+    "createdAt": 1671554819866,
+    "updatedAt": 1671554819866,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939868,
+    "createdFirstAt": 1671554819866,
     "name": "getObjectKeysArray",
     "slug": "get-object-keys-array",
     "module": "./getObjectKeysArray",
@@ -77,13 +77,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "vxevziicitxcuedcgealvibv"
+    "id": "ehuyqnezddskywmcuogsrgzk"
   },
   {
-    "createdAt": 1671116939869,
-    "updatedAt": 1671116939869,
+    "createdAt": 1671554819867,
+    "updatedAt": 1671554819867,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939869,
+    "createdFirstAt": 1671554819867,
     "name": "mergeObjectsArray",
     "slug": "merge-objects-array",
     "module": "./mergeObjectsArray",
@@ -93,13 +93,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "ilhqvwsihijbntwnnbzgzduu"
+    "id": "cuabvvqakxzepcrdouxiwneg"
   },
   {
-    "createdAt": 1671116939869,
-    "updatedAt": 1671116939869,
+    "createdAt": 1671554819867,
+    "updatedAt": 1671554819867,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939869,
+    "createdFirstAt": 1671554819867,
     "name": "NestedPartial",
     "slug": "nested-partial",
     "module": "./NestedPartial",
@@ -109,13 +109,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "wkxmtyxpmhxncwsjxbjluoxg"
+    "id": "quzkgarzbuxxzlqyvhaerysm"
   },
   {
-    "createdAt": 1671116939869,
-    "updatedAt": 1671116939869,
+    "createdAt": 1671554819867,
+    "updatedAt": 1671554819867,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939869,
+    "createdFirstAt": 1671554819867,
     "name": "O",
     "slug": "o",
     "module": "./NestedPartial",
@@ -125,13 +125,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "ikdndflqfkwdpkkpreqoplrd"
+    "id": "swhxujtvekkfobnhrjjcqdkz"
   },
   {
-    "createdAt": 1671116939869,
-    "updatedAt": 1671116939869,
+    "createdAt": 1671554819867,
+    "updatedAt": 1671554819867,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939869,
+    "createdFirstAt": 1671554819867,
     "name": "notEmpty",
     "slug": "not-empty",
     "module": "./general",
@@ -141,13 +141,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "ezikzczdtdfyflitvxxegjev"
+    "id": "qqdaldflpfhctgpbrucibwhb"
   },
   {
-    "createdAt": 1671116939869,
-    "updatedAt": 1671116939869,
+    "createdAt": 1671554819867,
+    "updatedAt": 1671554819867,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939869,
+    "createdFirstAt": 1671554819867,
     "name": "getObjectKeysArray",
     "slug": "get-object-keys-array",
     "module": "./getObjectKeysArray",
@@ -157,13 +157,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "hbxitggcboxaeliogavnqgri"
+    "id": "viigniedjgpcjcchzoklrdcl"
   },
   {
-    "createdAt": 1671116939869,
-    "updatedAt": 1671116939869,
+    "createdAt": 1671554819868,
+    "updatedAt": 1671554819868,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939869,
+    "createdFirstAt": 1671554819868,
     "name": "mergeObjectsArray",
     "slug": "merge-objects-array",
     "module": "./mergeObjectsArray",
@@ -173,13 +173,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "aeodhymzbuyufaztgrbqamli"
+    "id": "ksfsmdctixxrxfzqrzbvjwwg"
   },
   {
-    "createdAt": 1671116939869,
-    "updatedAt": 1671116939869,
+    "createdAt": 1671554819868,
+    "updatedAt": 1671554819868,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939869,
+    "createdFirstAt": 1671554819868,
     "name": "omitUndefinedValues",
     "slug": "omit-undefined-values",
     "module": "./omitUndefinedValues",
@@ -189,13 +189,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "piqmwemlcmzwwxqzwthduazz"
+    "id": "lcgnipdrsslwgkfljchloouy"
   },
   {
-    "createdAt": 1671116939870,
-    "updatedAt": 1671116939870,
+    "createdAt": 1671554819868,
+    "updatedAt": 1671554819868,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939870,
+    "createdFirstAt": 1671554819868,
     "name": "O",
     "slug": "o",
     "module": "./NestedPartial",
@@ -205,13 +205,13 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "tmxugkjdowmbhldusaieskcb"
+    "id": "gukdasdhoxptgwkbajmnxiwk"
   },
   {
-    "createdAt": 1671116939870,
-    "updatedAt": 1671116939870,
+    "createdAt": 1671554819868,
+    "updatedAt": 1671554819868,
     "deletedAt": 0,
-    "createdFirstAt": 1671116939870,
+    "createdFirstAt": 1671554819868,
     "name": "OptionalKeys",
     "slug": "optional-keys",
     "module": "./types",
@@ -221,6 +221,6 @@
     "classification": "internal",
     "isAbsolute": false,
     "isModuleFromMonorepo": false,
-    "id": "kbfwmiqgtskkixnrfcllomir"
+    "id": "ntzjtshptnjkncascwztqqob"
   }
 ]

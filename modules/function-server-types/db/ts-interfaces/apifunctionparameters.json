@@ -1,0 +1,117 @@
+{
+  "createdAt": 1671554412061,
+  "updatedAt": 1671554412061,
+  "deletedAt": 0,
+  "createdFirstAt": 1671554412061,
+  "id": "apifunctionparameters",
+  "name": "ApiFunctionParameters",
+  "slug": "apifunctionparameters",
+  "operationRelativeTypescriptFilePath": "src/ApiFunction.ts",
+  "hasGeneric": false,
+  "isExported": true,
+  "rawText": "\n\nexport type ApiFunctionParameters = {\n  isPublic?: boolean;\n  /**\n   * If it's a slug without TLD, the function will be on on a landing page without its own domain\n   * If it's a slug with TLD, it can get it's own domain\n   * If domain is given, function is wrapped into `sdk-public-tools`, wrapped with:\n   *\n   * - providing email and other required credentials\n   * - adding to queue if server is busy\n   *\n   * Later I can wrap this even more with monetisation and 'tool-owner', so I can let others do the same with a single click (promote after form is filled is like \"learn more about how to earn money with the new AI tech revolution (or so)\")\n   */\n  domain?: string;\n  /**\n   * - If true, usage will be counted in `UsageReport`\n   * - If \"isSuccessful\", usage will be counted only if this function returns `.isSuccessful: true`\n   *\n   * NB: not sure if the latter is needed\n   *\n   */\n  isPaid?: true | \"isSuccessful\";\n  /**\n   * Cost per execution in EURO CENT\n   *\n   * e.g. 0.05 means that 2000 executions cost 1 euro.\n   */\n  price?: number;\n  allowedRoles?: string[];\n};",
+  "extensions": [],
+  "isOperationIndex": false,
+  "description": "",
+  "isDbModel": false,
+  "commentsInside": [],
+  "type": {
+    "typeDefinition": {
+      "type": "object",
+      "properties": {
+        "isPublic": {
+          "type": "boolean"
+        },
+        "domain": {
+          "type": "string",
+          "description": "If it's a slug without TLD, the function will be on on a landing page without its own domain If it's a slug with TLD, it can get it's own domain If domain is given, function is wrapped into `sdk-public-tools`, wrapped with:\n\n- providing email and other required credentials\n- adding to queue if server is busy\n\nLater I can wrap this even more with monetisation and 'tool-owner', so I can let others do the same with a single click (promote after form is filled is like \"learn more about how to earn money with the new AI tech revolution (or so)\")"
+        },
+        "isPaid": {
+          "type": [
+            "boolean",
+            "string"
+          ],
+          "enum": [
+            true,
+            "isSuccessful"
+          ],
+          "description": "- If true, usage will be counted in `UsageReport`\n- If \"isSuccessful\", usage will be counted only if this function returns `.isSuccessful: true`\n\nNB: not sure if the latter is needed"
+        },
+        "price": {
+          "type": "number",
+          "description": "Cost per execution in EURO CENT\n\ne.g. 0.05 means that 2000 executions cost 1 euro."
+        },
+        "allowedRoles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "simplifiedSchema": {
+      "properties": [
+        {
+          "name": "isPublic",
+          "required": false,
+          "schema": {
+            "type": "boolean"
+          }
+        },
+        {
+          "name": "domain",
+          "required": false,
+          "schema": {
+            "fullComment": "If it's a slug without TLD, the function will be on on a landing page without its own domain If it's a slug with TLD, it can get it's own domain If domain is given, function is wrapped into `sdk-public-tools`, wrapped with:\n\n- providing email and other required credentials\n- adding to queue if server is busy\n\nLater I can wrap this even more with monetisation and 'tool-owner', so I can let others do the same with a single click (promote after form is filled is like \"learn more about how to earn money with the new AI tech revolution (or so)\")",
+            "type": "string"
+          }
+        },
+        {
+          "name": "isPaid",
+          "required": false,
+          "schema": {
+            "enum": [
+              true,
+              "isSuccessful"
+            ],
+            "fullComment": "- If true, usage will be counted in `UsageReport`\n- If \"isSuccessful\", usage will be counted only if this function returns `.isSuccessful: true`\n\nNB: not sure if the latter is needed",
+            "nb": "not sure if the latter is needed",
+            "type": "boolean"
+          }
+        },
+        {
+          "name": "price",
+          "required": false,
+          "schema": {
+            "fullComment": "Cost per execution in EURO CENT\n\ne.g. 0.05 means that 2000 executions cost 1 euro.",
+            "type": "number"
+          }
+        },
+        {
+          "name": "allowedRoles",
+          "required": false,
+          "schema": {
+            "items": [
+              {
+                "schema": {
+                  "type": "string"
+                },
+                "name": null
+              }
+            ],
+            "type": "array"
+          }
+        }
+      ],
+      "type": "object"
+    },
+    "typeCoverage": 0,
+    "rawType": "ApiFunctionParameters",
+    "isArray": false,
+    "isEnum": false,
+    "isEnumLiteral": false,
+    "isObject": false,
+    "isPrimitive": false
+  }
+}

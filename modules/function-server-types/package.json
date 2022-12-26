@@ -22,30 +22,30 @@
       "indexImportExportError": "",
       "lintProblems": []
     },
-    "lastRebuildAt": 1671318158886,
+    "lastRebuildAt": 1671554427670,
     "sizeIndexed": {
       "codeSize": {
         "numberOfFiles": 1,
-        "lines": 20,
-        "characters": 488,
-        "bytes": 488
+        "lines": 37,
+        "characters": 1224,
+        "bytes": 1224
       },
       "dataSize": {
         "numberOfFiles": 2,
         "lines": 100,
-        "characters": 3243,
-        "bytes": 3243
+        "characters": 3246,
+        "bytes": 3246
       },
       "textSize": {
         "numberOfFiles": 2,
-        "lines": 27,
-        "characters": 557,
-        "bytes": 557
+        "lines": 48,
+        "characters": 927,
+        "bytes": 927
       },
       "size": {
-        "bytes": 4288,
-        "characters": 4288,
-        "lines": 147,
+        "bytes": 5397,
+        "characters": 5397,
+        "lines": 185,
         "numberOfFiles": 5
       }
     },

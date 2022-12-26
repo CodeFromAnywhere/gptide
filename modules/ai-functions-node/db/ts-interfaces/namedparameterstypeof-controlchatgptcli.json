@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671505928656,
-  "updatedAt": 1671505928656,
+  "createdAt": 1671553053246,
+  "updatedAt": 1671553053246,
   "deletedAt": 0,
-  "createdFirstAt": 1671505928656,
+  "createdFirstAt": 1671553053246,
   "id": "namedparameterstypeof-controlchatgptcli",
   "name": "NamedParameters<typeof controlChatGptCli>",
   "slug": "namedparameterstypeof-controlchatgptcli",

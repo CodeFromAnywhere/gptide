@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671505947062,
-  "updatedAt": 1671505947062,
+  "createdAt": 1671553089291,
+  "updatedAt": 1671553089291,
   "deletedAt": 0,
-  "createdFirstAt": 1671505947062,
+  "createdFirstAt": 1671553089291,
   "id": "namedparameterstypeof-gptideasregisterwithcontext",
   "name": "NamedParameters<typeof gptIdeasRegisterWithContext>",
   "slug": "namedparameterstypeof-gptideasregisterwithcontext",

@@ -1,18 +1,20 @@
 [
   {
-    "createdAt": 1670268931014,
-    "updatedAt": 1670268931014,
+    "createdAt": 1671554414327,
+    "updatedAt": 1671554414327,
     "deletedAt": 0,
-    "createdFirstAt": 1670268931014,
+    "createdFirstAt": 1671554414327,
     "name": "Comment",
     "slug": "comment",
-    "operationRelativeTypescriptFilePath": "src/index.ts",
-    "comment": "Please run your `dev` to auto-generate this file based on all other files you are creating.",
-    "rawStatement": "export * from \"./ApiFunction\";",
+    "operationRelativeTypescriptFilePath": "src/ApiFunction.ts",
+    "comment": "TODO: get rid of `TsFunctionFrontmatterConfig` and put here",
+    "rawStatement": "export type ApiFunction = {\n  (): any;\n} & ApiFunctionParameters;",
     "parameters": {},
-    "types": [],
+    "types": [
+      "todo"
+    ],
     "firstLine": 1,
-    "lastLine": 1,
-    "id": "nfoklffebjggllahmyfmbtaw"
+    "lastLine": 3,
+    "id": "gxfunvmkpveomdlelzwsmfts"
   }
 ]

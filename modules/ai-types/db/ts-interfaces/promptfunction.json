@@ -1,15 +1,15 @@
 {
-  "createdAt": 1671365971573,
-  "updatedAt": 1671365971573,
+  "createdAt": 1671553208468,
+  "updatedAt": 1671553208468,
   "deletedAt": 0,
-  "createdFirstAt": 1671365971573,
+  "createdFirstAt": 1671553208468,
   "id": "promptfunction",
   "name": "PromptFunction",
   "slug": "promptfunction",
   "operationRelativeTypescriptFilePath": "src/PromptFunction.ts",
   "hasGeneric": false,
   "isExported": true,
-  "rawText": "\n\n/**\n * Special kind of function that executes a prompt with the use of a language model\n */\nexport type PromptFunction = {\n  (...parameters: any[]): Promise<ProcessPromptFunctionResult>;\n  contextualPromptInfo: ContextualPromptInfo;\n};",
+  "rawText": "\n/**\n * Special kind of function that executes a prompt with the use of a language model\n */\nexport type PromptFunction = {\n  (...parameters: any[]): Promise<ProcessPromptFunctionResult>;\n  contextualPromptInfo: ContextualPromptInfo;\n} & ApiFunctionParameters;",
   "extensions": [],
   "isOperationIndex": false,
   "description": "Special kind of function that executes a prompt with the use of a language model",
@@ -18,7 +18,36 @@
   "type": {
     "typeDefinition": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
+        "isPublic": {
+          "type": "boolean"
+        },
+        "domain": {
+          "type": "string",
+          "description": "If it's a slug without TLD, the function will be on on a landing page without its own domain If it's a slug with TLD, it can get it's own domain If domain is given, function is wrapped into `sdk-public-tools`, wrapped with:\n\n- providing email and other required credentials\n- adding to queue if server is busy\n\nLater I can wrap this even more with monetisation and 'tool-owner', so I can let others do the same with a single click (promote after form is filled is like \"learn more about how to earn money with the new AI tech revolution (or so)\")"
+        },
+        "isPaid": {
+          "type": [
+            "boolean",
+            "string"
+          ],
+          "enum": [
+            true,
+            "isSuccessful"
+          ],
+          "description": "- If true, usage will be counted in `UsageReport`\n- If \"isSuccessful\", usage will be counted only if this function returns `.isSuccessful: true`\n\nNB: not sure if the latter is needed"
+        },
+        "price": {
+          "type": "number",
+          "description": "Cost per execution in EURO CENT\n\ne.g. 0.05 means that 2000 executions cost 1 euro."
+        },
+        "allowedRoles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
         "contextualPromptInfo": {
           "$ref": "#/definitions/ContextualPromptInfo"
         }
@@ -26,12 +55,62 @@
       "required": [
         "contextualPromptInfo"
       ],
-      "additionalProperties": false,
       "description": "Special kind of function that executes a prompt with the use of a language model"
     },
     "simplifiedSchema": {
       "fullComment": "Special kind of function that executes a prompt with the use of a language model",
       "properties": [
+        {
+          "name": "isPublic",
+          "required": false,
+          "schema": {
+            "type": "boolean"
+          }
+        },
+        {
+          "name": "domain",
+          "required": false,
+          "schema": {
+            "fullComment": "If it's a slug without TLD, the function will be on on a landing page without its own domain If it's a slug with TLD, it can get it's own domain If domain is given, function is wrapped into `sdk-public-tools`, wrapped with:\n\n- providing email and other required credentials\n- adding to queue if server is busy\n\nLater I can wrap this even more with monetisation and 'tool-owner', so I can let others do the same with a single click (promote after form is filled is like \"learn more about how to earn money with the new AI tech revolution (or so)\")",
+            "type": "string"
+          }
+        },
+        {
+          "name": "isPaid",
+          "required": false,
+          "schema": {
+            "enum": [
+              true,
+              "isSuccessful"
+            ],
+            "fullComment": "- If true, usage will be counted in `UsageReport`\n- If \"isSuccessful\", usage will be counted only if this function returns `.isSuccessful: true`\n\nNB: not sure if the latter is needed",
+            "nb": "not sure if the latter is needed",
+            "type": "boolean"
+          }
+        },
+        {
+          "name": "price",
+          "required": false,
+          "schema": {
+            "fullComment": "Cost per execution in EURO CENT\n\ne.g. 0.05 means that 2000 executions cost 1 euro.",
+            "type": "number"
+          }
+        },
+        {
+          "name": "allowedRoles",
+          "required": false,
+          "schema": {
+            "items": [
+              {
+                "schema": {
+                  "type": "string"
+                },
+                "name": null
+              }
+            ],
+            "type": "array"
+          }
+        },
         {
           "name": "contextualPromptInfo",
           "required": true,

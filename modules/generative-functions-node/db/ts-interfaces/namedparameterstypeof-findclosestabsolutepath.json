@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671315231315,
-  "updatedAt": 1671315231315,
+  "createdAt": 1671553276850,
+  "updatedAt": 1671553276850,
   "deletedAt": 0,
-  "createdFirstAt": 1671315231315,
+  "createdFirstAt": 1671553276850,
   "id": "namedparameterstypeof-findclosestabsolutepath",
   "name": "NamedParameters<typeof findClosestAbsolutePath>",
   "slug": "namedparameterstypeof-findclosestabsolutepath",

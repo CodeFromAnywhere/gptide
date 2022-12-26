@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671101637525,
-  "updatedAt": 1671101637525,
+  "createdAt": 1671553691771,
+  "updatedAt": 1671553691771,
   "deletedAt": 0,
-  "createdFirstAt": 1671101637525,
+  "createdFirstAt": 1671553691771,
   "id": "namedparameterstypeof-movepath",
   "name": "NamedParameters<typeof movePath>",
   "slug": "namedparameterstypeof-movepath",

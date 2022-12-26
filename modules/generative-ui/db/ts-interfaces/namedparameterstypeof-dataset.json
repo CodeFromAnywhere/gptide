@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671506463673,
-  "updatedAt": 1671506463673,
+  "createdAt": 1671553347182,
+  "updatedAt": 1671553347182,
   "deletedAt": 0,
-  "createdFirstAt": 1671506463673,
+  "createdFirstAt": 1671553347182,
   "id": "namedparameterstypeof-dataset",
   "name": "NamedParameters<typeof Dataset>",
   "slug": "namedparameterstypeof-dataset",

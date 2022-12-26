@@ -1,9 +1,9 @@
 [
   {
-    "createdAt": 1669288091166,
-    "updatedAt": 1669288091166,
+    "createdAt": 1671554680129,
+    "updatedAt": 1671554680129,
     "deletedAt": 0,
-    "createdFirstAt": 1669288091166,
+    "createdFirstAt": 1671554680129,
     "name": "Comment",
     "slug": "comment",
     "operationRelativeTypescriptFilePath": "src/store.tsx",
@@ -13,6 +13,6 @@
     "types": [],
     "firstLine": 5,
     "lastLine": 7,
-    "id": "saznlaflyliwphylivrzpyaf"
+    "id": "bsjrzgoripoxknojgqmattmf"
   }
 ]

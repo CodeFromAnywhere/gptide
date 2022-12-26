@@ -82,19 +82,19 @@
       "indexImportExportError": "",
       "lintProblems": []
     },
-    "lastRebuildAt": 1671506619776,
+    "lastRebuildAt": 1671553418169,
     "sizeIndexed": {
       "codeSize": {
         "numberOfFiles": 15,
-        "lines": 1592,
-        "characters": 49451,
-        "bytes": 49451
+        "lines": 1613,
+        "characters": 50006,
+        "bytes": 50006
       },
       "dataSize": {
         "numberOfFiles": 2,
-        "lines": 238,
-        "characters": 5992,
-        "bytes": 5992
+        "lines": 242,
+        "characters": 6082,
+        "bytes": 6082
       },
       "textSize": {
         "numberOfFiles": 2,
@@ -103,9 +103,9 @@
         "bytes": 4320
       },
       "size": {
-        "bytes": 59763,
-        "characters": 59763,
-        "lines": 2027,
+        "bytes": 60408,
+        "characters": 60408,
+        "lines": 2052,
         "numberOfFiles": 19
       }
     },
@@ -124,6 +124,7 @@
       "FolderContent",
       "api",
       "showStandardResponse",
+      "warningToast",
       "getFileOrFolderName",
       "getFolderJs",
       "useContextMenu",

@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671101593297,
-  "updatedAt": 1671101593297,
+  "createdAt": 1671553669289,
+  "updatedAt": 1671553669289,
   "deletedAt": 0,
-  "createdFirstAt": 1671101593297,
+  "createdFirstAt": 1671553669289,
   "id": "namedparameterstypeof-copypath",
   "name": "NamedParameters<typeof copyPath>",
   "slug": "namedparameterstypeof-copypath",

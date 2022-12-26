@@ -15,7 +15,8 @@
     "react-with-native-store": "2.0.40",
     "js-util": "0.0.1",
     "augmented-word-types": "0.0.1",
-    "breadcrumbs": "0.0.1"
+    "breadcrumbs": "0.0.1",
+    "writer-types": "0.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.25",
@@ -42,7 +43,7 @@
   "operation": {
     "buildResultIndexed": {
       "indexInteracesErrors": [
-        "No schema/definitions found for /Users/king/King/operations/tools/user-interfaces/gui/wise/file-writer/src/FileWriter.tsx. Error: TypeError: Cannot read properties of undefined (reading 'filter')"
+        "No schema/definitions found for /Users/king/King/operations/tools/user-interfaces/gui/wise/file-writer/src/WriterLayout.tsx. Error: Error: Unknown node \"new (props: P) => Component<P, any>\" of kind \"ConstructorType\""
       ],
       "buildSucceeded": true,
       "indexImportExportError": "",
@@ -50,21 +51,21 @@
     },
     "hasGeneratedDependenciesIndexed": false,
     "lastPullTimeAtIndexed": 0,
-    "lastRebuildAt": 1671012856611,
+    "lastRebuildAt": 1671554683547,
     "markdown": "# ❌ No description set yet\n\nPlease set a description for this operation in OPERATION.md\n\nThis is a ui-esm operation. This means it's a ui operation that builds to javascript with ESM module resolving... It was based on this example: https://prateeksurana.me/blog/react-library-with-typescript/\n",
     "hasGeneratedImportsIndexed": false,
     "sizeIndexed": {
       "codeSize": {
         "numberOfFiles": 4,
-        "lines": 142,
-        "characters": 4262,
-        "bytes": 4262
+        "lines": 145,
+        "characters": 4340,
+        "bytes": 4340
       },
       "dataSize": {
         "numberOfFiles": 2,
         "lines": 135,
-        "characters": 3973,
-        "bytes": 3973
+        "characters": 3967,
+        "bytes": 3967
       },
       "textSize": {
         "numberOfFiles": 2,
@@ -73,9 +74,9 @@
         "bytes": 1248
       },
       "size": {
-        "bytes": 9483,
-        "characters": 9483,
-        "lines": 343,
+        "bytes": 9555,
+        "characters": 9555,
+        "lines": 346,
         "numberOfFiles": 8
       }
     },
@@ -84,17 +85,16 @@
     "classificationIndexed": "ui-esm",
     "coreDependenciesIndexed": [],
     "operationDependenciesIndexed": [
+      "api",
+      "queries",
+      "isCtrlS",
+      "useHotkey",
       "Div",
       "P",
-      "queries",
-      "api",
-      "WriterInput",
       "toast",
-      "useHotkey",
-      "isCtrlS",
       "DbModels",
-      "MappedObject",
-      "AugmentedWord",
+      "WriterInput",
+      "WriterViewEnum",
       "FileTabs",
       "PagesObjectShape",
       "createStore",

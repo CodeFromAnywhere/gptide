@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671317337653,
-  "updatedAt": 1671317337653,
+  "createdAt": 1671553828089,
+  "updatedAt": 1671553828089,
   "deletedAt": 0,
-  "createdFirstAt": 1671317337653,
+  "createdFirstAt": 1671553828089,
   "id": "namedparameterstypeof-getsubtext",
   "name": "NamedParameters<typeof getSubtext>",
   "slug": "namedparameterstypeof-getsubtext",

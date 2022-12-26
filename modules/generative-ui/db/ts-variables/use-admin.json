@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671506598626,
-  "updatedAt": 1671506598626,
+  "createdAt": 1671553405814,
+  "updatedAt": 1671553405814,
   "deletedAt": 0,
-  "createdFirstAt": 1671506598626,
+  "createdFirstAt": 1671553405814,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -29,5 +29,5 @@
   },
   "value": "() => {\n  const queryPath = useQueryPath();\n  const { refetch, isLoading } = queries.useGetReaderPageProps(\n    process.env.NEXT_PUBLIC_BASEPATH || \"\",\n    queryPath,\n    true\n  );\n\n  const meQuery = queries.useGetMeWithContext();\n\n  const isAdmin = !!meQuery.data?.result?.groups?.find(\n    (x: Group) => x.slug === \"admin\"\n  );\n\n  const [config] = useStore(\"generativeWeb.config\");\n\n  const isAdminActive = isAdmin && !config.disableAdmin;\n  const result: {\n    isAdminActive: boolean;\n    isLoading?: boolean;\n    refetch?: typeof refetch;\n  } = isAdminActive\n    ? {\n        isAdminActive,\n        isLoading,\n        refetch,\n      }\n    : { isAdminActive };\n\n  return result;\n}",
   "description": "Useful hook to make a static site dynamic for administrator",
-  "id": "tzvfywuzglgunazngfijmgrk"
+  "id": "mwixovdsvjhsdlzkswbripyc"
 }

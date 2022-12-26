@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671317289911,
-  "updatedAt": 1671317289911,
+  "createdAt": 1671553780985,
+  "updatedAt": 1671553780985,
   "deletedAt": 0,
-  "createdFirstAt": 1671317289911,
+  "createdFirstAt": 1671553780985,
   "id": "namedparameterstypeof-writerconfigform",
   "name": "NamedParameters<typeof WriterConfigForm>",
   "slug": "namedparameterstypeof-writerconfigform",

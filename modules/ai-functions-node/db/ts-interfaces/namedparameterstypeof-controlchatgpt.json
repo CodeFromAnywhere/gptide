@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671505931155,
-  "updatedAt": 1671505931155,
+  "createdAt": 1671553056613,
+  "updatedAt": 1671553056613,
   "deletedAt": 0,
-  "createdFirstAt": 1671505931155,
+  "createdFirstAt": 1671553056613,
   "id": "namedparameterstypeof-controlchatgpt",
   "name": "NamedParameters<typeof controlChatGpt>",
   "slug": "namedparameterstypeof-controlchatgpt",

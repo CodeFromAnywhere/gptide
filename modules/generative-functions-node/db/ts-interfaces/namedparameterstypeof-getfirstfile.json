@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671315234620,
-  "updatedAt": 1671315234620,
+  "createdAt": 1671553280249,
+  "updatedAt": 1671553280249,
   "deletedAt": 0,
-  "createdFirstAt": 1671315234620,
+  "createdFirstAt": 1671553280249,
   "id": "namedparameterstypeof-getfirstfile",
   "name": "NamedParameters<typeof getFirstFile>",
   "slug": "namedparameterstypeof-getfirstfile",

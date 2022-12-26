@@ -47,7 +47,7 @@
     "folderNameIndexed": "code-types",
     "hasGeneratedDependenciesIndexed": false,
     "lastPullTimeAtIndexed": 0,
-    "lastRebuildAt": 1670064118199,
+    "lastRebuildAt": 1671554126682,
     "operationDependenciesIndexed": [
       "DefaultModelType",
       "SlugModelType",
@@ -105,12 +105,12 @@
       "textSize": {
         "numberOfFiles": 3,
         "lines": 1647,
-        "characters": 43365,
-        "bytes": 43365
+        "characters": 43325,
+        "bytes": 43325
       },
       "size": {
-        "bytes": 96556,
-        "characters": 96556,
+        "bytes": 96516,
+        "characters": 96516,
         "lines": 3575,
         "numberOfFiles": 31
       }

@@ -1,9 +1,9 @@
 [
   {
-    "createdAt": 1671448804932,
-    "updatedAt": 1671448804932,
+    "createdAt": 1671553543889,
+    "updatedAt": 1671553543889,
     "deletedAt": 0,
-    "createdFirstAt": 1671448804932,
+    "createdFirstAt": 1671553543889,
     "name": "DefaultModelType",
     "slug": "default-model-type",
     "type": "type",
@@ -15,6 +15,6 @@
     "classification": "operation",
     "isAbsolute": true,
     "isModuleFromMonorepo": true,
-    "id": "ygcewskdxwsctjjfsbutapqv"
+    "id": "yejdygtbkoanesyytphnhjmr"
   }
 ]

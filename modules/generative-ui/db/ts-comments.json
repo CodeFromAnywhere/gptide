@@ -1,9 +1,9 @@
 [
   {
-    "createdAt": 1671506604108,
-    "updatedAt": 1671506604108,
+    "createdAt": 1671553409724,
+    "updatedAt": 1671553409724,
     "deletedAt": 0,
-    "createdFirstAt": 1671506604108,
+    "createdFirstAt": 1671553409724,
     "name": "Comment",
     "slug": "comment",
     "operationRelativeTypescriptFilePath": "src/components/useQueryPath.ts",
@@ -13,6 +13,6 @@
     "types": [],
     "firstLine": 4,
     "lastLine": 6,
-    "id": "kyipkfagsvnyumcmmbodkths"
+    "id": "hdnnjakpwabtntdiytddvuqb"
   }
 ]

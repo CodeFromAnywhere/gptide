@@ -1,15 +1,15 @@
 {
-  "createdAt": 1671505972748,
-  "updatedAt": 1671505972748,
+  "createdAt": 1671553119583,
+  "updatedAt": 1671553119583,
   "deletedAt": 0,
-  "createdFirstAt": 1671505972748,
+  "createdFirstAt": 1671553119583,
   "runEveryPeriod": "minute",
   "isApiExposed": true,
   "isExported": true,
   "groupAuthorization": {},
-  "operationRelativeTypescriptFilePath": "src/queue-functions.ts",
+  "operationRelativeTypescriptFilePath": "src/queue/checkQueue.ts",
   "commentsInside": [],
-  "rawText": " async () => {\n  const queueItems = await db.get(\"Queue\");\n  if (queueItems.length === 0) return;\n\n  // 1. check how many chrome tabs are available (according to OS settings / memory limit)\n  const idlePages = (await db.get(\"BrowserPage\")).filter((p) => p.isIdle);\n\n  if (idlePages.length === 0) return;\n  // 2. check how many queue items can be executed now, and sort by importancy\n  const queueItemsToExecute = queueItems.slice(0, 1); //idlePages.length);\n  // NB: limit to 1 for now to test if that works\n\n  // 3. take the ones that are most important and execute those\n  await Promise.all(\n    queueItemsToExecute.map(async (queue) => {\n      const fn = sdk[queue.functionName as keyof typeof sdk] as\n        | ((...parameters: any[]) => any)\n        | undefined;\n\n      if (!fn) return;\n\n      await fn(...queue.parameters);\n    })\n  );\n\n  const removeResult = await db.remove(\"Queue\", (item) =>\n    queueItemsToExecute.map((x) => x.id).includes(item.id)\n  );\n  console.log(`executed`, { removeResult });\n}",
+  "rawText": " async () => {\n  const queueItems = (await db.get(\"Queue\")).filter(\n    (x) => x.type === \"puppeteer\"\n  );\n\n  if (queueItems.length === 0) return;\n\n  const lateQueueItemsToNotify = queueItems.filter(\n    (x) =>\n      x.notifyLateAfterSeconds &&\n      Date.now() - x.createdAt > x.notifyLateAfterSeconds * 1000 &&\n      !x.hasNotifiedLate\n  );\n\n  // 1. check how many chrome tabs are available (according to OS settings / memory limit)\n  const idlePages = (await db.get(\"BrowserPage\")).filter((p) => p.isIdle);\n\n  const runnableNowAmount = 1; //idlePages.length\n  const queueItemsToExecute = queueItems.slice(0, runnableNowAmount);\n\n  if (runnableNowAmount < lateQueueItemsToNotify.length) {\n    //email the ones that won't be executed\n    console.log(\n      {\n        runnableNowAmount,\n        lateQueueItemsToNotify: lateQueueItemsToNotify.length,\n      },\n      \"SHOULD EMAIL SOME THAT CAN'T BE EXECUTED AND PUT THEM ON NOTIFIED WITH ETA\"\n    );\n  }\n\n  if (idlePages.length === 0) return;\n  // 2. check how many queue items can be executed now, and sort by importancy\n  // NB: limit to 1 for now to test if that works\n\n  // 3. take the ones that are most important and execute those\n  await Promise.all(\n    queueItemsToExecute.map(async (queue) => {\n      const fn = sdk[queue.functionName as keyof typeof sdk] as\n        | ((...parameters: any[]) => any)\n        | undefined;\n\n      if (!fn) return;\n\n      await fn(...queue.parameters);\n    })\n  );\n\n  const removeResult = await db.remove(\"Queue\", (item) =>\n    queueItemsToExecute.map((x) => x.id).includes(item.id)\n  );\n  console.log(`executed`, { removeResult });\n}",
   "name": "checkQueue",
   "slug": "check-queue",
   "parameters": [],
@@ -25,13 +25,13 @@
   },
   "maxIndentationDepth": 4,
   "size": {
-    "characters": 1321,
-    "lines": 34,
-    "bytes": 1321,
+    "characters": 1934,
+    "lines": 57,
+    "bytes": 1934,
     "bytesPerCharacter": 1,
-    "charactersPerLine": 39,
-    "linesPerFile": 34,
+    "charactersPerLine": 34,
+    "linesPerFile": 57,
     "numberOfFiles": 1
   },
-  "id": "kgxhsvytdfqajjvftazynhho"
+  "id": "ietdfbzocloqedpmzosuqbol"
 }

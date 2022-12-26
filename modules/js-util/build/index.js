@@ -23,6 +23,7 @@ __exportStar(require("./getObjectKeysArray"), exports);
 __exportStar(require("./getParameterAtLocation"), exports);
 __exportStar(require("./getSubsetFromObject"), exports);
 __exportStar(require("./hasAllLetters"), exports);
+__exportStar(require("./isArrayEqual"), exports);
 __exportStar(require("./mapAsync"), exports);
 __exportStar(require("./mapMany"), exports);
 __exportStar(require("./mergeNestedObject"), exports);
@@ -35,5 +36,4 @@ __exportStar(require("./removeOptionalKeysFromObject"), exports);
 __exportStar(require("./replaceLastOccurence"), exports);
 __exportStar(require("./trimSlashes"), exports);
 __exportStar(require("./types"), exports);
-__exportStar(require("./isArrayEqual"), exports);
 //# sourceMappingURL=index.js.map

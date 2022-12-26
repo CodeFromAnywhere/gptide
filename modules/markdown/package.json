@@ -71,7 +71,7 @@
     "folderNameIndexed": "markdown",
     "hasGeneratedDependenciesIndexed": false,
     "lastPullTimeAtIndexed": 0,
-    "lastRebuildAt": 1671318512154,
+    "lastRebuildAt": 1671554574876,
     "operationDependenciesIndexed": [
       "path",
       "apiUrl",
@@ -96,7 +96,6 @@
       "MarkdownChunk",
       "AssetView",
       "AugmentedWord",
-      "useSelectionPromptsMenu",
       "Asset",
       "getFolderJs",
       "isPathRelative",
@@ -123,15 +122,15 @@
     "sizeIndexed": {
       "codeSize": {
         "numberOfFiles": 15,
-        "lines": 1007,
-        "characters": 29848,
-        "bytes": 29848
+        "lines": 987,
+        "characters": 29221,
+        "bytes": 29221
       },
       "dataSize": {
         "numberOfFiles": 2,
-        "lines": 178,
-        "characters": 4920,
-        "bytes": 4920
+        "lines": 176,
+        "characters": 4828,
+        "bytes": 4828
       },
       "textSize": {
         "numberOfFiles": 4,
@@ -140,9 +139,9 @@
         "bytes": 8139
       },
       "size": {
-        "bytes": 42907,
-        "characters": 42907,
-        "lines": 1500,
+        "bytes": 42188,
+        "characters": 42188,
+        "lines": 1478,
         "numberOfFiles": 21
       }
     },

@@ -117,6 +117,18 @@ return "something" + a + b + c;
 
 
 
+## takeFirst()
+
+takes any type T or an array of T and returns T or the first of the array (which is T)
+
+
+| Input      |    |    |
+| ---------- | -- | -- |
+| - | | |
+| **Output** |    |    |
+
+
+
 ## 📄 destructureOptionalObject (exported const)
 
 Easy way to destructure your object even if it may be `undefined` or `null`.
@@ -142,18 +154,6 @@ return "something" + a + b + c;
 ```
 
 <!-- It would be great if I could also make examples that not only refer to input/output combos but maybe another function that showcases it's usage... -->
-
-
-## takeFirst()
-
-takes any type T or an array of T and returns T or the first of the array (which is T)
-
-
-| Input      |    |    |
-| ---------- | -- | -- |
-| - | | |
-| **Output** |    |    |
-
 
 
 ## 📄 takeFirst (exported const)
@@ -280,6 +280,17 @@ input: { x: "a", y: "b", z: "c" } and ["x"]
 output: { x: "a" }
 
 
+## sum()
+
+| Input      |    |    |
+| ---------- | -- | -- |
+| a | number |  |,| b | number |  |
+| **Output** |    |    |
+
+
+
+## 📄 sum (exported const)
+
 ## isAllTrue()
 
 checks if all items in an array are true
@@ -341,15 +352,6 @@ console.log(removeIndexFromArray(exampleArray, 2)); //c should be removed
 
 
 
-## sum()
-
-| Input      |    |    |
-| ---------- | -- | -- |
-| a | number |  |,| b | number |  |
-| **Output** |    |    |
-
-
-
 ## trimSlashes()
 
 Trims a slash on both sides in any path
@@ -386,8 +388,6 @@ console.log(removeIndexFromArray(exampleArray, 2)); //c should be removed
 ```
 
 
-## 📄 sum (exported const)
-
 ## 📄 trimSlashes (exported const)
 
 Trims a slash on both sides in any path
@@ -407,13 +407,6 @@ NB: Don't use this inside of render functions, it's a very slow function, the wh
 
 
 
-## 📄 createMappedObject (exported const)
-
-Creates a `MappedObject` of an array of any type. `MappedObject`s are great for increasing efficiency to get an item from an array. Especially useful when finds are needed on a specific key match for huge arrays. Instead of finding on the array you can simply get the right property from this object.
-
-NB: Don't use this inside of render functions, it's a very slow function, the whole idea is that this makes it faster, so just do it once!
-
-
 ## getObjectKeysArray()
 
 Handy function to get the keys of an object, but typed.
@@ -426,6 +419,20 @@ NB: The only difference from Object.keys is that this returns the keys in a type
 | - | | |
 | **Output** | {  }[]   |    |
 
+
+
+## 📄 createMappedObject (exported const)
+
+Creates a `MappedObject` of an array of any type. `MappedObject`s are great for increasing efficiency to get an item from an array. Especially useful when finds are needed on a specific key match for huge arrays. Instead of finding on the array you can simply get the right property from this object.
+
+NB: Don't use this inside of render functions, it's a very slow function, the whole idea is that this makes it faster, so just do it once!
+
+
+## 📄 getObjectKeysArray (exported const)
+
+Handy function to get the keys of an object, but typed.
+
+NB: The only difference from Object.keys is that this returns the keys in a typesafe manner
 
 
 ## insertAt()
@@ -487,13 +494,6 @@ NB: this is not the most efficient method, as it reverses the string by making i
 | string | string |  |,| searchValue | string |  |,| replaceValue | string |  |
 | **Output** | `String`   |    |
 
-
-
-## 📄 getObjectKeysArray (exported const)
-
-Handy function to get the keys of an object, but typed.
-
-NB: The only difference from Object.keys is that this returns the keys in a typesafe manner
 
 
 ## 📄 insertAt (exported const)
@@ -608,6 +608,15 @@ all letters of b can be found in a, in order (but other letters in between are a
 | Input      |    |    |
 | ---------- | -- | -- |
 | a | string |  |,| b | string |  |
+| **Output** | {  }   |    |
+
+
+
+## isArrayEqual()
+
+| Input      |    |    |
+| ---------- | -- | -- |
+| a | {  }[] |  |,| b | {  }[] |  |
 | **Output** | {  }   |    |
 
 
@@ -787,6 +796,8 @@ ouput: { xyz: [{path:"xyz"},{path:"xyz"}], abc: [{path:"abc"}]}
 
 all letters of b can be found in a, in order (but other letters in between are allowed)
 
+
+## 📄 isArrayEqual (exported const)
 
 ## 📄 mapValuesSync (exported const)
 

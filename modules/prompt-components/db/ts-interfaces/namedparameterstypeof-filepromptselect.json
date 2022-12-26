@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671483647856,
-  "updatedAt": 1671483647856,
+  "createdAt": 1671553512441,
+  "updatedAt": 1671553512441,
   "deletedAt": 0,
-  "createdFirstAt": 1671483647856,
+  "createdFirstAt": 1671553512441,
   "id": "namedparameterstypeof-filepromptselect",
   "name": "NamedParameters<typeof FilePromptSelect>",
   "slug": "namedparameterstypeof-filepromptselect",

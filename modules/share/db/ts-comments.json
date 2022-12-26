@@ -1,9 +1,9 @@
 [
   {
-    "createdAt": 1671449631889,
-    "updatedAt": 1671449631889,
+    "createdAt": 1671554803102,
+    "updatedAt": 1671554803102,
     "deletedAt": 0,
-    "createdFirstAt": 1671449631889,
+    "createdFirstAt": 1671554803102,
     "name": "Comment",
     "slug": "comment",
     "operationRelativeTypescriptFilePath": "src/useProjectRelativeScreenshot.ts",
@@ -13,6 +13,6 @@
     "types": [],
     "firstLine": 4,
     "lastLine": 8,
-    "id": "jgpoxdnqlkpwyukpcvzlprwp"
+    "id": "btydmkmvjqimlhtnabjjodpt"
   }
 ]

@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671101669835,
-  "updatedAt": 1671101669835,
+  "createdAt": 1671553709893,
+  "updatedAt": 1671553709893,
   "deletedAt": 0,
-  "createdFirstAt": 1671101669835,
+  "createdFirstAt": 1671553709893,
   "id": "namedparameterstypeof-savefilecontents",
   "name": "NamedParameters<typeof saveFileContents>",
   "slug": "namedparameterstypeof-savefilecontents",

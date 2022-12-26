@@ -32,7 +32,11 @@ Properties:
 | id  | string |  |
 | categoryStack (optional) | array |  |
 | startedAt (optional) | number |  |
-| type  | string |  |
+| type (optional) | string |  |
+| notifyLateAfterSeconds (optional) | number |  |
+| hasNotifiedLate (optional) | boolean |  |
+| shouldNotifyOnResult (optional) | boolean |  |
+| executionAuthToken  | string |  |
 | functionName  | string |  |
 | parameters  | array |  |
 

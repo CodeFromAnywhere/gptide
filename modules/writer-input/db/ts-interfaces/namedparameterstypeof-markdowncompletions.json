@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671317330528,
-  "updatedAt": 1671317330528,
+  "createdAt": 1671553822349,
+  "updatedAt": 1671553822349,
   "deletedAt": 0,
-  "createdFirstAt": 1671317330528,
+  "createdFirstAt": 1671553822349,
   "id": "namedparameterstypeof-markdowncompletions",
   "name": "NamedParameters<typeof MarkdownCompletions>",
   "slug": "namedparameterstypeof-markdowncompletions",

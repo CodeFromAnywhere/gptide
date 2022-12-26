@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671506545066,
-  "updatedAt": 1671506545066,
+  "createdAt": 1671553377881,
+  "updatedAt": 1671553377881,
   "deletedAt": 0,
-  "createdFirstAt": 1671506545066,
+  "createdFirstAt": 1671553377881,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -29,5 +29,5 @@
   },
   "value": "(props: ReaderProps) => {\n  // props provide the static data for the website\n  const queryPath = useQueryPath();\n  const basePath = process.env.NEXT_PUBLIC_BASEPATH;\n  const [config] = useStore(\"generativeWeb.config\");\n\n  const readerPageQuery = queries.useGetReaderPageProps(\n    basePath,\n    queryPath,\n    true,\n    config.activeCustomBasePath\n  );\n\n  const queryProps = readerPageQuery.data?.result?.props;\n\n  // either use the props returned from the query or from the static site\n  const realProps = queryProps?.actualProjectRelativeFilePath\n    ? queryProps\n    : props;\n\n  return <ReaderPage {...realProps} />;\n}",
   "description": "ReaderPage to export for next project. Uses either the props from the next server, or if they're available, the props from the query.",
-  "id": "ijdxkkufqwrxxzurkkrvimxg"
+  "id": "aowvhqgtiffcpwqktybyyjgf"
 }

@@ -1,26 +1,50 @@
 [
   {
-    "createdAt": 1671317866629,
-    "updatedAt": 1671317866629,
+    "createdAt": 1671554408232,
+    "updatedAt": 1671554408232,
     "deletedAt": 0,
-    "createdFirstAt": 1671317866629,
+    "createdFirstAt": 1671554408232,
     "name": "ApiFunction",
     "slug": "api-function",
     "operationRelativeTypescriptFilePath": "src/ApiFunction.ts",
     "comments": [],
     "type": "value",
-    "id": "rfgdpgaoyowjqiowvbbytytx"
+    "id": "lpnhfkvpprneelzkwkkcboxk"
   },
   {
-    "createdAt": 1671317866629,
-    "updatedAt": 1671317866629,
+    "createdAt": 1671554408232,
+    "updatedAt": 1671554408232,
     "deletedAt": 0,
-    "createdFirstAt": 1671317866629,
+    "createdFirstAt": 1671554408232,
+    "name": "ApiFunctionParameters",
+    "slug": "api-function-parameters",
+    "operationRelativeTypescriptFilePath": "src/ApiFunction.ts",
+    "comments": [],
+    "type": "value",
+    "id": "fmplnywhcxhvqabcbvhxjzby"
+  },
+  {
+    "createdAt": 1671554408232,
+    "updatedAt": 1671554408232,
+    "deletedAt": 0,
+    "createdFirstAt": 1671554408232,
     "name": "ApiFunction",
     "slug": "api-function",
     "operationRelativeTypescriptFilePath": "src/index.ts",
     "comments": [],
     "type": "value",
-    "id": "ljjxgqwmwxgovomlyjvzwnnz"
+    "id": "vlechlxxixecdtjhuxyvspyr"
+  },
+  {
+    "createdAt": 1671554408232,
+    "updatedAt": 1671554408232,
+    "deletedAt": 0,
+    "createdFirstAt": 1671554408232,
+    "name": "ApiFunctionParameters",
+    "slug": "api-function-parameters",
+    "operationRelativeTypescriptFilePath": "src/index.ts",
+    "comments": [],
+    "type": "value",
+    "id": "pvubornchvgozmtfbhgmrmxf"
   }
 ]

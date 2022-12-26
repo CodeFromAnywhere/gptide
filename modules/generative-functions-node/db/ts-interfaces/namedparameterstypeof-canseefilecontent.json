@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671315234621,
-  "updatedAt": 1671315234621,
+  "createdAt": 1671553280250,
+  "updatedAt": 1671553280250,
   "deletedAt": 0,
-  "createdFirstAt": 1671315234621,
+  "createdFirstAt": 1671553280250,
   "id": "namedparameterstypeof-canseefilecontent",
   "name": "NamedParameters<typeof canSeeFileContent>",
   "slug": "namedparameterstypeof-canseefilecontent",

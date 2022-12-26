@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671506516804,
-  "updatedAt": 1671506516804,
+  "createdAt": 1671553365686,
+  "updatedAt": 1671553365686,
   "deletedAt": 0,
-  "createdFirstAt": 1671506516804,
+  "createdFirstAt": 1671553365686,
   "id": "contextualprompt",
   "name": "ContextualPrompt",
   "slug": "contextualprompt",

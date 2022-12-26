@@ -517,6 +517,7 @@ export declare const sdk: {
         isActive?: boolean | undefined;
         title: string;
         id?: string | undefined;
+        isDisabled?: boolean | undefined;
         openContextMenuProps?: object | undefined;
     }) => JSX.Element;
     PromptButton: (props: {

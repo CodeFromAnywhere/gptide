@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671506575284,
-  "updatedAt": 1671506575284,
+  "createdAt": 1671553394184,
+  "updatedAt": 1671553394184,
   "deletedAt": 0,
-  "createdFirstAt": 1671506575284,
+  "createdFirstAt": 1671553394184,
   "id": "namedparameterstypeof-setconfig",
   "name": "NamedParameters<typeof setConfig>",
   "slug": "namedparameterstypeof-setconfig",

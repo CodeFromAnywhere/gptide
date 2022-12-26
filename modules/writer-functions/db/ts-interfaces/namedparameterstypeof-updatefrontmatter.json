@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671101682838,
-  "updatedAt": 1671101682838,
+  "createdAt": 1671553717466,
+  "updatedAt": 1671553717466,
   "deletedAt": 0,
-  "createdFirstAt": 1671101682838,
+  "createdFirstAt": 1671553717466,
   "id": "namedparameterstypeof-updatefrontmatter",
   "name": "NamedParameters<typeof updateFrontmatter>",
   "slug": "namedparameterstypeof-updatefrontmatter",

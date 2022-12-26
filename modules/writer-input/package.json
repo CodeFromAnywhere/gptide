@@ -98,7 +98,7 @@
     "folderNameIndexed": "writer-input",
     "hasGeneratedDependenciesIndexed": false,
     "lastPullTimeAtIndexed": 0,
-    "lastRebuildAt": 1671317412425,
+    "lastRebuildAt": 1671553879456,
     "operationDependenciesIndexed": [
       "api",
       "queries",
@@ -133,6 +133,7 @@
       "MappedObject",
       "AugmentedWord",
       "flattenMarkdownChunks",
+      "useHotkey",
       "Div",
       "MarkdownParse",
       "createStore",
@@ -204,7 +205,6 @@
       "useHotkeys",
       "queries",
       "getFileTypeFromPath",
-      "useSelectionPromptsMenu",
       "Div",
       "WriterType",
       "tryParseJson"
@@ -224,15 +224,15 @@
     "sizeIndexed": {
       "codeSize": {
         "numberOfFiles": 30,
-        "lines": 2432,
-        "characters": 70078,
-        "bytes": 70078
+        "lines": 2428,
+        "characters": 69790,
+        "bytes": 69790
       },
       "dataSize": {
         "numberOfFiles": 2,
-        "lines": 281,
-        "characters": 7455,
-        "bytes": 7455
+        "lines": 278,
+        "characters": 7332,
+        "bytes": 7332
       },
       "textSize": {
         "numberOfFiles": 2,
@@ -241,9 +241,9 @@
         "bytes": 19026
       },
       "size": {
-        "bytes": 96559,
-        "characters": 96559,
-        "lines": 3364,
+        "bytes": 96148,
+        "characters": 96148,
+        "lines": 3357,
         "numberOfFiles": 34
       }
     },

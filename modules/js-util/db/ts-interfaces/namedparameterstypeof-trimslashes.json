@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671116992596,
-  "updatedAt": 1671116992596,
+  "createdAt": 1671554907584,
+  "updatedAt": 1671554907584,
   "deletedAt": 0,
-  "createdFirstAt": 1671116992596,
+  "createdFirstAt": 1671554907584,
   "id": "namedparameterstypeof-trimslashes",
   "name": "NamedParameters<typeof trimSlashes>",
   "slug": "namedparameterstypeof-trimslashes",

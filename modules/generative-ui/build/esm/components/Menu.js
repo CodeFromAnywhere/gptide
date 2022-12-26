@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 import * as React from "react";
 import { api } from "api";
-import { showStandardResponse } from "cool-toast";
+import { showStandardResponse, warningToast } from "cool-toast";
 import { getFileOrFolderName, getFolderJs } from "fs-util-js";
 import { useContextMenu } from "context-menu";
 import { notEmpty } from "js-util";
@@ -359,53 +359,60 @@ export var Menu = function (props) {
                 var projectRelativePath = "".concat(basePath || "").concat(href.startsWith("/") ? href : "/".concat(href));
                 return (React.createElement(NavButton, { openContextMenuProps: admin.isAdminActive ? openContextMenuProps : undefined, isActive: filename === navItem.name, href: href, id: projectRelativePath, title: "".concat(icon, " ").concat(navItem.name, " ").concat(extraIcons) }));
             }),
-            admin.isAdminActive ? (React.createElement(React.Fragment, null,
-                React.createElement(NavButton, { onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
-                        var filename, projectRelativePath, apiResult;
-                        var _a, _b;
-                        return __generator(this, function (_c) {
-                            switch (_c.label) {
-                                case 0:
-                                    if (!basePath)
-                                        return [2 /*return*/];
-                                    filename = prompt("What should be the name (including extension)?", "untitled.md");
-                                    if (!filename || filename === "")
-                                        return [2 /*return*/];
-                                    projectRelativePath = "".concat(basePath, "/").concat(basePathRelativeFolderPath, "/").concat(filename);
-                                    return [4 /*yield*/, api.newFile(projectRelativePath)];
-                                case 1:
-                                    apiResult = _c.sent();
-                                    showStandardResponse(apiResult);
-                                    if ((_a = apiResult === null || apiResult === void 0 ? void 0 : apiResult.result) === null || _a === void 0 ? void 0 : _a.isSuccessful) {
-                                        (_b = admin.refetch) === null || _b === void 0 ? void 0 : _b.call(admin);
-                                    }
+            React.createElement(NavButton, { isDisabled: !admin.isAdminActive, onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
+                    var filename, projectRelativePath, apiResult;
+                    var _a, _b;
+                    return __generator(this, function (_c) {
+                        switch (_c.label) {
+                            case 0:
+                                if (!admin.isAdminActive) {
+                                    warningToast("You can't do this yet! Please install the server first, and ensure you're connected with it.");
                                     return [2 /*return*/];
-                            }
-                        });
-                    }); }, title: "+ New file" }),
-                React.createElement(NavButton, { onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
-                        var folderName, projectRelativeBasePath, apiResult;
-                        var _a, _b;
-                        return __generator(this, function (_c) {
-                            switch (_c.label) {
-                                case 0:
-                                    if (!basePath)
-                                        return [2 /*return*/];
-                                    folderName = prompt("What should be the name?", "");
-                                    if (!folderName || folderName === "")
-                                        return [2 /*return*/];
-                                    projectRelativeBasePath = "".concat(basePath, "/").concat(basePathRelativeFolderPath);
-                                    return [4 /*yield*/, api.newFolder(projectRelativeBasePath, folderName)];
-                                case 1:
-                                    apiResult = _c.sent();
-                                    showStandardResponse(apiResult);
-                                    if ((_a = apiResult === null || apiResult === void 0 ? void 0 : apiResult.result) === null || _a === void 0 ? void 0 : _a.isSuccessful) {
-                                        (_b = admin.refetch) === null || _b === void 0 ? void 0 : _b.call(admin);
-                                    }
+                                }
+                                if (!basePath)
                                     return [2 /*return*/];
-                            }
-                        });
-                    }); }, title: "+ New folder" }))) : null),
+                                filename = prompt("What should be the name (including extension)?", "untitled.md");
+                                if (!filename || filename === "")
+                                    return [2 /*return*/];
+                                projectRelativePath = "".concat(basePath, "/").concat(basePathRelativeFolderPath, "/").concat(filename);
+                                return [4 /*yield*/, api.newFile(projectRelativePath)];
+                            case 1:
+                                apiResult = _c.sent();
+                                showStandardResponse(apiResult);
+                                if ((_a = apiResult === null || apiResult === void 0 ? void 0 : apiResult.result) === null || _a === void 0 ? void 0 : _a.isSuccessful) {
+                                    (_b = admin.refetch) === null || _b === void 0 ? void 0 : _b.call(admin);
+                                }
+                                return [2 /*return*/];
+                        }
+                    });
+                }); }, title: "+ New file" }),
+            React.createElement(NavButton, { isDisabled: !admin.isAdminActive, onClick: function () { return __awaiter(void 0, void 0, void 0, function () {
+                    var folderName, projectRelativeBasePath, apiResult;
+                    var _a, _b;
+                    return __generator(this, function (_c) {
+                        switch (_c.label) {
+                            case 0:
+                                if (!admin.isAdminActive) {
+                                    warningToast("You can't do this yet! Please install the server first, and ensure you're connected with it.");
+                                    return [2 /*return*/];
+                                }
+                                if (!basePath)
+                                    return [2 /*return*/];
+                                folderName = prompt("What should be the name?", "");
+                                if (!folderName || folderName === "")
+                                    return [2 /*return*/];
+                                projectRelativeBasePath = "".concat(basePath, "/").concat(basePathRelativeFolderPath);
+                                return [4 /*yield*/, api.newFolder(projectRelativeBasePath, folderName)];
+                            case 1:
+                                apiResult = _c.sent();
+                                showStandardResponse(apiResult);
+                                if ((_a = apiResult === null || apiResult === void 0 ? void 0 : apiResult.result) === null || _a === void 0 ? void 0 : _a.isSuccessful) {
+                                    (_b = admin.refetch) === null || _b === void 0 ? void 0 : _b.call(admin);
+                                }
+                                return [2 /*return*/];
+                        }
+                    });
+                }); }, title: "+ New folder" })),
         admin.isAdminActive ? (React.createElement(Div, { className: "mx-2" },
             React.createElement(P, null,
                 "selectionResults: ",

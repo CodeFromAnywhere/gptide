@@ -1,26 +1,31 @@
 {
-  "createdAt": 1671317868946,
-  "updatedAt": 1671317868946,
+  "createdAt": 1671554412060,
+  "updatedAt": 1671554412060,
   "deletedAt": 0,
-  "createdFirstAt": 1671317868946,
+  "createdFirstAt": 1671554412060,
   "id": "apifunction",
   "name": "ApiFunction",
   "slug": "apifunction",
   "operationRelativeTypescriptFilePath": "src/ApiFunction.ts",
   "hasGeneric": false,
   "isExported": true,
-  "rawText": "export type ApiFunction = {\n  (...parameters: any[]): any;\n  isPublic?: boolean;\n  /**\n   * - If true, usage will be counted in UsageReport\n   * - If \"isSuccessful\", usage will be counted only if this function returns `.isSuccessful: true`\n   *\n   * NB: not sure if the latter is needed\n   *\n   */\n  isPaid?: true | \"isSuccessful\";\n  /**\n   * Cost per execution in EUROCENT\n   *\n   * e.g. 0.05 means that 2000 executions cost 1 euro.\n   */\n  price?: number;\n  allowedRoles?: string[];\n};",
+  "rawText": "/**\n * TODO: get rid of `TsFunctionFrontmatterConfig` and put here\n */\nexport type ApiFunction = {\n  (): any;\n} & ApiFunctionParameters;",
   "extensions": [],
   "isOperationIndex": false,
-  "description": "",
+  "description": "TODO: get rid of `TsFunctionFrontmatterConfig` and put here",
   "isDbModel": false,
   "commentsInside": [],
   "type": {
     "typeDefinition": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "isPublic": {
           "type": "boolean"
+        },
+        "domain": {
+          "type": "string",
+          "description": "If it's a slug without TLD, the function will be on on a landing page without its own domain If it's a slug with TLD, it can get it's own domain If domain is given, function is wrapped into `sdk-public-tools`, wrapped with:\n\n- providing email and other required credentials\n- adding to queue if server is busy\n\nLater I can wrap this even more with monetisation and 'tool-owner', so I can let others do the same with a single click (promote after form is filled is like \"learn more about how to earn money with the new AI tech revolution (or so)\")"
         },
         "isPaid": {
           "type": [
@@ -31,11 +36,11 @@
             true,
             "isSuccessful"
           ],
-          "description": "- If true, usage will be counted in UsageReport\n- If \"isSuccessful\", usage will be counted only if this function returns `.isSuccessful: true`\n\nNB: not sure if the latter is needed"
+          "description": "- If true, usage will be counted in `UsageReport`\n- If \"isSuccessful\", usage will be counted only if this function returns `.isSuccessful: true`\n\nNB: not sure if the latter is needed"
         },
         "price": {
           "type": "number",
-          "description": "Cost per execution in EUROCENT\n\ne.g. 0.05 means that 2000 executions cost 1 euro."
+          "description": "Cost per execution in EURO CENT\n\ne.g. 0.05 means that 2000 executions cost 1 euro."
         },
         "allowedRoles": {
           "type": "array",
@@ -44,15 +49,25 @@
           }
         }
       },
-      "additionalProperties": false
+      "description": "TODO: get rid of `TsFunctionFrontmatterConfig` and put here"
     },
     "simplifiedSchema": {
+      "fullComment": "TODO: get rid of `TsFunctionFrontmatterConfig` and put here",
+      "todo": "get rid of `TsFunctionFrontmatterConfig` and put here",
       "properties": [
         {
           "name": "isPublic",
           "required": false,
           "schema": {
             "type": "boolean"
+          }
+        },
+        {
+          "name": "domain",
+          "required": false,
+          "schema": {
+            "fullComment": "If it's a slug without TLD, the function will be on on a landing page without its own domain If it's a slug with TLD, it can get it's own domain If domain is given, function is wrapped into `sdk-public-tools`, wrapped with:\n\n- providing email and other required credentials\n- adding to queue if server is busy\n\nLater I can wrap this even more with monetisation and 'tool-owner', so I can let others do the same with a single click (promote after form is filled is like \"learn more about how to earn money with the new AI tech revolution (or so)\")",
+            "type": "string"
           }
         },
         {
@@ -63,7 +78,7 @@
               true,
               "isSuccessful"
             ],
-            "fullComment": "- If true, usage will be counted in UsageReport\n- If \"isSuccessful\", usage will be counted only if this function returns `.isSuccessful: true`\n\nNB: not sure if the latter is needed",
+            "fullComment": "- If true, usage will be counted in `UsageReport`\n- If \"isSuccessful\", usage will be counted only if this function returns `.isSuccessful: true`\n\nNB: not sure if the latter is needed",
             "nb": "not sure if the latter is needed",
             "type": "boolean"
           }
@@ -72,7 +87,7 @@
           "name": "price",
           "required": false,
           "schema": {
-            "fullComment": "Cost per execution in EUROCENT\n\ne.g. 0.05 means that 2000 executions cost 1 euro.",
+            "fullComment": "Cost per execution in EURO CENT\n\ne.g. 0.05 means that 2000 executions cost 1 euro.",
             "type": "number"
           }
         },

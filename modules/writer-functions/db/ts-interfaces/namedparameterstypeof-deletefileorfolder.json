@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671101602571,
-  "updatedAt": 1671101602571,
+  "createdAt": 1671553673216,
+  "updatedAt": 1671553673216,
   "deletedAt": 0,
-  "createdFirstAt": 1671101602571,
+  "createdFirstAt": 1671553673216,
   "id": "namedparameterstypeof-deletefileorfolder",
   "name": "NamedParameters<typeof deleteFileOrFolder>",
   "slug": "namedparameterstypeof-deletefileorfolder",

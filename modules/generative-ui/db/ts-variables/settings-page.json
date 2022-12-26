@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671506563994,
-  "updatedAt": 1671506563994,
+  "createdAt": 1671553387884,
+  "updatedAt": 1671553387884,
   "deletedAt": 0,
-  "createdFirstAt": 1671506563994,
+  "createdFirstAt": 1671553387884,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -29,5 +29,5 @@
   },
   "value": "() => {\n  const [config, _, { hydrated }] = useStore(\"generativeWeb.config\");\n  const [customUrl, __, { hydrated: apiHydrated }] = useStore(\"api.customUrl\");\n  return (\n    <Div className=\"max-lg:mx-4 lg:mx-20\">\n      {hydrated && apiHydrated ? (\n        <FunctionForm\n          tsFunction={SetConfigIndex}\n          initialValues={[\n            customUrl,\n            config.disableAdmin,\n            config.customAbsoluteBasePaths,\n          ]}\n          submitFunction={setConfig}\n          withResult={() => {\n            showStandardResponse({ isSuccessful: true, message: \"Updated\" });\n          }}\n        />\n      ) : (\n        <FancyLoader />\n      )}\n    </Div>\n  );\n}",
   "description": "",
-  "id": "zncnmngecfxuiiyzydcimflv"
+  "id": "jabdzksqlcicasfarcjpgurp"
 }

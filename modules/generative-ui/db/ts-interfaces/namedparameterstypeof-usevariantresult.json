@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671506607517,
-  "updatedAt": 1671506607517,
+  "createdAt": 1671553412126,
+  "updatedAt": 1671553412126,
   "deletedAt": 0,
-  "createdFirstAt": 1671506607517,
+  "createdFirstAt": 1671553412126,
   "id": "namedparameterstypeof-usevariantresult",
   "name": "NamedParameters<typeof useVariantResult>",
   "slug": "namedparameterstypeof-usevariantresult",

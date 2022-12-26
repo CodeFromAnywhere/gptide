@@ -30,7 +30,7 @@ Properties:
 | projectRelativePath  | string |  |
 | operationRelativePath (optional) | string |  |
 | id  | string |  |
-| categoryStackCalculated (optional) | array |  |
+| categoryStack (optional) | array |  |
 | isValidCalculated (optional) | boolean |  |
 | isFake (optional) | boolean |  |
 | contextualPromptSlug  | string |  |
@@ -78,7 +78,6 @@ Properties:
 | projectRelativePath  | string |  |
 | operationRelativePath (optional) | string |  |
 | id  | string |  |
-| categoryStackCalculated (optional) | array |  |
 | title (optional) | string |  |
 | description (optional) | string |  |
 | scopeProjectRelativePath (optional) | string |  |
@@ -88,6 +87,32 @@ Properties:
 | usesContext (optional) | boolean |  |
 | usesSelection (optional) | boolean |  |
 | usesAnyContext (optional) | boolean |  |
+
+
+
+## 🔹 ReaderProps
+
+This is what we need on the page level. There are many subtleties to it, but this is the core
+
+
+
+
+
+Properties: 
+
+ | Name | Type | Description |
+|---|---|---|
+| notFound (optional) | boolean |  |
+| notFoundReason (optional) | string |  |
+| isFolder (optional) | boolean |  |
+| canSeeContent (optional) | boolean |  |
+| unauthorizedWarningMessage (optional) | string |  |
+| markdown (optional) | string |  |
+| contextualPromptsObject (optional) | object |  |
+| contextualPromptResults (optional) | object |  |
+| actualProjectRelativeFilePath (optional) | string |  |
+| navigation (optional) | array |  |
+| contextualPromptCategories (optional) | object |  |
 
 
 
@@ -140,31 +165,6 @@ Properties:
 
 
 
-## 🔹 ReaderProps
-
-This is what we need on the page level. There are many subtleties to it, but this is the core
-
-
-
-
-
-Properties: 
-
- | Name | Type | Description |
-|---|---|---|
-| notFound (optional) | boolean |  |
-| notFoundReason (optional) | string |  |
-| isFolder (optional) | boolean |  |
-| canSeeContent (optional) | boolean |  |
-| unauthorizedWarningMessage (optional) | string |  |
-| markdown (optional) | string |  |
-| contextualPromptsObject (optional) | object |  |
-| contextualPromptResults (optional) | object |  |
-| actualProjectRelativeFilePath (optional) | string |  |
-| navigation (optional) | array |  |
-
-
-
 ## 🔸 AiDemoApp
 
 jsonSingle model
@@ -192,13 +192,30 @@ Properties:
 | projectRelativePath  | string |  |
 | operationRelativePath (optional) | string |  |
 | id  | string |  |
-| categoryStackCalculated (optional) | array |  |
+| categoryStack (optional) | array |  |
 | domain (optional) | string |  |
 | headerTitle  | string |  |
 | hasImageBoolean (optional) | boolean |  |
 | headerSubtitle (optional) | string |  |
 | headerCtaHref (optional) | string |  |
 | headerCtaText (optional) | string |  |
+
+
+
+## 🔹 CategoryChildObject
+
+Properties: 
+
+ | Name | Type | Description |
+|---|---|---|
+| category (optional) | string |  |
+| categoryStack  | array |  |
+| count  | number |  |
+| name (optional) | string |  |
+| title (optional) | string |  |
+| description (optional) | string |  |
+| pricing (optional) | string |  |
+| children (optional) | array |  |
 
 
 
@@ -226,6 +243,11 @@ Properties:
 
  | Name | Type | Description |
 |---|---|---|
+| isPublic (optional) | boolean |  |
+| domain (optional) | string |  |
+| isPaid (optional) | boolean |  |
+| price (optional) | number |  |
+| allowedRoles (optional) | array |  |
 | contextualPromptInfo  | object |  |
 
 
@@ -280,7 +302,7 @@ Properties:
 | projectRelativePath  | string |  |
 | operationRelativePath (optional) | string |  |
 | id  | string |  |
-| categoryStackCalculated (optional) | array |  |
+| categoryStack (optional) | array |  |
 | email  | string |  |
 | tier  | string |  |
 | newsletter  | string |  |

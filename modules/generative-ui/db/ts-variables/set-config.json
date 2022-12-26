@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671506578255,
-  "updatedAt": 1671506578255,
+  "createdAt": 1671553396433,
+  "updatedAt": 1671553396433,
   "deletedAt": 0,
-  "createdFirstAt": 1671506578255,
+  "createdFirstAt": 1671553396433,
   "classification": "const",
   "comments": [],
   "isExported": true,
@@ -29,5 +29,5 @@
   },
   "value": "(\n  apiUrl: string,\n  disableAdmin: boolean,\n  /**\n   * TITLE: Absolute base path of your file system to show\n   */\n  customAbsoluteBasePaths: string[]\n) => {\n  setItem(\"api.customUrl\", apiUrl === \"\" ? null : apiUrl);\n  setItem(\"generativeWeb.config\", { disableAdmin, customAbsoluteBasePaths });\n}",
   "description": "",
-  "id": "wcumnqtpnbbqgrqtrygcwgsi"
+  "id": "vkhykayxmxhmbaotgvutjhtq"
 }

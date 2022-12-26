@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671101685892,
-  "updatedAt": 1671101685892,
+  "createdAt": 1671553719389,
+  "updatedAt": 1671553719389,
   "deletedAt": 0,
-  "createdFirstAt": 1671101685892,
+  "createdFirstAt": 1671553719389,
   "isApiExposed": true,
   "isExported": true,
   "groupAuthorization": {},
@@ -76,5 +76,5 @@
     "linesPerFile": 60,
     "numberOfFiles": 1
   },
-  "id": "uyrolgzmjyjbvfchnuanchcd"
+  "id": "tzbhnljwrhnvnjblntzfkxkf"
 }

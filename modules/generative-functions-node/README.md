@@ -6,9 +6,65 @@ generative-functions-node (`OperationClassification` node-cjs)
 
 # Api reference
 
+## readerPageGetStaticProps()
+
+| Input      |    |    |
+| ---------- | -- | -- |
+| context | `GetStaticPropsContext` |  |
+| **Output** |    |    |
+
+
+
+## 📄 readerPageGetStaticProps (exported const)
+
+## getContextualPromptResults()
+
+Gets all contextualPromptResults, but only if specific things are true
+
+- For any prompt we have for this filetype: get it from the database
+- For prompts about a folder: path/to/folder/.index/prompt-results.json
+- For prompts about a file or a selection thereof: path/to/folder/.index/[filename]/prompt-results.json
+
+NB: the slug of the ones in index should be the ID, and does not need to be set by the user, because we cannot guarantee that it's no duplicate.
+
+
+| Input      |    |    |
+| ---------- | -- | -- |
+| config (optional) | { prompt_projectRelativePath?: string, <br />promptSlugs?: string[], <br /> } |  |
+| **Output** |    |    |
+
+
+
+## getContextualPrompts()
+
+Returns all contextual prompts for the selection and for the page with the right context type
+
+
+| Input      |    |    |
+| ---------- | -- | -- |
+| contextType (optional) | `FileType` | If not given, will return all |,| scopeProjectRelativePath (optional) | string |  |,| isDev (optional) | boolean |  |
+| **Output** |    |    |
+
+
+
+## 📄 getContextualPromptResults (exported const)
+
+Gets all contextualPromptResults, but only if specific things are true
+
+- For any prompt we have for this filetype: get it from the database
+- For prompts about a folder: path/to/folder/.index/prompt-results.json
+- For prompts about a file or a selection thereof: path/to/folder/.index/[filename]/prompt-results.json
+
+NB: the slug of the ones in index should be the ID, and does not need to be set by the user, because we cannot guarantee that it's no duplicate.
+
+
+## 📄 getContextualPrompts (exported const)
+
+Returns all contextual prompts for the selection and for the page with the right context type
+
 # Internal
 
-<details><summary>Show internal (28)</summary>
+<details><summary>Show internal (22)</summary>
     
   # augmentMarkdown()
 
@@ -78,24 +134,6 @@ import webMarkdownFileTsInterface from "markdown-types/db/ts-interfaces/webmarkd
 
 
 
-## getContextualPromptResults()
-
-Gets all contextualPromptResults, but only if specific things are true
-
-- For any prompt we have for this filetype: get it from the database
-- For prompts about a folder: path/to/folder/.index/prompt-results.json
-- For prompts about a file or a selection thereof: path/to/folder/.index/[filename]/prompt-results.json
-
-NB: the slug of the ones in index should be the ID, and does not need to be set by the user, because we cannot guarantee that it's no duplicate.
-
-
-| Input      |    |    |
-| ---------- | -- | -- |
-| config (optional) | { prompt_projectRelativePath?: string, <br />promptSlugs?: string[], <br /> } |  |
-| **Output** |    |    |
-
-
-
 ## getContextualPromptsArray()
 
 Wrapper around the database to support the usecase of storing a file in a custom location for contextualPrompts.
@@ -104,18 +142,6 @@ Wrapper around the database to support the usecase of storing a file in a custom
 | Input      |    |    |
 | ---------- | -- | -- |
 | scopeProjectRelativePath (optional) | string | If available, will also get the scoped context |
-| **Output** |    |    |
-
-
-
-## getContextualPrompts()
-
-Returns all contextual prompts for the selection and for the page with the right context type
-
-
-| Input      |    |    |
-| ---------- | -- | -- |
-| contextType (optional) | `FileType` | If not given, will return all |,| scopeProjectRelativePath (optional) | string |  |,| isDev (optional) | boolean |  |
 | **Output** |    |    |
 
 
@@ -155,7 +181,7 @@ Idea: would it be easy to allow for path outside of project as well?
 
 | Input      |    |    |
 | ---------- | -- | -- |
-| basePath | string | BasePath for this project |,| queryPath | string | QueryPath as in the URL |,| isAdmin (optional) | boolean | If true, isDev will be overwritten to be false, even in prod |
+| basePath (optional) | string | BasePath for this project |,| queryPath | string | QueryPath as in the URL |,| isAdmin (optional) | boolean | If true, isDev will be overwritten to be false, even in prod |,| absoluteBasePath (optional) | string | If given, will be used instead of basePath, if it exists. |
 | **Output** |    |    |
 
 
@@ -186,15 +212,6 @@ Ther are other workarounds here to make sure it ends up in the bundle.
 | Input      |    |    |
 | ---------- | -- | -- |
 | - | | |
-| **Output** |    |    |
-
-
-
-## readerPageGetStaticProps()
-
-| Input      |    |    |
-| ---------- | -- | -- |
-| context | `GetStaticPropsContext` |  |
 | **Output** |    |    |
 
 
@@ -232,25 +249,9 @@ import webMarkdownFileTsInterface from "markdown-types/db/ts-interfaces/webmarkd
 
 ## 📄 findClosestAbsolutePath (exported const)
 
-## 📄 getContextualPromptResults (exported const)
-
-Gets all contextualPromptResults, but only if specific things are true
-
-- For any prompt we have for this filetype: get it from the database
-- For prompts about a folder: path/to/folder/.index/prompt-results.json
-- For prompts about a file or a selection thereof: path/to/folder/.index/[filename]/prompt-results.json
-
-NB: the slug of the ones in index should be the ID, and does not need to be set by the user, because we cannot guarantee that it's no duplicate.
-
-
 ## 📄 getContextualPromptsArray (exported const)
 
 Wrapper around the database to support the usecase of storing a file in a custom location for contextualPrompts.
-
-
-## 📄 getContextualPrompts (exported const)
-
-Returns all contextual prompts for the selection and for the page with the right context type
 
 
 ## 📄 getFirstFile (exported const)
@@ -286,9 +287,5 @@ A solution could be to add the docs folder into the next.js folder or copy it...
 https://github.com/vercel/next.js/discussions/32236?sort=new#discussioncomment-3029649
 
 Ther are other workarounds here to make sure it ends up in the bundle.
-
-
-## 📄 readerPageGetStaticProps (exported const)
-
   </details>
 

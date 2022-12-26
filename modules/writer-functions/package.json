@@ -54,7 +54,7 @@
     "folderNameIndexed": "writer-functions",
     "hasGeneratedDependenciesIndexed": false,
     "lastPullTimeAtIndexed": 0,
-    "lastRebuildAt": 1671101704917,
+    "lastRebuildAt": 1671553729175,
     "operationDependenciesIndexed": [
       "fs",
       "path",
@@ -106,14 +106,14 @@
       "codeSize": {
         "numberOfFiles": 14,
         "lines": 444,
-        "characters": 12274,
-        "bytes": 12274
+        "characters": 12277,
+        "bytes": 12277
       },
       "dataSize": {
         "numberOfFiles": 2,
-        "lines": 164,
-        "characters": 4865,
-        "bytes": 4865
+        "lines": 171,
+        "characters": 5034,
+        "bytes": 5034
       },
       "textSize": {
         "numberOfFiles": 1,
@@ -122,9 +122,9 @@
         "bytes": 4257
       },
       "size": {
-        "bytes": 21396,
-        "characters": 21396,
-        "lines": 811,
+        "bytes": 21568,
+        "characters": 21568,
+        "lines": 818,
         "numberOfFiles": 17
       }
     },

@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671315506682,
-  "updatedAt": 1671315506682,
+  "createdAt": 1671553506728,
+  "updatedAt": 1671553506728,
   "deletedAt": 0,
-  "createdFirstAt": 1671315506682,
+  "createdFirstAt": 1671553506728,
   "id": "namedparameterstypeof-contextualpromptresultstab",
   "name": "NamedParameters<typeof ContextualPromptResultsTab>",
   "slug": "namedparameterstypeof-contextualpromptresultstab",

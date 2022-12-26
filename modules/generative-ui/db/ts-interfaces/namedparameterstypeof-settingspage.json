@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671506560169,
-  "updatedAt": 1671506560169,
+  "createdAt": 1671553385728,
+  "updatedAt": 1671553385728,
   "deletedAt": 0,
-  "createdFirstAt": 1671506560169,
+  "createdFirstAt": 1671553385728,
   "id": "namedparameterstypeof-settingspage",
   "name": "NamedParameters<typeof SettingsPage>",
   "slug": "namedparameterstypeof-settingspage",

@@ -26,30 +26,30 @@
       "indexImportExportError": "",
       "lintProblems": []
     },
-    "lastRebuildAt": 1671315262071,
+    "lastRebuildAt": 1671553314930,
     "sizeIndexed": {
       "codeSize": {
         "numberOfFiles": 7,
-        "lines": 952,
-        "characters": 31719,
-        "bytes": 31719
+        "lines": 971,
+        "characters": 32259,
+        "bytes": 32259
       },
       "dataSize": {
         "numberOfFiles": 2,
-        "lines": 171,
-        "characters": 5071,
-        "bytes": 5071
+        "lines": 174,
+        "characters": 5161,
+        "bytes": 5161
       },
       "textSize": {
         "numberOfFiles": 2,
-        "lines": 299,
-        "characters": 10385,
-        "bytes": 10385
+        "lines": 296,
+        "characters": 10494,
+        "bytes": 10494
       },
       "size": {
-        "bytes": 47175,
-        "characters": 47175,
-        "lines": 1422,
+        "bytes": 47914,
+        "characters": 47914,
+        "lines": 1441,
         "numberOfFiles": 11
       }
     },
@@ -90,6 +90,7 @@
       "tryParseJson",
       "ContextualPrompt",
       "ContextualPromptsObject",
+      "CategoryChildObject",
       "FolderContent",
       "ReaderProps",
       "fs",
@@ -97,6 +98,7 @@
       "getExtension",
       "makeRelative",
       "getProjectRoot",
+      "getContextualPromptCategories",
       "notEmpty",
       "omitUndefinedValues",
       "readMarkdownFile",
@@ -128,7 +130,8 @@
     "next-types": "0.0.1",
     "read-markdown-file": "0.0.1",
     "k-explore": "0.0.2",
-    "next": "*"
+    "next": "*",
+    "ai-functions-node": "0.0.1"
   },
   "slug": "generative-functions-node",
   "id": "eatosihbotjdxslswtdiybvq"

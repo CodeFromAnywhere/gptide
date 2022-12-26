@@ -1,9 +1,9 @@
 [
   {
-    "createdAt": 1670064044189,
-    "updatedAt": 1670064044189,
+    "createdAt": 1671553998378,
+    "updatedAt": 1671553998378,
     "deletedAt": 0,
-    "createdFirstAt": 1670064044189,
+    "createdFirstAt": 1671553998378,
     "name": "Comment",
     "slug": "comment",
     "operationRelativeTypescriptFilePath": "src/ts/TypescriptFile.ts",
@@ -15,6 +15,6 @@
     ],
     "firstLine": 4,
     "lastLine": 17,
-    "id": "kseqdfertjzcztmpgglnwkvt"
+    "id": "rmniltiiuzroomlnfkreyhol"
   }
 ]

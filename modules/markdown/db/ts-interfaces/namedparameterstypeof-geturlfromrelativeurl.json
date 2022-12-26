@@ -1,8 +1,8 @@
 {
-  "createdAt": 1671318488046,
-  "updatedAt": 1671318488046,
+  "createdAt": 1671554535990,
+  "updatedAt": 1671554535990,
   "deletedAt": 0,
-  "createdFirstAt": 1671318488046,
+  "createdFirstAt": 1671554535990,
   "id": "namedparameterstypeof-geturlfromrelativeurl",
   "name": "NamedParameters<typeof getUrlFromRelativeUrl>",
   "slug": "namedparameterstypeof-geturlfromrelativeurl",
