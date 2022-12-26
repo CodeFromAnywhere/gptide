@@ -1,17 +1,5 @@
 [
   {
-    "createdAt": 1671554657430,
-    "updatedAt": 1671554657430,
-    "deletedAt": 0,
-    "createdFirstAt": 1671554657430,
-    "name": "FileWriter",
-    "slug": "file-writer",
-    "operationRelativeTypescriptFilePath": "src/FileWriter.tsx",
-    "comments": [],
-    "type": "value",
-    "id": "tvwgfpcubhcxfnawojipifsa"
-  },
-  {
     "createdAt": 1671554657431,
     "updatedAt": 1671554657431,
     "deletedAt": 0,

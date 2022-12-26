@@ -481,20 +481,25 @@ export declare const sdk: {
         placement?: import("@popperjs/core").Placement | undefined;
     }) => JSX.Element;
     useOnScreen: typeof useOnScreen;
-    FileWriter: (props: {
-        markdownModelName?: string | number | symbol | undefined;
-        projectRelativeFilePath: string;
-        initialWriterView?: import("writer-types").WriterViewEnum | undefined;
-        disabledMenuItems?: string[] | undefined;
-        hideButtons?: boolean | undefined;
-    }) => JSX.Element;
     OpenFileWriterPages: (props: {
         pagesObject: import("file-tabs").PagesObjectShape;
     }) => JSX.Element;
+    useFileWriter: (props: {
+        markdownModelName?: string | number | symbol | undefined;
+        projectRelativeFilePath?: string | undefined;
+        initialWriterView?: import("writer-types").WriterViewEnum | undefined;
+        disabledMenuItems?: string[] | undefined;
+        hideButtons?: boolean | undefined;
+    }) => {
+        renderFileWriter: () => JSX.Element;
+        save: () => Promise<void>;
+        isSaved: boolean;
+    };
     WriterLayout: (props: {
         children: JSX.Element;
     }) => JSX.Element;
     Dataset: () => JSX.Element;
+    FileActions: any;
     Menu: (props: {
         notFound?: boolean | undefined;
         projectRelativeFilePath?: string | undefined;
@@ -540,6 +545,7 @@ export declare const sdk: {
         isLoading?: boolean | undefined;
         refetch?: (<TPageData>(options?: (import("react-query").RefetchOptions & import("react-query").RefetchQueryFilters<TPageData>) | undefined) => Promise<import("react-query").QueryObserverResult<import("api-types").ApiReturnType<"getReaderPageProps">, unknown>>) | undefined;
     };
+    useFileActions: any;
     useQueryPath: () => string;
     useVariantResult: (fileContextualPromptResults?: import("ai-types").ContextualPromptResult[] | null | undefined) => import("ai-types").ContextualPromptResult | undefined;
     VariantSelector: (props: {

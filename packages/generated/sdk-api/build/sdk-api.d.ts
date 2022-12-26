@@ -1163,7 +1163,7 @@ export declare const sdk: {
         isSuccessful: boolean;
         message?: string | undefined;
     }>;
-    getFileContents: (projectRelativeFilePath: string) => Promise<{
+    getFileContents: (projectRelativeFilePath?: string | undefined) => Promise<{
         isSuccessful: boolean;
         message?: string | undefined;
         fileContents?: string | undefined;

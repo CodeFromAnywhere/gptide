@@ -43,7 +43,7 @@
   "operation": {
     "buildResultIndexed": {
       "indexInteracesErrors": [
-        "No schema/definitions found for /Users/king/King/operations/tools/user-interfaces/gui/wise/file-writer/src/WriterLayout.tsx. Error: Error: Unknown node \"new (props: P) => Component<P, any>\" of kind \"ConstructorType\""
+        "No schema/definitions found for /Users/king/King/operations/tools/user-interfaces/gui/wise/file-writer/src/useFileWriter.tsx. Error: TypeError: Cannot read properties of undefined (reading 'filter')"
       ],
       "buildSucceeded": true,
       "indexImportExportError": "",

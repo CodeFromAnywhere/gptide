@@ -541,6 +541,7 @@ export declare const sdkInterfacePaths: {
     "NamedParameters<typeof readerPageGetStaticPaths>": string;
     "NamedParameters<typeof readerPageGetStaticProps>": string;
     "NamedParameters<typeof Dataset>": string;
+    "NamedParameters<typeof FileActions>": string;
     "NamedParameters<typeof Menu>": string;
     "NamedParameters<typeof MyLayout>": string;
     "NamedParameters<typeof PromptButton>": string;
@@ -549,6 +550,7 @@ export declare const sdkInterfacePaths: {
     "NamedParameters<typeof setConfig>": string;
     "NamedParameters<typeof SettingsPage>": string;
     "NamedParameters<typeof useAdmin>": string;
+    "NamedParameters<typeof useFileActions>": string;
     "NamedParameters<typeof useQueryPath>": string;
     "NamedParameters<typeof useVariantResult>": string;
     "NamedParameters<typeof VariantSelector>": string;

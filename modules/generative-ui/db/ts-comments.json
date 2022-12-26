@@ -1,18 +1,18 @@
 [
   {
-    "createdAt": 1671553409724,
-    "updatedAt": 1671553409724,
+    "createdAt": 1672063352401,
+    "updatedAt": 1672063352401,
     "deletedAt": 0,
-    "createdFirstAt": 1671553409724,
+    "createdFirstAt": 1672063352401,
     "name": "Comment",
     "slug": "comment",
-    "operationRelativeTypescriptFilePath": "src/components/useQueryPath.ts",
-    "comment": "Returns the queryPath of your URL without everything after ? and #",
-    "rawStatement": "export const useQueryPath = () => {\n  const router = useRouter();\n  const queryPath = router.query.queryPath;\n  const realQueryPathArray = queryPath ? makeArray(queryPath) : [];\n\n  const realQueryPath = realQueryPathArray.join(\"/\");\n  return realQueryPath;\n};",
+    "operationRelativeTypescriptFilePath": "src/components/useAdmin.ts",
+    "comment": "Useful hook to make a static site dynamic for administrator",
+    "rawStatement": "export const useAdmin = () => {\n  const queryPath = useQueryPath();\n  const { refetch, isLoading } = queries.useGetReaderPageProps(\n    process.env.NEXT_PUBLIC_BASEPATH || \"\",\n    queryPath,\n    true\n  );\n\n  const meQuery = queries.useGetMeWithContext();\n\n  const isAdmin = !!meQuery.data?.result?.groups?.find(\n    (x: Group) => x.slug === \"admin\"\n  );\n\n  const [config] = useStore(\"generativeWeb.config\");\n\n  const isAdminActive = isAdmin && !config.disableAdmin;\n  const result: {\n    isAdminActive: boolean;\n    isLoading?: boolean;\n    refetch?: typeof refetch;\n  } = isAdminActive\n    ? {\n        isAdminActive,\n        isLoading,\n        refetch,\n      }\n    : { isAdminActive };\n\n  return result;\n};",
     "parameters": {},
     "types": [],
-    "firstLine": 4,
-    "lastLine": 6,
-    "id": "hdnnjakpwabtntdiytddvuqb"
+    "firstLine": 6,
+    "lastLine": 8,
+    "id": "mageepertynqkvehhylvcaez"
   }
 ]

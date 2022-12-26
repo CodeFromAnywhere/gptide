@@ -34,17 +34,19 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import * as React from "react";
+import { apiWithConfig } from "api";
 import { ClickableIcon } from "clickable-icon";
-import { FileWriter } from "file-writer";
+import { useFileWriter } from "file-writer";
 import { getFileOrFolderName, getFolderJs } from "fs-util-js";
 import { MarkdownContent } from "markdown";
-import { Tabs } from "tabs";
 import { processPrompt, usePromptResultAlert } from "prompt-components";
+import * as React from "react";
 import { useState } from "react";
 import { Div, P } from "react-with-native";
 import { useAlert } from "react-with-native-alert";
 import { useRouter } from "react-with-native-router";
+import { Tabs } from "tabs";
+import { FileActions } from "./FileActions";
 import { Menu } from "./Menu";
 import { NavButton } from "./NavButton";
 import { PromptButton } from "./PromptButton";
@@ -53,7 +55,6 @@ import { useStore } from "./store";
 import { useAdmin } from "./useAdmin";
 import { useVariantResult } from "./useVariant";
 import { VariantSelector } from "./VariantSelector";
-import { apiWithConfig } from "api";
 export var ReaderPage = function (props) {
     var _a = useState(false), sidebarHidden = _a[0], setSidebarHidden = _a[1];
     var router = useRouter();
@@ -63,10 +64,16 @@ export var ReaderPage = function (props) {
     var queryPath = router.asPath.slice(1);
     var showPromptAlert = usePromptResultAlert();
     var alert = useAlert();
+    var basePath = process.env.NEXT_PUBLIC_BASEPATH;
+    var markdown = props.markdown, actualProjectRelativeFilePath = props.actualProjectRelativeFilePath, contextualPromptResults = props.contextualPromptResults, contextualPromptsObject = props.contextualPromptsObject, navigation = props.navigation, isFolder = props.isFolder, canSeeContent = props.canSeeContent, unauthorizedWarningMessage = props.unauthorizedWarningMessage, notFound = props.notFound;
+    var _d = useFileWriter({
+        projectRelativeFilePath: actualProjectRelativeFilePath,
+        hideButtons: true,
+        initialWriterView: "edit",
+    }), renderFileWriter = _d.renderFileWriter, save = _d.save, isSaved = _d.isSaved;
     var promo = "**What to do now?**\n- [\uD83D\uDD7A Join our discord](https://discord.gg/gehCtKJk)".concat(admin.isAdminActive
         ? ""
         : "\n- [🧪 Install your server](/gpt-ide/README.md)", "\n- [\uD83C\uDFDB See my premium services and offers](/offers)\n- [\uD83E\uDD2F Join our AI hacker villa \uD83C\uDFDD](https://codefrombali.com)");
-    var markdown = props.markdown, actualProjectRelativeFilePath = props.actualProjectRelativeFilePath, contextualPromptResults = props.contextualPromptResults, contextualPromptsObject = props.contextualPromptsObject, navigation = props.navigation, isFolder = props.isFolder, canSeeContent = props.canSeeContent, unauthorizedWarningMessage = props.unauthorizedWarningMessage, notFound = props.notFound;
     var onFocus = function () { return __awaiter(void 0, void 0, void 0, function () {
         var localUrl, isAlive;
         return __generator(this, function (_a) {
@@ -155,11 +162,14 @@ export var ReaderPage = function (props) {
         selectionPrompts: contextualPromptsObject === null || contextualPromptsObject === void 0 ? void 0 : contextualPromptsObject.selectionContextualPrompts,
     };
     var renderEditContent = function () {
-        return (React.createElement(Div, { className: "flex flex-1 flex-col lg:h-full lg:overflow-y-scroll" }, actualProjectRelativeFilePath ? (React.createElement(FileWriter, { hideButtons: true, projectRelativeFilePath: actualProjectRelativeFilePath, markdownModelName: "CreatorMarkdownFile", initialWriterView: "edit", disabledMenuItems: ["view", "config"] })) : null));
+        return (React.createElement(Div, { className: "flex flex-1 flex-col lg:h-full lg:overflow-y-scroll" },
+            React.createElement(FileActions, { projectRelativeFilePath: actualProjectRelativeFilePath, basePath: basePath, navigation: navigation }),
+            actualProjectRelativeFilePath ? renderFileWriter() : null));
     };
     var renderPage = function () {
         var _a;
         return (React.createElement(Div, { className: "flex flex-1 flex-col" },
+            React.createElement(FileActions, { projectRelativeFilePath: actualProjectRelativeFilePath, basePath: basePath, navigation: navigation }),
             sidebarHidden ? (React.createElement(Div, { className: "max-lg:hidden lg:block flex justify-end" },
                 React.createElement(ClickableIcon, { emoji: "<<", onClick: function () { return setSidebarHidden(false); } }))) : null,
             React.createElement(VariantSelector, { projectRelativeFilePath: actualProjectRelativeFilePath, folderPath: folderPath, isFolder: isFolder, filename: filename, contextualPromptResults: fileContextualPromptResults }),

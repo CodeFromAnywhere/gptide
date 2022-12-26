@@ -1,3 +1,6 @@
+---
+authorizedGroup: 
+---
 # Pricing
 
 Pricing is **free now** but will cost **± 5 cents per prompt** later (to be determined)

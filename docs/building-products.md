@@ -1,3 +1,6 @@
+---
+authorizedGroup: 
+---
 # Building your own products on top?
 
 Because it's just an API, you can build things with ChatGPT with any techstack. However, I am opinionated, and I recommend Typescript (Node.js, Next.js, and React) because I built a way to build full stack apps with that super quickly (see [typerepo](https://typerepo.com)) and I've started with a course about it (see [codefromanywhere](https://codefromanywhere.com))

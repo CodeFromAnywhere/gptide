@@ -295,8 +295,8 @@ export declare const sdkFunctionPaths: {
     getActivePage: string;
     getOpenPageUrl: string;
     renderIcon: string;
-    FileWriter: string;
     OpenFileWriterPages: string;
+    useFileWriter: string;
     WriterLayout: string;
     getFileTypeFromPath: string;
     getWriterType: string;
@@ -434,6 +434,7 @@ export declare const sdkFunctionPaths: {
     readerPageGetStaticPaths: string;
     readerPageGetStaticProps: string;
     Dataset: string;
+    FileActions: string;
     Menu: string;
     MyLayout: string;
     NavButton: string;
@@ -444,6 +445,7 @@ export declare const sdkFunctionPaths: {
     setConfig: string;
     SettingsPage: string;
     useAdmin: string;
+    useFileActions: string;
     useQueryPath: string;
     useVariantResult: string;
     VariantSelector: string;

@@ -156,10 +156,11 @@ import { useReferencableModelData } from "simplified-schema-form";
 import { useTsInterfaceForm } from "simplified-schema-form";
 import { Tooltip } from "tooltip";
 import { useOnScreen } from "use-on-screen";
-import { FileWriter } from "file-writer";
 import { OpenFileWriterPages } from "file-writer";
+import { useFileWriter } from "file-writer";
 import { WriterLayout } from "file-writer";
 import { Dataset } from "generative-ui";
+import { FileActions } from "generative-ui";
 import { Menu } from "generative-ui";
 import { MyLayout } from "generative-ui";
 import { NavButton } from "generative-ui";
@@ -170,6 +171,7 @@ import { SelectionPrompts } from "generative-ui";
 import { setConfig } from "generative-ui";
 import { SettingsPage } from "generative-ui";
 import { useAdmin } from "generative-ui";
+import { useFileActions } from "generative-ui";
 import { useQueryPath } from "generative-ui";
 import { useVariantResult } from "generative-ui";
 import { VariantSelector } from "generative-ui";
@@ -392,10 +394,11 @@ useReferencableModelData,
 useTsInterfaceForm,
 Tooltip,
 useOnScreen,
-FileWriter,
 OpenFileWriterPages,
+useFileWriter,
 WriterLayout,
 Dataset,
+FileActions,
 Menu,
 MyLayout,
 NavButton,
@@ -406,6 +409,7 @@ SelectionPrompts,
 setConfig,
 SettingsPage,
 useAdmin,
+useFileActions,
 useQueryPath,
 useVariantResult,
 VariantSelector,

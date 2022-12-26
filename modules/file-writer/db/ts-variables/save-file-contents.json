@@ -1,14 +1,14 @@
 {
-  "createdAt": 1671554668288,
-  "updatedAt": 1671554668288,
+  "createdAt": 1672061925596,
+  "updatedAt": 1672061925596,
   "deletedAt": 0,
-  "createdFirstAt": 1671554668288,
+  "createdFirstAt": 1672061925596,
   "classification": "const",
   "comments": [],
   "isExported": false,
   "name": "{ saveFileContents }",
   "slug": "save-file-contents",
-  "operationRelativeTypescriptFilePath": "src/FileWriter.tsx",
+  "operationRelativeTypescriptFilePath": "src/useFileWriter.tsx",
   "type": {
     "rawType": "any",
     "typeCoverage": 0,
@@ -20,5 +20,5 @@
   },
   "value": "api",
   "description": "",
-  "id": "uhjbeeqezppjfxkhnuivincp"
+  "id": "ifrglbhsvjnaejuynmpypxsx"
 }
